@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*/////////////// HEADER ///////////////////*/
+
+
+
+
+
+
+
+/*////////////////// MAIN //////////////////////*/
+
+main {
+    background-color: rgb(231, 241, 238);
+}
+
+h1 {
+    padding: 10px;
+    font-size: 8vw;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+
+}
+
+.buy-list {                /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
+    margin: 20px;
+}
+
+.buy-list h2 {
+    font-size: 17px;
+}
+
+.buy-list p {
+    margin: 10px 14px;
+}
+
+main section article {
+    display: flex;
+}
+
+
+main section article img {
+    width: 40%;
+    margin: 15px 10px 15px 20px;
+    
+}
+
+
+h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
+    font-size: 5vw;
+    margin-left: 9px;
+    margin-top: 18px;
+}
+
+.description {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.price
+
+.products {
+    display: flex;
+    
+}
+
+/*/////////////////////     BOTONES             //////////////////////*/
+.button {
+    display: flex;
+    margin: 20px 60px;
+}
+
+.less-button {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.more-button {
+    width: 20px;
+    margin-left: 8px;
+}
+
+
+.add-basket {
+    background-color: rgb(224, 121, 121);
+    margin-left: 40px;
+}
+

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(231, 241, 238);
+}
+
+/*//////////////////////// HEADER ///////////////////////*/
+
+
+
+
+
+/*//////////////////////////         MAIN               /////////////////////////////*/
+
+
+
+
+
+h2 {
+font-size: 40px;
+text-align: center;
+padding: 40px;
+}
+
+
+main .user-name, 
+.pass {
+    font-size: 15px;
+    margin: 16px 70px;
+}
+
+main .button-send {
+    margin: 40px 130px;
+    width: 95px;
+    height: 25px;
+    background-color: rgb(52, 155, 180);
+    color: white;
+}
+
+
+
+
+
+
+
+/*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
+
+
+@media (min-width: 361px){
+    body {
+        
+        width: 100%;
+        height: 100%;
+        background-color: #f0c3a0;
+        
+    }
+    main {
+        background-color: white;
+        width: 30%;
+        height: 80%;
+        margin: 100px 200px 150px 450px;
+        box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.59);
+
+    }
+
+    main section.login {
+        padding-bottom: 30px;
+    }
+
+    main .user-name, 
+.pass {
+    font-size: 15px;
+    margin: 15px 30%;  
+}
+
+main .button-send {
+    margin: 25px 35%;
+    width: 95px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(52, 155, 180);
+    color: white;
+}
+
+.retrieve-pass,
+.register-here {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+main section.options-login {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+}
+
+}
+
+@media (min-width: 769px){
+    body {
+        
+        width: 100%;
+        height: 100%;
+        background-color: #fff1e6;
+        
+    }
+    main {
+        background-color: white;
+        width: 30%;
+        height: 80%;
+        margin: 100px 200px 150px 450px;
+        box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.59);
+
+    }
+
+    main section.login {
+        padding-bottom: 30px;
+    }
+
+    main .user-name, 
+.pass {
+    font-size: 15px;
+    margin: 15px 30%;  
+}
+
+main .button-send {
+    margin: 25px 35%;
+    width: 95px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(52, 155, 180);
+    color: white;
+}
+
+.retrieve-pass,
+.register-here {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+main section.options-login {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+}
+
+}
