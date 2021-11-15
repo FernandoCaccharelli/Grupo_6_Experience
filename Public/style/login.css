@@ -20,7 +20,7 @@ main {
     background-color: #D8E7F5;
     width: 80%;
     height: 80%;
-    margin: 70px 0px 70px 39px;
+    margin: 56px 0px 70px 39px;
     box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.40);
     border-radius: 10px;
 }
@@ -92,7 +92,7 @@ main section.options-login button{
         width: 50%;
         height: 655px;
         margin-left: 395px;
-        margin-top: 48px;
+        margin-top: 110px;
     }
 
     h2 {
