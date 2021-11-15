@@ -24,3 +24,4 @@ app.get('/basket', (req, res) => {
   app.get('/register', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/register.html'))
   })
+  
