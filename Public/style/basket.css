@@ -4,8 +4,74 @@
     padding: 0%;
 }
 
+body {
+    width: 150%;
+}
+
 /*/////////////// HEADER ///////////////////*/
 
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 460px;
+}
+.menu{
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-top: 16px;
+    color:#5E81A3;
+}
+.logo{
+    font-size: 12px;
+    margin-top: 25px;
+   
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 35%;
+    height: 28px;
+    margin-top: 20px;
+}
+.barra p{
+    padding: 10px;
+    margin-top:-8px;
+    font-size: 18px;
+}
+.search{
+    margin-top: 24px;
+    margin-left: -25px;
+    padding: 3px;
+    font-size: 1em;
+}
+.user{
+    display: flex;
+    margin-top: 22px;
+    margin-right: 2.1px;
+    font-size: 1.3em;
+    color: #5E81A3;
+}
+.user p{
+    display: none;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-size: 12px; 
+}
+.shop{
+    margin-top: 22px;
+    margin-left: -4px;
+    margin-right: 55px;
+    font-size: 1.3em;
+    color: #5E81A3;
+    
+}
+.menu-inferior{
+    display: none;
+}
 
 
 
@@ -18,97 +84,584 @@ main {
     background-color: white;
 }
 
-main section {
-    display: flex;
-}
-
-h1 {
-    padding: 20px;
+main div.franja-decorativa {
+    padding: 40px;
     font-size: 4vw;
     text-align: center;
-    margin: 0px 0px 15px 0px;
+    margin: 20px 0px 20px 0px;
+    background-color: rgb(214, 98, 98);
 
 }
 
-.buy-list {                /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
+/*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
+
+main section article.food {
+    display: flex;
+    flex-direction: row;   
+    width: 100%;
+}
+
+h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
+    font-size: 6vw;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 70%;
+    position: absolute;
+}
+
+.description {                      
+    font-size: 14px;
+    margin-left: 11px;
+    margin-top: 55px;
+    position: absolute;
+    width: 98%;
+}
+
+main section article img {
+    width: 30%;
+    margin: 127px -67px 300px 15px;
+       
+}
+
+
+
+/*/////////////////////     BOTONES             //////////////////////*/
+main section article div.gourmet-description {
+    display: flex; 
+    margin: 40px 50px;
+}
+
+main section article div.button {
+    display: flex;
+    margin-top: 5px;
+}
+
+main section article div.button p{
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.less-button {
+    width: 20px;
+    height: 20px;
+    margin-right: 35px;
+}
+
+.more-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.add-basket {
+    background-color: rgb(224, 121, 121);
+    margin-left: -85px;
+    margin-top: 45px;
+}
+
+.info-exp div.button{
+    margin-left: 104px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+.info-exp {
+    margin-left: 100px;
+    margin-top: 140px;
+    
+}
+
+section article div.info-exp h3 {
+    color:rgb(214, 98, 98);
+    margin: -9px -19px;
+    font-size: 16px;
+}
+
+.info-exp p {
+    margin-top: 20px;
+    margin-left: -22px;
+    font-size: 12px;
+}
+
+.info-exp p.price {
+    font-size: 16px;
+    color: black;
+    margin-left: -250px;
+    margin-top: 27px;
+}
+
+
+ /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
+
+.buy-list {               
     margin: 50px 20px;
     position: absolute;
-    right: 350px;
-    
+    top: 700px;  
 
 }
 
-.buy-list ol {
+.buy-list ul {
     margin-left: 40px;
 }
 
 .buy-list h2 {
     font-size: 17px;
+    margin-top: -45px;
 }
 
 .buy-list p {
     margin: 10px 14px;
 }
 
-main .products {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+button.buy {
+    width: 15%;
+    margin-bottom: 15px;
+    margin-left: 166px;
+    background-color: rgb(224, 121, 121);
 }
 
-main section article {
-    width: 65%;
+
+
+/*////////////////////////        MEDIAS QUERIES                /////////////////////////////////*/
+
+@media(min-width:768px) {
+    /*/////////////// HEADER ///////////////////*/
+
+.menu-superior{
     display: flex;
-    flex-wrap: wrap;
-    margin: 10px 90px 10px 50px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 820px;
+}
+.menu{
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-top: 16px;
+    color:#5E81A3;
+}
+.logo{
+    font-size: 20px;
+    margin-top: 18px;
    
 }
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 35%;
+    height: 28px;
+    margin-top: 20px;
+}
+.barra p{
+    padding: 10px;
+    margin-top:-8px;
+    font-size: 18px;
+}
+.search{
+    margin-top: 18px;
+    margin-left: -65px;
+    padding: 3px;
+    font-size: 1.4em;
+}
+.user{
+    display: flex;
+    margin-top: 18px;
+    margin-right: 2.1px;
+    font-size: 1.8em;
+    color: #5E81A3;
+}
+.user p{
+    display: none;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-size: 12px; 
+}
+.shop{
+    margin-top: 18px;
+    margin-left: -4px;
+    margin-right: 55px;
+    font-size: 1.8em;
+    color: #5E81A3;
+    
+}
+.menu-inferior{
+    display: none;
+}
 
+
+
+
+
+
+/*////////////////// MAIN //////////////////////*/
+
+main {
+    background-color: white;
+}
+
+main div.franja-decorativa {
+    padding: 40px;
+    font-size: 4vw;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    background-color: rgb(214, 98, 98);
+
+}
+
+/*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
+
+main section article.food {
+    display: flex;
+    flex-direction: row;   
+    width: 100%;
+}
+
+h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
+    font-size: 6vw;
+    margin-left: 190px;
+    margin-top: 10px;
+    width: 70%;
+    position: absolute;
+}
+
+.description {                      
+    font-size: 17px;
+    margin-left: 11px;
+    margin-top: 75px;
+    position: absolute;
+    width: 98%;
+}
 
 main section article img {
-    width: 20%;
-    margin: 50px 10px 50px 30px;
+    width: 30%;
+    margin: 127px -67px 300px 15px;
        
 }
 
 
-h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
-    font-size: 2vw;
-    margin-left: 15px;
-    margin-top: 55px;
-}
-
-.description {
-    font-size: 18px;
-    margin-left: 15px;
-}
-
-.price
-
-.products {
-    display: flex;
-    
-}
 
 /*/////////////////////     BOTONES             //////////////////////*/
-.button {
+main section article div.gourmet-description {
+    display: flex; 
+    margin: 40px 50px;
+}
+
+main section article div.button {
     display: flex;
-    margin: 30px 60px;
+    margin-top: 5px;
+}
+
+main section article div.button p{
+    margin-top: -1px;
+    margin-right: 4px;
+    font-size: 28px;
 }
 
 .less-button {
-    width: 20px;
-    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    margin-right: -38px;
 }
 
 .more-button {
-    width: 20px;
+    width: 30px;
+    height: 30px;
     margin-left: 8px;
 }
 
-
 .add-basket {
     background-color: rgb(224, 121, 121);
+    margin-left: -120px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.info-exp div.button{
+    margin-left: 160px;
+    margin-top: 50px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+.info-exp {
+    margin-left: 100px;
+    margin-top: 140px;
+    
+}
+
+section article div.info-exp h3 {
+    color:rgb(214, 98, 98);
+    margin: -15px 25px;
+    font-size: 26px;
+}
+
+.info-exp p {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+.info-exp p.price {
+    font-size: 22px;
+    color: black;
+    margin-left: -310px;
+    margin-top: 65px;
+}
+
+
+ /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
+
+.buy-list {               
+    margin: 50px 20px;
+    position: absolute;
+    top: 700px;  
+
+}
+
+.buy-list ul {
     margin-left: 40px;
 }
 
+.buy-list h2 {
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+.buy-list p {
+    margin: 10px 14px;
+}
+
+button.buy {
+    width: 15%;
+    height: 25px;
+    margin-bottom: 15px;
+    margin-left: 285px;
+    background-color: rgb(224, 121, 121);
+}
+
+}
+@media(min-width:1200px) {
+    /*/////////////// HEADER ///////////////////*/
+
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 1300px;
+}
+.menu{
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-top: 16px;
+    color:#5E81A3;
+}
+.logo{
+    font-size: 20px;
+    margin-top: 18px;
+   
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 35%;
+    height: 28px;
+    margin-top: 20px;
+}
+.barra p{
+    padding: 10px;
+    margin-top:-8px;
+    font-size: 18px;
+}
+.search{
+    margin-top: 18px;
+    margin-left: -65px;
+    padding: 3px;
+    font-size: 1.4em;
+}
+.user{
+    display: flex;
+    margin-top: 18px;
+    margin-right: 2.1px;
+    font-size: 1.8em;
+    color: #5E81A3;
+}
+.user p{
+    display: none;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-size: 12px; 
+}
+.shop{
+    margin-top: 18px;
+    margin-left: -4px;
+    margin-right: 55px;
+    font-size: 1.8em;
+    color: #5E81A3;
+    
+}
+.menu-inferior{
+    display: none;
+}
+
+
+
+
+
+
+/*////////////////// MAIN //////////////////////*/
+
+main {
+    background-color: white;
+}
+
+main div.franja-decorativa {
+    padding: 40px;
+    font-size: 4vw;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    background-color: rgb(214, 98, 98);
+
+}
+
+/*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
+
+main section article.food {
+    display: flex;
+    flex-direction: row;   
+    width: 100%;
+}
+
+h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
+    font-size: 6vw;
+    margin-left: 190px;
+    margin-top: 10px;
+    width: 70%;
+    position: absolute;
+}
+
+.description {                      
+    font-size: 25px;
+    margin-left: 23px;
+    margin-top: 150px;
+    position: absolute;
+    width: 100%;
+}
+
+main section article img {
+    width: 20%;
+    margin: 250px -67px 300px 75px;
+       
+}
+
+
+
+/*/////////////////////     BOTONES             //////////////////////*/
+main section article div.gourmet-description {
+    display: flex; 
+    margin: 40px 50px;
+}
+
+main section article div.button {
+    display: flex;
+    margin-top: 5px;
+}
+
+main section article div.button p{
+    margin-top: -1px;
+    margin-right: 4px;
+    font-size: 28px;
+}
+
+.less-button {
+    width: 30px;
+    height: 30px;
+    margin-right: -38px;
+}
+
+.more-button {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+.add-basket {
+    background-color: rgb(224, 121, 121);
+    margin-left: -120px;
+    margin-top: 190px;
+    font-size: 20px;
+}
+
+.info-exp div.button{
+    margin-left: 115px;
+    margin-top: 140px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+.info-exp {
+    margin-left: 100px;
+    margin-top: 140px;
+    
+}
+
+section article div.info-exp h3 {
+    color:rgb(214, 98, 98);
+    margin: 90px 25px;
+    font-size: 45px;
+}
+
+.info-exp p {
+    margin-top: 180px;
+    margin-left: 50px;
+    font-size: 25px;
+    margin-bottom: -130px;
+}
+
+.info-exp p.price {
+    font-size: 25px;
+    color: black;
+    margin-left: -35px;
+    margin-top: 165px;
+}
+
+
+ /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
+
+.buy-list {               
+    margin: 50px 20px;
+    position: absolute;
+    top: 700px;  
+
+}
+
+.buy-list ul {
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.buy-list h2 {
+    font-size: 30px;
+    margin-top: 250px;
+}
+
+.buy-list p {
+    margin: 10px 14px;
+    font-size: 25px;
+}
+
+button.buy {
+    width: 15%;
+    height: 45px;
+    margin-bottom: 15px;
+    margin-left: 400px;
+    background-color: rgb(224, 121, 121);
+    font-size: 25px;
+}
+
+
+}
