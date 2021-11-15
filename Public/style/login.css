@@ -41,7 +41,10 @@ main .button-send {
     color: white;
 }
 
-
+main section.options-login {
+    margin: 30px 15px;
+    padding: 10px;
+}
 
 
 
@@ -52,17 +55,17 @@ main .button-send {
 
 @media (min-width: 361px){
     body {
-        
+        background-color: white;
         width: 100%;
         height: 100%;
-        background-color: #f3bb91;
+       
         
     }
     main {
-        background-color: white;
-        width: 30%;
+        background-color: #f3c9a9;
+        width: 80%;
         height: 80%;
-        margin: 100px 200px 150px 450px;
+        margin: 100px 135px 70px 70px;
         box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.59);
 
     }
@@ -92,17 +95,18 @@ main .button-send {
     font-size: 14px;
 }
 
+.register-here {
+    margin-bottom: 30px;
+}
 main section.options-login {
-    margin-top: 10px;
+    margin: 30px;
     padding: 10px;
-    border: none;
 }
 
 }
 
 @media (min-width: 769px){
     body {
-        
         width: 100%;
         height: 100%;
         background-color: #fff1e6;
@@ -124,8 +128,8 @@ main section.options-login {
     main .user-name, 
 .pass {
     font-size: 15px;
-    margin: 15px 30%;  
-}
+    margin: 15px 30%; 
+    }
 
 main .button-send {
     margin: 25px 35%;
@@ -145,7 +149,7 @@ main .button-send {
 main section.options-login {
     margin-top: 10px;
     padding: 10px;
-    border: none;
+
 }
 
 }

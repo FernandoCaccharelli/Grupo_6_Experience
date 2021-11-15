@@ -17,9 +17,7 @@ body {
 /*//////////////////////////         MAIN               /////////////////////////////*/
 
 
-main {
 
-}
 
 h2 {
     font-size: 40px;
@@ -70,9 +68,9 @@ main section .register-button{
     }
     main {
         background-color: rgb(134, 240, 204);
-        width: 50vw;
-        height: 80vw;
-        margin: 100px 200px 150px 450px;
+        width: 70vw;
+        height: 125vw;
+        margin: 100px 200px 150px 150px;
         box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.59);
 
     }
@@ -91,10 +89,10 @@ main section .register-button{
     }
 
     main section .register-button{
-        margin: 48px 52px;
+        margin: 48px 125px;
         background-color: rgb(52, 155, 180);
         color: white;
-        width: 290px;
+        width: 200px;
         height: 30px;
     }
 
@@ -131,7 +129,7 @@ main section .register-button{
     }
 
     main section .register-button{
-        margin-left: 150px;
+        margin-left: 100px;
         background-color: rgb(52, 155, 180);
         color: white;
     }
