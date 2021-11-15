@@ -9,8 +9,11 @@ app.use(express.static(publicPath));
 
 app.listen(3030, () => { console.log(`Servidor escuchando en el puerto ${3030}`);
 });
-
 app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/index.html'))
+})
+
+app.get('/basket', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/basket.html'))
   })
 

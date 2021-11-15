@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+.menu{
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-top: 16px;
+    color:#5E81A3;
+}
+.logo{
+    font-size: 16px;
+   
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 44%;
+    height: 28px;
+    margin-top: 20px;
+}
+.barra p{
+    padding: 10px;
+    margin-top:-8px;
+    font-size: 18px;
+}
+.search{
+    margin-top: 21px;
+    margin-left: -46px;
+    padding: 3px;
+    font-size: 1em;
+}
+.user{
+    display: flex;
+    margin-top: 22px;
+    margin-right: 2px;
+    font-size: 1.3em;
+    color: #5E81A3;
+}
+.user p{
+    display: none;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-size: 12px; 
+}
+.shop{
+    margin-top: 20px;
+    margin-left: -4px;
+    margin-right: 14px;
+    font-size: 1.3em;
+    color: #5E81A3;
+}
+.menu-inferior{
+    display: none;
+}
+.banner{
+    width: 101%;
+}
+article{
+    display: flex;
+}
+.pregunta{
+    font-size: 1.6em;
+    margin: 5px -8px 2px 10px;
+    color: #5E81A3;
+}
+.how{
+    text-align: center;
+    margin-left: 98px;
+    margin-right: 69px;
+    border-radius: 14px;
+    margin-top: -27px;
+    position: relative;
+    z-index: 10;
+    background-color:white;
+    box-shadow: 0px 0px 10px rgb(90, 90, 90);
+}
+.how p{
+   font-size: 16px;
+   padding: 5px;
+   margin: 5px 14px;
+}
+section h1{
+    margin-left: 28px;
+    margin-top: 58px;
+    font-size: 18px;
+}
+.opciones{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.op1, .op2, .op3,.op4{
+    border: 1px solid #9BB1C5;
+    min-width: 58%;
+    padding: 12px;
+    margin-bottom: 80px;
+    margin-left: 35px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(140, 140, 140);
+}
+.op1 img,.op2 img,.op3 img,.op4 img{
+    width: 98%;
+    margin-left: 3px;
+}
+.op1 .categoria,.op2 .categoria,.op3 .categoria ,.op4 .categoria{
+    font-size: 18px;
+    color: #345D84;
+}
+.op1 i, .op2 i,.op3 i,.op4 i{ 
+    padding-left: 4px;
+    padding-right: 10px;
+}
+.opciones h2{
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+}
+.op1 .descripcion,.op2 .descripcion,.op3 .descripcion,.op4 .descripcion{
+    font-size: 16px;
+    text-align: center;
+}
+.op1 .precio, .op2 .precio,.op3 .precio,.op4 .precio{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #5E81A3;
+}
+
+.mas{
+    text-align: center;
+    max-width: 30%;
+    margin:-26px 0px 56px 140px;
+    border-radius: 14px;
+    background-color: #D8E7F5 ;
+}
+.mas p{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin: 3px 2px;
+}
+.extra p, .extrados p{
+    text-align: right;
+    margin-bottom: -100px;
+    margin-top: 30px;
+    margin-right: 13px;
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+}
+.extra img, .extrados img{
+    width: 102%;
+    margin-top: 66px;  
+    margin-bottom: 46px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 16px;
+    margin: 70px 0px 0px 15px;
+}
+footer div i{
+    font-size: 1.6em;
+    margin: 63px 22px 20px 0px;
+    color: #345D84;
+}
+
+footer .twitter{
+    margin-right: -6px;
+    margin-left:-112px ;
+}
+
+@media(min-width:768px){
+    .menu{
+        display: none;
+    }
+    .menu-superior{
+        margin-top: 12px;
+        margin-bottom: -26px;
+    }
+    .menu-superior .logo{
+        margin-left: 42px;
+        font-size: 26px;
+        margin-top: -6px;
+    }
+    .barra{
+        max-width: 40%;
+        margin-left: -162px;
+        margin-top: 30px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .barra p{
+        margin-top: -3px;
+        font-size: 20px;
+        margin-left: 6px;
+    }
+    .search{
+        margin-left: -310px;
+        margin-top: 35px;
+        font-size: 1.3em;
+    }
+    .user{
+        font-size: 1.7em;
+        margin-left: -168px;
+        margin-right: 30px;
+        margin-top: 35px;
+    }
+    .shop{
+        font-size: 1.7em;
+        margin-left: -275px;
+        margin-right: 40px;
+        margin-top: 34px;
+    }
+    .menu-inferior{
+        display: flex;
+        padding: 20px;
+    }
+    .menu-inferior ul{
+        list-style: none;
+        display: flex; 
+    }
+    .menu-inferior li a{
+        margin: 0px 35px 2px 92px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        font-size: 18px;
+    }
+    .how{
+        max-width: 38%;
+        margin: -28px 0px 0px 242px;
+        height: 56px;
+    }
+    .how .pregunta{
+        font-size: 1.8em;
+        margin-top: 10px;
+    }
+    .how p{
+      font-size: 24px;
+      margin-top: 8px;
+    }
+    section h1{
+        font-size: 20px;
+    }
+    .opciones{
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .op4{
+        display: none;
+    }
+    .op1,.op2, .op3,.op4{
+        width: 30%;
+        margin-left: 11px;
+        margin-right: 27px;
+    }
+    .op1{
+        margin-left: 13px;
+    }
+    .mas p{
+       font-size: 26px;
+    }
+    .mas{
+       max-width: 20%;
+       margin-left:297px ;
+    }
+    .agregado{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .extra, .extrados{
+        width: 45%;
+    }
+    .extra{
+        margin-left: 36px;
+    }
+    .extrados{
+        margin-right: 24px;
+    }
+    .extra img{
+        width: 97%;
+        margin-left: 5px;
+        margin-top: 55px;
+    }
+    .extrados img{
+        width: 97%;
+        margin-left: 5px;
+        margin-top: 55px;
+    }
+    footer p{
+        margin-left: 38px;
+    }
+    footer .twitter{
+        margin-left: -460px;
+        margin-right: 14px;
+    }
+   }
+   @media(min-width:1000px){
+
+       .logo h2{
+           margin-left: 6px;
+       }
+       .barra{
+           margin-left: -168px;
+           margin-top: 26px;
+           height: 48px;
+           max-width: 100%;
+       }
+       .barra p{
+           font-size: 24px;
+           margin-top: -2px;
+       }
+       .search{
+           margin-left: -368px;
+           margin-top: 35px ;
+       }
+       .user{
+           font-size: 2.2em;
+           margin-right: -116px;
+           margin-top: 30px;
+       }
+       .shop{
+        font-size: 2.2em;
+        margin-left: -170px;
+        margin-top: 27px ;
+       }
+       .menu-inferior{
+           margin:14px 0px 14px 42px;
+           padding: 8px 24px;
+       }
+       .menu-inferior li a{
+           font-size: 22px;
+           padding: 2px 15px;
+       }
+       .how{
+           max-width: 30%;
+           margin-left: 356px;
+       }
+       .opciones{
+           max-width: 40%;
+           flex-wrap: nowrap;
+           margin-left: -3px;
+       }
+       .op4{
+           display: block;
+       }
+       .op1,.op2,.op3,.op4{
+           margin-left: 17px;
+           margin-right: -4px;
+        }
+        .op1{
+            margin-left: 20px;
+        }
+        
+       .mas{
+           max-width: 18%;
+           margin-left: 412px;
+       }
+       footer p{
+           font-size: 18px;
+       }
+       footer .instagram{
+           margin-right: -220px;
+       }
+   
+   
+    }
+   
+    
+    
+
+
+
