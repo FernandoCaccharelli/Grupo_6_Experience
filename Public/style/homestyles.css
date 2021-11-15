@@ -45,6 +45,9 @@ body{
     margin-top: 22px;
     margin-right: 2px;
     font-size: 1.3em;
+    
+}
+.user a{
     color: #5E81A3;
 }
 .user p{
@@ -54,10 +57,13 @@ body{
     font-size: 12px; 
 }
 .shop{
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: -4px;
     margin-right: 14px;
     font-size: 1.3em;
+   
+}
+.shop a {
     color: #5E81A3;
 }
 .menu-inferior{
@@ -76,8 +82,8 @@ article{
 }
 .how{
     text-align: center;
-    margin-left: 98px;
-    margin-right: 69px;
+    margin-left: 88px;
+    margin-right: 80px;
     border-radius: 14px;
     margin-top: -27px;
     position: relative;
@@ -309,6 +315,12 @@ footer .twitter{
         margin-left: 5px;
         margin-top: 55px;
     }
+    .extra p, .extrados p{
+        text-align: right;
+        margin-bottom: -86px;
+        margin-top: 38px;
+        margin-right: 17px;
+    }
     footer p{
         margin-left: 38px;
     }
@@ -317,7 +329,7 @@ footer .twitter{
         margin-right: 14px;
     }
    }
-   @media(min-width:1000px){
+   @media(min-width:1200px){
 
        .logo h2{
            margin-left: 6px;
@@ -333,35 +345,40 @@ footer .twitter{
            margin-top: -2px;
        }
        .search{
-           margin-left: -368px;
-           margin-top: 35px ;
+           margin-left: -415px;
+           margin-top: 30px;
+           font-size: 1.8em;
        }
        .user{
-           font-size: 2.2em;
+           font-size: 2.3em;
            margin-right: -116px;
-           margin-top: 30px;
+           margin-top: 32px;
        }
        .shop{
         font-size: 2.2em;
-        margin-left: -170px;
-        margin-top: 27px ;
+        margin-left: -194px;
+        margin-top: 33px ;
        }
        .menu-inferior{
-           margin:14px 0px 14px 42px;
+           margin:14px 0px 14px 24px;
            padding: 8px 24px;
        }
        .menu-inferior li a{
-           font-size: 22px;
-           padding: 2px 15px;
+           font-size: 24px;
+           padding: 4px 50px;
        }
        .how{
-           max-width: 30%;
-           margin-left: 356px;
+           max-width: 27%;
+           margin-left: 442px;
+       }
+       .how p{
+           font-size: 28px;
+           margin: 6px 14px;
        }
        .opciones{
            max-width: 40%;
            flex-wrap: nowrap;
-           margin-left: -3px;
+           margin-left: 5px;
        }
        .op4{
            display: block;
@@ -375,14 +392,28 @@ footer .twitter{
         }
         
        .mas{
-           max-width: 18%;
-           margin-left: 412px;
+           max-width: 15%;
+           height: 48px;
+           margin-left: 518px;
        }
+       .mas p{
+          padding: 8px;
+          font-size: 28px;
+       }
+       .extra p, .extrados p{
+        font-size: 22px;
+        text-align: right;
+        margin-bottom: -91px;
+        margin-top: 47px;
+        margin-right: 26px;
+    }
+    
        footer p{
-           font-size: 18px;
+           font-size: 20px;
        }
        footer .instagram{
-           margin-right: -220px;
+           margin-right: -376px;
+           margin-top: 3px;
        }
    
    
