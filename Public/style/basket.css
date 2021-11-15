@@ -15,19 +15,31 @@
 /*////////////////// MAIN //////////////////////*/
 
 main {
-    background-color: rgb(231, 241, 238);
+    background-color: white;
+}
+
+main section {
+    display: flex;
 }
 
 h1 {
-    padding: 10px;
-    font-size: 8vw;
+    padding: 20px;
+    font-size: 4vw;
     text-align: center;
     margin: 0px 0px 15px 0px;
 
 }
 
 .buy-list {                /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
-    margin: 20px;
+    margin: 50px 20px;
+    position: absolute;
+    right: 350px;
+    
+
+}
+
+.buy-list ol {
+    margin-left: 40px;
 }
 
 .buy-list h2 {
@@ -38,27 +50,37 @@ h1 {
     margin: 10px 14px;
 }
 
-main section article {
+main .products {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main section article {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 90px 10px 50px;
+   
 }
 
 
 main section article img {
-    width: 40%;
-    margin: 15px 10px 15px 20px;
-    
+    width: 20%;
+    margin: 50px 10px 50px 30px;
+       
 }
 
 
 h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
-    font-size: 5vw;
-    margin-left: 9px;
-    margin-top: 18px;
+    font-size: 2vw;
+    margin-left: 15px;
+    margin-top: 55px;
 }
 
 .description {
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: 18px;
+    margin-left: 15px;
 }
 
 .price
@@ -71,7 +93,7 @@ h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA ///
 /*/////////////////////     BOTONES             //////////////////////*/
 .button {
     display: flex;
-    margin: 20px 60px;
+    margin: 30px 60px;
 }
 
 .less-button {
