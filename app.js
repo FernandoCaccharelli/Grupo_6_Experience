@@ -28,6 +28,7 @@ app.get('/basket', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/productDetail.html'))
   })
   
+  
 
  
   
