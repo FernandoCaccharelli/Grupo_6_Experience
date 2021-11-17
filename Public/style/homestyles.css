@@ -372,7 +372,7 @@ footer .instagram{
            margin-top: 32px;
        }
        .barra{
-           margin-left: -42px;
+           margin-left: -34px;
            margin-top: 34px;
            height: 58px;
            border-radius: 29px;
@@ -395,17 +395,17 @@ footer .instagram{
            
        }
        .shop{
-           margin-left: -45px;
-           margin-right: -42px;
+           margin-left: -49px;
+           margin-right: 18px;
        }
        
        .menu-inferior{
-           margin:14px 0px 14px 89px;
+           margin:14px 0px 14px 124px;
            padding: 4px 0px;
        }
        .menu-inferior li a{
            font-size: 26px;
-           padding: 4px 50px;
+           padding: 4px 30px;
        }
        .banner{
            width: 104%;
@@ -413,7 +413,7 @@ footer .instagram{
        .how{
            max-width: 40%;
            height: 90px;
-           margin-left: 422px;
+           margin-left: 388px;
            margin-top: -46px;
        }
        .how h3{
@@ -429,14 +429,14 @@ footer .instagram{
        }
        .opciones{
            flex-wrap: nowrap;
-           max-width: 100%; 
-           margin: 32px -56px 0px 54px;
+           max-width: 98%; 
+           margin: 32px -12px 0px 47px;
        }
        .op4{
            display: block;
         }
         .opciones .categoria{
-            font-size: 24px;
+            font-size: 22px;
         }
         .opciones .descripcion{
             font-size: 20px;
@@ -450,11 +450,12 @@ footer .instagram{
         
        .mas{
            max-width: 20%;
-           height: 68px;
+           height: 75px;
            margin-left: 521px;
+           margin-top: 30px;
        }
        .mas h3{
-          padding: 17px;
+          padding: 19px;
           font-size: 32px;
        }
        .extra h3, .extra2 h3{
@@ -466,7 +467,7 @@ footer .instagram{
        }
        .extra2{
            margin-top: -15px;
-           margin-right: -44px;
+           margin-right: -14px;
 
        }
        footer h4{
@@ -476,10 +477,10 @@ footer .instagram{
            font-size: 2.2em;
        }
        footer .instagram{
-           margin-right: -132px;
+           margin-right: -146px;
        }
        footer .twitter{
-           margin-right: -54px;
+           margin-right: -3px;
        }
       
    

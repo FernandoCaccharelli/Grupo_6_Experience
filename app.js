@@ -27,6 +27,13 @@ app.get('/basket', (req, res) => {
   app.get('/productDetail', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/productDetail.html'))
   })
+  app.get('/how', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/how.html'))
+  })
+  app.get('/how', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/index.html'))
+  })
+
   
   
 
