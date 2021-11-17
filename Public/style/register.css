@@ -6,9 +6,65 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 
 /*//////////////////////// HEADER ///////////////////////*/
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 460px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    
+}
+
+ header h2{
+    font-size: 25px;
+    margin-top: -22px;
+    margin-left: -5px;
+   
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 35%;
+    height: 28px;
+    margin-top: 0px;
+    margin-left: -40px;
+}
+.barra p{
+    padding: 10px;
+    margin-top:-8px;
+    font-size: 18px;
+}
+.search{
+    margin-top: -2px;
+    margin-left: -50px;
+    padding: 3px;
+    font-size: 1.3em;
+}
+
+.shop {
+    margin-right: 70px;
+    font-size: 1.3em;
+}
+
+/* header .menu-superior div.user {
+    font-size: 20px;
+
+}*/
+
+
+.menu-inferior{
+    display: none;
+}
+
+
+
 
 
 /*//////////////////////////         MAIN               /////////////////////////////*/
@@ -67,6 +123,71 @@ main section .register-button{
 /*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
 
 @media(min-width:768px){
+
+    .menu-superior{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 50PX;
+        width: 720px;
+    }
+    .menu{
+        font-size: 1.8em;
+        margin-left: 18px;
+        margin-top: 16px;
+        color:#5E81A3;
+    }
+    .logo{
+        font-size: 20px;
+        margin-top: 18px;
+       
+    }
+    .barra{
+        border:1px solid #9BB1C5;
+        border-radius: 14px;
+        width: 40%;
+        height: 28px;
+        margin-top: 20px;
+    }
+    .barra p{
+        padding: 10px;
+        margin-top:-8px;
+        font-size: 18px;
+    }
+    .search{
+        margin-top: 18px;
+        margin-left: -95px;
+        padding: 3px;
+        font-size: 1.4em;
+    }
+    /*.user{
+        display: flex;
+        margin-top: 18px;
+        margin-right: 2.1px;
+        font-size: 1.8em;
+        color: #5E81A3;
+    }*/
+    .user p{
+        display: none;
+        margin-top: 2px;
+        padding-right: 10px;
+        font-size: 12px; 
+    }
+    .shop{
+        margin-top: 18px;
+        margin-left: -4px;
+        margin-right: 95px;
+        font-size: 1.8em;
+        color: #5E81A3;
+        
+    }
+    .menu-inferior{
+        display: none;
+    }
+
     main{
         max-width: 45%;
         margin-left: 212px;
@@ -81,15 +202,82 @@ main section .register-button{
     }
 }
 @media(min-width:1200px){
+
+    .menu-superior{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 50PX;
+        width: 1100px;
+    }
+    .menu{
+        font-size: 1.8em;
+        margin-left: 18px;
+        margin-top: 16px;
+        color:#5E81A3;
+    }
+    header h2{
+        font-size: 45px;
+        margin-top: -50px;
+        margin-left: -5px;
+       
+    }
+    .barra{
+        border:1px solid #9BB1C5;
+        border-radius: 14px;
+        width: 50%;
+        height: 32px;
+        margin-top: 30px;
+        margin-left: -90px;
+    }
+    .barra p{
+        padding: 11px;
+        margin-top:-8px;
+        font-size: 20px;
+    }
+    .search{
+        margin-top: 29px;
+        margin-left: -125px;
+        padding: 3px;
+        font-size: 1.5em;
+    }
+    /*.user{
+        display: flex;
+        margin-top: 18px;
+        margin-right: 2.1px;
+        font-size: 1.8em;
+        color: #5E81A3;
+    }*/
+    .user p{
+        display: none;
+        margin-top: 2px;
+        padding-right: 10px;
+        font-size: 12px; 
+    }
+    .shop{
+        margin-top: 18px;
+        margin-left: -4px;
+        margin-right: 115px;
+        font-size: 2.3em;
+        color: #5E81A3;
+        
+    }
+    .menu-inferior{
+        display: none;
+    }
+
     main{
-        max-width: 42%;
+       
         height: 800px;
-        margin-left: 360px;
+        margin-left: 300px;
         margin-top: 53px;
     }
     h2 {
         font-size: 44px;
-       padding-top: 56px;
+       padding-top: 46px;
     }
     main section div{
         padding: 6px;
@@ -98,7 +286,7 @@ main section .register-button{
     main section .name, .last-name,.email,.pass,
     .birth-date {
         font-size: 20px;
-        margin: 8px 21px;
+        margin: 9px 21px;
         height: 38px;
         padding: 6px;
     }

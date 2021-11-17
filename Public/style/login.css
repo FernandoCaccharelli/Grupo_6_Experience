@@ -10,7 +10,69 @@ body {
 }
 
 /*//////////////////////// HEADER ///////////////////////*/
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 460px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    
+}
 
+
+ header h2{
+    font-size: 25px;
+    margin-top: -20px;
+    margin-left: -5px;
+   
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 35%;
+    height: 28px;
+    margin-top: 20px;
+    margin-left: -40px;
+}
+.barra p{
+    padding: 10px;
+    margin-top:-8px;
+    font-size: 18px;
+}
+.search{
+    margin-top: 18px;
+    margin-left: -35px;
+    padding: 3px;
+    font-size: 1.3em;
+}
+/*.user{
+    display: flex;
+    margin-top: 22px;
+    margin-right: 2.1px;
+    font-size: 1.3em;
+    color: #5E81A3;
+}*/
+
+.user p{
+    display: none;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-size: 12px; 
+}
+.shop{
+    margin-top: 22px;
+    margin-left: -4px;
+    margin-right: 55px;
+    font-size: 1.3em;
+    color: #5E81A3;
+    
+}
+.menu-inferior{
+    display: none;
+}
 
 
 
@@ -35,6 +97,12 @@ main .user-name,
     margin: 16px 63px;
     
 }
+
+main .rimen-me {
+    margin: 10px 60px;
+}
+
+
 main .user-name input, 
 .pass input{
     font-size: 16px;
@@ -76,11 +144,98 @@ main section.options-login button{
     body{
         width: 100%;
     }
-    main{
-        width: 40%;
-        margin-left: 222px;
+    
+
+    .menu-superior{            /*////////////////////////        HEADER         ////////////////*/
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        padding-top: 20px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        width: 760px;
+        border-bottom: 1px solid rgb(197, 196, 196);
+    }
+
+    .barra{
+        border:1px solid #9BB1C5;
+        border-radius: 14px;
+        width: 45%;
+        height: 28px;
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    
+    .search{
+        margin-top: 18px;
+        margin-left: -70px;
+        padding: 3px;
+        font-size: 1.3em;
+    }
+    
+    .shop{
+        margin-top: 15px;
+        margin-left: -4px;
+        margin-right: 55px;
+        font-size: 1.8em;
+        color: #5E81A3;
+    }
+
+    main{            /*////////////////////     MAIN             ////////////////////*/
+        width: 50%;
+        margin-left: 185px;
         margin-top: 79px;
     }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 40px;
+        }
+
+    main .user-name, 
+    .pass {
+        margin: 16px 92px;
+        text-align: center;
+            
+        }
+    main .user-name input, 
+    .pass input{
+        font-size: 15px;
+        padding: 7px; 
+        }
+
+       
+    main .rimen-me {
+        margin: 10px 95px;
+        font-size: 15px;
+        }
+    
+    main .button-send {
+        margin: 45px 135px;
+        width: 105px;
+        height: 40px;
+        font-size: 15px;
+        padding: 6px;
+        }
+
+    .retrieve-pass,
+    .register-here {
+        margin-left: 30px;
+        font-size: 14px;
+        }
+        
+    main section.options-login {
+        margin: 15px 6px 0px 31px;
+        padding: 36px 27px;
+        }
+
+    main section.options-login button{
+        font-size: 14px;
+        padding: 4px;
+        }
+    
+
 }
 
 @media (min-width:1200px){
@@ -88,49 +243,104 @@ main section.options-login button{
         width: 70%;
         height: 70%;
     }
-    main{
-        width: 50%;
+
+    .menu-superior{          /*////////////////           HEADER       //////////////////*/
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        padding-top: 20px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        width: 1350px;
+        border-bottom: 1px solid rgb(197, 196, 196);   
+    }
+    header h2{
+        font-size: 45px;
+        margin-top: -20px;
+        margin-left: -5px;
+    }
+
+    .barra{
+        border:1px solid #9BB1C5;
+        border-radius: 14px;
+        width: 45%;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: -280px;
+    }
+    
+    .barra p{
+        padding: 10px;
+        margin-top:-6px;
+        font-size: 25px;
+    }
+
+    .search{
+        margin-top: 27px;
+        margin-left: -360px;
+        padding: 3px;
+        font-size: 2em;
+    }
+    
+    .shop{
+        margin-top: 12px;
+        margin-left: -150px;
+        margin-right: 135px;
+        font-size: 3em;
+        color: #5E81A3;
+        
+    }
+
+    main{                   /*///////       MAIN            //////////////*/
+        width: 70%;
         height: 655px;
         margin-left: 395px;
         margin-top: 110px;
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 52px;
         text-align: center;
         padding: 42px;
         }
-        main .user-name, 
-        .pass {
-            margin: 16px 102px;
-            
-        }
-        main .user-name input, 
-        .pass input{
-            font-size: 20px;
-            padding: 4px; 
+    main .user-name, 
+    .pass {
+     margin: 16px 102px;
+     text-align: center;          
+        }     
+
+    main .user-name input, 
+    .pass input{
+        font-size: 25px;
+        padding: 6px; 
+    }
+
+    main .rimen-me {
+        margin: 10px 125px;
+        font-size: 20px;
         }
     
-        main .button-send {
-            margin: 54px 146px;
-            width: 135px;
-            height: 44px;
-            font-size: 20px;
-            padding: 6px;
+    main .button-send {
+        margin: 54px 196px;
+        width: 155px;
+        height: 50px;
+        font-size: 22px;
+        padding: 6px;
         }
-        .retrieve-pass,
-        .register-here {
-            margin-left: 40px;
-            font-size: 18px;
+    .retrieve-pass,
+    .register-here {
+        margin-left: 40px;
+        font-size: 22px;
         }
         
-        main section.options-login {
-            margin: 34px 6px 0px 61px;
-            padding: 36px 27px;
+    main section.options-login {
+        margin: 15px 6px 0px 71px;
+        padding: 36px 27px;
         }
-        main section.options-login button{
-            font-size: 17px;
-            padding: 4px;
+
+    main section.options-login button{
+        font-size: 19px;
+        padding: 4px;
         }
    
 }

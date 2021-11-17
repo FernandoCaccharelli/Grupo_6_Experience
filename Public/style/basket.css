@@ -28,6 +28,7 @@ body {
 .logo{
     font-size: 12px;
     margin-top: 25px;
+    margin-left: 15px;
    
 }
 .barra{
@@ -89,7 +90,7 @@ main div.franja-decorativa {
     font-size: 4vw;
     text-align: center;
     margin: 20px 0px 20px 0px;
-    background-color: rgb(214, 98, 98);
+    background-color: #9BB1C5;
 
 }
 
@@ -154,7 +155,7 @@ main section article div.button p{
 }
 
 .add-basket {
-    background-color: rgb(224, 121, 121);
+    background-color: #9BB1C5;
     margin-left: -85px;
     margin-top: 45px;
 }
@@ -172,7 +173,7 @@ main section article div.button p{
 }
 
 section article div.info-exp h3 {
-    color:rgb(214, 98, 98);
+    color:#9BB1C5;
     margin: -9px -19px;
     font-size: 16px;
 }
@@ -217,7 +218,7 @@ button.buy {
     width: 15%;
     margin-bottom: 15px;
     margin-left: 166px;
-    background-color: rgb(224, 121, 121);
+    background-color: #9BB1C5;
 }
 
 
@@ -234,7 +235,8 @@ button.buy {
     padding-top: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 820px;
+    margin-left: 50PX;
+    width: 720px;
 }
 .menu{
     font-size: 1.8em;
@@ -306,7 +308,7 @@ main div.franja-decorativa {
     font-size: 4vw;
     text-align: center;
     margin: 20px 0px 20px 0px;
-    background-color: rgb(214, 98, 98);
+    background-color: #9BB1C5;
 
 }
 
@@ -372,7 +374,7 @@ main section article div.button p{
 }
 
 .add-basket {
-    background-color: rgb(224, 121, 121);
+    background-color: #9BB1C5;
     margin-left: -120px;
     margin-top: 100px;
     font-size: 20px;
@@ -392,7 +394,7 @@ main section article div.button p{
 }
 
 section article div.info-exp h3 {
-    color:rgb(214, 98, 98);
+    color:#9BB1C5;
     margin: -15px 25px;
     font-size: 26px;
 }
@@ -438,11 +440,14 @@ button.buy {
     height: 25px;
     margin-bottom: 15px;
     margin-left: 285px;
-    background-color: rgb(224, 121, 121);
+    background-color: #9BB1C5;
 }
 
 }
 @media(min-width:1200px) {
+
+   
+
     /*/////////////// HEADER ///////////////////*/
 
 .menu-superior{
@@ -461,33 +466,34 @@ button.buy {
     color:#5E81A3;
 }
 .logo{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 18px;
+    margin-left: 30px;
    
 }
 .barra{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 35%;
-    height: 28px;
+    width: 45%;
+    height: 40px;
     margin-top: 20px;
 }
 .barra p{
     padding: 10px;
-    margin-top:-8px;
-    font-size: 18px;
+    margin-top: -5px;
+    font-size: 23px;
 }
 .search{
     margin-top: 18px;
-    margin-left: -65px;
+    margin-left: -70px;
     padding: 3px;
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
 .user{
     display: flex;
-    margin-top: 18px;
-    margin-right: 2.1px;
-    font-size: 1.8em;
+    margin-top: 16px;
+    margin-right: 30px;
+    font-size: 2.5em;
     color: #5E81A3;
 }
 .user p{
@@ -497,10 +503,10 @@ button.buy {
     font-size: 12px; 
 }
 .shop{
-    margin-top: 18px;
+    margin-top: 16px;
     margin-left: -4px;
-    margin-right: 55px;
-    font-size: 1.8em;
+    margin-right: 155px;
+    font-size: 2.5em;
     color: #5E81A3;
     
 }
@@ -524,7 +530,7 @@ main div.franja-decorativa {
     font-size: 4vw;
     text-align: center;
     margin: 20px 0px 20px 0px;
-    background-color: rgb(214, 98, 98);
+    background-color: #9BB1C5;
 
 }
 
@@ -590,7 +596,7 @@ main section article div.button p{
 }
 
 .add-basket {
-    background-color: rgb(224, 121, 121);
+    background-color: #9BB1C5;
     margin-left: -120px;
     margin-top: 190px;
     font-size: 20px;
@@ -610,7 +616,7 @@ main section article div.button p{
 }
 
 section article div.info-exp h3 {
-    color:rgb(214, 98, 98);
+    color:#9BB1C5;
     margin: 90px 25px;
     font-size: 45px;
 }
@@ -659,7 +665,7 @@ button.buy {
     height: 45px;
     margin-bottom: 15px;
     margin-left: 400px;
-    background-color: rgb(224, 121, 121);
+    background-color: #9BB1C5;
     font-size: 25px;
 }
 

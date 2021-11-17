@@ -11,8 +11,28 @@
 
 </head>
 <body>
-    <header>
-
+    <header class="menu-principal">
+        <div class="menu-superior">    
+        <div class="logo"><h2>EXP</h2></div>    
+        <div class="barra">
+            <p>Buscar</p>
+        </div>
+        <div class="search"><i class="fas fa-search"></i></div> 
+        <!--<div class="user">
+             <a href="/login"><i class="fas fa-user"></i></a>
+        </div>  -->
+        <div class="shop">
+             <a href="/basket"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        
+        </div>
+         <nav class = "menu-inferior">
+             <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Ayuda</a></li>
+             </ul>
+         </nav>
     </header>
     <main>
         <form action="/" method="POST">
@@ -23,6 +43,9 @@
                 </div>
                 <div class="pass">
                 <input type="password" name="pass" placeholder="Contraseña">
+                </div>
+                <div class="rimen-me">
+                    <input type="checkbox" name="remin-me"> Recordarme
                 </div>
                 <div >
                 <input class="button-send" type="submit" value="Iniciar sesión">
