@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
@@ -14,105 +13,111 @@ body{
 }
 .menu{
     font-size: 1.8em;
-    margin-left: 18px;
-    margin-top: 16px;
+    margin-left: 27px;
+    margin-right: -24px;
+    margin-top: 12px;
     color:#5E81A3;
 }
-.logo{
-    font-size: 16px;
-   
+.menu-superior h1{
+    font-size: 24px;
+    margin-top: 15px;  
+    margin-left: 38px;
 }
 .barra{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 44%;
-    height: 28px;
-    margin-top: 20px;
+    width: 46%;
+    height: 32px;
+    margin-top: 12px;
+    margin-left: 16px;
+    display: flex;
 }
-.barra p{
+.barra h3{
     padding: 10px;
-    margin-top:-8px;
+    margin-top:-6px;
     font-size: 18px;
 }
-.search{
-    margin-top: 21px;
-    margin-left: -46px;
-    padding: 3px;
-    font-size: 1em;
+.barra i{
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-left: 71px;
+}
+.iconos{
+    display: flex;
+    margin-right: 8px;
+    margin-top: 15px;
+    font-size: 1.4em;
+}
+.iconos i{
+    color:#5E81A3;
 }
 .user{
-    display: flex;
-    margin-top: 22px;
-    margin-right: 2px;
-    font-size: 1.3em;
-    
-}
-.user a{
-    color: #5E81A3;
-}
-.user p{
-    display: none;
-    margin-top: 2px;
-    padding-right: 10px;
-    font-size: 12px; 
+    margin-left: 12px;
 }
 .shop{
-    margin-top: 22px;
-    margin-left: -4px;
-    margin-right: 14px;
-    font-size: 1.3em;
-   
-}
-.shop a {
-    color: #5E81A3;
+    margin-right: -11px;
+    margin-left: 9px;
 }
 .menu-inferior{
     display: none;
 }
 .banner{
-    width: 101%;
-}
-article{
-    display: flex;
-}
-.pregunta{
-    font-size: 1.6em;
-    margin: 5px -8px 2px 10px;
-    color: #5E81A3;
+    width: 102%;
+    margin-top: -1px;
 }
 .how{
+    display: flex;
     text-align: center;
-    margin-left: 88px;
+    width: 70%;
+    margin-left: 62px;
     margin-right: 80px;
     border-radius: 14px;
-    margin-top: -27px;
+    margin-top: -30px;
     position: relative;
     z-index: 10;
     background-color:white;
     box-shadow: 0px 0px 10px rgb(90, 90, 90);
 }
-.how p{
-   font-size: 16px;
-   padding: 5px;
-   margin: 5px 14px;
+.how h3{
+   font-size: 17px;
+   margin: 16px 7px 17px 9px;
 }
-section h1{
+
+.how i{
+    font-size: 1.7em;
+    margin-left: 14px;
+    margin-top: 12px;
+    color:#5E81A3;
+}
+.how .flecha{
+    color:#5E81A3;
+    margin-right: 15px;
+}
+.flecha i{ 
+    color:#5E81A3;
+    transition: color 450ms;
+}
+.flecha i:hover{
+  color:#1E5488;
+    
+}
+section h2{
     margin-left: 28px;
-    margin-top: 58px;
+    margin-top: 38px;
     font-size: 18px;
 }
 .opciones{
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
+    margin-top: 33px;
 }
-
 .op1, .op2, .op3,.op4{
     border: 1px solid #9BB1C5;
-    min-width: 58%;
+    width: 76%;
     padding: 12px;
-    margin-bottom: 80px;
-    margin-left: 35px;
-    margin-right: 30px;
+    margin-bottom: 75px;
+    margin-left: 53px;
+    margin-right: -22px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(140, 140, 140);
 }
@@ -132,6 +137,7 @@ section h1{
     font-size: 18px;
     margin-top: 40px;
     text-align: center;
+    margin-left: 0px;
 }
 .op1 .descripcion,.op2 .descripcion,.op3 .descripcion,.op4 .descripcion{
     font-size: 16px;
@@ -143,32 +149,38 @@ section h1{
     text-align: center;
     color: #5E81A3;
 }
-
 .mas{
     text-align: center;
     max-width: 30%;
-    margin:-26px 0px 56px 140px;
+    margin:-20px 0px 64px 138px;
     border-radius: 14px;
     background-color: #D8E7F5 ;
 }
-.mas p{
+.mas h3{
     color: black;
     font-size: 20px;
     padding: 5px;
     margin: 3px 2px;
 }
-.extra p, .extrados p{
+.extra h3{
     text-align: right;
-    margin-bottom: -100px;
-    margin-top: 30px;
-    margin-right: 13px;
     position: relative;
     z-index: 10;
     font-size: 18px;
     color: black;
     font-weight: 900;
+    margin-bottom: -100px;
+    margin-top: 30px;
+    margin-right: 13px;
 }
-.extra img, .extrados img{
+
+.extra2 h3{
+    margin-bottom: -70px;
+    margin-top: 30px;
+    margin-right: 13px;
+    
+}
+.extra img, .extra2 img{
     width: 102%;
     margin-top: 66px;  
     margin-bottom: 46px;
@@ -177,20 +189,24 @@ section h1{
 footer{
     display: flex;
     justify-content: space-between;
+    
 }
-footer p{
-    font-size: 16px;
-    margin: 70px 0px 0px 15px;
+footer h4{
+    font-size: 12px;
+    margin: 84px -214px 0px 11px;
 }
-footer div i{
-    font-size: 1.6em;
-    margin: 63px 22px 20px 0px;
-    color: #345D84;
+footer i{
+    font-size: 1em;
+    margin: 81px 22px 20px 0px;
+    color: #5E81A3;
 }
 
 footer .twitter{
-    margin-right: -6px;
-    margin-left:-112px ;
+    margin-right: -11px;
+    margin-left:-243px;
+}
+footer .instagram{
+    margin-left: 30px;
 }
 
 @media(min-width:768px){
@@ -201,220 +217,272 @@ footer .twitter{
         margin-top: 12px;
         margin-bottom: -26px;
     }
-    .menu-superior .logo{
-        margin-left: 42px;
-        font-size: 26px;
-        margin-top: -6px;
+    .menu-superior h1{
+        margin-left: 34px;
+        font-size: 34px;
+        margin-top: 20px;
     }
     .barra{
-        max-width: 40%;
-        margin-left: -162px;
-        margin-top: 30px;
-        height: 40px;
+        max-width: 50%;
+        margin-left: -17px;
+        margin-top: 21px;
+        height: 42px;
         border-radius: 20px;
     }
-    .barra p{
+    .barra h3{
         margin-top: -3px;
         font-size: 20px;
         margin-left: 6px;
     }
-    .search{
-        margin-left: -310px;
-        margin-top: 35px;
-        font-size: 1.3em;
+    .barra i{
+        margin-left: 228px;
+        margin-top: 9px;
+    }
+    .iconos{
+        margin-top: 27px;
     }
     .user{
-        font-size: 1.7em;
-        margin-left: -168px;
-        margin-right: 30px;
-        margin-top: 35px;
+        font-size: 1.2em;
+        margin-right: 95px; 
+        margin-left: -41px;
     }
     .shop{
-        font-size: 1.7em;
-        margin-left: -275px;
-        margin-right: 40px;
-        margin-top: 34px;
+        font-size: 1.2em;
+        margin-right: 31px;  
+        margin-left: -70px;
     }
     .menu-inferior{
         display: flex;
-        padding: 20px;
+        padding: 17px 0px 11px 52px;
     }
     .menu-inferior ul{
         list-style: none;
         display: flex; 
     }
     .menu-inferior li a{
-        margin: 0px 35px 2px 92px;
+        margin: 0px 30px 2px 77px;
         text-decoration: none;
         color: black;
         display: inline-block;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .banner{
+        width: 100%;
     }
     .how{
-        max-width: 38%;
-        margin: -28px 0px 0px 242px;
-        height: 56px;
+        max-width: 39%;
+        margin: -36px 0px 0px 238px;
+        height: 68px;
     }
-    .how .pregunta{
+    .how i{
         font-size: 1.8em;
-        margin-top: 10px;
+        margin-top: 19px;
     }
-    .how p{
-      font-size: 24px;
-      margin-top: 8px;
+    .how h3{
+      font-size: 20px;
+      margin-top: 20px;
     }
-    section h1{
-        font-size: 20px;
+
+    .destacados h2{
+        font-size: 18px;
     }
     .opciones{
-        width: 50%;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        margin: 0;
+        margin: 38px 20px 39px 36px;
+        max-width: 94% ;
+        
+    }
+    .opciones .categoria{
+        font-size: 16px;
+    }
+    .opciones .descripcion{
+        font-size: 13px;
     }
     .op4{
         display: none;
     }
     .op1,.op2, .op3,.op4{
-        width: 30%;
         margin-left: 11px;
-        margin-right: 27px;
+        margin-right: 11px;
     }
     .op1{
-        margin-left: 13px;
-    }
-    .mas p{
-       font-size: 26px;
+        margin-left: -15px; 
     }
     .mas{
-       max-width: 20%;
-       margin-left:297px ;
+       max-width: 18%;
+       margin-left: 314px;
+       height: 42px;
     }
-    .agregado{
+    .mas h3{
+        font-size: 24px;
+        padding: 7px;
+     }
+    .otros{
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;    
     }
-    .extra, .extrados{
-        width: 45%;
+    .extra, .extra2{
+        width: 43%;
     }
     .extra{
-        margin-left: 36px;
+        margin-left: 41px;
     }
-    .extrados{
-        margin-right: 24px;
+    .extra2{
+        margin-right: 32px;
     }
     .extra img{
         width: 97%;
         margin-left: 5px;
         margin-top: 55px;
     }
-    .extrados img{
-        width: 97%;
+    .extra2 img{
+        width: 101%;
         margin-left: 5px;
-        margin-top: 55px;
+        margin-top: -24px;
     }
-    .extra p, .extrados p{
+    .extra h3 {
         text-align: right;
         margin-bottom: -86px;
         margin-top: 38px;
         margin-right: 17px;
     }
-    footer p{
-        margin-left: 38px;
+    
+    footer h4{
+        font-size: 14px;
+        margin-left: 26px;
+        margin-right: -559px;
+    }
+    footer i{
+        font-size: 1.5em;
     }
     footer .twitter{
-        margin-left: -460px;
-        margin-right: 14px;
+        margin-left: -712px;
+        margin-right: 5px;
     }
    }
-   @media(min-width:1200px){
 
-       .logo h2{
-           margin-left: 6px;
-       }
-       .barra{
-           margin-left: -168px;
-           margin-top: 26px;
-           height: 48px;
-           max-width: 100%;
-       }
-       .barra p{
-           font-size: 24px;
-           margin-top: -2px;
-       }
-       .search{
-           margin-left: -415px;
-           margin-top: 30px;
-           font-size: 1.8em;
-       }
-       .user{
-           font-size: 2.3em;
-           margin-right: -116px;
+
+   @media(min-width:1200px){
+    
+       .menu-superior h1{
+           font-size: 50px;
+           margin-left: 49px;
            margin-top: 32px;
        }
-       .shop{
-        font-size: 2.2em;
-        margin-left: -194px;
-        margin-top: 33px ;
+       .barra{
+           margin-left: -34px;
+           margin-top: 34px;
+           height: 58px;
+           border-radius: 29px;
        }
+       .barra h3{
+           font-size: 28px;
+           margin-top: 0px;
+       }
+       .barra i{
+           margin-left: 392px;
+           margin-top: 11px;
+           font-size: 2em;
+       }
+       .iconos{
+           font-size: 2em;
+           margin-top: 41px;
+       }
+       .user{
+           margin-left: -75px;
+           
+       }
+       .shop{
+           margin-left: -49px;
+           margin-right: 18px;
+       }
+       
        .menu-inferior{
-           margin:14px 0px 14px 24px;
-           padding: 8px 24px;
+           margin:14px 0px 14px 124px;
+           padding: 4px 0px;
        }
        .menu-inferior li a{
-           font-size: 24px;
-           padding: 4px 50px;
+           font-size: 26px;
+           padding: 4px 30px;
+       }
+       .banner{
+           width: 104%;
        }
        .how{
-           max-width: 27%;
-           margin-left: 442px;
+           max-width: 40%;
+           height: 90px;
+           margin-left: 388px;
+           margin-top: -46px;
        }
-       .how p{
-           font-size: 28px;
-           margin: 6px 14px;
+       .how h3{
+           font-size: 30px;
+           margin: 22px 37px;
+       }
+       .how i{
+           font-size: 2.5em;
+       }
+       .destacados h2{
+           font-size: 24px;
+           margin-top: 62px;
        }
        .opciones{
-           max-width: 40%;
            flex-wrap: nowrap;
-           margin-left: 5px;
+           max-width: 98%; 
+           margin: 32px -12px 0px 47px;
        }
        .op4{
            display: block;
-       }
-       .op1,.op2,.op3,.op4{
-           margin-left: 17px;
-           margin-right: -4px;
         }
-        .op1{
-            margin-left: 20px;
+        .opciones .categoria{
+            font-size: 22px;
+        }
+        .opciones .descripcion{
+            font-size: 20px;
+        }
+        .opciones .precio{
+            font-size: 28px;
+        }
+        .opciones h2{
+            font-size: 26px;
         }
         
        .mas{
-           max-width: 15%;
-           height: 48px;
-           margin-left: 518px;
+           max-width: 20%;
+           height: 75px;
+           margin-left: 521px;
+           margin-top: 30px;
        }
-       .mas p{
-          padding: 8px;
-          font-size: 28px;
+       .mas h3{
+          padding: 19px;
+          font-size: 32px;
        }
-       .extra p, .extrados p{
+       .extra h3, .extra2 h3{
         font-size: 22px;
         text-align: right;
         margin-bottom: -91px;
         margin-top: 47px;
-        margin-right: 26px;
-    }
-    
-       footer p{
-           font-size: 20px;
+        margin-right: 17px;
+       }
+       .extra2{
+           margin-top: -15px;
+           margin-right: -14px;
+
+       }
+       footer h4{
+           font-size: 22px;
+       }
+       footer i{
+           font-size: 2.2em;
        }
        footer .instagram{
-           margin-right: -376px;
-           margin-top: 3px;
+           margin-right: -146px;
        }
+       footer .twitter{
+           margin-right: -3px;
+       }
+      
    
    
     }

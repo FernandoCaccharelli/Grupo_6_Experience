@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    border: 1px solid #9BB1C5;
+}
+.menu{
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-right: -20px;
+    margin-top: 16px;
+    color:#5E81A3;
+}
+.menu-superior h1{
+    font-size: 24px;
+    margin-top: 18px;  
+    margin-left: 31px;
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 46%;
+    height: 32px;
+    margin-top: 17px;
+    margin-left: 6px;
+    display: flex;
+}
+.barra h3{
+    padding: 10px;
+    margin-top:-6px;
+    font-size: 18px;
+}
+.barra i{
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-left: 71px;
+}
+.iconos{
+    display: flex;
+    margin-right: 27px;
+    margin-top: 21px;
+    font-size: 1.4em;
+}
+.iconos i{
+    color:#5E81A3;
+}
+.user{
+    margin-left: 12px;
+}
+.shop{
+    margin-right: -11px;
+    margin-left: 9px;
+}
+.menu-inferior{
+    display: none;
+}
+
+.flecha i {
+    color: #5E81A3;
+    font-size: 1.7em;
+    margin-top: 10px;
+    margin-left: 19px;
+}
+.superior{
+    display: flex;
+}
+.superior h1{
+    margin-left: 48px;
+}
+.superior i {
+    color: #F8B238 ;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.superior h3{
+    color: #F8B238 ;
+    margin-top: 23px;
+    margin-left: 8px;
+}
+.detalle{
+    max-width: 92%;
+    margin-left: 18px;
+}
+.bar img{
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+article{
+    margin-left: 20px;
+}
+article i{
+    color: #6c8fb1;
+}
+article h4{
+    font-size: 22px;
+}
+article input{
+    margin-left: 86px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 41px;
+    border-radius: 14px;
+    border:1px solid #5E81A3;
+    background-color: #cedeee;
+    box-shadow: 0px 0px 5px rgb(180, 180, 180);
+    font-size: 18px;
+}
+article img{
+    width: 100%;
+    margin-left: -13px;
+    margin-top: 38px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer h4{
+    font-size: 12px;
+    margin: 84px -289px 0px 11px;
+}
+footer i{
+    font-size: 1em;
+    margin: 81px 22px 20px 0px;
+    color: #5E81A3;
+}
+
+footer .twitter{
+    margin-right: 1px;
+    margin-left:-318px;
+}
+footer .instagram{
+    margin-left: 30px;
+}
+
+@media(min-width:768px){
+    .menu{
+        display: none;
+    }
+    .menu-superior{
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+    .menu-superior h1{
+        margin-left: 34px;
+        font-size: 34px;
+        margin-top: 20px;
+    }
+    .barra{
+        max-width: 50%;
+        margin-left: -17px;
+        margin-top: 21px;
+        height: 42px;
+        border-radius: 20px;
+    }
+    .barra h3{
+        margin-top: -3px;
+        font-size: 20px;
+        margin-left: 6px;
+    }
+    .barra i{
+        margin-left: 228px;
+        margin-top: 9px;
+    }
+    .iconos{
+        margin-top: 27px;
+    }
+    .user{
+        font-size: 1.2em;
+        margin-right: 77px; 
+        margin-left: -41px;
+    }
+    .shop{
+        font-size: 1.2em;
+        margin-right: 32px;  
+        margin-left: -38px;
+    }
+    .detalle{
+        margin-left: 45px;
+    }
+    .bar img{
+        width: 70%;
+        margin-left: 123px;
+    }
+    article{
+        margin-left: 84px;
+    }
+    article input{
+        margin-left: 156px;
+        margin-top: 20px;
+    }
+    article img{
+        width: 40%;
+        margin-left: -50px;
+        margin-top: 79px;
+    }
+    footer .instagram{
+        margin-right: -182px;
+    }
+    
+    }
+    @media(min-width:1200px){
+    
+        .menu-superior h1{
+            font-size: 50px;
+            margin-left: 49px;
+            margin-top: 32px;
+        }
+        .barra{
+            margin-left: -81px;
+            margin-top: 34px;
+            height: 58px;
+            border-radius: 29px;
+        }
+        .barra h3{
+            font-size: 28px;
+            margin-top: 0px;
+        }
+        .barra i{
+            margin-left: 392px;
+            margin-top: 11px;
+            font-size: 2em;
+        }
+        .iconos{
+            font-size: 2em;
+            margin-top: 41px;
+        }
+        .user{
+            margin-left: -91px;
+        }
+        .shop{
+            margin-right: 18px;
+        }
+        .flecha i{
+            font-size: 2.5em;
+        }
+        .superior h1{
+            font-size: 34px;
+            margin-left: 59px;
+        } 
+        .superior i{
+            font-size: 2em;
+            margin-top: 31px;
+        } 
+        .superior h3{
+            font-size: 30px;
+            margin-top: 32px;
+        }
+        .detalle{
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+        .bar img{
+            width: 50%;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        article{
+            margin-top: -332px;
+            margin-left: 694px;
+        }
+        article h3{
+            font-size: 30px;
+        }
+        article p{
+            font-size: 28px;
+        }
+        article h4{
+            font-size: 29px;
+        }
+        article input{
+            margin-left: -6px;
+            margin-top: 20px;
+            margin-bottom: 240px;
+            width: 60%;
+            height: 56px;
+            font-size: 24px;
+        }
+        article img{
+            width: 70%;
+            margin-top: 90px;
+            margin-left: -870px;
+
+        }
+        footer h4{
+            font-size: 20px;
+        }
+        footer i{
+            font-size: 2em;
+        }
+        footer .instagram{
+            margin-right: -266px;
+        }
+        footer .twitter{
+            margin-right: 30px;
+        }
+        
+        
+    }

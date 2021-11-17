@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    border: 1px solid #9BB1C5;
+}
+.menu{
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-right: -20px;
+    margin-top: 16px;
+    color:#5E81A3;
+}
+.menu-superior h1{
+    font-size: 24px;
+    margin-top: 18px;  
+    margin-left: 31px;
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 46%;
+    height: 32px;
+    margin-top: 17px;
+    margin-left: 6px;
+    display: flex;
+}
+.barra h3{
+    padding: 10px;
+    margin-top:-6px;
+    font-size: 18px;
+}
+.barra i{
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-left: 71px;
+}
+.iconos{
+    display: flex;
+    margin-right: 27px;
+    margin-top: 21px;
+    font-size: 1.4em;
+}
+.iconos i{
+    color:#5E81A3;
+}
+.user{
+    margin-left: 12px;
+}
+.shop{
+    margin-right: -11px;
+    margin-left: 9px;
+}
+.flecha i{
+    font-size:1.8em ;
+    color:#5E81A3;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.tablet{
+    display: none;
+}
+.desktop{
+   display:none ;
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+section{
+    margin-top: 12px;
+    display: flex;
+}
+section i{
+    font-size: 1.6em;
+    color: #145aa0;
+    margin-top: 14px;
+    margin-left: 15px;
+    margin-right: 8px;
+}
+article{
+    margin-top: 35px;
+}
+article h2{
+    margin-left: 0px; 
+    margin-bottom: 46px;
+    background-color: #c1d3e4;
+    width: 100%;
+    height: 69px;
+    padding: 20px 90px;
+}
+article h3{
+    margin-left: 30px;
+    padding: 10px 1px;
+}
+h3 i {
+    font-size: 1.5em;
+    color: #145aa0;
+}
+
+
+
+@media(min-width:768px){
+    .menu{
+        display: none;
+    }
+    .menu-superior{
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+    .menu-superior h1{
+        margin-left: 34px;
+        font-size: 34px;
+        margin-top: 20px;
+    }
+    .barra{
+        max-width: 50%;
+        margin-left: -17px;
+        margin-top: 21px;
+        height: 42px;
+        border-radius: 20px;
+    }
+    .barra h3{
+        margin-top: -3px;
+        font-size: 20px;
+        margin-left: 6px;
+    }
+    .barra i{
+        margin-left: 228px;
+        margin-top: 9px;
+    }
+    .iconos{
+        margin-top: 27px;
+    }
+    .user{
+        font-size: 1.2em;
+        margin-right: 77px; 
+        margin-left: -41px;
+    }
+    .shop{
+        font-size: 1.2em;
+        margin-right: 32px;  
+        margin-left: -38px;
+    }
+    .tablet{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    section{
+        margin-left: 217px;
+    }
+    article h2{
+        text-align: center;
+    }
+    article h3{
+        margin-left: 70px;
+        padding: 25px 40px;
+
+    }
+}
+
+
+
+@media(min-width:1200px){
+    
+    .menu-superior h1{
+        font-size: 50px;
+        margin-left: 49px;
+        margin-top: 32px;
+    }
+    .barra{
+        margin-left: -81px;
+        margin-top: 34px;
+        height: 58px;
+        border-radius: 29px;
+    }
+    .barra h3{
+        font-size: 28px;
+        margin-top: 0px;
+    }
+    .barra i{
+        margin-left: 392px;
+        margin-top: 11px;
+        font-size: 2em;
+    }
+    .iconos{
+        font-size: 2em;
+        margin-top: 41px;
+    }
+    .user{
+        margin-left: -91px;
+    }
+    .shop{
+        margin-right: 18px;
+    }
+    .flecha i{
+        font-size: 2.2em;
+        margin-left: 56px;
+        margin-top: 36px;
+    }
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    section {
+        margin-left: 331px;
+    }
+    section i{
+        font-size: 2.2em;
+        margin-top: 20px;
+    }
+    section h1{
+        font-size: 30px;
+    }
+    article h2{
+        font-size: 32px;
+        height: 78px;
+    }
+    article i{ 
+        font-size: 2.2em;
+    }
+    article h3{
+        font-size: 26px;
+        padding: 52px 99px;
+    }
+
+
+
+
+
+}
