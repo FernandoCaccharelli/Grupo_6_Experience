@@ -17,7 +17,7 @@ body{
     padding-top: 20px;
     margin-top: 15px;
     margin-bottom: 40px;
-    width: 460px;
+    width: 90%;
     border-bottom: 1px solid rgb(197, 196, 196);
     
 }
@@ -132,7 +132,6 @@ main section .register-button{
         margin-top: 20px;
         margin-bottom: 40px;
         margin-left: 50PX;
-        width: 720px;
     }
     .menu{
         font-size: 1.8em;
@@ -211,7 +210,6 @@ main section .register-button{
         margin-top: 20px;
         margin-bottom: 40px;
         margin-left: 50PX;
-        width: 1100px;
     }
     .menu{
         font-size: 1.8em;
