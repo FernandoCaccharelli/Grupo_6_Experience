@@ -141,21 +141,23 @@ section .titulo{
  }
  .puntuacion i, .puntuacion2 i{
      color:#F8B238;
+     margin-top: 19px;
+     margin-left: 8px;
  }
  .puntuacion h2, .puntuacion2 h2{
     color:#F8B238;
     font-size: 20px;
  }
-
  .oportunidad1 h3,.oportunidad2 h3{
      margin-top: 25px;
      font-size: 18px;
-
+ }
+ .categoria i{
+     font-size: 1.2em;
+     margin-left: 8px;
  }
  .oportunidad1 h4,.oportunidad2 h4{
-     margin-bottom: 26px;
- }
- article h4{
+     margin-bottom: 22px;
      font-size: 14px;
      margin-left: 10px;
  }
@@ -254,6 +256,35 @@ footer .instagram{
         width: 100%;
         margin-left: -31px;
     }
+
+    .oportunidades{
+        margin-left: 14px;
+        width: 90%;
+    }
+    .oportunidades img{
+        margin-left: 7px;
+        margin-top: 5px;
+    }
+    .puntuacion i, .puntuacion2 i{
+        font-size: 1.2em;
+        margin-top: 19px;
+        margin-left: 10px;
+    }
+    .puntuacion h2, .puntuacion2 h2{
+        font-size: 22px ;
+    }
+    .categoria i{
+        font-size: 1em;
+        margin-left: 14px;
+        padding-right: 20px;
+    }
+    .oportunidad1 h3, .oportunidad2 h3{
+        font-size: 20px;
+    }
+    .oportunidad1 h4, .oportunidad2 h4{
+        font-size: 16px;
+        margin-left: 5px;
+    }
     footer .instagram{
         margin-right: -182px;
     }
@@ -314,8 +345,12 @@ footer .instagram{
         font-size: 34px;
     }
     .como h2{
+        width: 102%;
         font-size: 32px;
         padding-top: 16px;
+    }
+    .como .nada{
+        width: 102%;
     }
     .codigo, .feliz{
         font-size: 34px;
@@ -325,8 +360,8 @@ footer .instagram{
         margin-left: 125px;
     }
     .oportunidades{
-        margin-left: 31px;
-        width: 90%;
+        margin-left: 93px;
+        width: 80%;
     }
     .oportunidades img{
         margin-left: 12px;
@@ -350,6 +385,7 @@ footer .instagram{
     }
     .oportunidad1 h4, .oportunidad2 h4{
         font-size: 22px;
+        margin-left: 10px;
     }
     footer{
         margin-top: 80px;

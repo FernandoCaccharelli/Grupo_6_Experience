@@ -115,6 +115,53 @@ article img{
     margin-top: 38px;
 }
 
+.oportunidad1 img, .oportunidad2 img{
+    width: 95%;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.oportunidad1{
+    border: 1px solid #5E81A3;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: 62px;
+    margin-top: 96px;
+}
+ section .oportunidad2{
+    border: 1px solid #5E81A3;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: 62px;
+    margin-top: 95px;
+ }
+ article .puntuacion, article .puntuacion2{
+     display: flex;
+ }
+ .puntuacion i, .puntuacion2 i{
+     color:#F8B238;
+     margin-top: 19px;
+     margin-left: 8px;
+ }
+ .puntuacion h2, .puntuacion2 h2{
+    color:#F8B238;
+    font-size: 20px;
+ }
+ .oportunidad1 h3,.oportunidad2 h3{
+     margin-top: 25px;
+     font-size: 16px;
+     margin-left: 2px;
+ }
+ .categoria i{
+     font-size: 1.2em;
+     margin-left: 8px;
+ }
+ .oportunidad1 h4,.oportunidad2 h4{
+     margin-bottom: 22px;
+     font-size: 14px;
+     margin-left: 10px;
+ }
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -198,6 +245,10 @@ footer .instagram{
         margin-left: -50px;
         margin-top: 79px;
     }
+   .oportunidades{
+       display: flex;
+       width: 90%;
+   }
     footer .instagram{
         margin-right: -182px;
     }
@@ -253,12 +304,12 @@ footer .instagram{
         }
         .bar img{
             width: 50%;
-            margin-left: 30px;
+            margin-left: 62px;
             margin-top: 40px;
         }
         article{
             margin-top: -332px;
-            margin-left: 694px;
+            margin-left: 712px;
         }
         article h3{
             font-size: 30px;
@@ -281,8 +332,30 @@ footer .instagram{
             width: 70%;
             margin-top: 90px;
             margin-left: -870px;
+        }
+        .oportunidades{
+            width: 80%;
+            margin-left: 78px;
+            margin-bottom: 80px;
+        }
+        .oportunidades img{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .puntuacion i, .puntuacion2 i{
+            font-size: 2em;
+        }
+        .puntuacion h2, .puntuacion2 h2{
+            font-size: 26px;
+        }
+        .oportunidad1 h3, .oportunidad2 h3{
+            font-size: 24px;
 
         }
+        .oportunidad1 h4, .oportunidad2 h4{
+            font-size: 22px;
+        }
+       
         footer h4{
             font-size: 20px;
         }
