@@ -25,24 +25,18 @@ body{
     margin-top: 18px;  
     margin-left: 31px;
 }
-.barra{
+.barra input{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 46%;
+    width: 85%;
     height: 32px;
     margin-top: 17px;
-    margin-left: 6px;
-    display: flex;
-}
-.barra h3{
-    padding: 10px;
-    margin-top:-6px;
-    font-size: 18px;
+    margin-left: 16px;
+    padding: 5px;
+    font-size: 16px;
 }
 .barra i{
-    font-size: 1.2em;
-    margin-top: 5px;
-    margin-left: 71px;
+    margin-left: -26px;
 }
 .iconos{
     display: flex;
@@ -65,8 +59,12 @@ body{
     color:#5E81A3;
     margin-left: 16px;
     margin-top: 10px;
+    transition: color 450ms;
 }
-
+.flecha i:hover{
+  color:#1E5488;
+    
+}
 .tablet{
     display: none;
 }
@@ -81,7 +79,7 @@ section{
     margin-top: 12px;
     display: flex;
 }
-section i{
+.regalo i{
     font-size: 1.6em;
     color: #145aa0;
     margin-top: 14px;
@@ -91,21 +89,97 @@ section i{
 article{
     margin-top: 35px;
 }
-article h2{
+.como h2, .como .nada{
     margin-left: 0px; 
     margin-bottom: 46px;
+    margin-top: 46px;
     background-color: #c1d3e4;
     width: 100%;
     height: 69px;
     padding: 20px 90px;
 }
-article h3{
+.como h3{
     margin-left: 30px;
     padding: 10px 1px;
 }
 h3 i {
     font-size: 1.5em;
     color: #145aa0;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 33px;
+}
+section .titulo{
+    margin-top: 56px;
+    margin-left: 122px;
+    margin-bottom: -18px;
+}
+.oportunidad1 img, .oportunidad2 img{
+    width: 95%;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-top: 5px;
+  
+}
+.oportunidad1{
+    border: 1px solid #5E81A3;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: 62px;
+}
+ section .oportunidad2{
+    border: 1px solid #5E81A3;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: 62px;
+ }
+ article .puntuacion, article .puntuacion2{
+     display: flex;
+ }
+ .puntuacion i, .puntuacion2 i{
+     color:#F8B238;
+ }
+ .puntuacion h2, .puntuacion2 h2{
+    color:#F8B238;
+    font-size: 20px;
+ }
+
+ .oportunidad1 h3,.oportunidad2 h3{
+     margin-top: 25px;
+     font-size: 18px;
+
+ }
+ .oportunidad1 h4,.oportunidad2 h4{
+     margin-bottom: 26px;
+ }
+ article h4{
+     font-size: 14px;
+     margin-left: 10px;
+ }
+ footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer h4{
+    font-size: 12px;
+    margin: 84px -289px 0px 11px;
+}
+footer i{
+    font-size: 1em;
+    margin: 81px 22px 20px 0px;
+    color: #5E81A3;
+}
+
+footer .twitter{
+    margin-right: 1px;
+    margin-left:-318px;
+}
+footer .instagram{
+    margin-left: 30px;
 }
 
 
@@ -123,21 +197,20 @@ h3 i {
         font-size: 34px;
         margin-top: 20px;
     }
-    .barra{
-        max-width: 50%;
-        margin-left: -17px;
+    .barra {
+        width: 100%;
+    }
+    .barra input{
+        width: 55%;
+        margin-left: 134px;
         margin-top: 21px;
         height: 42px;
         border-radius: 20px;
-    }
-    .barra h3{
-        margin-top: -3px;
-        font-size: 20px;
-        margin-left: 6px;
+        padding: 8px;
     }
     .barra i{
-        margin-left: 228px;
-        margin-top: 9px;
+        font-size: 1.4em;
+        margin-left: -36px;
     }
     .iconos{
         margin-top: 27px;
@@ -161,41 +234,48 @@ h3 i {
     .desktop{
         display: none;
     }
-    section{
-        margin-left: 217px;
+    .regalo{
+        margin-left: 196px;
     }
-    article h2{
+   .como h2{
         text-align: center;
     }
-    article h3{
+   .como h3{
         margin-left: 70px;
         padding: 25px 40px;
 
     }
+    section .titulo{
+        margin-left: 63px;
+    }
+    section{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-left: -31px;
+    }
+    footer .instagram{
+        margin-right: -182px;
+    }
+   
 }
 
-
-
 @media(min-width:1200px){
-    
     .menu-superior h1{
         font-size: 50px;
         margin-left: 49px;
         margin-top: 32px;
     }
-    .barra{
-        margin-left: -81px;
+    .barra input{
+        margin-left: 227px;
         margin-top: 34px;
         height: 58px;
         border-radius: 29px;
-    }
-    .barra h3{
         font-size: 28px;
-        margin-top: 0px;
+        padding: 12px;
     }
     .barra i{
-        margin-left: 392px;
-        margin-top: 11px;
+        margin-left: -55px;
         font-size: 2em;
     }
     .iconos{
@@ -215,6 +295,7 @@ h3 i {
     }
     .desktop{
         display: block;
+        font-size: 2.2em;
     }
     .mobile{
         display: none;
@@ -222,30 +303,78 @@ h3 i {
     .tablet{
         display: none;
     }
-    section {
+    .regalo {
         margin-left: 331px;
     }
-    section i{
-        font-size: 2.2em;
+    .regalo i{
+        font-size: 2.7em;
         margin-top: 20px;
     }
-    section h1{
-        font-size: 30px;
+    .regalo h1{
+        font-size: 34px;
     }
-    article h2{
+    .como h2{
         font-size: 32px;
-        height: 78px;
+        padding-top: 16px;
     }
-    article i{ 
+    .codigo, .feliz{
+        font-size: 34px;
+    }
+    section .titulo{
+        font-size: 28px;
+        margin-left: 125px;
+    }
+    .oportunidades{
+        margin-left: 31px;
+        width: 90%;
+    }
+    .oportunidades img{
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    .puntuacion i, .puntuacion2 i{
         font-size: 2.2em;
+        margin-top: 24px;
+        margin-left: 10px;
     }
-    article h3{
-        font-size: 26px;
-        padding: 52px 99px;
+    .puntuacion h2, .puntuacion2 h2{
+        font-size: 32px ;
     }
-
-
-
-
+    .categoria i{
+        font-size: 1.2em;
+        margin-left: 14px;
+        padding-right: 20px;
+    }
+    .oportunidad1 h3, .oportunidad2 h3{
+        font-size: 24px;
+    }
+    .oportunidad1 h4, .oportunidad2 h4{
+        font-size: 22px;
+    }
+    footer{
+        margin-top: 80px;
+    }
+    footer h4{
+        font-size: 20px;
+    }
+    footer i{
+        font-size: 2em;
+    }
+    footer .instagram{
+        margin-right: -290px;
+    }
+    footer .twitter{
+        margin-right: 30px;
+    }
+    
+    
 
 }
+
+
+
+
+
+
+
+

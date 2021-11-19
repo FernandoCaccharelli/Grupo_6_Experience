@@ -25,24 +25,18 @@ body{
     margin-top: 18px;  
     margin-left: 31px;
 }
-.barra{
+.barra input{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 46%;
+    width: 85%;
     height: 32px;
     margin-top: 17px;
-    margin-left: 6px;
-    display: flex;
-}
-.barra h3{
-    padding: 10px;
-    margin-top:-6px;
-    font-size: 18px;
+    margin-left: 16px;
+    padding: 5px;
+    font-size: 16px;
 }
 .barra i{
-    font-size: 1.2em;
-    margin-top: 5px;
-    margin-left: 71px;
+    margin-left: -26px;
 }
 .iconos{
     display: flex;
@@ -157,21 +151,20 @@ footer .instagram{
         font-size: 34px;
         margin-top: 20px;
     }
-    .barra{
-        max-width: 50%;
-        margin-left: -17px;
+    .barra {
+        width: 100%;
+    }
+    .barra input{
+        width: 55%;
+        margin-left: 134px;
         margin-top: 21px;
         height: 42px;
         border-radius: 20px;
-    }
-    .barra h3{
-        margin-top: -3px;
-        font-size: 20px;
-        margin-left: 6px;
+        padding: 8px;
     }
     .barra i{
-        margin-left: 228px;
-        margin-top: 9px;
+        font-size: 1.4em;
+        margin-left: -36px;
     }
     .iconos{
         margin-top: 27px;
@@ -194,10 +187,10 @@ footer .instagram{
         margin-left: 123px;
     }
     article{
-        margin-left: 84px;
+        margin-left: 125px;
     }
     article input{
-        margin-left: 156px;
+        margin-left: 120px;
         margin-top: 20px;
     }
     article img{
@@ -217,19 +210,16 @@ footer .instagram{
             margin-left: 49px;
             margin-top: 32px;
         }
-        .barra{
-            margin-left: -81px;
+        .barra input{
+            margin-left: 227px;
             margin-top: 34px;
             height: 58px;
             border-radius: 29px;
-        }
-        .barra h3{
             font-size: 28px;
-            margin-top: 0px;
+            padding: 12px;
         }
         .barra i{
-            margin-left: 392px;
-            margin-top: 11px;
+            margin-left: -55px;
             font-size: 2em;
         }
         .iconos{
