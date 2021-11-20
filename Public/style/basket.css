@@ -17,7 +17,7 @@ body {
     padding-top: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 460px;
+    width: 90%;
 }
 .menu{
     font-size: 1.8em;
@@ -236,7 +236,6 @@ button.buy {
     margin-top: 20px;
     margin-bottom: 40px;
     margin-left: 50PX;
-    width: 720px;
 }
 .menu{
     font-size: 1.8em;
@@ -457,7 +456,6 @@ button.buy {
     padding-top: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 1300px;
 }
 .menu{
     font-size: 1.8em;

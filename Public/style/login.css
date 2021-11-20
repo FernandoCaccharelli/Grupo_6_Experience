@@ -17,7 +17,7 @@ body {
     padding-top: 20px;
     margin-top: 15px;
     margin-bottom: 40px;
-    width: 460px;
+    width: 90%;
     border-bottom: 1px solid rgb(197, 196, 196);
     
 }
@@ -153,7 +153,6 @@ main section.options-login button{
         padding-top: 20px;
         margin-top: 15px;
         margin-bottom: 40px;
-        width: 760px;
         border-bottom: 1px solid rgb(197, 196, 196);
     }
 
@@ -251,7 +250,6 @@ main section.options-login button{
         padding-top: 20px;
         margin-top: 15px;
         margin-bottom: 40px;
-        width: 1350px;
         border-bottom: 1px solid rgb(197, 196, 196);   
     }
     header h2{
