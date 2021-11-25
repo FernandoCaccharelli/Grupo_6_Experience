@@ -6,6 +6,10 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+.logo a {
+    text-decoration: none;
+    color: black;
+}
 .menu-superior{
     display: flex;
     justify-content: space-between;
@@ -124,6 +128,10 @@ section h2{
 }
 .op1 .categoria,.op2 .categoria,.op3 .categoria ,.op4 .categoria{
     font-size: 18px;
+    color: #345D84;
+}
+.op4 .categoria a{
+    text-decoration: none;
     color: #345D84;
 }
 .op1 i, .op2 i,.op3 i,.op4 i{ 
@@ -416,7 +424,7 @@ footer .instagram{
        }
        .opciones{
            flex-wrap: nowrap;
-           width: 96%;    
+           width: 95%;    
        }
        
        .op4{

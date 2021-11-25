@@ -24,6 +24,10 @@ body {
     margin-left: 20px;
    
 }
+.logo a {
+    text-decoration: none;
+    color: black;
+}
 .barra{
     border:1px solid #9BB1C5;
     border-radius: 14px;

@@ -8,6 +8,10 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 /*//////////////////////// HEADER ///////////////////////*/
+.logo a {
+    text-decoration: none;
+    color: black;
+}
 .menu-superior{
     display: flex;
     justify-content: space-between;
