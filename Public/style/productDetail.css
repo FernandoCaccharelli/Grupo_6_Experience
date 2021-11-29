@@ -166,27 +166,29 @@ article img{
      margin-left: 10px;
  }
 
+/*////////////////////////////      FOOTER               //////////////////////////////////*/
 footer{
-    display: flex;
-    justify-content: space-between;
-    
-}
-footer h4{
-    font-size: 12px;
-    margin: 84px -289px 0px 11px;
-}
-footer i{
-    font-size: 1em;
-    margin: 81px 22px 20px 0px;
-    color: #5E81A3;
+    margin-top: 30px;   
 }
 
-footer .twitter{
-    margin-right: 1px;
-    margin-left:-318px;
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-footer .instagram{
-    margin-left: 30px;
+
+footer h4{
+    font-size: 12px;
+}
+.footer-i{
+    font-size: 1em;
+    align-self: center;
+    
+}
+
+footer i {
+    margin-right: 20px;
+    color: #5E81A3;
 }
 
 @media(min-width:768px){
@@ -253,12 +255,26 @@ footer .instagram{
        display: flex;
        width: 90%;
    }
-    footer .instagram{
-        margin-right: -182px;
-    }
+    /*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 15px;
+}
+
+.instagram, .twitter {
+    font-size: 25px;
+    margin-right: 10px;
+}
     
     }
-    @media(min-width:1200px){
+    @media(min-width:1024px){
     
         .menu-superior h1{
             font-size: 50px;
@@ -360,18 +376,22 @@ footer .instagram{
             font-size: 22px;
         }
        
-        footer h4{
-            font-size: 20px;
-        }
-        footer i{
-            font-size: 2em;
-        }
-        footer .instagram{
-            margin-right: -266px;
-        }
-        footer .twitter{
-            margin-right: 30px;
-        }
-        
+ /*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 25px;
+}
+
+.instagram, .twitter {
+    font-size: 30px;
+    margin-right: 15px;
+}
         
     }

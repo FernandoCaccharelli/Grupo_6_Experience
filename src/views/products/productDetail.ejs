@@ -11,21 +11,7 @@
     <link rel ="stylesheet" href = "../style/productDetail.css">
 </head>
 <body>
-    <header>
-        <div class="menu-superior">
-            <a class="menu" href="#" ><i class="fas fa-bars"></i></a>    
-            <h1 class="logo"><a href="/">EXP</a></h1>    
-            <div class="barra">
-                <input type="search" placeholder="Buscar"> 
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="iconos">
-                <a class="user" href="/login"><i class="fas fa-user"></i></a>
-                <a class="shop" href="/basket"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-        </div>
-        
-    </header>
+    <%- include ("../partials/header") %>
     <main>
         <div class="flecha">
             <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
@@ -69,13 +55,7 @@
 
             </article>
         </section>
-        <footer>
-            <h4>Políticas y garantías </h4>
-            <h4>Términos y condiciones</h4>
-            <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="twitter"href="#"><i class="fab fa-twitter"></i></a>
-        </footer>
-
+        <%- include ("../partials/footer") %>
     </main>
    
 </body>
