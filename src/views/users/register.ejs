@@ -10,33 +10,11 @@
     <link rel="stylesheet" href="/style/register.css">
 </head>
 <body>
-    <header class="menu-principal">
-        <div class="menu-superior">
-        <!-- <div class="menu"><i class="fas fa-bars"></i></div>  -->  
-        <div class="logo"><h2><a href="/">EXP</a></h2></div>    
-        <div class="barra">
-            <p>Buscar</p>
-        </div>
-        <div class="search"><i class="fas fa-search"></i></div>
-        <!-- <div class="user">
-             <a href="/login"><i class="fas fa-user"></i></a>
-        </div> -->
-        <div class="shop">
-             <a href="/basket"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-        </div>
-         <nav class = "menu-inferior">
-             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Ayuda</a></li>
-             </ul>
-         </nav>
-    </header>
+    <%- include ("../partials/header") %>
     <main>
         <form action="/" method="POST">
-             <h2>¡Creá Tu Cuenta!</h2>
-             <section class="register">
+            <h2>¡Creá Tu Cuenta!</h2>
+            <section class="register">
                 <div  class="user-name">
                     <input class="name" type="text" name="name" placeholder="Nombre">
                     <input class="last-name" type="text" name="last-name" placeholder="Apellido">
@@ -50,18 +28,17 @@
                 <div>
                     <input class="birth-date" name="birth-date" placeholder="Fecha de Nacimiento   DD/MM/AAAA">
                 </div>
-
+            </section>
         </form>
         <section class="checkbox">
             <div>
-            <input type="checkbox" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
-        </div>
+                <input type="checkbox" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
+            </div>
         </section>
-        <section >
+        <section class="register-accept" >
             <button class="register-button">Registrarme</button>
         </section>
-
     </main>
-    
+    <%- include ("../partials/footer") %>
 </body>
 </html>

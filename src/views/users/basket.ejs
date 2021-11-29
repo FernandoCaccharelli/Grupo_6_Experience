@@ -12,47 +12,28 @@ rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="menu-principal">
-        <div class="menu-superior">
-            <!-- <div class="menu"><i class="fas fa-bars"></i></div>    -->
-            <div class="logo"><h2><a href="/">EXP</a></h2></div>    
-            <div class="barra">
-                <p>Buscar</p>
-            </div>
-            <div class="search"><i class="fas fa-search"></i></div>
-            <div class="user">
-                <a href="/login"><i class="fas fa-user"></i></a>
-            </div>
-            <!-- <div class="shop">
-                <a href="/basket"><i class="fas fa-shopping-cart"></i></a>
-            </div>    -->   
-        </div>
-         <nav class = "menu-inferior">
-             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Ayuda</a></li>
-             </ul>
-         </nav>
-    </header>
-
+    <%- include ("../partials/header") %>
     <main>
-        <div class="franja-decorativa"></div>
+        
         <section class="products">
                 <article class="food">
-                    <h3>Experiencia Gourmet</h3>
+                    <h3 class="title-product">Experiencia Gourmet</h3>
                     <p class="description">Esta Experiencia, para dos personas, ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.</p>
-                    <img class="Imagen-product" src="/Images/experiencia.gourmet.png" alt="Experiencia Gourmet">
-                    
-                    <div class="info-exp">
-                        <h3>Acerca de esta experiencia:</h3>
-                            <div>
-                                <p><i class="fas fa-user-friends"></i> Para 2 personas</p>
-                                <p><i class="far fa-calendar-alt"></i> Se puede usar hasta el 31/12/2022</p>
-                                <p><i class="fas fa-gifts"></i> Contiene varias opciones</p>
-                                <p><i class="fas fa-sync"></i> Se puede cambiar por otra Experiencia</p>
-                                <p><i class="far fa-credit-card"></i> Varias formas de pago</p>
-                            </div>
+                    <div class="product-container">
+                        <div class="imagen-product">
+                            <img src="/Images/experiencia.gourmet.png" alt="Experiencia Gourmet">
+                        </div>
+                        <div class="info-exp">
+                            <h3>Acerca de esta experiencia:</h3>
+                                <div>
+                                    <p><i class="fas fa-user-friends"></i> Para 2 personas</p>
+                                    <p><i class="far fa-calendar-alt"></i> Se puede usar hasta el 31/12/2022</p>
+                                    <p><i class="fas fa-gifts"></i> Contiene varias opciones</p>
+                                    <p><i class="fas fa-sync"></i> Se puede cambiar por otra Experiencia</p>
+                                    <p><i class="far fa-credit-card"></i> Varias formas de pago</p>
+                                </div>
+                        </div>
+                    </div>
                             <div class="gourmet-description">                                              
                                 <p class="price">A tan solo $5.500</p>
                                 <div class="button">
@@ -65,9 +46,10 @@ rel="stylesheet" />
                                  </div>
                             </div>
                     </div>
+                
                  </article>     
         </section>
-        <section>
+        <section class="total-buy">
             <div class="buy-list">
                 <h2> Resumen de compra:</h2>
                 <p>Productos:</p>
@@ -82,5 +64,6 @@ rel="stylesheet" />
         </section>
         
     </main>
+    <%- include ("../partials/footer") %> 
 </body>
 </html>

@@ -8,76 +8,93 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 /*//////////////////////// HEADER ///////////////////////*/
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+a.menu, a.user, a.shop {
+    display: none;
+}
+
+.logo{
+    font-size: 20px;
+    margin-left: 15px;
+   
+}
 .logo a {
     text-decoration: none;
     color: black;
 }
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0px;
-    padding-top: 20px;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    width: 100%;
-    border-bottom: 1px solid rgb(197, 196, 196); 
-}
- header h2{
-    font-size: 25px;
-    margin-top: -20px;
-    margin-left: -5px; 
-}
 .barra{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 35%;
+    width: 50%;
     height: 28px;
-    margin-top: 20px;
-    margin-left: -40px;
+    margin-left: -35px;
+    position: relative;
+}
+.barra input {
+    border: none;
+    background-color: transparent;
+    padding-left: 10%;
+    height: 28px;
+}
+.fa-search {
+    position: absolute;
+    top: 5px;
+    right: 5%;
 }
 .barra p{
     padding: 10px;
-    margin-top:-8px;
     font-size: 18px;
 }
 .search{
-    margin-top: 18px;
-    margin-left: -35px;
-    padding: 3px;
-    font-size: 1.3em;
+    padding: 5px;
+    font-size: 125%;
 }
-.shop{
-    margin-top: 22px;
-    margin-right: 55px;
+.user{
+    margin-right: 15px;  
     font-size: 1.3em;
     color: #5E81A3;
 }
+
 .menu-inferior{
     display: none;
 }
 /*//////////////////////////         MAIN               /////////////////////////////*/
 main {
     background-color: #D8E7F5;
-    width: 65%;
+    width: 75%;
     height: 90%;
     margin: 10% 0% 10% 17%;
     box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.40);
     border-radius: 10px;   
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 h2 {
-font-size: 8vw;
-text-align: center;
-padding: 38px;
-margin-top: 20px;
+    font-size: 8vw;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
+
+main section.login {
+    display: flex;
+    flex-direction: column;
+}
+
 main .user-name, 
 .pass {
-    margin: 16px 63px;
+    font-size: 20px;
 }
 
 main .rimen-me {
-    margin: 10px 60px;
+    margin-top: 5px;
+    font-size: 12px;
 }
 main .user-name input, 
 .pass input{
@@ -87,9 +104,7 @@ main .user-name input,
     border:  #5E81A3 1px solid;
 }
 main .button-send {
-    margin: 48px 99px;
-    width: 40%;
-    
+    width: 50%;
     background-color:#5E81A3;
     border: #5E81A3 1px solid;
     box-shadow: 0px 0px 10px rgb(150, 150, 150);
@@ -97,218 +112,207 @@ main .button-send {
     border-radius: 5px;
     font-size: 16px;
     padding: 6px;
+    margin-top: 20px;
 }
-.retrieve-pass,
-.register-here {
-    margin-left: 20px;
+.retrieve-pass {
+    margin-top: 30px;
     font-size: 3vw;
 }
+
+.register-here {
+    margin-top: 10px;
+    font-size: 3vw;
+}
+
 main section.options-login {
-    margin: 31px 6px 0px 28px;
+    display: flex;
+    align-items: center;
     padding: 36px 27px;
 }
 main section.options-login button{
     padding: 2px;
     font-size: 4vw;
 }
+
+/*////////////////////////////      FOOTER               //////////////////////////////////*/
+footer{
+    margin-top: 30px;   
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h4{
+    font-size: 12px;
+}
+.footer-i{
+    font-size: 1em;
+    align-self: center;
+    
+}
+
+footer i {
+    margin-right: 20px;
+    color: #5E81A3;
+}
+
 /*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
+
 @media (min-width: 768px){
-    body{
-        width: 100%;
-    }
-    .menu-superior{            /*////////////////////////        HEADER         ////////////////*/
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0px;
-        padding-top: 20px;
-        margin-top: 15px;
-        margin-bottom: 40px;
-        border-bottom: 1px solid rgb(197, 196, 196);
-    }
-
-    .barra{
-        border:1px solid #9BB1C5;
-        border-radius: 14px;
-        width: 45%;
-        height: 28px;
-        margin-top: 20px;
-        margin-left: -40px;
-    }
     
-    .search{
-        margin-top: 18px;
-        margin-left: -70px;
-        padding: 3px;
-        font-size: 1.3em;
-    }
-    
-    .shop{
-        margin-top: 15px;
-        margin-left: -4px;
-        margin-right: 55px;
-        font-size: 1.8em;
-        color: #5E81A3;
-    }
+/*////////////////////////        HEADER         ////////////////*/
 
-    main{            /*////////////////////     MAIN             ////////////////////*/
-        width: 50%;
-        margin-left: 185px;
-        margin-top: 79px;
-    }
+.menu-superior {
+    margin-top: 30px;
+}
 
-    h2 {
-        font-size: 40px;
-        text-align: center;
-        padding: 40px;
-        }
+.logo {
+    font-size: 30px;
+    margin-left: 35px;
+}
 
-    main .user-name, 
-    .pass {
-        margin: 16px 92px;
-        text-align: center;
-            
-        }
-    main .user-name input, 
-    .pass input{
-        font-size: 15px;
-        padding: 7px; 
-        }
+.barra {
+    width: 55%;
+    height: 35px;
+}
 
-       
-    main .rimen-me {
-        margin: 10px 95px;
-        font-size: 15px;
-        }
-    
-    main .button-send {
-        margin: 45px 135px;
-        width: 105px;
-        height: 40px;
-        font-size: 15px;
-        padding: 6px;
-        }
+.barra input {
+    padding-left: 5%;
+    height: 35px;
+    font-size: 20px;
+}
 
-    .retrieve-pass,
-    .register-here {
-        margin-left: 30px;
-        font-size: 14px;
-        }
-        
-    main section.options-login {
-        margin: 15px 6px 0px 31px;
-        padding: 36px 27px;
-        }
+.fa-search {
+    font-size: 25px;
+}
 
-    main section.options-login button{
-        font-size: 14px;
-        padding: 4px;
-        }
-    
+/*////////////////////     MAIN             ////////////////////*/
+
+h2 {
+    font-size: 7vw;
+    padding-bottom: 45px;
+}
+
+.user-name {
+    margin-top: 30px;
+}
+
+.pass {
+    margin-top: 10px;
+}
+
+main .rimen-me {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+main .button-send {
+    width: 30%;
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+.retrieve-pass {
+    font-size: 2.5vw;
+}
+
+.register-here {
+    font-size: 2.5vw;
+}
+
+main section.options-login button {
+    font-size: 2.5vw;
+    margin-left: 125px;
+}
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 15px;
+}
+
+.instagram, .twitter {
+    font-size: 25px;
+    margin-right: 10px;
+}
 
 }
 
-@media (min-width:1200px){
-    body{
-        width: 100%;
-        height: 70%;
-    }
+@media (min-width:1024px){
 
-    .menu-superior{          /*////////////////           HEADER       //////////////////*/
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0px;
-        padding-top: 20px;
-        margin-top: 15px;
-        margin-bottom: 40px;
-        border-bottom: 1px solid rgb(197, 196, 196);   
-    }
-    header h2{
-        font-size: 45px;
-        margin-top: -20px;
-        margin-left: -5px;
-    }
+/*////////////////////////        HEADER         ////////////////*/
 
-    .barra{
-        border:1px solid #9BB1C5;
-        border-radius: 14px;
-        width: 45%;
-        height: 40px;
-        margin-top: 30px;
-        margin-left: -280px;
-    }
-    
-    .barra p{
-        padding: 10px;
-        margin-top:-6px;
-        font-size: 25px;
-    }
-
-    .search{
-        margin-top: 27px;
-        margin-left: -360px;
-        padding: 3px;
-        font-size: 2em;
-    }
-    
-    .shop{
-        margin-top: 12px;
-        margin-left: -150px;
-        margin-right: 135px;
-        font-size: 3em;
-        color: #5E81A3;
-        
-    }
-
-    main{                   /*///////       MAIN            //////////////*/
-        width: 60%;
-        height: 90%;
-        margin-left: 20%;
-        margin-top: 5%;
-    }
-
-    h2 {
-        font-size: 52px;
-        text-align: center;
-        padding: 42px;
-        }
-    main .user-name, 
-    .pass {
-     margin: 16px 102px;
-     text-align: center;          
-        }     
-
-    main .user-name input, 
-    .pass input{
-        font-size: 25px;
-        padding: 6px; 
-    }
-
-    main .rimen-me {
-        margin: 10px 125px;
-        font-size: 20px;
-        }
-    
-    main .button-send {
-        margin: 54px 196px;
-        width: 155px;
-        height: 50px;
-        font-size: 22px;
-        padding: 6px;
-        }
-    .retrieve-pass,
-    .register-here {
-        margin-left: 40px;
-        font-size: 22px;
-        }
-        
-    main section.options-login {
-        margin: 15px 6px 0px 71px;
-        padding: 36px 27px;
-        }
-
-    main section.options-login button{
-        font-size: 19px;
-        padding: 4px;
-        }
-   
+.logo {
+    font-size: 45px;
+    margin-left: 60px;
 }
+
+.barra {
+    width: 60%;
+    height: 40px;
+}
+
+.barra input {
+    padding-left: 4%;
+    height: 38px;
+    font-size: 25px;
+}
+
+.fa-search {
+    font-size: 30px;
+}
+
+/*///////       MAIN            //////////////*/
+
+.pass {
+    margin-top: 20px;
+}
+
+main .rimen-me {
+    margin-top: 20px;
+    font-size: 25px;
+}
+main .button-send {
+    width: 35%;
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.retrieve-pass {
+    margin-top: 40px
+}
+
+main section.options-login button {
+    margin-left: 185px;
+}
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 25px;
+}
+
+.instagram, .twitter {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+}
+

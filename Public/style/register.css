@@ -10,80 +10,67 @@ body{
 }
 
 /*//////////////////////// HEADER ///////////////////////*/
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+a.menu, a.user, a.shop {
+    display: none;
+}
+
+.logo{
+    font-size: 20px;
+    margin-left: 15px;
+   
+}
 .logo a {
     text-decoration: none;
     color: black;
 }
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0px;
-    padding-top: 20px;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    width: 100%;
-    border-bottom: 1px solid rgb(197, 196, 196);
-    
-}
-
- header h2{
-    font-size: 25px;
-    margin-top: -20px;
-    margin-left: -5px;
-   
-}
-.logo{
-    font-size: 20px;
-    margin-top: 18px;
-   
-}
 .barra{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 40%;
+    width: 50%;
     height: 28px;
-    margin-top: 20px;
+    margin-left: -35px;
+    position: relative;
+}
+.barra input {
+    border: none;
+    background-color: transparent;
+    padding-left: 10%;
+    height: 28px;
+}
+.fa-search {
+    position: absolute;
+    top: 5px;
+    right: 5%;
 }
 .barra p{
     padding: 10px;
-    margin-top:-8px;
     font-size: 18px;
 }
 .search{
-    margin-top: 18px;
-    margin-left: -45px;
-    padding: 3px;
-    font-size: 1.4em;
+    padding: 5px;
+    font-size: 125%;
 }
-
-.shop{
-    margin-top: 18px;
-    margin-left: -4px;
-    margin-right: 25px;
-    font-size: 1.8em;
+.user{
+    margin-right: 15px;  
+    font-size: 1.3em;
     color: #5E81A3;
-    
 }
-.menu-inferior{
-    display: none;
-}
-
-/* header .menu-superior div.user {
-    font-size: 20px;
-
-}*/
-
 
 .menu-inferior{
     display: none;
 }
-
-
-
-
 
 /*//////////////////////////         MAIN               /////////////////////////////*/
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #D8E7F5 ;
     margin-top: 32px;
     max-width:88%;
@@ -96,11 +83,12 @@ h2 {
     font-size: 34px;
     text-align: center;
     padding: 20px;
-    margin-left: -6px;
 }
 
-main section div {
-    margin: 20px;
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main section .name,
@@ -108,203 +96,202 @@ main section .name,
 .email,
 .pass,
 .birth-date {
-    font-size: 15px;
-    margin: 8px 17px;
+    font-size: 12px;
+    margin: 8px 10px;
     height: 35px;
     width: 90%;
     padding: 5px;
 }
-main section .name{
-    margin-bottom: 25px;
-}
+
 .checkbox{
     margin-left: 12px;
     font-size: 12px;
     margin-top: 30px;
 }
 
+.register-accept {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main section .register-button{
-    margin-left: 110px;
     background-color:#5E81A3;
     border: #5E81A3 1px solid;
     color: white;
     width: 119px;
     height: 34px;
-    margin-bottom: 18px;
+    margin: 15px;
     border-radius: 5px;
     padding: 9px 24px;
-    margin-top: 16px;
 }
 
+/*////////////////////////////      FOOTER               //////////////////////////////////*/
+
+footer{
+    margin-top: 30px;   
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h4{
+    font-size: 12px;
+}
+.footer-i{
+    font-size: 1em;
+    align-self: center;
+    
+}
+
+footer i {
+    margin-right: 20px;
+    color: #5E81A3;
+}
 
 /*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
 
 @media(min-width:768px){
 
-    .menu-superior{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px;
-        padding-top: 20px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        margin-left: 50PX;
-    }
-    
-    .logo{
-        font-size: 20px;
-        margin-top: 18px;
-       
-    }
-    .barra{
-        border:1px solid #9BB1C5;
-        border-radius: 14px;
-        width: 40%;
-        height: 28px;
-        margin-top: 20px;
-    }
-    .barra p{
-        padding: 10px;
-        margin-top:-8px;
-        font-size: 18px;
-    }
-    .search{
-        margin-top: 18px;
-        margin-left: -95px;
-        padding: 3px;
-        font-size: 1.4em;
-    }
-    /*.user{
-        display: flex;
-        margin-top: 18px;
-        margin-right: 2.1px;
-        font-size: 1.8em;
-        color: #5E81A3;
-    }*/
-    
-    .shop{
-        margin-top: 18px;
-        margin-left: -4px;
-        margin-right: 95px;
-        font-size: 1.8em;
-        color: #5E81A3;
-        
-    }
-    main{
-        max-width: 45%;
-        margin-left: 212px;
-        margin-top: 28px;
-    }
-    .checkbox{
-        margin-left: 3px;
-        font-size: 13px;
-    }
-    main section .register-button{
-        margin-left: 121px;
-    }
+/*//////////////////////////     HEADER      ///////////////////////*/
+
+.menu-superior {
+    margin-top: 30px;
 }
-@media(min-width:1200px){
 
-    .menu-superior{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px;
-        padding-top: 20px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        margin-left: 50PX;
-    }
-    .menu{
-        font-size: 1.8em;
-        margin-left: 18px;
-        margin-top: 16px;
-        color:#5E81A3;
-    }
-    header h2{
-        font-size: 45px;
-        margin-top: -50px;
-        margin-left: -5px;
-       
-    }
-    .barra{
-        border:1px solid #9BB1C5;
-        border-radius: 14px;
-        width: 50%;
-        height: 32px;
-        margin-top: 30px;
-        margin-left: -90px;
-    }
-    .barra p{
-        padding: 11px;
-        margin-top:-8px;
-        font-size: 20px;
-    }
-    .search{
-        margin-top: 29px;
-        margin-left: -125px;
-        padding: 3px;
-        font-size: 1.5em;
-    }
-    /*.user{
-        display: flex;
-        margin-top: 18px;
-        margin-right: 2.1px;
-        font-size: 1.8em;
-        color: #5E81A3;
-    }*/
-    .user p{
-        display: none;
-        margin-top: 2px;
-        padding-right: 10px;
-        font-size: 12px; 
-    }
-    .shop{
-        margin-top: 18px;
-        margin-left: -4px;
-        margin-right: 115px;
-        font-size: 2.3em;
-        color: #5E81A3;
-        
-    }
-    .menu-inferior{
-        display: none;
-    }
+.logo {
+    font-size: 30px;
+    margin-left: 35px;
+}
 
-    main{
-       
-        height: 800px;
-        margin-left: 300px;
-        margin-top: 53px;
-    }
-    h2 {
-        font-size: 44px;
-       padding-top: 46px;
-    }
-    main section div{
-        padding: 6px;
-    }
-   
-    main section .name, .last-name,.email,.pass,
-    .birth-date {
-        font-size: 20px;
-        margin: 9px 21px;
-        height: 38px;
-        padding: 6px;
-    }
-    .checkbox{
-       font-size: 20px;
-       margin-left: -1px;
-       margin-top: 58px;
-    }
-    main section .register-button{
-        width: 156px;
-        height: 52px;
-        font-size: 22px;
-        margin-left: 168px;
-        margin-top: 50px;
-        padding-left: 18px;
-     }
-   }
+.barra {
+    width: 55%;
+    height: 35px;
+}
+
+.barra input {
+    padding-left: 5%;
+    height: 35px;
+    font-size: 20px;
+}
+
+.fa-search {
+    font-size: 25px;
+}
+    
+/*///////////////////// MAIN ///////////////////////////////////*/
+
+main{
+    max-width:70%;
+    margin: 45px 100px;
+    border-radius: 10px;
+}
+
+.checkbox{
+    margin-left: 15px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 15px;
+}
+
+.instagram, .twitter {
+    font-size: 25px;
+    margin-right: 10px;
+}
+}
+@media(min-width:1024px){
+
+ /*////////////////////////        HEADER         ////////////////*/
+
+.logo {
+    font-size: 45px;
+    margin-left: 60px;
+}
+
+.barra {
+    width: 60%;
+    height: 40px;
+}
+
+.barra input {
+    padding-left: 4%;
+    height: 38px;
+    font-size: 25px;
+}
+
+.fa-search {
+    font-size: 30px;
+}   
+
+/*///////////////////// MAIN ///////////////////////////////////*/
+main {
+   text-align: center;
+   margin-left: 160px;
+}
+
+section.register {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+main section .name, .last-name, .email, .pass, .birth-date {
+    font-size: 16px;
+    margin: 16px 10px;
+    height: 40px;
+    width: 100%;
+    padding: 12px;
+}
+
+main section .register-button {
+    width: 150px;
+    font-size: 18px;
+}
+
+.checkbox {
+    font-size: 18px;
+}
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 25px;
+}
+
+.instagram, .twitter {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+
+}
 
 
 

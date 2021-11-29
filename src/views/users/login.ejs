@@ -11,32 +11,10 @@
 
 </head>
 <body>
-    <header class="menu-principal">
-        <div class="menu-superior">    
-        <div class="logo"><h2><a href="/">EXP</a></h2></div>    
-        <div class="barra">
-            <p>Buscar</p>
-        </div>
-        <div class="search"><i class="fas fa-search"></i></div> 
-        <!--<div class="user">
-             <a href="/login"><i class="fas fa-user"></i></a>
-        </div>  -->
-        <div class="shop">
-             <a href="/basket"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-        
-        </div>
-         <nav class = "menu-inferior">
-             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Ayuda</a></li>
-             </ul>
-         </nav>
-    </header>
+    <%- include ("../partials/header") %>
     <main>
         <form action="/" method="POST">
-             <h2>Iniciar seción</h2>
+             <h2>Iniciar sesión</h2>
              <section class="login">
                 <div  class="user-name">
                 <input type="text" name="user" placeholder="Nombre de usuario">
@@ -51,17 +29,15 @@
                 <input class="button-send" type="submit" value="Iniciar sesión">
                 </div>
                 <label class="retrieve-pass"> ¿Olvidaste tu contraseña?  <a href="#">Recupérala aquí</a></label>
-                <br>
-                <br>
                 <label class="register-here"> ¿No tenés una cuenta? <a href="/register">  Regístrese aquí</a></label>  
              </section>
         </form>
         <section class="options-login">
             <button><i class="fas fa-key"></i>Opciones de inicio de sesión</button>
         </section>
-
+        
     </main>
-             
+    <%- include ("../partials/footer") %>      
             
     
 </body>

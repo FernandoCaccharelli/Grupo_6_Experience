@@ -4,24 +4,23 @@
     padding: 0%;
 }
 body {
-    width: 100%;
+    font-family: "Roboto";
 }
+
 /*/////////////// HEADER ///////////////////*/
 .menu-superior{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    width: 90%;
-    
+    height: 60px;
+    align-items: center;
 }
-/*.logo, .barra, .search, .user, .shop {
-    flex-grow: 1;
-}*/
+a.menu, a.shop {
+    display: none;
+}
+
 .logo{
     font-size: 12px;
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 15px;
    
 }
 .logo a {
@@ -33,24 +32,30 @@ body {
     border-radius: 14px;
     width: 50%;
     height: 28px;
-    margin-top: 20px;
     margin-left: -35px;
+    position: relative;
+}
+.barra input {
+    border: none;
+    background-color: transparent;
+    padding-left: 10%;
+    height: 28px;
+}
+.fa-search {
+    position: absolute;
+    top: 5px;
+    right: 5%;
 }
 .barra p{
     padding: 10px;
-    margin-top:-8px;
     font-size: 18px;
 }
 .search{
-    margin-top: 18px;
-    margin-left: -120px;
     padding: 5px;
     font-size: 125%;
 }
 .user{
-    display: flex;
-    margin-top: 22px;
-    margin-right: -15px;
+    margin-right: 15px;  
     font-size: 1.3em;
     color: #5E81A3;
 }
@@ -62,76 +67,77 @@ body {
 main {
     background-color: white;
 }
-main div.franja-decorativa {
-    padding: 25px;
-    width: 110%;
+.franja-decorativa {
+    height: 20px;
     font-size: 4vw;
-    text-align: center;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
     background-color: #9BB1C5;
 }
 /*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
 main section article.food {
     display: flex;
-    flex-direction: row;   
-    width: 100%;
+    flex-direction:column;   
 }
-h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
+
+.title-product {          /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
     font-size: 6vw;
-    margin-left: 100px;
     margin-top: 10px;
-    width: 70%;
-    position: absolute;
+    text-align: center;
 }
 
 .description {                      
     font-size: 14px;
     margin-left: 11px;
-    margin-top: 55px;
-    position: absolute;
-    width: 98%;
+    margin-top: 25px;
 }
 
-main section article img {
-    width: 30%;
-    margin: 127px -67px 300px 15px;
-       
+.product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.imagen-product  {
+    width: 80%;
+    margin-top: 15px;
+}
+.imagen-product img {
+    width: 100%;
+    height: 100%;       
+}
 
 
 /*/////////////////////     BOTONES             //////////////////////*/
 main section article div.gourmet-description {
     display: flex; 
-    margin: 40px 50px;
+    flex-direction: column;
+    margin: 25px 0px;
+    align-items: center;
 }
 
 main section article div.button {
     display: flex;
-    margin-top: 5px;
-}
-
-main section article div.button p{
-    margin-top: 4px;
-    margin-right: 5px;
-}
-
-.less-button {
-    width: 20px;
-    height: 20px;
-    margin-right: 35px;
-}
-
-.more-button {
-    width: 20px;
-    height: 20px;
-    margin-left: 8px;
-}
-
-.add-basket {
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 100px;
+    height: 25px;
     background-color: #9BB1C5;
-    margin-left: -85px;
-    margin-top: 45px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.less-button, .more-button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+.add-basket, .buy {
+    background-color: #9BB1C5;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 150px;
 }
 
 .info-exp div.button{
@@ -141,20 +147,16 @@ main section article div.button p{
 /*/////////////////////////////////////////////////////////////////////////////////////*/
 
 .info-exp {
-    margin-left: 100px;
-    margin-top: 140px;
-    
+    margin-top: 15px;   
 }
 
 section article div.info-exp h3 {
     color:#9BB1C5;
-    margin: -9px -19px;
     font-size: 16px;
 }
 
 .info-exp p {
     margin-top: 20px;
-    margin-left: -22px;
     font-size: 12px;
 }
 
@@ -168,12 +170,10 @@ section article div.info-exp h3 {
 
  /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
 
-.buy-list {               
-    margin: 50px 20px;
-    position: absolute;
-    top: 700px;  
-
-}
+ .total-buy {
+     display: flex;
+     flex-direction: column;
+ }
 
 .buy-list ul {
     margin-left: 40px;
@@ -181,18 +181,41 @@ section article div.info-exp h3 {
 
 .buy-list h2 {
     font-size: 17px;
-    margin-top: -45px;
 }
 
 .buy-list p {
     margin: 10px 14px;
 }
 
-button.buy {
-    width: 15%;
-    margin-bottom: 15px;
-    margin-left: 166px;
-    background-color: #9BB1C5;
+.buy {
+    align-self: center;
+}
+
+/*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
+
+footer{
+    margin-top: 30px;   
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+footer h4{
+    font-size: 12px;
+}
+.footer-i{
+    font-size: 1em;
+    align-self: center;
+    
+}
+
+footer i {
+    margin-right: 20px;
+    color: #5E81A3;
 }
 
 
@@ -200,388 +223,194 @@ button.buy {
 /*////////////////////////        MEDIAS QUERIES                /////////////////////////////////*/
 
 @media(min-width:768px) {
-    /*/////////////// HEADER ///////////////////*/
-
-
-
+/*/////////////// HEADER ///////////////////*/
 .logo{
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: 35px;
-   
-}
-.barra{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 45%;
-    height: 28px;
-    margin-top: 20px;
-    
-}
-.barra p{
-    padding: 10px;
-    margin-top:-8px;
-    font-size: 18px;
-}
-.search{
-    margin-top: 18px;
-    margin-left: -255px;
-    padding: 3px;
-    font-size: 1.4em;
-    text-align: center;
-}
-.user{
-    display: flex;
-    margin-top: 18px;
-    margin-right: -75px;
-    font-size: 1.8em;
-    color: #5E81A3;
+    font-size: 20px;
+    margin-left: 15px;
 }
 
-.shop{
-    margin-top: 18px;
-    margin-left: -4px;
-    margin-right: -290px;
-    font-size: 1.8em;
-    color: #5E81A3;
-    
+.barra input {
+    padding-left: 5%;
+    height: 25px;
 }
 
-
+.user {
+    font-size: 1.5em;
+}
 /*////////////////// MAIN //////////////////////*/
 
-
-
-main div.franja-decorativa {
-    width: 120%;
+.description {
+    font-size: 20px;
 }
 
 /*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
-
-main section article.food {
-    display: flex;
-    flex-direction: row;   
-    width: 100%;
+.product-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    height: 400px;
 }
 
-h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
-    font-size: 6vw;
-    margin-left: 190px;
-    margin-top: 10px;
-    width: 70%;
-    position: absolute;
+.imagen-product {
+    width: 40%;
 }
 
-.description {                      
-    font-size: 17px;
-    margin-left: 11px;
-    margin-top: 75px;
-    position: absolute;
-    width: 98%;
-}
-
-main section article img {
-    width: 30%;
-    margin: 127px -67px 300px 15px;
-       
+.info-exp {
+    margin-top: 45px;
+    height: 358.86px;
 }
 
 
 /*/////////////////////     BOTONES             //////////////////////*/
-main section article div.gourmet-description {
-    display: flex; 
-    margin: 40px 50px;
+
+p.price {
+    font-size: 25px;
 }
 
-main section article div.button {
-    display: flex;
-    margin-top: 5px;
-}
-
-main section article div.button p{
-    margin-top: -1px;
-    margin-right: 4px;
-    font-size: 28px;
-}
-
-.less-button {
-    width: 30px;
-    height: 30px;
-    margin-right: -38px;
-}
-
-.more-button {
-    width: 30px;
-    height: 30px;
-    margin-left: 8px;
-}
-
-.add-basket {
-    background-color: #9BB1C5;
-    margin-left: -120px;
-    margin-top: 100px;
-    font-size: 20px;
-}
-
-.info-exp div.button{
-    margin-left: 160px;
-    margin-top: 50px;
+.add-basket, .buy {
+    font-size: 18px;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////*/
 
-.info-exp {
-    margin-left: 100px;
-    margin-top: 140px;
-    
+/*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
+.buy-list h2 {
+    font-size: 22px;
+    margin-left: 15px;
 }
 
+.buy-list p {
+    margin: 10px 45px;
+}
+
+.buy-list ul {
+    margin-left: 90px;
+}
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 15px;
+}
+
+.instagram, .twitter {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+}
+
+@media(min-width:1024px) {
+    /*/////////////// HEADER ///////////////////*/
+.logo{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.barra {
+    height: 33px;
+}
+
+.barra input {
+    padding-left: 5%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.fa-search{
+    font-size: 22px;
+}
+
+.user {
+    font-size: 1.9em;
+}
+/*////////////////// MAIN //////////////////////*/
+
+.description {
+    font-size: 25px;
+}
+
+/*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
+.product-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    height: 400px;
+}
+
+.imagen-product {
+    width: 40%;
+}
+
+.info-exp {
+    margin-top: 45px;
+    height: 478px;
+}
 section article div.info-exp h3 {
     color:#9BB1C5;
-    margin: -15px 25px;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .info-exp p {
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 20px;
     font-size: 16px;
 }
 
-.info-exp p.price {
-    font-size: 22px;
-    color: black;
-    margin-left: -160px;
-    margin-top: 65px;
-}
-
- /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
-
-.buy-list {               
-    margin: 50px 20px;
-    position: absolute;
-    top: 700px;  
-
-}
-
-.buy-list ul {
-    margin-left: 40px;
-}
-
-.buy-list h2 {
-    font-size: 20px;
-    margin-top: 150px;
-}
-
-.buy-list p {
-    margin: 10px 14px;
-}
-
-button.buy {
-    width: 15%;
-    height: 25px;
-    margin-bottom: 15px;
-    margin-left: 285px;
-    background-color: #9BB1C5;
-}
-
-}
-@media(min-width:1200px) {
-
-   
-
-    /*/////////////// HEADER ///////////////////*/
-
-
-.logo{
-    font-size: 25px;
-    margin-top: 18px;
-    margin-left: 110px;
-   
-}
-.barra{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 45%;
-    height: 40px;
-    margin-top: 20px;
-}
-.barra p{
-    padding: 10px;
-    margin-top: -5px;
-    font-size: 23px;
-}
-.search{
-    margin-top: 18px;
-    margin-left: -70px;
-    padding: 3px;
-    font-size: 1.8em;
-}
-.user{
-    display: flex;
-    margin-top: 16px;
-    margin-right: -100px;
-    font-size: 2.5em;
-    color: #5E81A3;
-}
-
-.shop{
-    margin-top: 16px;
-    margin-left: -4px;
-    margin-right: -370px;
-    font-size: 2.5em;
-    color: #5E81A3;
-    
-}
-
-
-
-/*////////////////// MAIN //////////////////////*/
-
-main {
-    background-color: white;
-}
-
-main div.franja-decorativa {
-    padding: 40px;
-    font-size: 4vw;
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-    background-color: #9BB1C5;
-
-}
-
-/*//////////////////////////////////   INFORMACION POR EXPERIENCIA ///////////////////////*/
-
-main section article.food {
-    display: flex;
-    flex-direction: row;   
-    width: 100%;
-}
-
-h3 {                                 /*////////// TITULO DE CADA EXPERIENCIA /////////////*/
-    font-size: 6vw;
-    margin-left: 190px;
-    margin-top: 10px;
-    width: 70%;
-    position: absolute;
-}
-
-.description {                      
-    font-size: 25px;
-    margin-left: 23px;
-    margin-top: 150px;
-    position: absolute;
-    width: 100%;
-}
-
-main section article img {
-    width: 20%;
-    margin: 250px -67px 300px 75px;
-       
-}
-
 
 /*/////////////////////     BOTONES             //////////////////////*/
+
 main section article div.gourmet-description {
-    display: flex; 
-    margin: 40px 50px;
+    margin: 60px 0px;
+}
+p.price {
+    font-size: 25px;
 }
 
-main section article div.button {
-    display: flex;
-    margin-top: 5px;
-}
-
-main section article div.button p{
-    margin-top: -1px;
-    margin-right: 4px;
-    font-size: 28px;
-}
-
-.less-button {
-    width: 30px;
-    height: 30px;
-    margin-right: -38px;
-}
-
-.more-button {
-    width: 30px;
-    height: 30px;
-    margin-left: 8px;
-}
-
-.add-basket {
-    background-color: #9BB1C5;
-    margin-left: -120px;
-    margin-top: 190px;
+.add-basket, .buy {
     font-size: 20px;
-}
-
-.info-exp div.button{
-    margin-left: 115px;
-    margin-top: 140px;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////*/
 
-.info-exp {
-    margin-left: 100px;
-    margin-top: 140px;
-    
-}
-
-section article div.info-exp h3 {
-    color:#9BB1C5;
-    margin: 90px 25px;
-    font-size: 45px;
-}
-
-.info-exp p {
-    margin-top: 180px;
-    margin-left: 50px;
-    font-size: 25px;
-    margin-bottom: -130px;
-}
-
-.info-exp p.price {
-    font-size: 25px;
-    color: black;
-    margin-left: -35px;
-    margin-top: 165px;
-}
-
- /*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
-
-.buy-list {               
-    margin: 50px 20px;
-    position: absolute;
-    top: 700px;  
-
-}
-
-.buy-list ul {
-    margin-left: 40px;
-    font-size: 25px;
-}
-
+/*//////////////  LISTA DE PRODUCTOS A COMPRAR ////////////*/
 .buy-list h2 {
-    font-size: 30px;
-    margin-top: 250px;
+    font-size: 25px;
+    margin-left: 15px;
 }
 
 .buy-list p {
-    margin: 10px 14px;
+    margin: 10px 45px;
     font-size: 25px;
 }
 
-button.buy {
-    width: 15%;
-    height: 45px;
-    margin-bottom: 15px;
-    margin-left: 400px;
-    background-color: #9BB1C5;
+.buy-list ul {
+    margin-left: 90px;
+}
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
     font-size: 25px;
 }
 
+.instagram, .twitter {
+    font-size: 30px;
+    margin-right: 15px;
 }
+
+}
+
