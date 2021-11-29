@@ -6,58 +6,61 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+/*//////////////////////// HEADER ///////////////////////*/
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+a.menu {
+    display: none;
+}
+
+.logo{
+    font-size: 20px;
+    margin-left: 15px;
+   
+}
 .logo a {
     text-decoration: none;
     color: black;
 }
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    margin-top: 0px;
-    border-bottom: 1px solid #9BB1C5;
-    width: 100%;
-}
-.menu{
-    font-size: 1.8em;
-    margin-left: 18px;
-    margin-right: -20px;
-    margin-top: 16px;
-    color:#5E81A3;
-}
-.menu-superior h1{
-    font-size: 24px;
-    margin-top: 18px;  
-    margin-left: 31px;
-}
-.barra input{
+.barra{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 85%;
-    height: 32px;
-    margin-top: 17px;
-    margin-left: 16px;
+    width: 50%;
+    height: 28px;
+    margin-left: -35px;
+    position: relative;
+}
+.barra input {
+    border: none;
+    background-color: transparent;
+    padding-left: 10%;
+    height: 28px;
+}
+.fa-search {
+    position: absolute;
+    top: 5px;
+    right: 5%;
+}
+.barra p{
+    padding: 10px;
+    font-size: 18px;
+}
+.search{
     padding: 5px;
-    font-size: 16px;
-}
-.barra i{
-    margin-left: -26px;
-}
-.iconos{
-    display: flex;
-    margin-right: 27px;
-    margin-top: 21px;
-    font-size: 1.4em;
-}
-.iconos i{
-    color:#5E81A3;
+    font-size: 125%;
 }
 .user{
-    margin-left: 12px;
+    margin-right: 15px;  
+    font-size: 1.3em;
+    color: #5E81A3;
 }
-.shop{
-    margin-right: -11px;
-    margin-left: 9px;
+
+.menu-inferior{
+    display: none;
 }
 .flecha i{
     font-size:1.8em ;
@@ -166,29 +169,30 @@ section .titulo{
      font-size: 14px;
      margin-left: 10px;
  }
- footer{
-    display: flex;
-    justify-content: space-between;
-    
+ /*////////////////////////////      FOOTER               //////////////////////////////////*/
+footer{
+    margin-top: 30px;   
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 footer h4{
     font-size: 12px;
-    margin: 84px -289px 0px 11px;
 }
-footer i{
+.footer-i{
     font-size: 1em;
-    margin: 81px 22px 20px 0px;
+    align-self: center;
+    
+}
+
+footer i {
+    margin-right: 20px;
     color: #5E81A3;
 }
-
-footer .twitter{
-    margin-right: 1px;
-    margin-left:-318px;
-}
-footer .instagram{
-    margin-left: 30px;
-}
-
 
 
 @media(min-width:768px){
