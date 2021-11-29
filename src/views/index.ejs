@@ -12,27 +12,7 @@
     
 </head>
 <body>
-    <header class="menu-principal">
-        <div class="menu-superior">
-            <a class="menu" href="#" ><i class="fas fa-bars"></i></a>    
-            <h1 class="logo"><a href="/">EXP</a></h1>    
-            <div class="barra">
-                <input type="search" placeholder="Buscar"> 
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="iconos">
-                <a class="user" href="/login"><i class="fas fa-user"></i></a>
-                <a class="shop" href="/basket"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-        </div>
-         <nav class = "menu-inferior">
-             <ul>
-                <li><a href="#">CATEGORÍAS</a></li>
-                <li><a href="#">OFERTAS</a></li>
-                <li><a href="#">AYUDA</a></li>
-             </ul>
-         </nav>
-    </header>
+    <%- include ("./partials/header") %>
     <main>
         <section class="banner">
             <img src = "../images/SkBAKpnSG_1256x620__1.webp" class = "banner" >
@@ -88,11 +68,6 @@
        
 </main>
         
-        <footer>
-            <h4>Políticas y garantías </h4>
-            <h4>Términos y condiciones</h4>
-            <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="twitter"href="#"><i class="fab fa-twitter"></i></a>
-        </footer>
+<%- include ("./partials/footer") %>
 </body>
 </html>
