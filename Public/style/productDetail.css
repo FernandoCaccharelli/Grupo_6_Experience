@@ -247,8 +247,8 @@ footer i {
         margin-top: 20px;
     }
     article img{
-        width: 40%;
-        margin-left: -50px;
+        width: 70%;
+        margin-left: -3px;
         margin-top: 79px;
     }
    .oportunidades{
@@ -327,9 +327,13 @@ footer h4 {
             margin-left: 62px;
             margin-top: 40px;
         }
+       
+        .bar{
+            display: flex;
+        }
         article{
-            margin-top: -332px;
-            margin-left: 712px;
+            margin-left: 63px;
+            margin-top: 6px;
         }
         article h3{
             font-size: 30px;
@@ -341,18 +345,9 @@ footer h4 {
             font-size: 29px;
         }
         article input{
-            margin-left: -6px;
-            margin-top: 20px;
-            margin-bottom: 240px;
-            width: 60%;
-            height: 56px;
-            font-size: 24px;
+            margin-left: 62px;
         }
-        article img{
-            width: 70%;
-            margin-top: 90px;
-            margin-left: -870px;
-        }
+      
         .oportunidades{
             width: 80%;
             margin-left: 78px;
