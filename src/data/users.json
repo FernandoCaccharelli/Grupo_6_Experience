@@ -1,5 +1,9 @@
 [
-{
-    
+{"identificador": "id",
+"nombre": "firstName",
+"apellido": "lastName",
+"email": "email",
+"contraseña": "password",
+"categoría": "category" 
 }
 ]
