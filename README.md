@@ -23,4 +23,4 @@ https://www.amazon.com/-/es/
 Tanto Mercado libre como Amazon son dos páginas de las más usadas por los usuarios a la hora de buscar cualquier producto y/o servicio. Se caracterizan por la facilidad de navegar en las mismas, con una estructura tradicional y un diseño cautivador.
 
 
-En cuanto a los integrantes del grupo, está compuesto por Sofía Joffe, Maximiliano Chiappero, Ignacio Dutto y Fernando Caccharelli. Somos 4 personas sin experiencias previa en lo que respecta a la programación pero que estamos dispuestos a aprender y realizar una e-commerce que quede guardada en la retina del público por su funcionalidad, estructura y su alucinante estética. 
+En cuanto a los integrantes del grupo, está compuesto por Sofía Joffe, Maximiliano Chiappe, Ignacio Dutto y Fernando Caccharelli. Somos 4 personas sin experiencias previa en lo que respecta a la programación pero que estamos dispuestos a aprender y realizar una e-commerce que quede guardada en la retina del público por su funcionalidad, estructura y su alucinante estética. 
