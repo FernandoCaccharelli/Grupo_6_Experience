@@ -94,7 +94,7 @@ main section article.food {
 .product-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
 }
 
 .imagen-product  {
@@ -103,8 +103,7 @@ main section article.food {
 }
 .imagen-product img {
     width: 100%;
-    height: 100%;       
-}
+    height: 100%;}
 
 
 /*/////////////////////     BOTONES             //////////////////////*/
@@ -141,7 +140,7 @@ main section article div.button {
 }
 
 .info-exp div.button{
-    margin-left: 104px;
+    margin-left: 80px;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////*/
