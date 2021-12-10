@@ -143,99 +143,166 @@
     "image": null,
     "price":"$1300"
    },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+   {
+    "id": "19",
+    "name": "Noche de Jazz",
+    "description": "Bebop Club, uno de los mejores lugares para disfrutar del Jazz.",
     "personas": "2",
     "category": "Entretenimiento",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+    "price":"$1.800"
+},
+{
+    "id": "20",
+    "name": "Tango porteño",
+    "description": "Espectáculo de nivel mundial en uno de los teatros de Tango más lindo de Buenos Aires.",
     "personas": "2",
     "category": "Entretenimiento",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+    "price":"$2.200"
+},
+{
+    "id": "21",
+    "name": "Stand up",
+    "description": "Paseo la plaza te invita a disfrutar de un show lleno de risas.",
     "personas": "2",
     "category": "Entretenimiento",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+    "price":"$1.500"
+},
+{
+    "id": "22",
+    "name": "MAMBA",
+    "description": "Museo de arte moderno con obras de  artistas argentinos e internacionales.",
+    "personas": "1",
+    "category": "Entretenimiento",
+    "image": null,
+    "price":"$300"
+},
+{
+    "id": "23",
+    "name": "Campanopolis",
+    "description": "Aldea de estilo medieval, con edificios de materiales reciclados.",
     "personas": "2",
     "category": "Entretenimiento",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
-    "personas": "2",
+    "price":"$5.800"
+},
+{
+    "id": "24",
+    "name": "Tour de Arte Callejero y Graffiti",
+    "description": "Este recorrido a pie permite explorar las calles de la ciudad en busca de increíbles muestras de arte urbano.",
+    "personas": "1",
     "category": "Entretenimiento",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
-    "personas": "2",
-    "category": "Entretenimiento",
+    "price":"$1.600"
+},
+{
+    "id": "25",
+    "name": "Salto en paracaídas",
+    "description": "Vas a tener la posibilidad de vivir lo que se siente volar.",
+    "personas": "1",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+    "price":"$5.000"
+},
+{
+    "id": "26",
+    "name": "kayak",
+    "description": "Travesía por el Delta rodeado de naturaleza, mientras aprendes a andar en kayak.",
     "personas": "2",
-    "category": "Entretenimiento",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+    "price":"$5.400"
+},
+{
+    "id": "27",
+    "name": "Paseo en velero",
+    "description": "Disfrutá de un paseo especial recorriendo el Río de la Plata al atardecer en un velero.",
     "personas": "2",
-    "category": "Entretenimiento",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
+    "price":"$8.500"
+},
+{
+    "id": "28",
+    "name": "Escalada",
+    "description": "Vení a divertirte y conocé los beneficios de escalar.",
+    "personas": "1",
+    "category": "Aventura",
+    "image": null,
+    "price":"$1.900"
+},
+{
+    "id": "29",
+    "name": "Flyboard",
+    "description": "Actividad extrema donde volaras por los aires desde el agua.",
+    "personas": "1",
+    "category": "Aventura",
+    "image": null,
+    "price":"$2.300"
+},
+{
+    "id": "30",
+    "name": "Arco y flecha",
+    "description": "La oportunidad perfecta para poner a prueba tu puntería.",
+    "personas": "1",
+    "category": "Aventura",
+    "image": null,
+    "price":"$1.150"
+},
+{
+    "id": "31",
+    "name": "Clase de golf",
+    "description": "Clases personalizadas de golf para niños y adultos.",
+    "personas": "1",
+    "category": "Aventura",
+    "image": null,
+    "price":"$1.850"
+},
+{
+    "id": "32",
+    "name": "Parque camas elásticas",
+    "description": "Rush, te invita a disfrutar de un espacio lleno de camas elásticas para disfrutar saltando.",
     "personas": "2",
-    "category": "Entretenimiento",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
-    "personas": "2",
-    "category": "Entretenimiento",
+    "price":"$2.100"
+},
+{
+    "id": "33",
+    "name": "Destruyendo cosas",
+    "description": "The Break Club, es el mejor lugar para descargarse y romper todo sin culpa.",
+    "personas": "1",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
-    "personas": "2",
-    "category": "Entretenimiento",
+    "price":"$2.000"
+},
+{
+    "id": "34",
+    "name": "Equitación",
+    "description": "Si amas a los caballos ésta es tu oportunidad de conectarte con ellos.",
+    "personas": "1",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   },
-   {"id": "18",
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
-    "personas": "2",
-    "category": "Entretenimiento",
+    "price":"$2.420"
+},
+{
+    "id": "35",
+    "name": "Paint ball",
+    "description": "Forma tu equipo y preparate para un momento intenso en un gran espacio de juego.",
+    "personas": "4",
+    "category": "Aventura",
     "image": null,
-    "price":"$1000"
-   }]
+    "price":"$7.400"
+},
+{
+    "id": "36",
+    "name": "Parque aereo de aventura",
+    "description": "Euca tigre, es un parque en el que podrás treparte en árboles con toda la seguridad.",
+    "personas": "1",
+    "category": "Aventura",
+    "image": null,
+    "price":"$2.150"
+}
+]
