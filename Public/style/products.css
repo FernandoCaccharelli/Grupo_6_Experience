@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: "Roboto";
+}
+
+/*/////////////// HEADER ///////////////////*/
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+a.menu {
+    display: none;
+}
+
+.logo{
+    font-size: 12px;
+    margin-left: 15px;
+   
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+.barra{
+    border:1px solid #9BB1C5;
+    border-radius: 14px;
+    width: 50%;
+    height: 28px;
+    position: relative;
+}
+.barra input {
+    border: none;
+    background-color: transparent;
+    padding-left: 10%;
+    height: 28px;
+}
+.fa-search {
+    position: absolute;
+    top: 5px;
+    right: 5%;
+}
+.barra p{
+    padding: 10px;
+    font-size: 18px;
+}
+.search{
+    padding: 5px;
+    font-size: 125%;
+}
+.user, a.shop{
+    margin-right: 15px;  
+    font-size: 1.3em;
+    color: #5E81A3;
+}
+
+.menu-inferior{
+    display: none;
+}
+
+/*/////////////////////////////      NAV DESPLEGABLE         /////////////////////*/
+
+.nav-desplegable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.filter {
+    position: relative;
+    justify-content: center;
+}
+
+.filter i {
+    font-size: 10px;
+    margin-left: 6px;
+}
+
+.item {
+    position: absolute;
+    display: none;
+
+}
+
+.filter:hover > .item {
+    display: block;
+}
+
+
+
+
+
+
+/*/////////////////////////////        ASIDE           ////////////////////////////*/
+
+.aside {
+    display: none;
+}
+
+
+
+
+
+
+/*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
+
+footer{
+    margin-top: 30px;   
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+footer h4{
+    font-size: 12px;
+}
+.footer-i{
+    font-size: 1em;
+    align-self: center;
+    
+}
+
+footer i {
+    margin-right: 20px;
+    color: #5E81A3;
+}
+
+
+
+/*////////////////////////        MEDIAS QUERIES                /////////////////////////////////*/
+
+@media(min-width:768px) {
+/*/////////////// HEADER ///////////////////*/
+.logo{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.barra input {
+    padding-left: 5%;
+    height: 25px;
+}
+
+.user {
+    font-size: 1.5em;
+}
+
+/*/////////////////////////////        ASIDE ////////////////////////////*/
+
+.aside, .aside-title, .relevance, .category,
+.participants, .location {
+    display: flex;
+}
+
+.relevance, .category,
+.participants, .location {
+    flex-direction: column;
+    
+}
+
+.mostsold, .news {
+    flex-direction: column;
+}
+
+
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 15px;
+}
+
+.instagram, .twitter {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+}
+
+@media(min-width:1024px) {
+    /*/////////////// HEADER ///////////////////*/
+.logo{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.barra {
+    height: 33px;
+}
+
+.barra input {
+    padding-left: 5%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.fa-search{
+    font-size: 22px;
+}
+
+.user {
+    font-size: 1.9em;
+}
+
+
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 25px;
+}
+
+.instagram, .twitter {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+}
