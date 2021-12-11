@@ -11,6 +11,7 @@ const loginRouter = require ("./routes/login");
 const basketRouter = require("./routes/basket");
 const registerRouter = require ("./routes/register");
 const howRouter = require ("./routes/how");
+const productsRouter = require ("./routes/products")
 
 app.use(express.static(publicPath));
 
@@ -31,6 +32,8 @@ app.use("/basket", basketRouter);
 app.use ("/register", registerRouter);
 
 app.use("/how", howRouter);
+
+app.use("/products", productsRouter);
 
 
 //create
