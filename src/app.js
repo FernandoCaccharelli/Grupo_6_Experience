@@ -33,19 +33,12 @@ app.use ("/register", registerRouter);
 app.use("/how", howRouter);
 
 
+//create
+const createRouter = require ("./routes/create");
+
+app.use("/create", createRouter);
 
 
-
-
-
-  
- 
-  app.get('/how', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/how.html'))
-  })
-  app.get('/how', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/index.html'))
-  })
 
  
   app.listen(3030, () => { console.log(`Servidor escuchando en el puerto ${3030}`);
