@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href ="/normalize.css">
+    <link rel ="stylesheet" href = "../style/edit.css">
+    
+</head>
+<body>
+	<%- include ("../partials/header") %>
+	<main>
+		<div class="formulario">
+			<div class="row">
+				<div class="formulario">
+					<h2 class="titulo">Formulario de creación de productos</h2>
+				</div>
+			</div>
+			<div class="completar-form">
+				<form action="/edit/<%= productToEdit.id %>?_method=PUT" method="POST"></form>
+					<div class="editando">
+						<h2 class="products-title">Estás editando: <i><%= productToEdit.name %></i></h2>
+					</div>
+					<div class="producto">
+						<div class="descripcion">
+							<label for="description" class="form-label">Descipción:</label>
+							<textarea name="description" id="description" class="form-input"></textarea>
+						</div>
+						<div class="personas">
+							<label for="personas" class="form-label">Cantidad de personas:</label>
+							<select name="personas" id="personas" class="form-input">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+						<div class="categorias">
+							<label for="category" class="form-label">Categoría:</label>
+							<select name="category" id="category" class="form-input">
+								<option value="gastronomia">Gastronomía</option>
+								<option value="aventura">Aventura</option>
+								<option value="entretenimiento">Entretenimiento</option>
+							</select>
+						</div>
+						<div class="imagen">
+							<label for="image" class="form-label">Imagen:</label>
+							<input type="file" id="image" name="image" name= ".jpg,.npg"  class="form-input">
+						</div>
+						<div class="precio">
+							<label for="price" class="form-label">Precio del producto:</label>
+							<input type="text" id="price" name="price" placeholder="Ej:$2.400" class="form-input">
+						</div>
+						<div class="crear">
+							<button type="submit" class="guardar">Guardar cambios</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<!--footer -->
+	<%- include ("../partials/footer") %>	
+</body>	
+</html>
