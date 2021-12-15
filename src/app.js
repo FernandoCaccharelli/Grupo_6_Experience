@@ -5,6 +5,10 @@ const app = express();
 
 const publicPath = path.resolve(__dirname, '../public');
 
+const methodOverride = require ("method-override");
+app.use (methodOverride ("_method"));
+
+
 const homeRouter = require("./routes/home");
 const productRouter = require ("./routes/product");
 const loginRouter = require ("./routes/login");
@@ -18,6 +22,9 @@ app.use(express.static(publicPath));
 app.set("view engine", "ejs");
 
 app.set ("views", path.resolve(__dirname, "views"));
+
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 
 
@@ -41,6 +48,11 @@ const createRouter = require ("./routes/create");
 
 app.use("/create", createRouter);
 
+//edit
+
+const editRouter = require ("./routes/edit");
+
+app.use("/edit", editRouter);
 
 
  
