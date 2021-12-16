@@ -1,16 +1,16 @@
-const express = require("express");
-const router = express.Router();
+//const express = require("express");
+//const router = express.Router();
 
-const editController = require ("../controllers/editController");
+//const editController = require ("../controllers/editController");
 
-router.get("/:id", editController.edit);
-router.put("/:id",editController.update);
-
-
+//router.get("/:id", editController.edit);
+//router.put("/:id",editController.update);
 
 
 
 
 
 
-module.exports = router;
+
+
+//module.exports = router;

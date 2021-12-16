@@ -43,16 +43,11 @@ app.use("/how", howRouter);
 app.use("/products", productsRouter);
 
 
-//create
-const createRouter = require ("./routes/create");
-
-app.use("/create", createRouter);
-
 //edit
 
-const editRouter = require ("./routes/edit");
+//const editRouter = require ("./routes/edit");
 
-app.use("/edit", editRouter);
+//app.use("/edit", editRouter);
 
 
  
