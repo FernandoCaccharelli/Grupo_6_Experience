@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "La Cabaña",
     "description": "Una tradicional parrilla argentina reconocida internacionalmente ubicada en Alicia Moreau de Justo 580. Puerto Madero.",
     "personas": "2",
@@ -9,7 +9,7 @@
     "price": "$2800"
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "BASA",
     "description": "La combinación de una excelente cocina con una de las barras más atractivas de Buenos Aires",
     "personas": "2",
@@ -18,7 +18,7 @@
     "price": "$2500"
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "El Preferido",
     "description": "Disfrutá un almuerzo por pasos en este bar notable clásico del barrio. Ubicado en Palermo - Jorge Luis Borges 2108 ",
     "personas": "2",
@@ -27,7 +27,7 @@
     "price": "$2000"
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "Libertador Hotel",
     "description": "Disfrutá de una merienda en el exclusivo Maximilian Lobby Bar & Restaurant del Hotel Libertador, ubicado en Retiro - Av. Córdoba 690.",
     "personas": "2",
@@ -36,7 +36,7 @@
     "price": "$1000"
   },
   {
-    "id": "5",
+    "id": 5,
     "name": "Negresco Bistró & Bar",
     "description": "Deliciosa cocina mediterránea al mejor estilo europeo!",
     "personas": "3",
@@ -45,7 +45,7 @@
     "price": "$3400"
   },
   {
-    "id": "6",
+    "id": 6,
     "name": "Avocado Republic",
     "description": "Acércate a conocerlos. Son mucho más que platos con palta. Ubicado en CABA - Honduras 5560.",
     "personas": "2",
@@ -54,7 +54,7 @@
     "price": "$1800"
   },
   {
-    "id": "7",
+    "id": 7,
     "name": "Cervelar",
     "description": "e esperan una amplia variedad de cervezas tiradas, un servicio gastronómico moderno y una arquitectura bien cervecera. Un combo que te va a regalar experiencias únicas e inolvidables! Ubicado en Coghlan - Av. Congreso 3701.",
     "personas": "2",
@@ -63,7 +63,7 @@
     "price": "$2100"
   },
   {
-    "id": "8",
+    "id": 8,
     "name": "La Birrería",
     "description": "Excelente cerveza, grandes amigos y un buen rock and roll. ¡Viva la birra! Ubicado en CABA (Varias sucursales)",
     "personas": "2",
@@ -72,7 +72,7 @@
     "price": "3000"
   },
   {
-    "id": "9",
+    "id": 9,
     "name": "Peñón del Aguila - Rosario",
     "description": "La historia y el paso de la cerveza artesanal en una pinta, junto a hamburguesas con un toque gourmet. ¡Una dupla que no te va a dejar a gamba! Ubicado en Rosario - Alvear 105.",
     "personas": "3",
@@ -81,7 +81,7 @@
     "price": "$2500"
   },
   {
-    "id": "10",
+    "id": 10,
     "name": "Vegan Burgers en Devoto",
     "description": "Green Factory te propone lo más rico del fast food 100% vegetal. Ubicado en Devoto - Sanabria 4509.",
     "personas": "2",
@@ -90,7 +90,7 @@
     "price": "$2200"
   },
   {
-    "id": "11",
+    "id": 11,
     "name": "Picarón",
     "description": "Disfruta la propuesta de Maxi Rossi. Platos de temporada en porciones chicas y compartibles. Ubicado en Capital Federal - Av. Dorrego 866",
     "personas": "2",
@@ -99,7 +99,7 @@
     "price": "$5000"
   },
   {
-    "id": "12",
+    "id": 12,
     "name": "Sucre Restaurant Bar Grill",
     "description": "Un espacio moderno e innovador combinado con la mejor cocina de autor.",
     "personas": "3",
@@ -108,7 +108,7 @@
     "price": "$6400"
   },
   {
-    "id": "13",
+    "id": 13,
     "name": "Toc Toc & Chungo",
     "description": "Una comedia desopilante de Laurent Baffie. Preparate para la obra con unas copas degustación. Ubicado en CABA (Varias sucursales)",
     "personas": "2",
@@ -117,7 +117,7 @@
     "price": "$3500"
   },
   {
-    "id": "14",
+    "id": 14,
     "name": "Ferdydurke",
     "description": "¡Disfrutá de esta comedia dramática desde tu casa!",
     "personas": "4",
@@ -126,7 +126,7 @@
     "price": "$2000"
   },
   {
-    "id": "15",
+    "id": 15,
     "name": "El Viejo Almacén",
     "description": "Un show único y auténtico con despliegue de parejas de tango, afamadas voces de cantores y cantantes y una gran orquesta típica. Ubicado en San Telmo - Balcarce 799",
     "personas": "2",
@@ -135,7 +135,7 @@
     "price": "$1400"
   },
   {
-    "id": "16",
+    "id": 16,
     "name": "Jazz Club",
     "description": "Buena música y buena comida en Thelonious, plan que no falla.",
     "personas": "2",
@@ -144,7 +144,7 @@
     "price": "$1100"
   },
   {
-    "id": "17",
+    "id": 17,
     "name": "SĀNTAL",
     "description": "Vino, tapas y un show de rock acústico. No te pierdas de la experiencia SĀNTAL en el barrio de Belgrano. Ubicado en Belgrano - Virrey del Pino 2235.",
     "personas": "2",
@@ -153,7 +153,7 @@
     "price": "$2900"
   },
   {
-    "id": "18",
+    "id": 18,
     "name": "Fede Cyrulnik & Tucson",
     "description": "Fede Cyrulnik & Tucson",
     "personas": "2",
@@ -162,7 +162,7 @@
     "price": "$1300"
   },
   {
-    "id": "19",
+    "id": 19,
     "name": "Noche de Jazz",
     "description": "Bebop Club, uno de los mejores lugares para disfrutar del Jazz.",
     "personas": "2",
@@ -171,7 +171,7 @@
     "price": "$1.800"
   },
   {
-    "id": "20",
+    "id": 20,
     "name": "Tango porteño",
     "description": "Espectáculo de nivel mundial en uno de los teatros de Tango más lindo de Buenos Aires.",
     "personas": "2",
@@ -180,7 +180,7 @@
     "price": "$2.200"
   },
   {
-    "id": "21",
+    "id": 21,
     "name": "Stand up",
     "description": "Paseo la plaza te invita a disfrutar de un show lleno de risas.",
     "personas": "2",
@@ -189,7 +189,7 @@
     "price": "$1.500"
   },
   {
-    "id": "22",
+    "id": 22,
     "name": "MAMBA",
     "description": "Museo de arte moderno con obras de  artistas argentinos e internacionales.",
     "personas": "1",
@@ -198,7 +198,7 @@
     "price": "$300"
   },
   {
-    "id": "23",
+    "id": 23,
     "name": "Campanopolis",
     "description": "Aldea de estilo medieval, con edificios de materiales reciclados.",
     "personas": "2",
@@ -207,7 +207,7 @@
     "price": "$5.800"
   },
   {
-    "id": "24",
+    "id": 24,
     "name": "Tour de Arte Callejero y Graffiti",
     "description": "Este recorrido a pie permite explorar las calles de la ciudad en busca de increíbles muestras de arte urbano.",
     "personas": "1",
@@ -216,7 +216,7 @@
     "price": "$1.600"
   },
   {
-    "id": "25",
+    "id": 25,
     "name": "Salto en paracaídas",
     "description": "Vas a tener la posibilidad de vivir lo que se siente volar.",
     "personas": "1",
@@ -225,7 +225,7 @@
     "price": "$5.000"
   },
   {
-    "id": "26",
+    "id": 26,
     "name": "kayak",
     "description": "Travesía por el Delta rodeado de naturaleza, mientras aprendes a andar en kayak.",
     "personas": "2",
@@ -234,7 +234,7 @@
     "price": "$5.400"
   },
   {
-    "id": "27",
+    "id": 27,
     "name": "Paseo en velero",
     "description": "Disfrutá de un paseo especial recorriendo el Río de la Plata al atardecer en un velero.",
     "personas": "2",
@@ -243,7 +243,7 @@
     "price": "$8.500"
   },
   {
-    "id": "28",
+    "id": 28,
     "name": "Escalada",
     "description": "Vení a divertirte y conocé los beneficios de escalar.",
     "personas": "1",
@@ -252,7 +252,7 @@
     "price": "$1.900"
   },
   {
-    "id": "29",
+    "id": 29,
     "name": "Flyboard",
     "description": "Actividad extrema donde volaras por los aires desde el agua.",
     "personas": "1",
@@ -261,7 +261,7 @@
     "price": "$2.300"
   },
   {
-    "id": "30",
+    "id": 30,
     "name": "Arco y flecha",
     "description": "La oportunidad perfecta para poner a prueba tu puntería.",
     "personas": "1",
@@ -270,7 +270,7 @@
     "price": "$1.150"
   },
   {
-    "id": "31",
+    "id": 31,
     "name": "Clase de golf",
     "description": "Clases personalizadas de golf para niños y adultos.",
     "personas": "1",
@@ -279,7 +279,7 @@
     "price": "$1.850"
   },
   {
-    "id": "32",
+    "id": 32,
     "name": "Parque camas elásticas",
     "description": "Rush, te invita a disfrutar de un espacio lleno de camas elásticas para disfrutar saltando.",
     "personas": "2",
@@ -288,7 +288,7 @@
     "price": "$2.100"
   },
   {
-    "id": "33",
+    "id": 33,
     "name": "Destruyendo cosas",
     "description": "The Break Club, es el mejor lugar para descargarse y romper todo sin culpa.",
     "personas": "1",
@@ -297,7 +297,7 @@
     "price": "$2.000"
   },
   {
-    "id": "34",
+    "id": 34,
     "name": "Equitación",
     "description": "Si amas a los caballos ésta es tu oportunidad de conectarte con ellos.",
     "personas": "1",
@@ -306,7 +306,7 @@
     "price": "$2.420"
   },
   {
-    "id": "35",
+    "id": 35,
     "name": "Paint ball",
     "description": "Forma tu equipo y preparate para un momento intenso en un gran espacio de juego.",
     "personas": "4",
@@ -315,7 +315,7 @@
     "price": "$7.400"
   },
   {
-    "id": "36",
+    "id": 36,
     "name": "Parque aereo de aventura",
     "description": "Euca tigre, es un parque en el que podrás treparte en árboles con toda la seguridad.",
     "personas": "1",

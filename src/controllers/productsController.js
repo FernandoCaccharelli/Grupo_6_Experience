@@ -13,7 +13,7 @@ const productsController = {
         res.render("products/product-create");
     },
     store: (req,res)=>{
-        let nuevoId = products [products.length -1].id +1;
+        let nuevoId = products [products.length -1].id ++;
         let newProduct = {
             id : nuevoId,
             ...req.body,
