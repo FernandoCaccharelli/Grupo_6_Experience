@@ -136,6 +136,8 @@ section h2{
     flex-direction: column;
     width: 125px;
     margin: 10px 5px 10px 20px;
+    height: 180px;
+    position: relative;
 
 }
 
@@ -163,6 +165,8 @@ section h2{
     text-align: center;
     color: #5E81A3;
     align-items: flex-end;
+    position: absolute;
+    bottom: 0;
 }
 
 /*/////////////////////////        Botones página siguiente    ////////////////////////////*/
