@@ -1,39 +1,59 @@
-<div>
+<div class="aside">
     <form action="">
         <div class="aside-title">
             <h2>Filtrar</h2>
             <h4>Limpiar filtros</h4>
         </div>
-        <div class="relevance">
-            <label>Relevancia</label>
-                <div class="mostsold"><input type="checkbox" name="mostSold"> Más vendidas</div>
-                <div class="news"></div><input type="checkbox" name="news"> ¡Nuevas!</div>
+        <div class="box-filters">
+            <ul class="">
+                <li class="filters"><label>Relevancia <i class="fas fa-angle-up"></i></label>
+                    <ul>
+                        <li class="items"> <div><input type="checkbox" name="mostSold"> Más vendidas</div> </li>
+                        <li class="items"> <div><input type="checkbox" name="news"> ¡Nuevas!</div> </li>
+                    </ul>             
+                </li>
+            </ul>
         </div>
-
-        <div class="category">
-            <label>Categorias</label>
-                <input type="radio" name="gastronomy"> Gastronomía
-                <input type="radio" name="adventure"> Aventura
-                <input type="radio" name="entertainment"> Entretenimiento
+        <hr>
+        <div class="box-filters">
+            <ul>
+                <li class="filters"><label>Categorias <i class="fas fa-angle-up"></i></label>
+                    <ul>
+                        <li class="items"> <input type="radio" name="categories" value="gastronomy"> Gastronomía </li>
+                        <li class="items"> <input type="radio" name="categories" value="adventure"> Aventura </li>
+                        <li class="items"> <input type="radio" name="categories" value="entertainment"> Entretenimiento </li>
+                    </ul>             
+                </li>
+            </ul>                
         </div>
-
-        <div class="participants">
-            <label>Participantes</label>
-                <input type="radio" name="onePerson"> Para 1 persona
-                <input type="radio" name="twoPersons"> Para 2 personas
-                <input type="radio" name="morePersons"> Para más de 2 personas
+        <hr>
+        <div class="box-filters">
+            <ul>
+                <li class="filters"><label>Participantes <i class="fas fa-angle-up"></i></label>
+                    <ul>
+                        <li class="items"> <input type="radio" name="person" value="onePerson"> Para 1 persona </li>
+                        <li class="items"> <input type="radio" name="person" value="twoPersons"> Para 2 personas </li>
+                        <li class="items"> <input type="radio" name="person" value="morePersons"> Para más de 2 personas </li>
+                    </ul>             
+                </li>
+            </ul>   
         </div>
-       
-        <div class="location">
-            <label>Locación</label>
-                <input type="checkbox" name="location1"> CABA
-                <input type="checkbox" name="location2"> Buenos Aires
-                <input type="checkbox" name="location3"> Córdoba
-                <input type="checkbox" name="location4"> GBA Oeste
-                <input type="checkbox" name="location5"> GBA Norte
-                <input type="checkbox" name="location6"> GBA Sur
-                <input type="checkbox" name="location7"> Santa Fe
-                <input type="checkbox" name="location8"> Mendoza
+        <hr>
+        <div class="box-filters">
+            <ul>
+                <li class="filters"><label>Locación <i class="fas fa-angle-up"></i></label>
+                    <ul>
+                        <li class="items"> <input type="checkbox" name="location1"> CABA </li>
+                        <li class="items"> <input type="checkbox" name="location2"> Buenos Aires </li>
+                        <li class="items"> <input type="checkbox" name="location3"> Córdoba </li>
+                        <li class="items"> <input type="checkbox" name="location5"> GBA Norte </li>
+                        <li class="items"> <input type="checkbox" name="location4"> GBA Sur </li>
+                        <li class="items"> <input type="checkbox" name="location6"> Mendoza </li>
+                        <li class="items"> <input type="checkbox" name="location7"> Santa Fe </li>
+                        <li class="items"> <input type="checkbox" name="location8"> Tucumán </li>
+                    </ul>             
+                </li>
+            </ul>  
         </div>
 
     </form>

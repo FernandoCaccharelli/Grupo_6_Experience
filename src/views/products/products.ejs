@@ -17,7 +17,7 @@
         <ul class="menu">
             <li class="filter"><a href="">Filtrar<i class="fas fa-angle-down"></i></a>
                 <ul class="item"> 
-                    <li><a href="">Gastronomía</a></li>
+                    <li class="red"><a href="">Gastronomía</a></li>
                     <li><a href="">Aventura</a></li>
                     <li><a href="">Entretenimiento</a></li>
                 </ul>          
@@ -26,32 +26,37 @@
     </nav>  
 
     <!--           HEADER                 -->
-    <div class="aside">
-        <%- include ("../partials/aside") %>
-    </div>
-    <% for (i = 0; i< productos.length; i++) { %>
-    <section>
-        <article class="op1">
-            <img src = "../images/7641_Mishiguene_Fayer_045PhSantiagoSotoMonllor.jpg" class = "opcion1" >
-            <p class="categoria"><i class="fas fa-utensils"></i><%= productos[i].category %></p>
-            <h2><%= productos[i].name %></h2>
-            <p class="descripcion"><%= productos[i].description %> </p>
-            <p class="precio"><%= productos[i].price %></p>
-        </article>
-              
-    </section>
-    <% } %>
+    <main>
+        <div >
+            <%- include ("../partials/aside") %>
+        </div>
+        <div class="all-products">
+            <% for (i=0; i<productos.length;i++) { %>
+            <section>
+                <article class="product-box">
+                    <img src = "../images/7641_Mishiguene_Fayer_045PhSantiagoSotoMonllor.jpg" class = "opcion1"  >
+                   <!-- <p class="categoria"><i class="fas fa-utensils"></i><%= productos[i].category %></p>   -->
+                    <h2><a href="/product/<%= productos[i].id %>"><i class="fas fa-utensils"></i><%= productos[i].name %></a></h2>
+                    <p class="descripcion"><%= productos[i].description %> </p>
+                    <p class="precio"><%= productos[i].price %></p>
+                </article>
+                    
+            </section>
+            <% } %>
+        </div>
+    </main>
     <div class="page-buttons">
-        <button class=""> <a href=""><i class="fal fa-angle-left"></i></a>       </button>
+        <button class="back-next">    <i class="fas fa-angle-left"></i>    </button>
+     
         
-        <button class="">    1    </button>
-        <button class="">    2    </button>
-        <button class="">    3    </button>
-        <button class="">    4    </button>
-        <button class="">    5    </button>
-        <button class="">    6    </button>
+        <button class="page">    1    </button>
+        <button class="page">    2    </button>
+        <button class="page">    3    </button>
+        <button class="page">    4    </button>
+        <button class="page">    5    </button>
+        <button class="page">    6    </button>
 
-        <button class="">    <i class="fal fa-angle-right"></i>    </button>
+        <button class="back-next">    <i class="fas fa-angle-right"></i>    </button>
     </div>
     
 
