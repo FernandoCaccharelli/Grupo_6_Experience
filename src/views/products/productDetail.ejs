@@ -31,7 +31,13 @@
             <p class="dia"><i class="fas fa-calendar-day"></i> Hasta el 8/03/22</p>
             <h4 class="precio"><%= productos.price %></h4>
             <input class="button-send" type="submit" value="Comprar">
-            <a href="/edit/<%= productos.id %>" class="action-button edit">Editar Producto</a>
+            <div class = "botones">  
+            <button><a href="/products/<%= productos.id%>/edit " class="action-button edit">EDITAR</a></button>
+            <form action="/products/:id/?_method=delete" method="POST" >
+            <button type="submit" class="action-button delete">BORRAR</button>
+        </div> 
+            
+            
             <img src="../images/MediosDePago_ar.f3317df5440144c6bf2cb502ad2bb941.png">
         </article>
     </section>
