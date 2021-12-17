@@ -7,5 +7,4 @@ router.get("/", homeController.index);
 
 
 
-
 module.exports = router;

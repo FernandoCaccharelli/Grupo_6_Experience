@@ -315,12 +315,21 @@
     "price": "$7.400"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Parque aereo de aventura",
     "description": "Euca tigre, es un parque en el que podrás treparte en árboles con toda la seguridad.",
     "personas": "1",
     "category": "Aventura",
     "image": null,
     "price": "$2.150"
+  },
+  {
+    "id": 36,
+    "name": "fer",
+    "description": "qssdas",
+    "personas": "2",
+    "category": "gastronomia",
+    "image": null,
+    "price": "3000"
   }
 ]

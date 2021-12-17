@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-
+const port = 3030;
 const app = express();
 
 const publicPath = path.resolve(__dirname, '../public');
@@ -51,7 +51,7 @@ app.use("/products", productsRouter);
 
 
  
-  app.listen(3030, () => { console.log(`Servidor escuchando en el puerto ${3030}`);
+  app.listen(port, () => { console.log(`Servidor escuchando en el puerto ${port}`);
 });
   
   
