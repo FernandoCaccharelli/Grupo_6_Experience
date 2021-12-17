@@ -10,7 +10,6 @@ app.use (methodOverride ("_method"));
 
 
 const homeRouter = require("./routes/home");
-const productRouter = require ("./routes/product");
 const loginRouter = require ("./routes/login");
 const basketRouter = require("./routes/basket");
 const registerRouter = require ("./routes/register");
@@ -30,8 +29,6 @@ app.use(express.json());
 
 app.use("/", homeRouter);
 
-app.use("/product", productRouter);
-
 app.use ("/login", loginRouter);
 
 app.use("/basket", basketRouter);
@@ -43,11 +40,6 @@ app.use("/how", howRouter);
 app.use("/products", productsRouter);
 
 
-//edit
-
-//const editRouter = require ("./routes/edit");
-
-//app.use("/edit", editRouter);
 
 
  

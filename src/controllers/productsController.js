@@ -8,6 +8,11 @@ const productsController = {
         
         res.render("products/products", {productos : products})
     },
+    productDetail: (req,res)=>{
+        let idProducto = req.params.id
+        let productoMostrar = products.find (element => element.id == idProducto)
+        res.render("products/productDetail", {productos:productoMostrar})
+    },
   
     create: (req,res)=>{
         res.render("products/product-create");
@@ -30,8 +35,11 @@ const productsController = {
         res.render("products/product-edit", {productToEdit: productoMostrar});
     },
     update:(req,res)=>{
-        res.send("recibidos los cambios");
-     }
+        res.send("se ha editado el producto");
+     },
+    destroy: (req,res)=>{
+        res.send("fue borrado")
+    } 
 
 
 }

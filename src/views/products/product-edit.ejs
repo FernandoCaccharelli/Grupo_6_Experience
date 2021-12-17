@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href ="/normalize.css">
-    <link rel ="stylesheet" href = "../style/edit.css">
+	<link rel ="stylesheet" href = "../style/create.css">
+</head>
     
 </head>
 <body>
@@ -17,22 +18,22 @@
 		<div class="formulario">
 			<div class="row">
 				<div class="formulario">
-					<h2 class="titulo">Formulario de creación de productos</h2>
+					<h2 class="titulo">Formulario de edición de productos</h2>
 				</div>
 			</div>
 			<div class="completar-form">
-				<form action="/products/<%= productToEdit.id %>?_method=PUT" method="POST"></form>
+				<form action="/products/:id/?_method=PUT" method="POST">
 					<div class="editando">
 						<h2 class="products-title">Estás editando: <i><%= productToEdit.name %></i></h2>
 					</div>
 					<div class="producto">
 						<div class="descripcion">
 							<label for="description" class="form-label">Descipción:</label>
-							<textarea name="description" id="description" class="form-input"></textarea>
+							<textarea name="description" id="description" class="form-input"><%= productToEdit.description%></textarea>
 						</div>
 						<div class="personas">
 							<label for="personas" class="form-label">Cantidad de personas:</label>
-							<select name="personas" id="personas" class="form-input">
+							<select name="personas" id="personas" class="form-input" ">
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -41,7 +42,7 @@
 						</div>
 						<div class="categorias">
 							<label for="category" class="form-label">Categoría:</label>
-							<select name="category" id="category" class="form-input">
+							<select name="category" id="category" class="form-input" >
 								<option value="gastronomia">Gastronomía</option>
 								<option value="aventura">Aventura</option>
 								<option value="entretenimiento">Entretenimiento</option>
@@ -53,7 +54,7 @@
 						</div>
 						<div class="precio">
 							<label for="price" class="form-label">Precio del producto:</label>
-							<input type="text" id="price" name="price" placeholder="Ej:$2.400" class="form-input">
+							<input type="text" id="price" name="price" placeholder="Ej:$2.400" class="form-input" value="<%= productToEdit.price%>">
 						</div>
 						<div class="crear">
 							<button type="submit" class="guardar">Guardar cambios</button>
