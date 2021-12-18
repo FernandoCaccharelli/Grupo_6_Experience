@@ -6,12 +6,9 @@ const productsController = require ("../controllers/productsController");
 //lista de productos
 router.get("", productsController.products);
 
-//detalle de producto
-router.get("/:id", productsController.productDetail);
-
 //crear producto
 router.get("/create", productsController.create);
-router.post("/", upload.single('image'), productsController.store );
+router.post("/",upload.single('image') ,productsController.store );
 
 //editar producto
 router.get("/:id/edit", productsController.edit);

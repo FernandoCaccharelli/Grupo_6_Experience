@@ -1,15 +1,15 @@
 [
   {
     "id": "1",
-    "name": "La cabaña",
+    "name": "La Cabaña",
     "description": "Una tradicional parrilla argentina reconocida internacionalmente ubicada en Alicia Moreau de Justo 580. Puerto Madero.",
-    "personas": 1,
-    "category": "gastronomia",
+    "personas": "2",
+    "category": "gastronomía",
     "price": "$2800",
     "image": null
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "El portal",
     "description": "La combinación de una excelente cocina con una de las barras más atractivas de Buenos Aires!!",
     "personas": 1,
@@ -315,7 +315,7 @@
     "price": "$7.400"
   },
   {
-    "id": 37,
+    "id": 36,
     "name": "Parque aereo de aventura",
     "description": "Euca tigre, es un parque en el que podrás treparte en árboles con toda la seguridad.",
     "personas": 1,
@@ -324,12 +324,12 @@
     "price": "$2.150"
   },
   {
-    "id": 36,
-    "name": "fer",
-    "description": "qssdas",
-    "personas": 2,
+    "id": 37,
+    "name": "sofia",
+    "description": "jdfkakfafjia",
+    "personas": "1",
     "category": "gastronomia",
-    "image": null,
-    "price": "3000"
+    "image": "default-image.png",
+    "price": "$30000"
   }
 ]
