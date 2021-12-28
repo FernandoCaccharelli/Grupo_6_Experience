@@ -53,15 +53,8 @@ const productsController = {
         fs.writeFileSync(productsFilePath,productsJSON)
         res.redirect('/products')
 
-
-        res.send("se ha editado el producto");
      },
     destroy: (req,res)=>{
         res.send("fue borrado")
     } 
-
-
 }
-
-
-module.exports = productsController;
