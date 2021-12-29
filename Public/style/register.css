@@ -293,7 +293,29 @@ footer h4 {
 
 }
 
-
+@media(min-width:1200px){ 
+   
+   /*///////////////////// MAIN ///////////////////////////////////*/
+   main {
+     max-width: 40%;
+     margin-left: 350px;
+   }
+   
+   main section .name, .last-name, .email, .pass, .birth-date {
+       width: 80%;
+   }
+   
+   /*///////////////////// FOOTER //////////////////*/
+   
+   footer {
+       margin-top: 100px;
+   }
+   
+   footer h4 {
+       font-size: 20px;
+   }
+   
+   }
 
 
 

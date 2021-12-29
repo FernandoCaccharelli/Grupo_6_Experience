@@ -101,11 +101,6 @@ li a{
     display: block;
 }
 
-
-
-
-
-
 /*/////////////////////////////        ASIDE           ////////////////////////////*/
 
 .aside {
@@ -158,6 +153,10 @@ section h2{
 .descripcion {
     font-size: 12px;
     text-align: justify;
+                                    /* Estas 3 lineas son para que no se vea todo el texto */
+    overflow: hidden;               /* Para que no muestre elementos que queden fuera del contenedor  */   
+    text-overflow: ellipsis;        /* Son los 3 puntitos suspensivos  */
+    white-space: nowrap;            /* Esto ubica todo el texto en una sola linea */
 }
 .precio{
     font-size: 18px;
@@ -332,6 +331,53 @@ footer h4 {
 }
 
 @media(min-width:1024px) {
+    /*/////////////// HEADER ///////////////////*/
+.logo{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.barra {
+    height: 33px;
+}
+
+.barra input {
+    padding-left: 5%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.fa-search{
+    font-size: 22px;
+}
+
+.user {
+    font-size: 1.9em;
+}
+
+
+
+/*///////////////////// FOOTER //////////////////*/
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    font-size: 25px;
+}
+
+.instagram, .twitter {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+}
+
+@media(min-width:1200px) {
     /*/////////////// HEADER ///////////////////*/
 .logo{
     font-size: 25px;
