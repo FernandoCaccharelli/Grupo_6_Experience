@@ -6,7 +6,7 @@
     "personas": "2",
     "category": "gastronomía",
     "price": "$2800",
-    "image": null
+    "image": "la_cabaña.PNG"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "personas": 1,
     "category": "gastronomia",
     "price": "$2500",
-    "image": null
+    "image": "el_portal.PNG"
   },
   {
     "id": 3,
@@ -23,7 +23,7 @@
     "description": "Disfrutá un almuerzo por pasos en este bar notable clásico del barrio. Ubicado en Palermo - Jorge Luis Borges 2108 ",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "el_preferido.PNG",
     "price": "$2000"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Disfrutá de una merienda en el exclusivo Maximilian Lobby Bar & Restaurant del Hotel Libertador, ubicado en Retiro - Av. Córdoba 690.",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "Libertador_Hotel.PNG",
     "price": "$1000"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Deliciosa cocina mediterránea al mejor estilo europeo!",
     "personas": 3,
     "category": "Gastronomía",
-    "image": null,
+    "image": "negresco_bitro_y_bar.PNG",
     "price": "$3400"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Acércate a conocerlos. Son mucho más que platos con palta. Ubicado en CABA - Honduras 5560.",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "avocado_republic.PNG",
     "price": "$1800"
   },
   {
@@ -59,7 +59,7 @@
     "description": "e esperan una amplia variedad de cervezas tiradas, un servicio gastronómico moderno y una arquitectura bien cervecera. Un combo que te va a regalar experiencias únicas e inolvidables! Ubicado en Coghlan - Av. Congreso 3701.",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "cervelar.PNG",
     "price": "$2100"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Excelente cerveza, grandes amigos y un buen rock and roll. ¡Viva la birra! Ubicado en CABA (Varias sucursales)",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "la_birreria.PNG",
     "price": "3000"
   },
   {
@@ -77,7 +77,7 @@
     "description": "La historia y el paso de la cerveza artesanal en una pinta, junto a hamburguesas con un toque gourmet. ¡Una dupla que no te va a dejar a gamba! Ubicado en Rosario - Alvear 105.",
     "personas": 3,
     "category": "Gastronomía",
-    "image": null,
+    "image": "peñon_del_aguila_rosario.PNG",
     "price": "$2500"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Green Factory te propone lo más rico del fast food 100% vegetal. Ubicado en Devoto - Sanabria 4509.",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "vegan_burgers_en_devoto.PNG",
     "price": "$2200"
   },
   {
@@ -95,7 +95,7 @@
     "description": "Disfruta la propuesta de Maxi Rossi. Platos de temporada en porciones chicas y compartibles. Ubicado en Capital Federal - Av. Dorrego 866",
     "personas": 2,
     "category": "Gastronomía",
-    "image": null,
+    "image": "picaron.PNG",
     "price": "$5000"
   },
   {
@@ -104,7 +104,7 @@
     "description": "Un espacio moderno e innovador combinado con la mejor cocina de autor.",
     "personas": 3,
     "category": "Gastronomía",
-    "image": null,
+    "image": "sucre_restaurant_bar_grill.PNG",
     "price": "$6400"
   },
   {
@@ -113,7 +113,7 @@
     "description": "Una comedia desopilante de Laurent Baffie. Preparate para la obra con unas copas degustación. Ubicado en CABA (Varias sucursales)",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "toc_toc_y_chungo.PNG",
     "price": "$3500"
   },
   {
@@ -122,7 +122,7 @@
     "description": "¡Disfrutá de esta comedia dramática desde tu casa!",
     "personas": 4,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "ferdydurke.PNG",
     "price": "$2000"
   },
   {
@@ -131,7 +131,7 @@
     "description": "Un show único y auténtico con despliegue de parejas de tango, afamadas voces de cantores y cantantes y una gran orquesta típica. Ubicado en San Telmo - Balcarce 799",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "el_viejo_almacen.PNG",
     "price": "$1400"
   },
   {
@@ -140,7 +140,7 @@
     "description": "Buena música y buena comida en Thelonious, plan que no falla.",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "jazz_club.PNG",
     "price": "$1100"
   },
   {
@@ -149,7 +149,7 @@
     "description": "Vino, tapas y un show de rock acústico. No te pierdas de la experiencia SĀNTAL en el barrio de Belgrano. Ubicado en Belgrano - Virrey del Pino 2235.",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "santal.PNG",
     "price": "$2900"
   },
   {
@@ -158,7 +158,7 @@
     "description": "Fede Cyrulnik & Tucson",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "fede_cyrulnik_y_tucson.PNG",
     "price": "$1300"
   },
   {
@@ -167,7 +167,7 @@
     "description": "Bebop Club, uno de los mejores lugares para disfrutar del Jazz.",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "noche_de_jazz.PNG",
     "price": "$1.800"
   },
   {
@@ -176,7 +176,7 @@
     "description": "Espectáculo de nivel mundial en uno de los teatros de Tango más lindo de Buenos Aires.",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "tango_porteño.PNG",
     "price": "$2.200"
   },
   {
@@ -185,7 +185,7 @@
     "description": "Paseo la plaza te invita a disfrutar de un show lleno de risas.",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "stand_up.PNG",
     "price": "$1.500"
   },
   {
@@ -194,7 +194,7 @@
     "description": "Museo de arte moderno con obras de  artistas argentinos e internacionales.",
     "personas": 1,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "mamba.PNG",
     "price": "$300"
   },
   {
@@ -203,7 +203,7 @@
     "description": "Aldea de estilo medieval, con edificios de materiales reciclados.",
     "personas": 2,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "campanopolis.PNG",
     "price": "$5.800"
   },
   {
@@ -212,7 +212,7 @@
     "description": "Este recorrido a pie permite explorar las calles de la ciudad en busca de increíbles muestras de arte urbano.",
     "personas": 1,
     "category": "Entretenimiento",
-    "image": null,
+    "image": "tour_de_arte_callejero_y_graffiti.PNG",
     "price": "$1.600"
   },
   {
@@ -221,7 +221,7 @@
     "description": "Vas a tener la posibilidad de vivir lo que se siente volar.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "salto_en_paracaidas.PNG",
     "price": "$5.000"
   },
   {
@@ -230,7 +230,7 @@
     "description": "Travesía por el Delta rodeado de naturaleza, mientras aprendes a andar en kayak.",
     "personas": 2,
     "category": "Aventura",
-    "image": null,
+    "image": "kayac.PNG",
     "price": "$5.400"
   },
   {
@@ -239,7 +239,7 @@
     "description": "Disfrutá de un paseo especial recorriendo el Río de la Plata al atardecer en un velero.",
     "personas": 2,
     "category": "Aventura",
-    "image": null,
+    "image": "paseo_en_velero.PNG",
     "price": "$8.500"
   },
   {
@@ -248,7 +248,7 @@
     "description": "Vení a divertirte y conocé los beneficios de escalar.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "escalada.PNG",
     "price": "$1.900"
   },
   {
@@ -257,7 +257,7 @@
     "description": "Actividad extrema donde volaras por los aires desde el agua.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "flyboard.png",
     "price": "$2.300"
   },
   {
@@ -266,7 +266,7 @@
     "description": "La oportunidad perfecta para poner a prueba tu puntería.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "arco_y_flecha.PNG",
     "price": "$1.150"
   },
   {
@@ -275,7 +275,7 @@
     "description": "Clases personalizadas de golf para niños y adultos.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "clase_de_golf.PNG",
     "price": "$1.850"
   },
   {
@@ -284,7 +284,7 @@
     "description": "Rush, te invita a disfrutar de un espacio lleno de camas elásticas para disfrutar saltando.",
     "personas": 2,
     "category": "Aventura",
-    "image": null,
+    "image": "parque_camas_elasticas.PNG",
     "price": "$2.100"
   },
   {
@@ -293,7 +293,7 @@
     "description": "The Break Club, es el mejor lugar para descargarse y romper todo sin culpa.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "destruyendo_cosas.PNG",
     "price": "$2.000"
   },
   {
@@ -302,7 +302,7 @@
     "description": "Si amas a los caballos ésta es tu oportunidad de conectarte con ellos.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "equitacion.PNG",
     "price": "$2.420"
   },
   {
@@ -311,7 +311,7 @@
     "description": "Forma tu equipo y preparate para un momento intenso en un gran espacio de juego.",
     "personas": 4,
     "category": "Aventura",
-    "image": null,
+    "image": "paint_ball.PNG",
     "price": "$7.400"
   },
   {
@@ -320,7 +320,7 @@
     "description": "Euca tigre, es un parque en el que podrás treparte en árboles con toda la seguridad.",
     "personas": 1,
     "category": "Aventura",
-    "image": null,
+    "image": "parque_aereo_de_aventura.PNG",
     "price": "$2.150"
   },
   {
