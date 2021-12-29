@@ -312,6 +312,7 @@ hr {                          /*           Linea divisoria       */
 
 /*///////////////////// FOOTER //////////////////*/
 
+
 .footer-text {
     display: flex;
     flex-direction: row;
@@ -355,6 +356,19 @@ footer h4 {
     font-size: 1.9em;
 }
 
+/*/////////////////////////////        ASIDE        ////////////////////////////*/
+
+.filters i {            /*             Piquito ocultar filtro          */
+    left: 15%;
+}
+
+
+/*/////////////////////////////        MAIN        ////////////////////////////*/
+
+.product-box {
+    width: 180px;
+    height: 215px;
+}
 
 
 /*///////////////////// FOOTER //////////////////*/
@@ -403,6 +417,12 @@ footer h4 {
 }
 
 
+/*/////////////////////////////        ASIDE        ////////////////////////////*/
+
+.filters i {            /*             Piquito ocultar filtro          */
+    left: 11%;
+}
+
 
 /*///////////////////// FOOTER //////////////////*/
 
@@ -423,3 +443,5 @@ footer h4 {
 }
 
 }
+
+
