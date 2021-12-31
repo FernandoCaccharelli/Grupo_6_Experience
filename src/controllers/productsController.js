@@ -49,9 +49,14 @@ const productsController = {
    },
     
     destroy: (req,res)=>{
-        let finalList = products.filter(element =>element.id != id);
-        fs.writeFileSync(productsFilePath, JSON.stringify(finalList,null, ""));
-        return true;
+        let id = req.params.id;
+        let productoAEliminar = products.find(element => element.id == id);
+		let newsProducts = products.filter((element) => element.id !== productoAEliminar.id);
+     
+        let productsJSON = JSON.stringify(newsProducts, null, 2); 
+		fs.writeFileSync(productsFilePath, productsJSON);
+		//res.send(productsJSON);
+		res.redirect("/products");
  
     
     } 

@@ -33,7 +33,7 @@
             <input class="button-send" type="submit" value="Comprar">
             <div class = "botones">  
             <button><a href="/products/<%= productos.id%>/edit " class="action-button edit">EDITAR</a></button>
-            <form action="/products/:id?_method=DELETE" method="POST" >
+            <form action="/products/<%= productos.id %>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
             <button type="submit" class="action-button delete"><a href="/products" class="action-button edit">BORRAR</a></button>
             </form>
         </div> 

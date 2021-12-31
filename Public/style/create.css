@@ -6,6 +6,8 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+
+/*//////////////////////// HEADER ///////////////////////*/
 .logo a {
     text-decoration: none;
     color: black;
@@ -61,28 +63,53 @@ body{
 .menu-inferior{
     display: none;
 }
-/* main */
-main{
+/*//////////////////////////         MAIN               /////////////////////////////*/
+
+.formulario {
+    width: 80%;
     background-color:aliceblue;
+    margin-left: 35px;
 }
 
 .formulario h2{
     font-size: 18px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 30px;
     padding-top: 30px;
 }
 .completar-form{
-   
     margin-top: 34px;
     margin-left: 7px;
 }
+
 .producto div{
-    padding-top: 20px;
+    margin-top: 20px;
   
 }
+
+form .form-label{
+    font-size: 15px;
+}
+
+.nombre, .descripcion, .imagen, .precio{
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre input, .descripcion textarea, .precio input {
+    width: 90%;
+} 
+
 .producto input, .producto select{
     border-radius: 5px;
+}
+
+.descripcion textarea {
+    margin-top: 5px;
+}
+
+.imagen input {
+    margin-top: 10px;
 }
 
 .crear{
@@ -99,7 +126,7 @@ main{
 }
 
 
-/*footer*/
+/*////////////////////////////      FOOTER               //////////////////////////////////*/
 
 footer{
     margin-top: 50px;   
@@ -126,13 +153,12 @@ footer i {
 }
 
 @media(min-width:768px){
+
+/*/////////////// HEADER ///////////////////*/
     .menu{
         display: none;
     }
-    .menu-superior{
-        margin-top: 0px;
-        margin-bottom: 4px;
-    }
+   
     .menu-superior h1{
         margin-left: 34px;
         font-size: 34px;
@@ -167,29 +193,39 @@ footer i {
         margin-right: 9px;  
         margin-left: -38px;
     }
-    /*main*/
+    /*////////////////// MAIN //////////////////////*/
+    main {
+        margin-top: 50px;
+    }
+
+    .formulario {
+        margin-left: 70px;
+    }
+
     .formulario h2{
         font-size: 26px;
-        margin-top: -4px;
-        padding-top: 30px;
     }
+
     .producto div{
-        font-size: 22px; 
-        margin-left: 10px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    form .form-label{
+        font-size: 18px;
     }
     
     .producto div input, .categorias select, .personas select{
-        font-size: 18px;
+        font-size: 14px;
     }
     .crear button{
         border-radius: 8px;
         padding: 5px;
         font-size: 18px;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        margin: 40px 40px 20px 0px;
     }
 
-    /*footer*/
+    /*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
 
     footer{
         margin-top: 90px;
@@ -214,7 +250,7 @@ footer i {
     
     }
     @media(min-width:1024px){
-    
+    /*/////////////// HEADER ///////////////////*/
         .menu-superior h1{
             font-size: 50px;
             margin-left: 49px;
@@ -244,28 +280,56 @@ footer i {
         }
         
 
-        /* main*/
+     /*////////////////// MAIN //////////////////////*/
+
+        .producto {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .formulario {
+            margin-left: 100px;
+        }
 
         .formulario h2{
-            font-size: 28px;
+            font-size: 40px;
         }
+
+        form .form-label{
+            font-size: 20px;
+        }
+
+        .nombre, .precio, .personas, .categorias {
+            width: 40%;
+        }
+
+        .descripcion {
+            width: 92%;
+        }
+
+        .descripcion textarea {
+            height: 100px;
+        }
+
         .producto div{
-            font-size: 24px; 
-            margin-left: 15px;
+            font-size: 34px; 
+            margin-left: 60px;
             padding-top: 35px;
         }
         
         .producto div input, .categorias select, .personas select{
-            font-size: 20px;
+            font-size: 18px;
         }
-        .crear button{
-            border-radius: 10px;
-            font-size: 20px;
-            margin-top: 62px;
-            margin-bottom: 46px;
-        }   
 
-        /* FOOTER */
+        .imagen {
+            width: 80%;
+        }
+
+        .crear {
+            width: 90%;
+        }
+
+        /*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
 
         .footer-text {
             display: flex;
@@ -283,4 +347,14 @@ footer i {
             margin-right: 15px;
         }
    
+    }
+
+    @media(min-width:1200px){
+  
+         /*////////////////// MAIN //////////////////////*/
+    
+        .formulario {
+            width: 60%;
+            margin-left: 250px;
+        }
     }
