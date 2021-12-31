@@ -13,34 +13,43 @@
 <body>
     <%- include ("../partials/header") %>
     <main>
-        <div class="flecha">
-            <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
+        <div class="product-detail">
+            <div class="title">
+                <div class="flecha">
+                    <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
+                </div>
+                <section class="superior">
+                    <h1><%= productos.name %></h1>
+                    <i class="fas fa-star"></i>
+                    <h3 class="puntuacion">4.5</h3>
+                </section>
+            </div>
+            <p class="detalle"><%= productos.description %> </p>
+            <section class="bar" >
+                <img class="product-image" src="../images/<%= productos.image %>">
+        
+            <article>
+                <div>
+                    <h3>Acerca de este producto:</h3>
+                    <p class="personas"><i class="fas fa-user-friends"></i> <%= productos.personas %></p>
+                    <p class="dia"><i class="fas fa-calendar-day"></i> Hasta el 8/03/22</p>
+                    <h4 class="precio"><%= productos.price %></h4>
+                </div>
+            
+                <div class="button-send">
+                    <input type="submit" value="Comprar">
+                </div>
+                <div class = "botones">  
+                    <button><a href="/products/<%= productos.id%>/edit " class="action-button edit">Editar</a></button>
+                    <form action="/products/<%= productos.id %>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
+                    <button type="submit" class="action-button delete"><a href="/products" class="action-button edit">Borrar</a></button>
+                    </form>
+                </div>        
+                <div class="payment">  
+                    <img src="../images/MediosDePago_ar.f3317df5440144c6bf2cb502ad2bb941.png">
+                </div>
+            </article>
         </div>
-        <section class="superior">
-            <h1><%= productos.name %></h1>
-            <i class="fas fa-star"></i>
-            <h3 class="puntuacion">4.5</h3>
-        </section>
-        <p class="detalle"><%= productos.description %> </p>
-        <section class="bar" >
-            <img src="../images/<%= productos.image %>">
-       
-        <article>
-            <h3>Acerca de este producto:</h3>
-            <p class="personas"><i class="fas fa-user-friends"></i> <%= productos.personas %></p>
-            <p class="dia"><i class="fas fa-calendar-day"></i> Hasta el 8/03/22</p>
-            <h4 class="precio"><%= productos.price %></h4>
-            <input class="button-send" type="submit" value="Comprar">
-            <div class = "botones">  
-            <button><a href="/products/<%= productos.id%>/edit " class="action-button edit">EDITAR</a></button>
-            <form action="/products/<%= productos.id %>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
-            <button type="submit" class="action-button delete"><a href="/products" class="action-button edit">BORRAR</a></button>
-            </form>
-        </div> 
-            
-            
-            <img src="../images/MediosDePago_ar.f3317df5440144c6bf2cb502ad2bb941.png">
-        </article>
     </section>
         <section class="oportunidades">
             <article class="oportunidad1">
