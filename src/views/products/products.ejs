@@ -34,7 +34,7 @@
             <% for (i=0; i<productos.length; i++) { %>
             <section>
                 <article class="product-box">
-                    <img src = "../images/7641_Mishiguene_Fayer_045PhSantiagoSotoMonllor.jpg" class = "opcion1"  >
+                    <img src = "/images/<%= productos[i].image %>" class = "opcion1"  >
                    <!-- <p class="categoria"><i class="fas fa-utensils"></i><%= productos[i].category %></p>   -->
                     <h2><a href="/products/<%= productos[i].id %>"><i class="fas fa-utensils"></i><%= productos[i].name %></a></h2>
                     <p class="descripcion"><%= productos[i].description %> </p>

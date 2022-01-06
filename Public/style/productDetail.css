@@ -6,6 +6,8 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+
+/*//////////////////////// HEADER ///////////////////////*/
 .logo a {
     text-decoration: none;
     color: black;
@@ -62,39 +64,62 @@ body{
     display: none;
 }
 
+/*/////////////////////////            MAIN                ////////////////////////////////*/
+
+.product-detail {
+    background-color:aliceblue;
+    width: 90%;
+    margin: 30px 0px 0px 17px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    border:1px solid #8ea3b8;
+    box-shadow: 0px 0px 5px rgb(180, 180, 180);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+.flecha {
+    margin-top: 25px;
+}
+
 .flecha i {
     color: #5E81A3;
-    font-size: 1.7em;
-    margin-top: 10px;
-    margin-left: 19px;
+    font-size: 15px;
+    margin-left: 25px;
 }
 .superior{
     display: flex;
+    flex-direction: row;
 }
-.superior h1{
-    margin-left: 48px;
-}
+
 .superior i {
     color: #F8B238 ;
-    margin-top: 25px;
-    margin-left: 25px;
+    margin: 25px 0px 0px 25px;
 }
 .superior h3{
     color: #F8B238 ;
-    margin-top: 23px;
-    margin-left: 8px;
+    margin: 23px 0px 0px 8px;
 }
 .detalle{
     max-width: 92%;
     margin-left: 18px;
+    text-align: justify;
 }
-.bar img{
+.product-image{
     width: 90%;
     margin-left: 20px;
     border-radius: 8px;
 }
 article{
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 article i{
     color: #6c8fb1;
@@ -104,12 +129,10 @@ article h4{
 }
 article .botones{
     display: flex;
-    margin-left: 40px;
-    
 }
 
 article input{
-    margin-left: 86px;
+    margin-left: 60px;
     margin-bottom: 20px;
     width: 50%;
     height: 41px;
@@ -120,7 +143,9 @@ article input{
     font-size: 18px;
 }
 button{
-    height: 41px;
+    height: 35px;
+    width: 90px;
+    margin-left: 25px;
     border-radius: 14px;
     border:1px solid #5E81A3;
     background-color: #cedeee;
@@ -132,11 +157,16 @@ article a{
     text-decoration: none;
     color:black;
 }
-article img{
-    width: 100%;
-    margin-left: -13px;
-    margin-top: 38px;
+.payment{
+    margin: 38px 0px 30px 0px;
+    
 }
+
+.payment img {
+    width: 95%;
+}
+
+/*///////////////////////////////////////////////////////////*/
 
 .oportunidad1 img, .oportunidad2 img{
     width: 95%;
@@ -211,70 +241,109 @@ footer i {
 }
 
 @media(min-width:768px){
-    .menu{
-        display: none;
-    }
-    .menu-superior{
-        margin-top: 0px;
-        margin-bottom: 4px;
-    }
-    .menu-superior h1{
-        margin-left: 34px;
-        font-size: 34px;
-        margin-top: 20px;
-    }
-    .barra {
-        width: 100%;
-    }
-    .barra input{
-        width: 55%;
-        margin-left: 134px;
-        margin-top: 21px;
-        height: 42px;
-        border-radius: 20px;
-        padding: 8px;
-    }
-    .barra i{
-        font-size: 1.4em;
-        margin-left: -36px;
-    }
-    .iconos{
-        margin-top: 27px;
-    }
-    .user{
-        font-size: 1.2em;
-        margin-right: 77px; 
-        margin-left: -41px;
-    }
-    .shop{
-        font-size: 1.2em;
-        margin-right: 32px;  
-        margin-left: -38px;
-    }
-    .detalle{
-        margin-left: 45px;
-    }
-    .bar img{
-        width: 70%;
-        margin-left: 123px;
-    }
-    article{
-        margin-left: 125px;
-    }
-    article input{
-        margin-left: 120px;
-        margin-top: 20px;
-    }
-    article img{
-        width: 70%;
-        margin-left: -3px;
-        margin-top: 79px;
-    }
-   .oportunidades{
-       display: flex;
-       width: 90%;
-   }
-    /*///////////////////// FOOTER //////////////////*/
+/*/////////////// HEADER ///////////////////*/
+.menu{
+    display: none;
+}
+
+.menu-superior h1{
+    margin-left: 34px;
+    font-size: 34px;
+    margin-top: 20px;
+}
+.barra {
+    width: 100%;
+}
+.barra input{
+    width: 55%;
+    font-size: 18px;
+    margin-left: 134px;
+    margin-top: 21px;
+    height: 42px;
+    border-radius: 20px;
+    padding: 8px;
+}
+.barra i{
+    font-size: 1.4em;
+    margin-left: -36px;
+}
+.iconos{
+    margin-top: 27px;
+}
+.user{
+    font-size: 1.2em;
+    margin-right: 77px; 
+    margin-left: -41px;
+}
+.shop{
+    font-size: 1.2em;
+    margin-right: 9px;  
+    margin-left: -38px;
+}
+
+/*//////////////////////////          MAIN          ///////////////////////*/
+.product-detail{
+    width: 80%;
+    margin-left: 75px;
+}
+.title {
+    justify-content: flex-start ;
+}
+.flecha{
+    margin-top: 55px;
+}
+.flecha i {
+    font-size: 30px;
+}
+.superior{
+    margin-left: 150px;
+}
+
+.superior h1 {
+    font-size: 45px;
+}
+
+.superior i {
+    color: #F8B238 ;
+    margin: 55px 0px 0px 55px;
+    font-size: 25px;
+}
+.superior h3{
+    color: #F8B238 ;
+    margin: 50px 0px 0px 8px;
+    font-size: 30px;
+}
+.detalle{
+    font-size: 22px;
+}
+
+.product-image{
+    width: 65%;
+    margin: 30px 0px 0px 100px;
+}
+article div h3{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+article div p {
+    font-size: 20px;
+}
+
+article input{
+    margin: 30px 0px 25px 200px;
+    width: 30%;
+    height: 41px;
+    font-size: 23px;
+}
+
+article .botones{
+    justify-content: start;
+    margin-left: 160px;
+}
+
+
+/*///////////////////// FOOTER //////////////////*/
 
 .footer-text {
     display: flex;
@@ -292,104 +361,97 @@ footer h4 {
     margin-right: 10px;
 }
     
-    }
-    @media(min-width:1024px){
-    
-        .menu-superior h1{
-            font-size: 50px;
-            margin-left: 49px;
-            margin-top: 32px;
-        }
-        .barra input{
-            margin-left: 227px;
-            margin-top: 34px;
-            height: 58px;
-            border-radius: 29px;
-            font-size: 28px;
-            padding: 12px;
-        }
-        .barra i{
-            margin-left: -55px;
-            font-size: 2em;
-        }
-        .iconos{
-            font-size: 2em;
-            margin-top: 41px;
-        }
-        .user{
-            margin-left: -91px;
-        }
-        .shop{
-            margin-right: 18px;
-        }
-        .flecha i{
-            font-size: 2.5em;
-        }
-        .superior h1{
-            font-size: 34px;
-            margin-left: 59px;
-        } 
-        .superior i{
-            font-size: 2em;
-            margin-top: 31px;
-        } 
-        .superior h3{
-            font-size: 30px;
-            margin-top: 32px;
-        }
-        .detalle{
-            font-size: 22px;
-            margin-bottom: 50px;
-        }
-        .bar img{
-            width: 50%;
-            margin-left: 62px;
-            margin-top: 40px;
-        }
-       
-        .bar{
-            display: flex;
-        }
-        article{
-            margin-left: 63px;
-            margin-top: 6px;
-        }
-        article h3{
-            font-size: 30px;
-        }
-        article p{
-            font-size: 28px;
-        }
-        article h4{
-            font-size: 29px;
-        }
-        article input{
-            margin-left: 62px;
-        }
-      
-        .oportunidades{
-            width: 80%;
-            margin-left: 78px;
-            margin-bottom: 80px;
-        }
-        .oportunidades img{
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-        .puntuacion i, .puntuacion2 i{
-            font-size: 2em;
-        }
-        .puntuacion h2, .puntuacion2 h2{
-            font-size: 26px;
-        }
-        .oportunidad1 h3, .oportunidad2 h3{
-            font-size: 24px;
+}
+@media(min-width:1024px){
+/*/////////////// HEADER ///////////////////*/
+.menu-superior h1{
+    font-size: 50px;
+    margin-left: 49px;
+    margin-top: 32px;
+}
+.barra input{
+    margin-left: 157px;
+    margin-top: 34px;
+    height: 58px;
+    border-radius: 29px;
+    font-size: 28px;
+    padding: 12px;
+}
+.barra i{
+    margin-left: -55px;
+    font-size: 2em;
+}
+.iconos{
+    font-size: 2em;
+    margin-top: 41px;
+}
+.user{
+    margin-left: -91px;
+}
+.shop{
+    margin-right: 18px;
+}
 
-        }
-        .oportunidad1 h4, .oportunidad2 h4{
-            font-size: 22px;
-        }
-       
+/*//////////////////////////          MAIN          ///////////////////////*/
+.product-detail{
+    margin-left: 100px;
+}
+
+.flecha{
+    margin-top: 65px;
+}
+.flecha i {
+    font-size: 30px;
+}
+.superior{
+    margin-left: 150px;
+}
+
+.superior h1 {
+    font-size: 55px;
+}
+
+.superior i {
+    margin: 65px 0px 0px 40px;
+    font-size: 30px;
+}
+.superior h3{
+    margin: 60px 0px 0px 8px;
+    font-size: 35px;
+}
+.detalle{
+    font-size: 30px;
+}
+
+.bar {
+    display: flex;
+}
+
+.product-image{
+    width: 50%;
+    height: 50%;
+    margin: 90px 0px 0px 25px;
+}
+article div h3{
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+article div h3, p, h4 {
+    margin-left: 15px;
+}
+
+article input{
+    margin: 0px 0px 25px 130px;
+    width: 30%;
+    height: 41px;
+    font-size: 23px;
+}
+
+article .botones{
+    margin-left: 60px;
+}
+        
  /*///////////////////// FOOTER //////////////////*/
 
 .footer-text {
@@ -408,4 +470,13 @@ footer h4 {
     margin-right: 15px;
 }
         
+}
+
+@media(min-width:1200px){
+    
+    /*//////////////////////////          MAIN          ///////////////////////*/
+    .product-detail{
+        width: 60%;
+        margin-left: 250px;
     }
+}

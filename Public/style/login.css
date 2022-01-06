@@ -316,3 +316,46 @@ footer h4 {
 
 }
 
+@media (min-width:1200px){
+    
+    /*///////       MAIN            //////////////*/
+    
+    main {
+        width: 50%;
+        margin: 10% 0% 10% 23%;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    main .user-name input, .pass input {
+        font-size: 2vw;
+    }
+   
+    main .button-send {
+        width: 30%;
+        font-size: 25px;
+        margin-top: 80px;
+    }
+    .retrieve-pass {
+        margin-top: 30px;
+        font-size: 1.5vw;
+    }
+    
+    .register-here {
+        margin-top: 10px;
+        font-size: 1.5vw;
+    }
+
+    main section.options-login button{
+        padding: 2px;
+        font-size: 1.5vw;
+    }
+    
+    /*///////////////////// FOOTER //////////////////*/
+    
+    footer h4 {
+        font-size: 20px;
+    }
+}

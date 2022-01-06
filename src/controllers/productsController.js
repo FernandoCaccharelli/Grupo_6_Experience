@@ -29,6 +29,7 @@ const productsController = {
         fs.writeFileSync(productsFilePath, productsJSON);
         res.redirect("/products")
     },
+    //editar producto
    edit: (req,res)=>{
         let idProducto = req.params.id
         let productoMostrar = products.find(element => element.id == idProducto)
@@ -51,7 +52,7 @@ const productsController = {
         fs.writeFileSync(productsFilePath,productsJSON)
         res.redirect('/products')      
    },
-    
+    //borrar producto
     destroy: (req,res)=>{
         let idProducto = req.params.id;
           let finalList = products.filter(element =>element.id != idProducto);

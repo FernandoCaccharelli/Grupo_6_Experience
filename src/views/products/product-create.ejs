@@ -21,15 +21,15 @@
 			</div>
 		</div>
 		<div class="completar-form">
-			<form action="/products" method="POST" >
+			<form action="/products" method="POST" enctype="multipart/form-data">
 				<div class="producto">
 					<div class="nombre">
 						<label for="name" class="form-label">Nombre del producto:</label>
 						<input type="text" id="name" name="name" placeholder="Ej: Paseo en velero" class="form-input">
 					</div>
-					<div class="descripcion">
-						<label for="description" class="form-label">Descipción:</label>
-						<textarea name="description" id="description" class="form-input"></textarea>
+					<div class="precio">
+						<label for="price" class="form-label">Precio del producto:</label>
+						<input type="text" id="price" name="price" placeholder="Ej: $2.400" class="form-input">
 					</div>
 					<div class="personas">
 						<label for="personas" class="form-label">Cantidad de personas:</label>
@@ -48,14 +48,14 @@
 							<option value="entretenimiento">Entretenimiento</option>
 						</select>
 					</div>
+					<div class="descripcion">
+						<label for="description" class="form-label">Descripción:</label>
+						<textarea name="description" id="description" class="form-input"></textarea>
+					</div>
 					<div class="imagen">
 						<label for="image" class="form-label">Imagen:</label>
-						<input type="file" id="image" name="image" name= ".jpg,.npg"  class="form-input">
-					</div>
-					<div class="precio">
-						<label for="price" class="form-label">Precio del producto:</label>
-						<input type="text" id="price" name="price" placeholder="Ej:2.400" class="form-input">
-					</div>
+						<input type="file" id="image" name="image"  class="form-input">
+					</div>					
 					<div class="crear">
 						<button type="submit" class="guardar">Guardar producto</button>
 					</div>
