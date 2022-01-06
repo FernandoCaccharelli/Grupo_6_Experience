@@ -17,24 +17,24 @@
             <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
         </div>
         <section class="superior">
-            <h1><%= productos.name %></h1>
+            <h1><%=productos.name%></h1>
             <i class="fas fa-star"></i>
             <h3 class="puntuacion">4.5</h3>
         </section>
-        <p class="detalle"><%= productos.description %> </p>
+        <p class="detalle"><%=productos.description%> </p>
         <section class="bar" >
             <img src="../images/img_cerveza-surtida-hd.jpg">
        
         <article>
             <h3>Acerca de este producto:</h3>
-            <p class="personas"><i class="fas fa-user-friends"></i> <%= productos.personas %></p>
+            <p class="personas"><i class="fas fa-user-friends"></i> <%=productos.personas%></p>
             <p class="dia"><i class="fas fa-calendar-day"></i> Hasta el 8/03/22</p>
-            <h4 class="precio"><%= productos.price %></h4>
+            <h4 class="precio"><%=productos.price%></h4>
             <input class="button-send" type="submit" value="Comprar">
             <div class = "botones">  
-            <button><a href="/products/<%= productos.id%>/edit " class="action-button edit">EDITAR</a></button>
-            <form action="/products/:id?_method=DELETE" method="POST" >
-            <button type="submit" class="action-button delete"><a href="/products" class="action-button edit">BORRAR</a></button>
+            <button><a href="/products/<%=productos.id%>/edit " class="action-button edit">EDITAR</a></button>
+            <form action="/products/<%=productos.id%>?_method=DELETE" method="POST" >
+            <button type="submit" class="action-button delete"> BORRAR</button>
             </form>
         </div> 
             
