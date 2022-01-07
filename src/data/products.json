@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "La Cabaña",
     "description": "Una tradicional parrilla argentina reconocida internacionalmente ubicada en Alicia Moreau de Justo 580. Puerto Madero.",
     "personas": "2",
@@ -322,41 +322,5 @@
     "category": "Aventura",
     "image": "parque_aereo_de_aventura.PNG",
     "price": "$2.150"
-  },
-  {
-    "id": 37,
-    "name": "sofia",
-    "description": "jdfkakfafjia",
-    "personas": "1",
-    "category": "gastronomia",
-    "image": "default-image.png",
-    "price": "$30000"
-  },
-  {
-    "id": 38,
-    "name": "Logo",
-    "price": "183",
-    "personas": "2",
-    "category": "aventura",
-    "description": "Probando el logo",
-    "image": "default-image.png"
-  },
-  {
-    "id": 39,
-    "name": "Logo",
-    "price": "$1.183",
-    "personas": "2",
-    "category": "aventura",
-    "description": "Probando el logo",
-    "image": "default-image.png"
-  },
-  {
-    "id": 40,
-    "name": "Persona",
-    "price": "$1.523",
-    "personas": "3",
-    "category": "entretenimiento",
-    "description": "Probando si funciona la imagen ",
-    "image": "image-1640965847313-675926668.PNG"
   }
 ]

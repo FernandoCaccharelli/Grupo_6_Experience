@@ -41,8 +41,8 @@
                 </div>
                 <div class = "botones">  
                     <button><a href="/products/<%= productos.id%>/edit " class="action-button edit">Editar</a></button>
-                    <form action="/products/<%= productos.id %>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
-                    <button type="submit" class="action-button delete"><a href="/products" class="action-button edit">Borrar</a></button>
+                    <form action="/products/<%=productos.id%>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
+                    <button type="submit" class="action-button delete">Borrar</button>
                     </form>
                 </div>        
                 <div class="payment">  

@@ -6,9 +6,13 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productsController = {
     //Todos los productos
     products: (req,res)=>{
-        
         res.render("products/products", {productos : products})
     },
+    productDetail: (req,res)=>{
+        let idProducto = req.params.id
+       let productoMostrar = products.find (element => element.id == idProducto)
+        res.render("products/productDetail", {productos:productoMostrar})
+   },
     //Crear producto
     create: (req,res)=>{
         res.render("products/product-create");
@@ -25,6 +29,7 @@ const productsController = {
         fs.writeFileSync(productsFilePath, productsJSON);
         res.redirect("/products")
     },
+    //editar producto
    edit: (req,res)=>{
         let idProducto = req.params.id
         let productoMostrar = products.find(element => element.id == idProducto)
@@ -47,18 +52,13 @@ const productsController = {
         fs.writeFileSync(productsFilePath,productsJSON)
         res.redirect('/products')      
    },
-    
+    //borrar producto
     destroy: (req,res)=>{
-        let id = req.params.id;
-        let productoAEliminar = products.find(element => element.id == id);
-		let newsProducts = products.filter((element) => element.id !== productoAEliminar.id);
-     
-        let productsJSON = JSON.stringify(newsProducts, null, 2); 
-		fs.writeFileSync(productsFilePath, productsJSON);
-		//res.send(productsJSON);
-		res.redirect("/products");
- 
-    
+        let idProducto = req.params.id;
+          let finalList = products.filter(element =>element.id != idProducto);
+          fs.writeFileSync(productsFilePath, JSON.stringify(finalList,null,2)) 
+          res.redirect('/products') 
+       
     } 
 
     
