@@ -1,10 +1,66 @@
 [
-{"identificador": "id",
-"nombre": "firstName",
-"apellido": "lastName",
-"email": "email",
-"contraseña": "password",
-"categoría": "category" 
-
-}
+ {
+  "id": 1,
+  "name": "Abel",
+  "lastName": "Pintos",
+  "email": "abelpintos@gmail.com",
+  "password": "abel123",
+  "birthdate": "11/05/1984",
+  "avatar": "abel_pintos.PNG"
+ },
+ {
+  "id": 2,
+  "name": "Luciano",
+  "lastName": "Pereyra",
+  "email": "lucianopereyra@gmail.com",
+  "password": "luciano123",
+  "birthdate": "21/09/1981",
+  "avatar": "luciano_pereyra.PNG"
+ },
+ {
+  "id": 3,
+  "name": "Jorge",
+  "lastName": "Rojas",
+  "email": "jorgerojas@gmail.com",
+  "password": "jorge123",
+  "birthdate": "04/03/1972",
+  "avatar": "jorge_rojas.PNG"
+ },
+ {
+  "id": 4,
+  "name": "Soledad",
+  "lastName": "Pastorutti",
+  "email": "soledadpastorutti@gmail.com",
+  "password": "soledad123",
+  "birthdate": "12/10/1980",
+  "avatar": "soledad_pastorutti.PNG"
+ },
+ {
+  "id": 5,
+  "name": "Sergio",
+  "lastName": "Galleguillo",
+  "email": "sergiogalleguillo@gmail.com",
+  "password": "sergio123",
+  "birthdate": "22/01/1969",
+  "avatar": "sergio_galleguillo.PNG"
+ },
+ {
+  "id": 6,
+  "name": "Los",
+  "lastName": "Palmeras",
+  "email": "lospalmeras@gmail.com",
+  "password": "los123",
+  "birthdate": "01/03/1968",
+  "avatar": "los_palmeras.PNG"
+ },
+ {
+  "id": 7,
+  "name": "fer",
+  "lastName": "Cacha",
+  "email": "fer.caccharelli@gmail.com",
+  "password": "$2a$10$V4xB34HArROTG1l5jhSGJ.Awb4dRfSsGJOZxrv0F3f6Mx58ebBx9e",
+  "birthdate": "27/12/1991",
+  "terms-and-conditions": "on",
+  "avatar": "avatar-1641773429290-875105628.jpg"
+ }
 ]

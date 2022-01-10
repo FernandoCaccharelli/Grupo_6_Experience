@@ -1,7 +1,22 @@
 const express = require('express');
+const session = require('express-session');
+const cookies = require('cookie-parser');
 const path = require('path');
 const port = 3030;
+
 const app = express();
+
+const userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware')
+
+app.use(session({
+	secret: "Shhh, It's a secret",
+	resave: false,
+	saveUninitialized: false,
+}));
+
+app.use(cookies());
+
+app.use(userLoggedMiddleware);
 
 const publicPath = path.resolve(__dirname, '../public');
 
@@ -10,43 +25,23 @@ app.use (methodOverride ("_method"));
 
 
 const homeRouter = require("./routes/home");
-const loginRouter = require ("./routes/login");
-const basketRouter = require("./routes/basket");
-const registerRouter = require ("./routes/register");
 const howRouter = require ("./routes/how");
 const productsRouter = require ("./routes/products")
-const detalleRouter = require ("./routes/detalle")
+const userRoutes = require("./routes/users");
 
 app.use(express.static(publicPath));
 
 app.set("view engine", "ejs");
-
 app.set ("views", path.resolve(__dirname, "views"));
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-
-
 app.use("/", homeRouter);
-
-app.use ("/login", loginRouter);
-
-app.use("/basket", basketRouter);
-
-app.use ("/register", registerRouter);
-
 app.use("/how", howRouter);
-
 app.use("/products", productsRouter);
+app.use("/user", userRoutes);
 
-app.use("/products", detalleRouter);
-
-
-
-
-
- 
-  app.listen(port, () => { console.log(`Servidor escuchando en el puerto ${port}`);
+app.listen(port, () => { console.log(`Servidor escuchando en el puerto ${port}`);
 });
   

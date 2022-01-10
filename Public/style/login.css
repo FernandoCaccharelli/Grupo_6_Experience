@@ -87,7 +87,7 @@ main section.login {
     flex-direction: column;
 }
 
-main .user-name, 
+main .email, 
 .pass {
     font-size: 20px;
 }
@@ -96,7 +96,7 @@ main .rimen-me {
     margin-top: 5px;
     font-size: 12px;
 }
-main .user-name input, 
+main .email input, 
 .pass input{
     font-size: 3vw;
     padding: 2px;
@@ -196,7 +196,7 @@ h2 {
     padding-bottom: 45px;
 }
 
-.user-name {
+.email {
     margin-top: 30px;
 }
 
@@ -329,7 +329,7 @@ footer h4 {
         font-size: 5vw;
     }
 
-    main .user-name input, .pass input {
+    main .email input, .pass input {
         font-size: 2vw;
     }
    

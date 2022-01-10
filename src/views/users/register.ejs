@@ -12,32 +12,71 @@
 <body>
     <%- include ("../partials/header") %>
     <main>
-        <form action="/" method="POST">
+        <form action="/user/register" method="POST" enctype="multipart/form-data">
             <h2>¡Creá Tu Cuenta!</h2>
             <section class="register">
                 <div  class="user-name">
-                    <input class="name" type="text" name="name" placeholder="Nombre">
-                    <input class="last-name" type="text" name="last-name" placeholder="Apellido">
+                    <input class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
+                        value="<%= locals.oldData ? oldData.name : null %>"
+                        type="text" name="name" placeholder="Nombre" >
+                        <% if (locals.errors && errors.name) { %>
+                            <div class="text-danger">
+                                <%= errors.name.msg %> 
+                            </div>
+                        <% } %>
+                    <input class="last-name <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" 
+                        value="<%= locals.oldData ? oldData.lastName : null %>"
+                        type="text" name="lastName" placeholder="Apellido">
+                        <% if (locals.errors && errors.lastName) { %>
+                            <div class="text-danger">
+                                <%= errors.lastName.msg %> 
+                            </div>
+                        <% } %>
                 </div>
                 <div>
-                    <input class="email" type="email" name="email" placeholder="Correo electrónico">
+                    <input class="email <%= locals.errors && errors.email ? 'is-invalid' : null %>" 
+                        value="<%= locals.oldData ? oldData.email : null %>"
+                        type="email" name="email" placeholder="Correo electrónico">
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.email.msg %>
+                            </div>
+                        <% } %>
                 </div>
                 <div >
-                    <input class="pass" name="pass" placeholder="Contraseña">
+                    <input class="password <%= locals.errors && errors.password ? 'is-invalid' : null %>" 
+                        type="password" name="password" placeholder="Contraseña">
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="text-danger">
+                                <%= errors.password.msg %>
+                            </div>
+                        <% } %>
                 </div>
                 <div>
-                    <input class="birth-date" name="birth-date" placeholder="Fecha de Nacimiento   DD/MM/AAAA">
+                    <input class="birth-date <%= locals.errors && errors.birthdate ? 'is-invalid' : null %>" 
+                    name="birthdate" placeholder="Fecha de Nacimiento   DD/MM/AAAA">
                 </div>
             </section>
-        </form>
+       
         <section class="checkbox">
             <div>
                 <input type="checkbox" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
             </div>
         </section>
-        <section class="register-accept" >
-            <button class="register-button">Registrarme</button>
-        </section>
+        <div class="imagen">
+            <label for="image" class="form-label">Imagen de perfil:</label>
+            <input type="file" id="image" name="avatar"  
+                class="form-input <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.avatar) { %>
+                    <div class="text-danger">
+                        <%= errors.avatar.msg %>
+                    </div>
+                <% } %>
+        </div>
+            <section class="register-accept" >
+                <button type="submit" class="register-button">Registrarme</button>
+            </section>
+        </form>
     </main>
     <%- include ("../partials/footer") %>
 </body>

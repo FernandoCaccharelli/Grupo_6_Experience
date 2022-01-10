@@ -4,17 +4,14 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productsController = {
+
     //Todos los productos
     products: (req,res)=>{
         res.render("products/products", {productos : products})
     },
-    productDetail: (req,res)=>{
-        let idProducto = req.params.id
-       let productoMostrar = products.find (element => element.id == idProducto)
-        res.render("products/productDetail", {productos:productoMostrar})
-   },
-    //Crear producto
-    create: (req,res)=>{
+
+     //Crear producto
+     create: (req,res)=>{
         res.render("products/product-create");
     },
     store: (req,res)=>{
@@ -29,6 +26,17 @@ const productsController = {
         fs.writeFileSync(productsFilePath, productsJSON);
         res.redirect("/products")
     },
+    //carrito de compras 
+    basket: (req,res)=>{
+        res.render("users/basket")
+    },
+
+    productDetail: (req,res)=>{
+        let idProducto = req.params.id
+       let productoMostrar = products.find (element => element.id == idProducto)
+        res.render("products/productDetail", {productos:productoMostrar})
+   },
+   
     //editar producto
    edit: (req,res)=>{
         let idProducto = req.params.id
@@ -59,8 +67,8 @@ const productsController = {
           fs.writeFileSync(productsFilePath, JSON.stringify(finalList,null,2)) 
           res.redirect('/products') 
        
-    } 
-
+    },
+    
     
 }
 

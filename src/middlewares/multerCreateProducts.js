@@ -1,7 +1,7 @@
 const multer = require('multer')
 const path = require('path')
 
-const folderPath = path.resolve(__dirname,'../../public/images/avatars') //Carpeta de imagenes de productos
+const folderPath = path.resolve(__dirname,'../../public/images') //Carpeta de imagenes de productos
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -14,6 +14,6 @@ const storage = multer.diskStorage({
   })
   
 
-const upload = multer({ storage: storage })
+const uploadFile = multer({ storage: storage })
 
-module.exports = upload
+module.exports = uploadFile

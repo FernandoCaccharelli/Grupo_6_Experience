@@ -13,23 +13,28 @@
 <body>
     <%- include ("../partials/header") %>
     <main>
-        <form action="/" method="POST">
+        <form action="/user/login" method="POST">
              <h2>Iniciar sesión</h2>
              <section class="login">
-                <div  class="user-name">
-                <input type="text" name="user" placeholder="Nombre de usuario">
+                <div  class="email">
+                    <input class="email" type="email" name="email" placeholder="Correo electrónico">
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                            <%= errors.email.msg %>
+                        </div>
+                    <% } %>
                 </div>
-                <div class="pass">
-                <input type="password" name="pass" placeholder="Contraseña">
+                <div class="password">
+                <input type="password" name="password" placeholder="Contraseña">
                 </div>
                 <div class="rimen-me">
-                    <input type="checkbox" name="remin-me"> Recordarme
+                    <input type="checkbox" name="remember_user"> Recordar mi usuario
                 </div>
                 <div >
                 <input class="button-send" type="submit" value="Iniciar sesión">
                 </div>
                 <label class="retrieve-pass"> ¿Olvidaste tu contraseña?  <a href="#">Recupérala aquí</a></label>
-                <label class="register-here"> ¿No tenés una cuenta? <a href="/register">  Regístrese aquí</a></label>  
+                <label class="register-here"> ¿No tenés una cuenta? <a href="user/register">  Regístrese aquí</a></label>  
              </section>
         </form>
         <section class="options-login">
