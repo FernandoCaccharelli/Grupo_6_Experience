@@ -38,7 +38,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 app.use("/", homeRouter);
-app.use("/how", howRouter);
+app.use("/products", howRouter);
 app.use("/products", productsRouter);
 app.use("/user", userRoutes);
 

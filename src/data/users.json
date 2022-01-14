@@ -62,5 +62,34 @@
   "birthdate": "27/12/1991",
   "terms-and-conditions": "on",
   "avatar": "avatar-1641773429290-875105628.jpg"
+ },
+ {
+  "id": 8,
+  "name": "sofi",
+  "lastName": "joffe",
+  "email": "sofi@gmail.com",
+  "password": "$2a$10$63wkAUSx2CobTopR6QZBZ.zj6NMpOQbYV4/bVze0hNylG12ZmSYFS",
+  "birthdate": "23/o5/1996",
+  "avatar": "avatar-1641776231523-884471631.jpg"
+ },
+ {
+  "id": 9,
+  "name": "Maria",
+  "lastName": "Garcia",
+  "email": "maria@gmail.com",
+  "password": "$2a$10$aYD2e1anP6L6cpKnYIwcZ.Ye7Vzr69n1zvwxAL2Zp/34ePo5rE95q",
+  "birthdate": "26/10/1990",
+  "terms-and-conditions": "on",
+  "avatar": "avatar-1641823098117-765750772.jpg"
+ },
+ {
+  "id": 10,
+  "name": "carla",
+  "lastName": "Garcia",
+  "email": "carla@gmail.com",
+  "password": "$2a$10$JgJXNCaESnoipHLgRaR0P.Yrdg4/CFmA349Iobt4ojXv9b5WRGt2G",
+  "birthdate": "26/10/1990",
+  "terms-and-conditions": "on",
+  "avatar": "avatar-1641826950028-919435785.jpg"
  }
 ]

@@ -322,6 +322,13 @@
     "category": "Aventura",
     "image": "parque_aereo_de_aventura.PNG",
     "price": "$2.150"
+  },
+  {
+    "id": 37,
+    "description": "",
+    "personas": "1",
+    "category": "gastronomia",
+    "price": "3000",
+    "image": "default-image.png"
   }
-  
 ]

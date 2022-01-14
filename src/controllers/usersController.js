@@ -58,7 +58,7 @@ const controller = {
 
 				return res.redirect('/user/profile');
 			} 
-			return res.render('login', {
+			return res.render('users/login', {
 				errors: {
 					email: {
 						msg: 'Las credenciales son inválidas'
@@ -67,7 +67,7 @@ const controller = {
 			});
 		}
 
-		return res.render('login', {
+		return res.render('users/login', {
 			errors: {
 				email: {
 					msg: 'No se encuentra este email en nuestra base de datos'
