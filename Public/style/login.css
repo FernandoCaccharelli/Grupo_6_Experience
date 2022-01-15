@@ -88,7 +88,7 @@ main section.login {
 }
 
 main .email, 
-.pass {
+.password {
     font-size: 20px;
 }
 
@@ -97,7 +97,7 @@ main .rimen-me {
     font-size: 12px;
 }
 main .email input, 
-.pass input{
+.password input{
     font-size: 3vw;
     padding: 2px;
     border-radius: 5px;
@@ -200,7 +200,7 @@ h2 {
     margin-top: 30px;
 }
 
-.pass {
+.password {
     margin-top: 10px;
 }
 
@@ -274,7 +274,7 @@ footer h4 {
 
 /*///////       MAIN            //////////////*/
 
-.pass {
+.password {
     margin-top: 20px;
 }
 
@@ -329,7 +329,7 @@ footer h4 {
         font-size: 5vw;
     }
 
-    main .email input, .pass input {
+    main .email input, .password input {
         font-size: 2vw;
     }
    
