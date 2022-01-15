@@ -9,6 +9,13 @@ body{
     
 }
 
+.text-danger {
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
 /*//////////////////////// HEADER ///////////////////////*/
 .menu-superior{
     display: flex;
@@ -92,21 +99,36 @@ h2 {
 }
 
 main section .name,
-.last-name,
+.lastName,
 .email,
-.pass,
+.password,
 .birth-date {
     font-size: 12px;
-    margin: 8px 10px;
+    margin: 8px 30px;
     height: 35px;
-    width: 90%;
+    width: 80%;
     padding: 5px;
 }
 
+.imagen {
+    margin-top: 15px;
+}
+
+.imagen label{    /*/////////////   Imagen de perfil ////////////////////*/
+    font-size: 13px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+.imagen input{    /*//////////////////   Seleccionar archivo        /////////////////////////////*/
+    font-size: 11px;
+}
+
 .checkbox{
-    margin-left: 12px;
+    margin: 30px 0px 15px 45px;
     font-size: 12px;
-    margin-top: 30px;
+    width: 70%;
+    
 }
 
 .register-accept {
@@ -156,6 +178,10 @@ footer i {
 
 @media(min-width:768px){
 
+div .text-danger {
+    font-size: 12px;
+}
+
 /*//////////////////////////     HEADER      ///////////////////////*/
 
 .menu-superior {
@@ -190,10 +216,19 @@ main{
     border-radius: 10px;
 }
 
+
 .checkbox{
-    margin-left: 15px;
     font-size: 15px;
-    margin-top: 30px;
+    width: 80%;
+}
+
+.imagen label {
+    font-size: 14px;
+}
+
+.imagen input {
+    font-size: 13px;
+    margin: 10px 0px 10px 30px;
 }
 
 /*///////////////////// FOOTER //////////////////*/
@@ -216,6 +251,10 @@ footer h4 {
 }
 @media(min-width:1024px){
 
+.text-danger {
+    font-size: 18px;
+
+}
  /*////////////////////////        HEADER         ////////////////*/
 
 .logo {
@@ -255,7 +294,7 @@ h2 {
     margin-top: 25px;
 }
 
-main section .name, .last-name, .email, .pass, .birth-date {
+main section .name, .lastName, .email, .password, .birth-date {
     font-size: 16px;
     margin: 16px 10px;
     height: 40px;
@@ -301,7 +340,7 @@ footer h4 {
      margin-left: 350px;
    }
    
-   main section .name, .last-name, .email, .pass, .birth-date {
+   main section .name, .lastName, .email, .password, .birth-date {
        width: 80%;
    }
    

@@ -16,15 +16,19 @@
             <h2>¡Creá Tu Cuenta!</h2>
             <section class="register">
                 <div  class="user-name">
-                    <input class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
-                        value="<%= locals.oldData ? oldData.name : null %>"
-                        type="text" name="name" placeholder="Nombre" >
+                    <input 
+                    class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
+                    value="<%= locals.oldData ? oldData.name : null %>"
+                    type="text" 
+                    name="name" 
+                    placeholder="Nombre"
+                     >
                         <% if (locals.errors && errors.name) { %>
                             <div class="text-danger">
                                 <%= errors.name.msg %> 
                             </div>
                         <% } %>
-                    <input class="last-name <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" 
+                    <input class="lastName <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" 
                         value="<%= locals.oldData ? oldData.lastName : null %>"
                         type="text" name="lastName" placeholder="Apellido">
                         <% if (locals.errors && errors.lastName) { %>
@@ -57,14 +61,8 @@
                     name="birthdate" placeholder="Fecha de Nacimiento   DD/MM/AAAA">
                 </div>
             </section>
-       
-        <section class="checkbox">
-            <div>
-                <input type="checkbox" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
-            </div>
-        </section>
         <div class="imagen">
-            <label for="image" class="form-label">Imagen de perfil:</label>
+            <label for="image" class="form-label">Imagen de perfil:</label><br>
             <input type="file" id="image" name="avatar"  
                 class="form-input <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.avatar) { %>
@@ -73,6 +71,11 @@
                     </div>
                 <% } %>
         </div>
+        <section class="checkbox">
+            <div>
+                <input type="checkbox" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
+            </div>
+        </section>
             <section class="register-accept" >
                 <button type="submit" class="register-button">Registrarme</button>
             </section>
