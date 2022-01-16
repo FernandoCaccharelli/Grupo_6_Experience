@@ -92,6 +92,13 @@ main .email,
     font-size: 20px;
 }
 
+.text-danger {
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
 main .rimen-me {
     margin-top: 5px;
     font-size: 12px;
@@ -204,6 +211,10 @@ h2 {
     margin-top: 10px;
 }
 
+div .text-danger {
+    font-size: 12px;
+}
+
 main .rimen-me {
     margin-top: 10px;
     font-size: 20px;
@@ -276,6 +287,10 @@ footer h4 {
 
 .password {
     margin-top: 20px;
+}
+
+.text-danger {
+    font-size: 18px;
 }
 
 main .rimen-me {

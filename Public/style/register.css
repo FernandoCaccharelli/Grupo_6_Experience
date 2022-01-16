@@ -9,13 +9,6 @@ body{
     
 }
 
-.text-danger {
-    color: red;
-    font-weight: bold;
-    font-size: 10px;
-    text-align: center;
-}
-
 /*//////////////////////// HEADER ///////////////////////*/
 .menu-superior{
     display: flex;
@@ -110,6 +103,13 @@ main section .name,
     padding: 5px;
 }
 
+.text-danger {
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
 .imagen {
     margin-top: 15px;
 }
@@ -178,10 +178,6 @@ footer i {
 
 @media(min-width:768px){
 
-div .text-danger {
-    font-size: 12px;
-}
-
 /*//////////////////////////     HEADER      ///////////////////////*/
 
 .menu-superior {
@@ -216,6 +212,9 @@ main{
     border-radius: 10px;
 }
 
+div .text-danger {
+    font-size: 12px;
+}
 
 .checkbox{
     font-size: 15px;
@@ -251,10 +250,6 @@ footer h4 {
 }
 @media(min-width:1024px){
 
-.text-danger {
-    font-size: 18px;
-
-}
  /*////////////////////////        HEADER         ////////////////*/
 
 .logo {
@@ -281,6 +276,10 @@ footer h4 {
 main {
    text-align: center;
    margin-left: 160px;
+}
+
+.text-danger {
+    font-size: 18px;
 }
 
 section.register {

@@ -11,6 +11,9 @@ Siguiendo la dinámica de estrella de mar:
 
 5.	Dejar de hacer: no establecer comunicación cuando uno no puede realizar una tarea.
 
+Link a Trello: https://trello.com/b/f2DpWAAi/proyecto-integrador
+
+
 
 
 
