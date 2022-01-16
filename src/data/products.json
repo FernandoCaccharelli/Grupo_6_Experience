@@ -9,10 +9,10 @@
     "image": "la_cabaña.PNG"
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "El portal",
     "description": "La combinación de una excelente cocina con una de las barras más atractivas de Buenos Aires!!",
-    "personas": 1,
+    "personas": "1",
     "category": "gastronomia",
     "price": "$2500",
     "image": "el_portal.PNG"
