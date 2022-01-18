@@ -23,7 +23,9 @@
 			<div class="completar-form">
 				<form action="/products/<%= productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
 					<div class="editando">
-						<h2 class="products-title">Estás editando: <i><%= productToEdit.name %></i></h2>
+						<label for="name" class="form-label">Nombre:</label>
+						<input type="text" id="name" name="name"  class="form-input" value="<%= productToEdit.name %>">
+					<!--<h2 class="products-title">Estás editando: <i><%= productToEdit.name %></i></h2> -->
 					</div>
 					<div class="producto">
 						<div class="descripcion">

@@ -109,6 +109,10 @@ div .formulario-titulo {
   
 }
 
+.form-label{
+    font-weight: bold;
+}
+
 .nombre .form-label{
     font-size: 15px;
 }
