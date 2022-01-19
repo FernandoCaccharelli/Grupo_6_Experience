@@ -111,7 +111,7 @@ section h2{
     flex-wrap: wrap;
     margin-top: 33px;
 }
-.op1, .op2, .op3,.op4{
+.op1, .op2, .op3{
     border: 1px solid #9BB1C5;
     width: 76%;
     padding: 12px;
@@ -121,19 +121,15 @@ section h2{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(140, 140, 140);
 }
-.op1 img,.op2 img,.op3 img,.op4 img{
+.op1 img,.op2 img,.op3 img{
     width: 98%;
     margin-left: 3px;
 }
-.op1 .categoria,.op2 .categoria,.op3 .categoria ,.op4 .categoria{
+.op1 .categoria,.op2 .categoria,.op3 .categoria{
     font-size: 18px;
     color: #345D84;
 }
-.op4 .categoria a{
-    text-decoration: none;
-    color: #345D84;
-}
-.op1 i, .op2 i,.op3 i,.op4 i{ 
+.op1 i, .op2 i,.op3 i{ 
     padding-left: 4px;
     padding-right: 10px;
 }
@@ -143,11 +139,11 @@ section h2{
     text-align: center;
     margin-left: 0px;
 }
-.op1 .descripcion,.op2 .descripcion,.op3 .descripcion,.op4 .descripcion{
+.op1 .descripcion,.op2 .descripcion,.op3 .descripcion{
     font-size: 16px;
     text-align: center;
 }
-.op1 .precio, .op2 .precio,.op3 .precio,.op4 .precio{
+.op1 .precio, .op2 .precio,.op3 .precio{
     font-size: 18px;
     font-weight: 900;
     text-align: center;
@@ -159,7 +155,6 @@ section h2{
     margin-left: 118px;
     border-radius: 14px;
     background-color: #D8E7F5 ;
- 
 }
 .mas a {
     text-decoration: none;
@@ -167,11 +162,8 @@ section h2{
 .mas h3{
     color: black;
     font-size: 20px;
-    padding: 5px;
-    margin: 3px 2px;
-   
+    padding: 5px; 
 }
-
 .extra h3{
     text-align: center;
     position: relative;
@@ -192,13 +184,10 @@ section h2{
     margin-left: 16px;  
     padding-top: 55px;
 }
-
-
-/*////////////////////////////      FOOTER               //////////////////////////////////*/
+/*FOOTER*/
 footer{
-    margin-top: 70px;   
+    margin-top: 110px;   
 }
-
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -260,23 +249,40 @@ footer i {
     }
     .menu-inferior{
         display: flex;
-        padding: 17px 0px 11px 50px;
+        padding: 17px 0px 11px 70px;
     }
     .menu-inferior ul{
         list-style: none;
         display: flex; 
     }
     .menu-inferior li a{
-        margin: 0px 30px 2px 77px;
+        margin: 0px 72px 2px 44px;
         text-decoration: none;
         color: black;
         display: inline-block;
         font-size: 16px;
     }
- 
+    .categorias{
+        display: flex;
+        flex-direction: column;
+        padding: 9px 1px;
+    }
+    .categorias li a {
+        padding: 6px 0px;
+        display: none;
+        position: relative;
+        padding: 2px 2px;
+    }
+    li .categorias:hover >li a {
+        display: block;
+    }
+
+    .banner{
+        width: 100%;
+    }
     .how{
-        max-width: 39%;
-        margin: -36px 0px 0px 250px;
+        max-width: 37%;
+        margin: -36px 0px 0px 241px;
         height: 68px;
     }
     .how i{
@@ -287,7 +293,6 @@ footer i {
       font-size: 20px;
       margin-top: 20px;
     }
-
     .destacados h2{
         font-size: 18px;
     }
@@ -304,10 +309,8 @@ footer i {
     .opciones .descripcion{
         font-size: 13px;
     }
-    .op4{
-        display: none;
-    }
-    .op1,.op2, .op3,.op4{
+   
+    .op1,.op2, .op3{
         margin-left: 11px;
         margin-right: 11px;
     }
@@ -316,8 +319,7 @@ footer i {
     }
     .mas{
        max-width: 18%;
-       margin-left: 327px;
-       height: 42px;
+       margin-left: 317px;
     }
     .mas h3{
         font-size: 24px;
@@ -365,7 +367,7 @@ footer h4 {
            margin-top: 38px;
        }
        .barra input{
-           margin-left: 174px;
+           margin-left: 197px;
            margin-top: 34px;
            height: 58px;
            border-radius: 29px;
@@ -391,27 +393,25 @@ footer h4 {
            width: 100%;
        }
        .how{
-           height: 90px;
+           height: 80px;
            margin-left: 315px;
            margin-top: -46px;
        }
        .how h3{
            font-size: 26px;
-           margin: 26px 30px;
+           margin: 26px 21px;
        }
        .how i{
            font-size: 2.5em;
            margin-left: 9px;
        }
        .destacados h2{
-           margin-top: 32px;
+           font-size: 28px;
+           margin: 57px 32px;
        }
        .opciones{
            width: 96%;    
        }
-       .op4{
-           display: block;
-        }
         .opciones .categoria{
             font-size: 22px;
         }
@@ -423,8 +423,7 @@ footer h4 {
         }
        .mas{
            max-width: 20%;
-           height: 75px;
-           margin-left: 425px;
+           margin-left: 410px;
            margin-top: 30px;
        }
        .mas h3{
@@ -442,7 +441,7 @@ footer h4 {
            height: 60px;
        }
     
-       /*///////////////////// FOOTER //////////////////*/
+       /*FOOTER*/
 
 footer{
     padding-top: 50px;
