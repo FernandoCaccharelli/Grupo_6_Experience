@@ -10,11 +10,11 @@
   },
   {
     "id": "2",
-    "name": "El portal",
+    "name": "El Portal",
     "description": "La combinación de una excelente cocina con una de las barras más atractivas de Buenos Aires!!",
     "personas": "1",
     "category": "gastronomia",
-    "price": "$2500",
+    "price": "$2600",
     "image": "el_portal.PNG"
   },
   {
@@ -322,13 +322,5 @@
     "category": "Aventura",
     "image": "parque_aereo_de_aventura.PNG",
     "price": "$2.150"
-  },
-  {
-    "id": 37,
-    "description": "",
-    "personas": "1",
-    "category": "gastronomia",
-    "price": "3000",
-    "image": "default-image.png"
   }
 ]

@@ -1,12 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
 const productsController = {
 
     //Todos los productos
     products: (req,res)=>{
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         res.render("products/products", {productos : products})
     },
 
@@ -15,6 +16,7 @@ const productsController = {
         res.render("products/product-create");
     },
     store: (req,res)=>{
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let nuevoId = products [products.length -1].id +1;
         let newProduct = {
             id : nuevoId,
@@ -32,22 +34,26 @@ const productsController = {
     },
     //detalle
     productDetail: (req,res)=>{
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let idProducto = req.params.id
        let productoMostrar = products.find (element => element.id == idProducto)
         res.render("products/productDetail", {productos:productoMostrar})
    },
     //editar producto
    edit: (req,res)=>{
+    let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
     let idProducto = req.params.id
     let productoMostrar = products.find(element => element.id == idProducto)
    res.render("products/product-edit", {productToEdit: productoMostrar});
  },
  update:(req,res)=>{
+    let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
     let id = req.params.id
      let modifiedProducts = products.map(element => {
        if (element.id == id){
          return element = {
            id: id,
+           name: element.name,
            ...req.body,
            image: req.file == undefined ? element.image : req.file.filename
         }
@@ -62,6 +68,7 @@ const productsController = {
   
     //borrar producto
     destroy: (req,res)=>{
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let idProducto = req.params.id;
           let finalList = products.filter(element =>element.id != idProducto);
           fs.writeFileSync(productsFilePath, JSON.stringify(finalList,null,2)) 
