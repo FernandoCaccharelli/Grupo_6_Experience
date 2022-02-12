@@ -8,7 +8,7 @@ const productsController = require ("../controllers/productsController");
 router.get("/basket", productsController.basket);
 
 //lista de productos
-router.get("", productsController.products);
+router.get("/", productsController.products);
 
 //crear producto
 router.get("/create", productsController.create);
