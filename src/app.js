@@ -42,11 +42,6 @@ app.use("/products", howRouter);
 app.use("/products", productsRouter);
 app.use("/user", userRoutes);
 
-//CRUD SPRINT 7
-const productsRou = require ("./routes/productsRouter")
-app.use("/productos", productsRou);
-
-
 
 app.listen(port, () => { console.log(`Servidor escuchando en el puerto ${port}`);
 });

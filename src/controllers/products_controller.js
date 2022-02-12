@@ -5,7 +5,7 @@ const sequelize = db.sequelize;
 //const { moveMessagePortToContext } = require('worker_threads');
 
 const products_controller = {
-    list: (req, res) => {
+    products: (req, res) => {
         db.Producto.findAll()
             .then(function(productos){
                 res.render("products/products", {productos:productos})
@@ -20,7 +20,7 @@ const products_controller = {
                 res.render('products/productDetail', {productos:producto});
             });
     }, 
-    add: function (req,res) {   
+    create: function (req,res) {   
         db.Producto.findAll()   
             .then(function(producto){  
                 res.render('products/product-create', {producto : producto}); 
@@ -29,7 +29,7 @@ const products_controller = {
                 console.log(error);
                 })        
     },
-    create: function (req,res) {
+    store: function (req,res) {
         db.Producto.create({
             ...req.body
         }).then(()=>{
@@ -49,7 +49,7 @@ const products_controller = {
             producto.update({
                 ...req.body
             }).then(()=>{
-                res.redirect("products/detail/" + producto.id)
+                res.redirect("products/" + producto.id)
             })
         })
 
@@ -74,6 +74,10 @@ const products_controller = {
             res.redirect("/products/list")
         })
 
+    },
+    //carrito de compras 
+    basket: (req,res)=>{
+        res.render("users/basket")
     }
 }
 

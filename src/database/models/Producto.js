@@ -25,12 +25,12 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(500),
             allowNull: false
         },
-        // expiration_date: {
-        //     type: dataTypes.DATE,
-        //     allowNull: false
-        // },
+        expiration_date: {
+            type: dataTypes.DATE,
+            allowNull: false
+        },
         image: dataTypes.STRING(500),
-        // category_id: dataTypes.BIGINT(10)
+        category_id: dataTypes.BIGINT(10)
     };
     let config = {
         tableName: "productos",
@@ -42,19 +42,19 @@ module.exports = (sequelize, dataTypes) => {
     const Producto = sequelize.define(alias,cols,config);
 
    
-    // Producto.associate = function(models){
-    //     Producto.belongsTo(models.Categoria,{
-    //         as:"categoria",
-    //         foreignKey: "category_id"
-    //     });
-    //     Producto.belongsToMany(models.Basket,{
-    //         as:"carritos",
-    //         through:"carritos_productos",
-    //         foreignKey: "product_id",
-    //         otherKey:"basket_id",
-    //         timestamps:false,
-    //     })
-    // }
+    Producto.associate = function(models){
+        Producto.belongsTo(models.Categoria,{
+            as:"categoria",
+            foreignKey: "category_id"
+        });
+        Producto.belongsToMany(models.Basket,{
+            as:"carritos",
+            through:"carritos_productos",
+            foreignKey: "product_id",
+            otherKey:"basket_id",
+            timestamps:false,
+        })
+    }
 
     return Producto;
 };
