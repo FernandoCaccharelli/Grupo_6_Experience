@@ -18,7 +18,10 @@ const products_controller = {
         db.Producto.findByPk(req.params.id)
             .then(producto => {
                 res.render('products/productDetail', {productos:producto});
-            });
+            })
+            .catch(function (error) {
+                console.log(error);
+                })
     }, 
     create: function (req,res) {   
         db.Producto.findAll()   
@@ -35,6 +38,9 @@ const products_controller = {
         }).then(()=>{
             res.redirect("/products")
         })
+        .catch(function (error) {
+            console.log(error);
+            })      
     },
     edit: function(req,res){
         db.Producto.findByPk(req.params.id)
@@ -49,7 +55,7 @@ const products_controller = {
             producto.update({
                 ...req.body
             }).then(()=>{
-                res.redirect("products/" + producto.id)
+                res.redirect("products/detail/" + producto.id)
             })
         })
 
@@ -71,7 +77,7 @@ const products_controller = {
                 id: req.params.id
             }
         }).then(()=>{
-            res.redirect("/products/list")
+            res.redirect("/products")
         })
 
     },

@@ -15,10 +15,10 @@ router.get("/create", productsController.create);
 router.post("/",uploadFile.single('image') ,productsController.store );
 
 //Detalle de producto
-router.get("/:id", productsController.detail);
+router.get("/detail/:id", productsController.detail);
 
 //editar producto
-router.get("/:id/edit", productsController.edit);
+router.get("/edit/:id", productsController.edit);
 router.put("/:id", uploadFile.single('image'),productsController.update);
 
 //borrar producto

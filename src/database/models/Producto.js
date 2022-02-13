@@ -27,10 +27,14 @@ module.exports = (sequelize, dataTypes) => {
         },
         expiration_date: {
             type: dataTypes.DATE,
-            allowNull: false
         },
         image: dataTypes.STRING(500),
-        category_id: dataTypes.BIGINT(10)
+        category_id:{
+            type:dataTypes.BIGINT(10),
+            allowNull:false
+
+        } 
+        
     };
     let config = {
         tableName: "productos",
