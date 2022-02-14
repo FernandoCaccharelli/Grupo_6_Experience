@@ -11,7 +11,7 @@ module.exports = (sequelize, dataTypes) => {
         //updated_at: dataTypes.TIMESTAMP,
        
         quantity: {
-            type: dataTypes.DECIMAL(3, 1).UNSIGNED,
+            type: dataTypes.DECIMAL.UNSIGNED,
             allowNull: false
         },
         total_price: {

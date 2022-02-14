@@ -6,33 +6,33 @@ CREATE TABLE usuarios(
 id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
 created_at timestamp DEFAULT CURRENT_TIMESTAMP,
 updated_at timestamp DEFAULT CURRENT_TIMESTAMP,
-first_name VARCHAR(20) NOT NULL,
-last_name VARCHAR(20) NOT NULL,
-email VARCHAR(20) NOT NULL,
-password VARCHAR(20) NOT NULL,
-birth_date DATE,
-avatar VARCHAR(100),
-profile VARCHAR(10)
+name VARCHAR(255) NOT NULL,
+lastName VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+password VARCHAR(255) NOT NULL,
+birthdate DATE,
+avatar VARCHAR(255),
+profile VARCHAR(255)
 );
 
 CREATE TABLE categorias(
- id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+ id INT(10) UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
  created_at timestamp DEFAULT CURRENT_TIMESTAMP,
  updated_at timestamp DEFAULT CURRENT_TIMESTAMP,
- category VARCHAR(30)
+ category VARCHAR(255)
 );
 
 CREATE TABLE productos(
 id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
 created_at timestamp DEFAULT CURRENT_TIMESTAMP,
 updated_at timestamp DEFAULT CURRENT_TIMESTAMP,
-name VARCHAR(20) NOT NULL,
+name VARCHAR(255) NOT NULL,
 price INT NOT NULL,
-description VARCHAR (200),
+description VARCHAR (500),
 people INT,
 expiration_date DATE,
-image VARCHAR(100),
-category_id INT UNSIGNED NOT NULL,
+image VARCHAR(255),
+category_id INT UNSIGNED,
 FOREIGN KEY (category_id) REFERENCES categorias (id)
 );
 

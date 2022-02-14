@@ -9,33 +9,31 @@ module.exports = (sequelize, dataTypes) => {
         },
         // created_at: dataTypes.TIMESTAMP,
         // updated_at: dataTypes.TIMESTAMP,
-        first_name: {
-            type: dataTypes.STRING(500),
+        name: {
+            type: dataTypes.STRING,
             allowNull: false
         },
-        last_name: {
-            type: dataTypes.STRING(500),
+        lastName: {
+            type: dataTypes.STRING,
             allowNull: false
         }, 
         email: {
-            type: dataTypes.STRING(500),
+            type: dataTypes.STRING,
             allowNull: false
         },
         password: {
-            type: dataTypes.STRING(500),
+            type: dataTypes.STRING,
             allowNull: false
         },
-        birth_date: {
+        birthdate: {
             type: dataTypes.DATE,
-            allowNull: false
         },
         avatar: {
-            type: dataTypes.STRING(500),
+            type: dataTypes.STRING,
             allowNull: false
         },
         profile: {
-            type: dataTypes.STRING(500),
-            allowNull: false
+            type: dataTypes.STRING,
         },
         
     };

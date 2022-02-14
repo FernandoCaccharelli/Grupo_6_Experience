@@ -10,11 +10,11 @@ module.exports = (sequelize, dataTypes) => {
         // created_at: dataTypes.TIMESTAMP,
         // updated_at: dataTypes.TIMESTAMP,
         name: {
-            type: dataTypes.STRING(500),
+            type: dataTypes.STRING,
             allowNull: false
         },
         price: {
-            type: dataTypes.DECIMAL(3, 1).UNSIGNED,
+            type: dataTypes.DECIMAL.UNSIGNED,
             allowNull: false
         },
         people: {
@@ -22,19 +22,14 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         description: {
-            type: dataTypes.STRING(500),
+            type: dataTypes.STRING,
             allowNull: false
         },
         expiration_date: {
             type: dataTypes.DATE,
         },
-        image: dataTypes.STRING(500),
-        category_id:{
-            type:dataTypes.BIGINT(10),
-            allowNull:false
-
-        } 
-        
+        image: dataTypes.STRING,
+        category_id:dataTypes.BIGINT(10)
     };
     let config = {
         tableName: "productos",

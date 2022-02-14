@@ -34,7 +34,8 @@ const products_controller = {
     },
     store: function (req,res) {
         db.Producto.create({
-            ...req.body
+            ...req.body,
+            image:req.file == undefined ? "default-image.png": req.file.filename
         }).then(()=>{
             res.redirect("/products")
         })
@@ -53,24 +54,15 @@ const products_controller = {
         db.Producto.findByPk(req.params.id)
         .then((producto)=>{
             producto.update({
-                ...req.body
+                ...req.body,
+                image:req.file == undefined ? "default-image.png": req.file.filename
             }).then(()=>{
-                res.redirect("products/detail/" + producto.id)
+                res.redirect("/products")
             })
         })
 
     },
-    //delete:(req,res)=>{
-      //  db.Producto.findByPk(req.params.id)
-        //.then((producto)=>{
-          //  producto.update({
-            //    ...req.body
-            //})
-        
-            //res.render("products/productDetail",{Movie:movie});
-       // })  
-    //},
-    
+      
     destroy:(req,res)=>{
         db.Producto.destroy({
             where:{

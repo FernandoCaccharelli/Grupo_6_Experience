@@ -1,55 +1,118 @@
-const path = require('path');
-const db = require('../database/models/Usuario');
+const bcryptjs = require('bcryptjs');
+const {	validationResult } = require('express-validator');
+const db = require('../database/models');
 const sequelize = db.sequelize;
 
-const usersController = {
-    
-    create: function (req,res) {
-        db.Usuario.create({
-            ...req.body
-        }).then(()=>{
-            res.redirect("/user/login")
-        })
-    },
-    edit: function(req,res){
-        db.Usuario.findByPk(req.params.id)
-        .then((usuario)=>{
-                res.render("products/product-edit",{Producto:producto})  
+const controller = {
+    register: (req, res) => {
+		return res.render('users/register');
+	},
+    processRegister: (req, res) => {
+		const resultValidation = validationResult(req);
 
-            })
+		if (resultValidation.errors.length > 0) {
+			return res.render('users/register', {
+				errors: resultValidation.mapped(),
+				oldData: req.body
+			});
+		} else {
+			db.Usuario.create({
+				...req.body,
+				password: bcryptjs.hashSync(req.body.password, 10),
+				avatar: req.file.filename
+			})
+			.then(()=>{
+				res.redirect("/user/login")
+			})
+
+
+			//let userToCreate = {
+			//	...req.body,
+			//	password: bcryptjs.hashSync(req.body.password, 10),
+			//	avatar: req.file.filename
+			//}
+		  
+		//db.Usuario.create(userToCreate)
+        //.then(
+          //  res.redirect("/user/login")
+        //)
+        .catch(function (error) {
+            console.log(error);
+            })   
+	}
+	},
+
+		//let userInDB = db.Usuario.findByField('email', req.body.email);
+
+		//if (userInDB) {
+		//	return res.render('users/register', {
+			//	errors: {
+			//		email: {
+			//			msg: 'Este email ya está registrado'
+			//		}
+			//	},
+			//	oldData: req.body
+		//	});
+		//}
+      
+
+    login: (req, res) => {
+		return res.render('users/login');
+	},
+	loginProcess: (req, res) => {
+		//let userToLogin = User.findByField('email', req.body.email);
+		const resultValidation = validationResult(req)
+		if (resultValidation.errors.length > 0){
+			return res.render("users/login", {
+				errors:resultValidation.mapped(),
+				oldData:req.body
+			})
+		}else{
+			db.Usuario.findOne({
+				where:{email:req.body.email}
+			})
+			.then(usuario => {
+			let isOkThePassword = bcryptjs.compareSync(req.body.password, usuario.password);
+			if (isOkThePassword) {
+				delete userToLogin.password;
+				req.session.userLogged = usuario;
+
+				if(req.body.remember_user) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				}
+				return res.redirect('/user/profile');
+
+			} else{
+				res.render('users/login', {
+					errors: {
+						email: {
+							msg: 'Las credenciales son inválidas'
+						}
+					}
+				});
+			}	
+		})
+		.catch(error => console.log(error.message))
+      }	
+	},
+	profile: (req, res) => {
+        db.Usuario.findOne({
+            where:{user: req.session.userLogged}
+        })
+        .then(usuario => {
+            res.render('users/profile', {user: usuario});
+	})
+    .catch(error =>console.log(error.massage))
      },
-    update: function (req,res) {
-        db.Producto.findByPk(req.params.id)
-        .then((producto)=>{
-            producto.update({
-                ...req.body
-            }).then(()=>{
-                res.redirect("products/detail/" + producto.id)
-            })
-        })
 
-    },
-    delete:(req,res)=>{
-        db.Producto.findByPk(req.params.id)
-        .then((producto)=>{
-            producto.update({
-                ...req.body
-            })
-        
-            res.render("products/productDetail",{Movie:movie});
-        })
-        
-    },
-    destroy:(req,res)=>{
-        db.Producto.destroy({
-            where:{
-                id: req.params.id
-            }
-        }).then(()=>{
-            res.redirect("/products/list")
-        })
+	logout: (req, res) => {
+		res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	}
 
-    }
 }
+   
 
-module.exports = usersController; 
+
+module.exports = controller; 
