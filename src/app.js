@@ -6,6 +6,7 @@ const port = 3030;
 
 const app = express();
 
+
 const userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware')
 
 app.use(session({

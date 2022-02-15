@@ -7,6 +7,18 @@ const controller = {
     register: (req, res) => {
 		return res.render('users/register');
 	},
+	processRegister: function (req,res) {
+        db.Usuario.create({
+            ...req.body,
+            image:req.file == undefined ? "default-image.png": req.file.filename
+        }).then(()=>{
+            res.redirect("/users/login")
+        })
+        .catch(function (error) {
+            console.log(error);
+            })      
+    },
+
     processRegister: (req, res) => {
 		const resultValidation = validationResult(req);
 
@@ -16,29 +28,18 @@ const controller = {
 				oldData: req.body
 			});
 		} else {
-			db.Usuario.create({
+			let userToCreate = {
 				...req.body,
 				password: bcryptjs.hashSync(req.body.password, 10),
 				avatar: req.file.filename
-			})
+			}
+			db.Usuario.create(userToCreate)
 			.then(()=>{
 				res.redirect("/user/login")
 			})
-
-
-			//let userToCreate = {
-			//	...req.body,
-			//	password: bcryptjs.hashSync(req.body.password, 10),
-			//	avatar: req.file.filename
-			//}
-		  
-		//db.Usuario.create(userToCreate)
-        //.then(
-          //  res.redirect("/user/login")
-        //)
-        .catch(function (error) {
-            console.log(error);
-            })   
+			.catch(function (error) {
+				console.log(error);
+				})     
 	}
 	},
 
@@ -54,7 +55,6 @@ const controller = {
 			//	oldData: req.body
 		//	});
 		//}
-      
 
     login: (req, res) => {
 		return res.render('users/login');
