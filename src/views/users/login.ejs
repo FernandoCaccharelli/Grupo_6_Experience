@@ -15,6 +15,11 @@
     <main>
         <form action="/user/login" method="POST">
              <h2>Iniciar sesión</h2>
+             <div class="errores">
+                <ul>
+                    
+                </ul>
+            </div>
              <section class="login">
                 <div  class="email">
                     <input class="email" type="email" name="email" placeholder="Correo electrónico">
@@ -25,7 +30,13 @@
                     <% } %>
                 </div>
                 <div class="password">
-                <input type="password" name="password" placeholder="Contraseña">
+                <input class="password" type="password" name="password" placeholder="Contraseña">
+                <% if (locals.errors && errors.password) { %>
+                    <div class="text-danger">
+                        <%= errors.password.msg %>
+                    </div>
+                <% } %>
+
                 </div>
                 <div class="rimen-me">
                     <input type="checkbox" name="remember_user"> Recordar mi usuario
@@ -44,6 +55,6 @@
     </main>
     <%- include ("../partials/footer") %>      
             
-    
+    <script src="/js/login.js"></script> 
 </body>
 </html>

@@ -65,6 +65,12 @@ body{
 }
 /*//////////////////////////         MAIN               /////////////////////////////*/
 
+.text-danger {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
 .formulario {
     width: 80%;
     background-color:aliceblue;

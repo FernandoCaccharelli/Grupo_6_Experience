@@ -14,14 +14,16 @@
     <main>
         <form action="/user/register" method="POST" enctype="multipart/form-data">
             <h2>¡Creá Tu Cuenta!</h2>
+            <div class="errores">
+                <ul>
+                    
+                </ul>
+            </div>
             <section class="register">
                 <div  class="user-name">
-                    <input 
-                    class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
+                    <input class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
                     value="<%= locals.oldData ? oldData.name : null %>"
-                    type="text" 
-                    name="name" 
-                    placeholder="Nombre"
+                    type="text" name="name" placeholder="Nombre"
                      >
                         <% if (locals.errors && errors.name) { %>
                             <div class="text-danger">
@@ -82,6 +84,7 @@
         </form>
     </main>
     <%- include ("../partials/footer") %>
+    <script src="/js/register.js"></script> 
 </body>
 </html>
 

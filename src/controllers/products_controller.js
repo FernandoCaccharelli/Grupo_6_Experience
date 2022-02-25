@@ -1,4 +1,5 @@
-const path = require('path');
+//const path = require('path');
+const { validationResult } = require('express-validator')
 const db = require('../database/models');
 const sequelize = db.sequelize;
 //const { Op } = require("sequelize");
@@ -33,15 +34,27 @@ const products_controller = {
                 })        
     },
     store: function (req,res) {
-        db.Producto.create({
-            ...req.body,
-            image:req.file == undefined ? "default-image.png": req.file.filename
-        }).then(()=>{
+        const errors = validationResult(req)
+        if(errors.errors.length > 0){
+            return res.render("products/product-create", {errors: errors.mapped()})
+        }else{
+            let newProduct = {
+                name: req.body.name,
+                price: req.body.price,
+                people: req.body.people,
+                category: req.body.category,
+                description: req.body.description,
+                image: req.file == undefined ? "default-image.jpg" : req.file.filename,
+            }
+        
+        db.Producto.create(newProduct)
+        .then(()=>{
             res.redirect("/products")
         })
         .catch(function (error) {
             console.log(error);
-            })      
+            })  
+        }          
     },
     edit: function(req,res){
         db.Producto.findByPk(req.params.id)

@@ -22,10 +22,21 @@
 		</div>
 		<div class="completar-form">
 			<form action="/products" method="POST" enctype="multipart/form-data">
+				<div class="errores">
+					<ul>
+						
+					</ul>
+				</div>
 				<div class="producto">
 					<div class="nombre">
 						<label for="name" class="form-label">Nombre del producto:</label>
-						<input type="text" id="name" name="name" placeholder="Ej: Paseo en velero" class="form-input">
+						<input type="text" id="name" name="name" value="<%= locals.oldData ? oldData.name: null%>" class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>">
+					    
+						<% if(locals.errors && errors.name) { %>
+                            <div class= "text-danger"> 
+								<%= errors.name.msg %> 
+							</div>
+                        <% } %> 
 					</div>
 					<div class="precio">
 						<label for="price" class="form-label">Precio del producto:</label>
@@ -50,21 +61,33 @@
 					</div>
 					<div class="descripcion">
 						<label for="description" class="form-label">Descripción:</label>
-						<textarea name="description" id="description" class="form-input"></textarea>
+						<textarea name="description" id="description" class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.description: null %>"></textarea>
+					    <% if(locals.errors && errors.description) { %>
+                            <div class= "text-danger">
+								 <%= errors.description.msg %> 
+							</div>
+                        <% } %>
 					</div>
 					<div class="imagen">
 						<label for="image" class="form-label">Imagen:</label>
-						<input type="file" id="image" name="image"  class="form-input">
+						<input type="file" id="image" name="image"  class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>" value= "<%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
+					    <% if (locals.errors && errors.image) { %>
+							<div class="text-danger">
+								<%= errors.image.msg %>
+							</div>
+						<% } %>
 					</div>					
 					<div class="crear">
 						<button type="submit" class="guardar">Guardar producto</button>
 					</div>
 				</div>
+			
 			</form>
 		</div>
     </div>
 </main>
 
 	<%- include ("../partials/footer") %>
+	<script src="/js/productCreate.js"></script>
 </body>	
 </html>

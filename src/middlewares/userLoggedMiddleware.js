@@ -1,7 +1,19 @@
-const User = require('../models/User');
-const db = require('../database/models');
+//const User = require('../models/User');
+//const db = require('../database/models');
 
 function userLoggedMiddleware(req, res, next) {
+	res.locals.isLogged = false;
+
+	if (req.session.userLogged && req.session) {
+		res.locals.isLogged = true;
+		res.locals.userLogged = req.session.userLogged;
+	}
+
+	next();
+}
+
+
+/*function userLoggedMiddleware(req, res, next) {
 	res.locals.isLogged = false;
 
 	let emailInCookie = req.cookies.userEmail;
@@ -17,6 +29,6 @@ function userLoggedMiddleware(req, res, next) {
 	}
 
 	next();
-}
+} */
 
 module.exports = userLoggedMiddleware;

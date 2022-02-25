@@ -2,12 +2,11 @@ const path = require('path');
 const { body } = require('express-validator');
 
 module.exports = [
-	body('name').notEmpty().withMessage('Tienes que escribir un nombre'),
-    body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
-	body('email')
-		.notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
-		.isEmail().withMessage('Debes escribir un formato de correo válido'),
-	body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+	body('name').notEmpty().withMessage('Tienes que escribir un nombre').bail().isLength({min:2}).withMessage("Mínimo 2 caracteres"),
+    body('lastName').notEmpty().withMessage('Tienes que escribir un apellido').bail().isLength({min:2}).withMessage("Mínimo 2 caracteres"),
+	body('email').notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
+		.isEmail().withMessage("Correo inválido"),
+	body('password').notEmpty().withMessage('Tienes que escribir una contraseña').isLength({min:8}).withMessage("Mínimo 8 caracteres"),
 	body('birthdate').notEmpty().withMessage('Tienes que poner tu fecha de nacimiento'),
 	body('avatar').custom((value, { req }) => {
 		let file = req.file;

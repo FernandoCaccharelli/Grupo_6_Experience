@@ -6,7 +6,7 @@ const port = 3030;
 
 const app = express();
 
-
+const rememberMiddleware = require("./middlewares/rememberMiddleware")
 const userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware')
 
 app.use(session({
@@ -17,6 +17,7 @@ app.use(session({
 
 app.use(cookies());
 
+app.use(rememberMiddleware);
 app.use(userLoggedMiddleware);
 
 const publicPath = path.resolve(__dirname, '../public');
