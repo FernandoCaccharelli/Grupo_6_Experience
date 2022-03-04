@@ -18,8 +18,7 @@ window.addEventListener("load",function(){
         let email = document.querySelector("input.email")
         if(email.value == ""){
             errores.push("Tenes que escribir un email")
-        }
-          
+        }  
         let password = document.querySelector("input.password")
         if(password.value == ""){
             errores.push("Tenes que escribir una contraseña")
@@ -39,3 +38,4 @@ window.addEventListener("load",function(){
         
     })
 })
+

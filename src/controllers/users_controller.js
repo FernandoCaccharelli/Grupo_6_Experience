@@ -34,7 +34,8 @@ const controller = {
 		return res.render('users/login');
 	},
 	loginProcess: (req, res) => {
-        const errors = validationResult(req)
+		const errors = validationResult(req)
+
 		if (errors.errors.length > 0){
 			return res.render("users/login", {
 				errors:errors.mapped(),
@@ -49,30 +50,30 @@ const controller = {
 			.then(function(usuario) {
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, usuario.password);
 			if (isOkThePassword) {
-				//delete usuario.password;
-				req.session.userLogged = usuario;
-				res.redirect('/user/profile')
+				
+               req.session.userLogged = usuario;
+			   res.redirect('/user/profile')
 
-			   if(req.body.remember_user != undefined) {
-             	   res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-					return res.redirect('/user/profile');
-			}
-			  else{
-				res.render('users/login', {
-				errors: {
-					email: {msg: 'Las credenciales son inválidas'},
-					password:{msg:'Las credenciales son inválidas'}
-					}
-				})
-		
-           }
-      }
+				  if(req.body.remember != undefined) {
+              	        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+			 		     return res.redirect('/user/profile');
+			          }
+			          
+                  }else{
+		              res.render('users/login', {
+		                   errors: {
+		                 	email: {msg: 'Las credenciales son inválidas'},
+			                password:{msg:'Las credenciales son inválidas'}
+			            }
+                    })
+
+                }
 	
        })
            .catch(function(error){
 	        console.log(error)
           })
-       }
+       } 
       },
 
 	profile: (req, res) => {
@@ -94,7 +95,8 @@ const controller = {
 	}
 
 }
-   
+
+
 
 
 module.exports = controller; 
