@@ -26,7 +26,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         expiration_date: {
-            type: dataTypes.DATE,
+            type: dataTypes.DATE
         },
         image: dataTypes.STRING,
         category_id:dataTypes.BIGINT(10)

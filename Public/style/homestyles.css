@@ -196,6 +196,7 @@ footer{
 
 footer h4{
     font-size: 12px;
+    
 }
 .footer-i{
     font-size: 1em;
@@ -245,7 +246,7 @@ footer i {
     }
     .shop{
         font-size: 1.2em;
-        margin-right: 4px;  
+        margin-right: 9px;  
     }
     .menu-inferior{
         display: flex;
@@ -371,7 +372,7 @@ footer h4 {
            margin-top: 34px;
            height: 58px;
            border-radius: 29px;
-           font-size: 28px;
+           font-size: 24px;
            padding: 12px;
        }
        .barra i{

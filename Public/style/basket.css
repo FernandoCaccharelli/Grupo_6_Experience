@@ -4,6 +4,7 @@
     padding: 0%;
 }
 body {
+    width: 100%;
     font-family: "Roboto";
 }
 
@@ -11,55 +12,46 @@ body {
 .menu-superior{
     display: flex;
     justify-content: space-between;
-    height: 60px;
     align-items: center;
 }
-a.menu, a.shop {
+a.menu {
     display: none;
 }
 
-.logo{
-    font-size: 12px;
-    margin-left: 15px;
-   
-}
 .logo a {
     text-decoration: none;
     color: black;
 }
-.barra{
+.menu-superior h1{
+    font-size: 24px;
+    margin-top: 14px;  
+    margin-left: 15px;
+}
+.barra input{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 50%;
-    height: 28px;
-    margin-left: -35px;
-    position: relative;
-}
-.barra input {
-    border: none;
-    background-color: transparent;
-    padding-left: 10%;
-    height: 28px;
-}
-.fa-search {
-    position: absolute;
-    top: 5px;
-    right: 5%;
-}
-.barra p{
-    padding: 10px;
-    font-size: 18px;
-}
-.search{
+    width: 85%;
+    height: 32px;
+    margin-left: 16px;
+    margin-top: 13px;
     padding: 5px;
-    font-size: 125%;
+    font-size: 16px;
 }
-.user{
-    margin-right: 15px;  
-    font-size: 1.3em;
-    color: #5E81A3;
+.barra i{
+    margin-left: -26px;
 }
-
+.iconos{
+    display: flex;
+    margin-right: 21px;
+    margin-top: 12px;
+    font-size: 1.4em;
+}
+.iconos i{
+    color:#5E81A3;
+}
+.shop{
+   display: none;
+}
 .menu-inferior{
     display: none;
 }
@@ -103,7 +95,9 @@ main section article.food {
 }
 .imagen-product img {
     width: 100%;
-    height: 100%;}
+    height: 100%;
+    margin-left: 15px;
+}
 
 
 /*/////////////////////     BOTONES             //////////////////////*/
@@ -146,17 +140,17 @@ main section article div.button {
 /*/////////////////////////////////////////////////////////////////////////////////////*/
 
 .info-exp {
-    margin-top: 15px;   
+    margin-top: 15px;  
+    margin-left: 15px; 
 }
-
-section article div.info-exp h3 {
+.info-exp h3 {
     color:#9BB1C5;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .info-exp p {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .info-exp p.price {
@@ -223,19 +217,38 @@ footer i {
 
 @media(min-width:768px) {
 /*/////////////// HEADER ///////////////////*/
-.logo{
-    font-size: 20px;
-    margin-left: 15px;
+.menu-superior{
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.menu-superior h1{
+    margin-left: 34px;
+    font-size: 34px;
+    margin-top: 20px;
+}
+.barra {
+    width: 100%;
+}
+.barra input{
+    width: 55%;
+    margin-left: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding: 8px;
+}
+.barra i{
+    font-size: 1.4em;
+    margin-left: -36px;
 }
 
-.barra input {
-    padding-left: 5%;
-    height: 25px;
+.iconos{
+    margin-top: 8px;
+}
+.user{
+    font-size: 1.4em;
+    margin-right: 23px;
 }
 
-.user {
-    font-size: 1.5em;
-}
 /*////////////////// MAIN //////////////////////*/
 
 .description {
@@ -257,6 +270,9 @@ footer i {
 .info-exp {
     margin-top: 45px;
     height: 358.86px;
+}
+.info-exp h3, .info-exp p{
+    font-size: 18px;
 }
 
 
@@ -308,28 +324,34 @@ footer h4 {
 
 @media(min-width:1024px) {
     /*/////////////// HEADER ///////////////////*/
-.logo{
-    font-size: 25px;
-    margin-left: 20px;
-}
-
-.barra {
-    height: 33px;
-}
-
-.barra input {
-    padding-left: 5%;
-    height: 30px;
-    font-size: 20px;
-}
-
-.fa-search{
-    font-size: 22px;
-}
-
-.user {
-    font-size: 1.9em;
-}
+    .menu-superior{
+        margin-top: 26px;
+        margin-bottom: 45px;
+    }
+    .logo a{
+        font-size: 46px;
+        margin-left: 16px;
+    }
+    .barra input{
+        width: 50%;
+        margin-left: 174px;
+        margin-top: 18px;
+        height: 58px;
+        border-radius: 29px;
+        font-size: 24px;
+        padding: 12px;
+    }
+    .barra i{
+        margin-left: -55px;
+        font-size: 2em;
+    }
+    .iconos{
+        font-size: 1.9em;
+        margin-top: 10px;
+    }
+    .user{
+        margin-left: -91px;
+    }
 /*////////////////// MAIN //////////////////////*/
 
 .description {
@@ -359,7 +381,7 @@ section article div.info-exp h3 {
 
 .info-exp p {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 

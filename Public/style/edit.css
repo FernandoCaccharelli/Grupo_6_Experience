@@ -17,7 +17,6 @@ body{
     justify-content: space-between;
     padding-bottom: 10px;
     margin-top: 0px;
-    border-bottom: 1px solid #9BB1C5;
 }
 .menu{
     font-size: 1.8em;
@@ -64,11 +63,21 @@ body{
     display: none;
 }
 /*//////////////////////////         MAIN               /////////////////////////////*/
+.flecha i{
+    font-size:1.5em ;
+    color:#5E81A3;
+    margin-left: 20px;
+    transition: color 450ms;
+}
+.flecha i:hover{
+  color:#1E5488;
+    
+}
 .formulario {
     background-color: #D8E7F5;
-    width: 75%;
+    width: 84%;
     height: 90%;
-    margin: 10% 0% 10% 17%;
+    margin: 24px 0px 10px 26px;
     box-shadow: 7px -1px 18px 0px rgba(0,0,0,0.40);
     border-radius: 10px;   
     text-align: center;
@@ -76,13 +85,10 @@ body{
     flex-direction: column;
 
 }
-
 div .formulario-titulo {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
-    margin-top: 30px;
 }
-
 .products-title {
     font-size: 16px;
     text-align: start;
@@ -91,6 +97,7 @@ div .formulario-titulo {
 .completar-form{
     display: flex;
     flex-direction: column;
+    margin-top: 14px;
 }
 
 .producto {
@@ -98,17 +105,12 @@ div .formulario-titulo {
     flex-direction: column;
     font-weight: bold;
 }
-
 .producto textarea {
     height: 100px;
-    margin-left: 13px;
 }
-
 .producto div{
-    margin-top: 20px;
-  
+    margin-top: 20px; 
 }
-
 .form-label{
     font-weight: bold;
 }
@@ -117,8 +119,9 @@ div .formulario-titulo {
     font-size: 15px;
 }
 
-.producto input, .producto select{
+.producto input, .producto textarea ,.producto select{
     border-radius: 5px;
+    border: #5E81A3 1px solid;
 }
 
 .descripcion textarea {
@@ -156,7 +159,7 @@ div .producto .precio .form-input{        /*   Precio    */
 /*////////////////////////////      FOOTER               //////////////////////////////////*/
 
 footer{
-    margin-top: 50px;   
+    margin-top: 46px;  
 }
 
 .footer-container {
@@ -167,11 +170,12 @@ footer{
 
 footer h4{
     font-size: 12px;
+    margin-left: 14px;
+    padding-top: 5px;
 }
 .footer-i{
     font-size: 1em;
-    align-self: center;
-    
+    align-self: center;   
 }
 
 footer i {
@@ -212,7 +216,7 @@ footer i {
     }
     .user{
         font-size: 1.2em;
-        margin-right: 77px; 
+        margin-right: 65px; 
         margin-left: -41px;
     }
     .shop{
@@ -222,17 +226,18 @@ footer i {
     }
     /*////////////////// MAIN //////////////////////*/
 
-
+    .flecha i{
+        margin-left: 36px;
+    }
+    main{
+        width: 68%;
+    }
+    .formulario{
+        margin-left: 165px;
+    }
     div .formulario-titulo {
-        font-size: 26px;
+        font-size: 20px;
     }
-
-    .products-title {
-        font-size: 25px;
-        text-align: center;
-    }
-    
-
     .producto div{
         align-items: center;
         margin-top: 40px;
@@ -242,9 +247,8 @@ footer i {
         margin: 10px 0px 0px 0px;
     }
     
-
     form .form-label{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     div .producto .imagen .form-input{   /*         Seleccionar archivo*/
@@ -320,25 +324,33 @@ footer i {
         
 
      /*////////////////// MAIN //////////////////////*/
+     .flecha i{
+        font-size: 2.2em;
+        margin-left: 54px;   
+         margin-top: 13px;
+        margin-bottom: 18px;
+    }
+    .formulario{
+        margin-left: 210px;
+    }
      div .formulario-titulo {
-        font-size: 30px;
+        font-size: 28px;
         margin-top: 70px;
     }
-
     .products-title {
         font-size: 35px;
     }
-
-    .producto textarea {
-        font-size: 20px;
-    }
-    
     form .form-label{
         font-size: 22px;
     }
-
+    .editando input, .producto input{
+        font-size: 24px;
+    }
+    .producto textarea {
+        font-size: 20px;
+    }
     div .producto select{
-        font-size: 18px;
+        font-size: 24px;
     }
 
     div .producto .imagen .form-input{   /*         Seleccionar archivo*/

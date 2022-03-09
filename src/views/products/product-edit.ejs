@@ -14,7 +14,11 @@
 <body>
 	<%- include ("../partials/header") %>
 	<main>
+		<div class="flecha">
+			<a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
+		</div>	
 		<div class="formulario">
+			
 			<div class="row">
 				<div class="formulario-titulo">
 					<h2 class="titulo">Formulario de edición de productos</h2>
@@ -34,11 +38,11 @@
 						</div>
 						<div class="personas">
 							<label for="personas" class="form-label">Cantidad de personas:</label>
-							<select name="personas" id="personas" class="form-input" ">
-								<option value="1">1</option>
+							<select name="personas" id="personas" class="form-input" >
+								<option value="1"> 1 </option>
 								<option value="2">2</option>
 								<option value="3">3</option>
-								<option value="4">4</option>
+								<option value="3">4</option>
 							</select>
 						</div>
 						<div class="categorias">
@@ -51,11 +55,15 @@
 						</div>
 						<div class="imagen">
 							<label for="image" class="form-label">Imagen:</label>
-							<input type="file" id="image" name="image" name= ".jpg,.npg"  class="form-input">
+							<input type="file" id="image" name="image" class="form-input">
 						</div>
 						<div class="precio">
 							<label for="price" class="form-label">Precio del producto:</label>
 							<input type="text" id="price" name="price" placeholder="Ej:$2.400" class="form-input" value="<%= productToEdit.price %>">
+						</div>
+						<div class="vencimiento">
+							<label for="expiration_date" class="form-label">Fecha limite:</label>
+							<input  type="date" name="expiration_date" id="expiration_date" class="form-input" value = "<%=  productToEdit.expiration_date %>"></input>
 						</div>
 						<div class="crear">
 							<button type="submit" class="guardar">Guardar cambios</button>

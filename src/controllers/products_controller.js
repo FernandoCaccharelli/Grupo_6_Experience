@@ -45,6 +45,7 @@ const products_controller = {
                 category: req.body.category,
                 description: req.body.description,
                 image: req.file == undefined ? "default-image.jpg" : req.file.filename,
+                expiration_date: req.body.expiration_date
             }
         
         db.Producto.create(newProduct)

@@ -8,6 +8,9 @@ body{
 }
 
 /*//////////////////////// HEADER ///////////////////////*/
+.menu-principal{
+    margin-top: 10px;
+}
 .logo a {
     text-decoration: none;
     color: black;
@@ -17,7 +20,6 @@ body{
     justify-content: space-between;
     padding-bottom: 10px;
     margin-top: 0px;
-    border-bottom: 1px solid #9BB1C5;
 }
 .menu{
     font-size: 1.8em;
@@ -69,7 +71,7 @@ body{
 .product-detail {
     background-color:aliceblue;
     width: 90%;
-    margin: 30px 0px 0px 17px;
+    margin: 22px 0px 0px 17px;
     display: flex;
     flex-direction: column;
     border-radius: 14px;
@@ -78,38 +80,19 @@ body{
 }
 
 .title {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    justify-content: space-evenly;
-}
-
-.flecha {
-    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .flecha i {
     color: #5E81A3;
-    font-size: 15px;
-    margin-left: 25px;
-}
-.superior{
-    display: flex;
-    flex-direction: row;
+    font-size: 1.5em;
+    margin-left: 18px;
 }
 
-.superior i {
-    color: #F8B238 ;
-    margin: 25px 0px 0px 25px;
-}
-.superior h3{
-    color: #F8B238 ;
-    margin: 23px 0px 0px 8px;
-}
 .detalle{
     max-width: 92%;
     margin-left: 18px;
-    text-align: justify;
 }
 .product-image{
     width: 90%;
@@ -126,6 +109,8 @@ article i{
 }
 article h4{
     font-size: 22px;
+    text-align: center;
+    margin-top: 3px;
 }
 article .botones{
     display: flex;
@@ -145,7 +130,7 @@ article input{
 button{
     height: 35px;
     width: 90px;
-    margin-left: 25px;
+    margin-left: 23px;
     border-radius: 14px;
     border:1px solid #5E81A3;
     background-color: #cedeee;
@@ -191,15 +176,7 @@ article a{
  article .puntuacion, article .puntuacion2{
      display: flex;
  }
- .puntuacion i, .puntuacion2 i{
-     color:#F8B238;
-     margin-top: 19px;
-     margin-left: 8px;
- }
- .puntuacion h2, .puntuacion2 h2{
-    color:#F8B238;
-    font-size: 20px;
- }
+ 
  .oportunidad1 h3,.oportunidad2 h3{
      margin-top: 25px;
      font-size: 16px;
@@ -272,7 +249,7 @@ footer i {
 }
 .user{
     font-size: 1.2em;
-    margin-right: 77px; 
+    margin-right: 64px; 
     margin-left: -41px;
 }
 .shop{
@@ -282,36 +259,20 @@ footer i {
 }
 
 /*//////////////////////////          MAIN          ///////////////////////*/
-.product-detail{
-    width: 80%;
-    margin-left: 75px;
-}
-.title {
-    justify-content: flex-start ;
-}
+
 .flecha{
-    margin-top: 55px;
+    margin-top: 20px;
+    margin-left: 17px;
 }
 .flecha i {
-    font-size: 30px;
+    font-size: 1.8em;
 }
-.superior{
-    margin-left: 150px;
+main{
+    width: 78%;
+    margin-left: 45px;
 }
-
-.superior h1 {
-    font-size: 45px;
-}
-
-.superior i {
-    color: #F8B238 ;
-    margin: 55px 0px 0px 55px;
-    font-size: 25px;
-}
-.superior h3{
-    color: #F8B238 ;
-    margin: 50px 0px 0px 8px;
-    font-size: 30px;
+.product-detail{
+    margin-left: 75px;
 }
 .detalle{
     font-size: 22px;
@@ -331,15 +292,14 @@ article div p {
 }
 
 article input{
-    margin: 30px 0px 25px 200px;
+    margin: 30px 0px 25px 180px;
     width: 30%;
     height: 41px;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 article .botones{
-    justify-content: start;
-    margin-left: 160px;
+   margin-left: 134px;
 }
 
 
@@ -364,6 +324,9 @@ footer h4 {
 }
 @media(min-width:1024px){
 /*/////////////// HEADER ///////////////////*/
+.menu-superior{
+    margin-bottom: -40px;
+}
 .menu-superior h1{
     font-size: 50px;
     margin-left: 49px;
@@ -394,30 +357,15 @@ footer h4 {
 
 /*//////////////////////////          MAIN          ///////////////////////*/
 .product-detail{
-    margin-left: 100px;
+    margin-left: 122px;
 }
 
 .flecha{
     margin-top: 65px;
 }
 .flecha i {
-    font-size: 30px;
-}
-.superior{
-    margin-left: 150px;
-}
-
-.superior h1 {
-    font-size: 55px;
-}
-
-.superior i {
-    margin: 65px 0px 0px 40px;
-    font-size: 30px;
-}
-.superior h3{
-    margin: 60px 0px 0px 8px;
-    font-size: 35px;
+    font-size: 2em;
+    margin-left: 36px;
 }
 .detalle{
     font-size: 30px;
@@ -436,6 +384,9 @@ article div h3{
     font-size: 25px;
     margin-top: 25px;
 }
+article h4{
+    margin-top: 50px;
+}
 
 article div h3, p, h4 {
     margin-left: 15px;
@@ -443,7 +394,7 @@ article div h3, p, h4 {
 
 article input{
     margin: 0px 0px 25px 130px;
-    width: 30%;
+    width: 35%;
     height: 41px;
     font-size: 23px;
 }

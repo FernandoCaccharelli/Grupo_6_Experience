@@ -6,81 +6,74 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    
+    width: 100%;
 }
 
 /*//////////////////////// HEADER ///////////////////////*/
+
 .menu-superior{
     display: flex;
     justify-content: space-between;
-    height: 60px;
     align-items: center;
+    margin-top: 10px;
+    margin-right: 58px;
 }
-a.menu, a.user, a.shop {
+a.menu {
     display: none;
 }
 
-.logo{
-    font-size: 20px;
-    margin-left: 15px;
-   
-}
 .logo a {
     text-decoration: none;
     color: black;
 }
-.barra{
+.menu-superior h1{
+    font-size: 24px;
+    margin-left: 15px;
+}
+.barra input{
     border:1px solid #9BB1C5;
     border-radius: 14px;
-    width: 50%;
-    height: 28px;
-    margin-left: -35px;
-    position: relative;
-}
-.barra input {
-    border: none;
-    background-color: transparent;
-    padding-left: 10%;
-    height: 28px;
-}
-.fa-search {
-    position: absolute;
-    top: 5px;
-    right: 5%;
-}
-.barra p{
-    padding: 10px;
-    font-size: 18px;
-}
-.search{
+    width: 85%;
+    height: 32px;
+    margin-left: 16px;
     padding: 5px;
-    font-size: 125%;
+    font-size: 16px;
+    margin-top: 3px;
 }
-.user{
-    margin-right: 15px;  
-    font-size: 1.3em;
-    color: #5E81A3;
+.barra i{
+    margin-left: -26px;
 }
-
 .menu-inferior{
+    display: none;
+}
+.iconos{
     display: none;
 }
 
 /*//////////////////////////         MAIN               /////////////////////////////*/
+.flecha i{
+    font-size:1.5em ;
+    color:#5E81A3;
+    margin-left: 16px;
+    margin-top: 12px;
+    transition: color 450ms;
+}
+.flecha i:hover{
+  color:#1E5488;   
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background-color: #D8E7F5 ;
-    margin-top: 32px;
-    max-width:88%;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-top: 18px;
+    max-width:85%;
+    margin-left: 27px;
     border-radius: 10px;
-
 }
 h2 {
-    font-size: 34px;
+    font-size: 30px;
     text-align: center;
     padding: 20px;
 }
@@ -116,7 +109,6 @@ main section .name,
 
 .imagen label{    /*/////////////   Imagen de perfil ////////////////////*/
     font-size: 13px;
-    margin-left: 35px;
     font-weight: bold;
 }
 
@@ -151,7 +143,8 @@ main section .register-button{
 /*////////////////////////////      FOOTER               //////////////////////////////////*/
 
 footer{
-    margin-top: 30px;   
+    margin-top: 25px;   
+    margin-left: 10px;
 }
 
 .footer-container {
@@ -162,6 +155,7 @@ footer{
 
 footer h4{
     font-size: 12px;
+    padding-top: 5px;
 }
 .footer-i{
     font-size: 1em;
@@ -180,24 +174,32 @@ footer i {
 
 /*//////////////////////////     HEADER      ///////////////////////*/
 
-.menu-superior {
-    margin-top: 30px;
+.menu-superior{
+    margin-top: 12px;
+    margin-bottom: -26px;
 }
-
-.logo {
-    font-size: 30px;
-    margin-left: 35px;
+.menu-superior h1{
+    margin-left: 34px;
+    font-size: 34px;
+    margin-top: 20px;
 }
 
 .barra {
-    width: 55%;
-    height: 35px;
+    width: 100%;
+    margin-top: 14px;
 }
 
 .barra input {
-    padding-left: 5%;
-    height: 35px;
-    font-size: 20px;
+    width: 50%;
+    margin-left: 132px;
+    margin-top: 12px;
+    height: 42px;
+    border-radius: 20px;
+    padding: 8px;
+}
+.barra i{
+    font-size: 1.4em;
+    margin-left: -36px;
 }
 
 .fa-search {
@@ -205,10 +207,14 @@ footer i {
 }
     
 /*///////////////////// MAIN ///////////////////////////////////*/
+.flecha i { 
+    margin-left: 36px;
+    margin-top: 64px;
+ }
 
 main{
-    max-width:70%;
-    margin: 45px 100px;
+    width:50%;
+    margin: 45px 195px;
     border-radius: 10px;
 }
 
@@ -252,32 +258,34 @@ footer h4 {
 
  /*////////////////////////        HEADER         ////////////////*/
 
-.logo {
-    font-size: 45px;
-    margin-left: 60px;
+ .menu-superior{
+    margin-top: 18px;
 }
-
-.barra {
-    width: 60%;
-    height: 40px;
+.logo a{
+    font-size: 44px;
+    margin-left: 16px;
 }
-
-.barra input {
-    padding-left: 4%;
-    height: 38px;
-    font-size: 25px;
+.barra input{
+    width: 50%;
+    margin-left: 174px;
+    margin-top: 13px;
+    height: 58px;
+    border-radius: 29px;
+    font-size: 22px;
+    padding: 12px;
 }
-
-.fa-search {
-    font-size: 30px;
-}   
+.barra i{
+    margin-left: -55px;
+    font-size: 2em;
+}
+ 
 
 /*///////////////////// MAIN ///////////////////////////////////*/
-main {
-   text-align: center;
-   margin-left: 160px;
+.flecha i { 
+    font-size: 2.1em;
+    margin-left: 56px;
+    margin-top: 74px;
 }
-
 .text-danger {
     font-size: 18px;
 }
@@ -287,24 +295,32 @@ section.register {
 }
 
 h2 {
-    font-size: 50px;
-    text-align: center;
-    padding: 20px;
+    font-size: 48px;
     margin-top: 25px;
+}
+main{
+    margin-left: 266px;
 }
 
 main section .name, .lastName, .email, .password, .birth-date {
-    font-size: 16px;
+    font-size: 18px;
     margin: 16px 10px;
     height: 40px;
-    width: 100%;
-    padding: 12px;
+    padding: 20px 12px;
 }
-
-main section .register-button {
-    width: 150px;
+.imagen label{
     font-size: 18px;
 }
+.imagen input{
+    font-size: 18px;
+}
+main section .register-button{
+    width: 35%;
+    height: 44px;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+} 
 
 .checkbox {
     font-size: 18px;

@@ -12,6 +12,9 @@
 </head>
 <body>
     <%- include ("../partials/header") %>
+    <div class="flecha">
+        <a href="/"><i class="fas fa-arrow-left"></i></a>
+    </div>
     <main>
         <form action="/user/login" method="POST">
              <h2>Iniciar sesión</h2>
@@ -48,9 +51,6 @@
                 <label class="register-here"> ¿No tenés una cuenta? <a href="/user/register">  Regístrese aquí</a></label>  
              </section>
         </form>
-        <section class="options-login">
-            <button><i class="fas fa-key"></i>Opciones de inicio de sesión</button>
-        </section>
         
     </main>
     <%- include ("../partials/footer") %>      

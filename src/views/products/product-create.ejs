@@ -14,12 +14,11 @@
 <body>
 	<%- include ("../partials/header") %>
 	<main>
+		<div class="flecha">
+			<a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
+		</div>	
 	<div class="formulario">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="titulo">Formulario de creación de productos</h2>
-			</div>
-		</div>
+			<h2 class="titulo">Formulario de creación de productos</h2>
 		<div class="completar-form">
 			<form action="/products" method="POST" enctype="multipart/form-data">
 				<div class="errores">
@@ -70,13 +69,18 @@
 					</div>
 					<div class="imagen">
 						<label for="image" class="form-label">Imagen:</label>
-						<input type="file" id="image" name="image"  class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>" value= "<%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
+						<input type="file" id="image" name="image"  class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>" value= "<%= locals.errors && errors.image ? 'is-invalid' : null %>">
 					    <% if (locals.errors && errors.image) { %>
 							<div class="text-danger">
 								<%= errors.image.msg %>
 							</div>
 						<% } %>
-					</div>					
+					</div>	
+					<div class="vencimiento">
+						<label for="expiration_date" class="form-label">Fecha limite:</label>
+						<input  type="date" name="expiration_date" id="expiration_date" class="form-input" value = "YYYY-MM-DD"></input>
+                    </div>
+
 					<div class="crear">
 						<button type="submit" class="guardar">Guardar producto</button>
 					</div>
