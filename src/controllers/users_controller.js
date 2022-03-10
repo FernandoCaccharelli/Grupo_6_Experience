@@ -9,6 +9,22 @@ const controller = {
 	},
 	processRegister: function (req,res) {
 		let errors = validationResult(req);
+		let validation = validationResult(req)
+
+		db.Usuario.findOne({
+			where:{
+				email:req.body.email
+			}
+		})
+		.then(function(usuario){
+			if(usuario.email==req.body.email){
+				res.render("users/register",{
+					validation: {
+					  email: {msg: 'Ya existe otra persona registrada con ese email'},
+					 }
+				 })
+			}
+		})
 		
 		if (errors.errors.length > 0) {
 			return res.render('users/register', {
