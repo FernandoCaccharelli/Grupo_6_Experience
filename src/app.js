@@ -25,10 +25,6 @@ const publicPath = path.resolve(__dirname, '../public');
 const methodOverride = require ("method-override");
 app.use (methodOverride ("_method"));
 
-// app.locals.formatDate = (date)=>{
-// 	return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate().toString().padStart(2, "0")}`;
-// };
-
 
 const homeRouter = require("./routes/home");
 const howRouter = require ("./routes/how");

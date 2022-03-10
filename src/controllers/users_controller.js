@@ -8,7 +8,7 @@ const controller = {
 		return res.render('users/register');
 	},
 	processRegister: function (req,res) {
-		const errors = validationResult(req);
+		let errors = validationResult(req);
 		
 		if (errors.errors.length > 0) {
 			return res.render('users/register', {
@@ -52,7 +52,7 @@ const controller = {
 			if (isOkThePassword) {
 				
                req.session.userLogged = usuario;
-			   res.redirect('/user/profile')
+			    res.redirect('/user/profile')
 
 				  if(req.body.remember != undefined) {
               	        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
