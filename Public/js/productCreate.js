@@ -2,13 +2,13 @@ console.log("probando");
 window.addEventListener("load",function(){
     let formulario = document.querySelector("form")
     formulario.addEventListener("submit", function(evento){
-       
+      
         let errores = [];
         let name = document.querySelector("input#name")
         if(name.value == ""){
             errores.push("Tenes que escribir un nombre")
-        }else if(name.value.length < 5){
-            errores.push("Tiene que tener al menos 5 caracteres")
+        }else if(name.value.length < 4){
+            errores.push("Tiene que tener al menos 4 caracteres")
         }
        
         let description = document.querySelector("textarea#description")
@@ -18,20 +18,20 @@ window.addEventListener("load",function(){
             errores.push("Tiene que tener al menos 20 caracteres")
         }
 
-        //  let image = document.querySelector("input#image")
-        //  if(image.value !== ".jpg"){
-        //     errores.push("Archivo inválido")
-        //  }
+         let image = document.querySelector("input#image")
+         if(description.value == ""){
+            errores.push("Tenes que subir una imagen")
+        }else if(!/\.(jpg|png|gif)$/i .test(image.value)){
+            errores.push("La extensión de este archivo es inválida")
+         }
         
+        let listaErrores = document.querySelector("div.errores")
+        listaErrores.style.color = "#F3832B";
+
         if(errores.length > 0){
             evento.preventDefault();
-            let listaErrores = document.querySelector("div.errores ul")
-            for(let i = 0; i < errores.length; i++){
-                listaErrores.innerHTML += "<li>" + errores[i] + "</li>"
-         }
-
+            listaErrores.innerHTML = errores.join("<br>") 
         }
-
         
     })
 })

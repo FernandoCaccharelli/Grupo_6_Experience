@@ -2,32 +2,30 @@ console.log("probando");
 window.addEventListener("load",function(){
     let formulario = document.querySelector("form")
     formulario.addEventListener("submit", function(evento){
+       
         let errores = [];
 
         let email = document.querySelector("input.email")
         if(email.value == ""){
             errores.push("Tenes que escribir un email")
-        }  
-        valor = document.getElementById("email").value;
-        if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {
-         errores.push("email inválido");
-      }
+        }else if( !/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com)+$/.test(email.value) ) {
+         errores.push("Email inválido");
+        }
       
         let password = document.querySelector("input.password")
         if(password.value == ""){
             errores.push("Tenes que escribir una contraseña")
         }
-       
- 
+    
+        let listaErrores = document.querySelector("div.errores") 
+        listaErrores.style.color = "#F3832B";
+
         if(errores.length > 0){
             evento.preventDefault();
-            let listaErrores = document.querySelector("div.errores ul")
-            for(let i = 0; i < errores.length; i++){
-                listaErrores.innerHTML += "<li>" + errores[i] + "</li>"
-         }
-
+            listaErrores.innerHTML = errores.join("<br>")
         }
 
-        
     })
+    
+
 })

@@ -35,7 +35,7 @@ const controller = {
 			db.Usuario.create({
             ...req.body,
 			password: bcryptjs.hashSync(req.body.password, 10),
-            image:req.file == undefined ? "default-image.png": req.file.filename
+            avatar:req.file == undefined ? "default-image.png": req.file.filename
 		})
 		.then(()=>{
             res.redirect("/user/login")

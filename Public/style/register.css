@@ -88,7 +88,7 @@ main section .name,
 .lastName,
 .email,
 .password,
-.birth-date {
+.birthdate {
     font-size: 12px;
     margin: 8px 30px;
     height: 35px;
@@ -302,7 +302,7 @@ main{
     margin-left: 266px;
 }
 
-main section .name, .lastName, .email, .password, .birth-date {
+main section .name, .lastName, .email, .password, .birthdate {
     font-size: 18px;
     margin: 16px 10px;
     height: 40px;

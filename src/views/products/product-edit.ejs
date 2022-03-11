@@ -37,8 +37,9 @@
 							<textarea name="description" id="description" class="form-input"><%= productToEdit.description%></textarea>
 						</div>
 						<div class="personas">
-							<label for="personas" class="form-label">Cantidad de personas:</label>
-							<select name="personas" id="personas" class="form-input" >
+							<label for="people" class="form-label">Cantidad de personas:</label>
+							<select name="people" id="people" class="form-input" >
+								<option><%= productToEdit.people%></option>
 								<option value="1"> 1 </option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -59,7 +60,7 @@
 						</div>
 						<div class="precio">
 							<label for="price" class="form-label">Precio del producto:</label>
-							<input type="text" id="price" name="price" placeholder="Ej:$2.400" class="form-input" value="<%= productToEdit.price %>">
+							<input type="text" id="price" name="price" placeholder="2.400" class="form-input" value="<%= productToEdit.price %>">
 						</div>
 						<div class="vencimiento">
 							<label for="expiration_date" class="form-label">Fecha limite:</label>

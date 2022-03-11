@@ -10,8 +10,7 @@ module.exports = (sequelize, dataTypes) => {
          //created_at: dataTypes.TIMESTAMP,
          //updated_at: dataTypes.TIMESTAMP,
         category: {
-             type: dataTypes.STRING,
-             allowNull: true
+             type: dataTypes.STRING
          },
      };
         
