@@ -1,4 +1,4 @@
-//const path = require('path');
+ const path = require('path');
 const { validationResult } = require('express-validator')
 const db = require('../database/models');
 const sequelize = db.sequelize;
@@ -16,7 +16,9 @@ const products_controller = {
                 })
     },
     detail: (req, res) => {
-        db.Producto.findByPk(req.params.id)
+        db.Producto.findByPk(req.params.id, {
+            include: ["categoria"]
+        })
             .then(producto => {
                 res.render('products/productDetail', {productos:producto});
             })
@@ -25,13 +27,21 @@ const products_controller = {
                 })
     }, 
     create: function (req,res) {   
-        db.Producto.findAll()   
-            .then(function(producto){  
-                res.render('products/product-create', {producto : producto}); 
-            }) 
-            .catch(function (error) {
-                console.log(error);
-                })        
+        let promProductos = db.Producto.findAll(); 
+        let promCategorias =db.Categoria.findAll(); 
+   
+        Promise
+        .all([promProductos, promCategorias])
+        .then(([producto, categoria])=>{
+            return res.render(path.resolve(__dirname, '../views/products/product-create'), {producto,categoria})
+        })
+        // db.Producto.findAll()   
+        //     .then(function(producto){  
+        //         res.render('products/product-create', {producto : producto}); 
+        //     }) 
+            // .catch(function (error) {
+            //     console.log(error);
+            //     })        
     },
     store: function (req,res) {
         const errors = validationResult(req)
@@ -42,10 +52,10 @@ const products_controller = {
                 name: req.body.name,
                 price: req.body.price,
                 people: req.body.people,
-                category: req.body.category,
                 description: req.body.description,
                 image: req.file == undefined ? "default-image.jpg" : req.file.filename,
-                expiration_date: req.body.expiration_date
+                expiration_date: req.body.expiration_date,
+                category_id: req.body.category_id
             }
         
         db.Producto.create(newProduct)
@@ -58,11 +68,24 @@ const products_controller = {
         }          
     },
     edit: function(req,res){
-        db.Producto.findByPk(req.params.id)
-        .then((producto)=>{
-                res.render("products/product-edit",{productToEdit:producto})  
+        let promCategorias = db.Categoria.findAll();
+        let promProducos = db.Producto.findByPk(req.params.id, {
+                include: ["categoria"]
+            });
+            Promise
+            .all([promProducos, promCategorias])
+            .then(([productToEdit, categoria])=>{
+                    res.render("products/product-edit",{productToEdit,categoria})  
+    
+                })
 
-            })
+        // db.Producto.findByPk(req.params.id, {
+        //     include: ["categoria"]
+        // })
+        // .then((producto)=>{
+        //         res.render("products/product-edit",{productToEdit:producto})  
+
+        //     })
      },
     update: function (req,res) {
         db.Producto.findByPk(req.params.id)

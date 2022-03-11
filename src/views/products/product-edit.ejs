@@ -47,11 +47,16 @@
 							</select>
 						</div>
 						<div class="categorias">
-							<label for="category" class="form-label">Categoría:</label>
-							<select name="category" id="category" class="form-input" >
-								<option value="gastronomia">Gastronomía</option>
+							<label for="category_id" class="form-label">Categoría:</label>
+							<!-- <select name="category" id="category" class="form-input" >
 								<option value="aventura">Aventura</option>
+								<option value="gastronomia">Gastronomía</option>
 								<option value="entretenimiento">Entretenimiento</option>
+							</select> -->
+							<select name="category_id" id="category" class="form-input">
+								<% categoria.forEach(categoria => { %>
+								<option value="<%= categoria.id %>" <% if (productToEdit.categoria.id == categoria.id) { %><%= 'selected' %><% }; %>><%= categoria.category %></option>
+								<% }); %>
 							</select>
 						</div>
 						<div class="imagen">
