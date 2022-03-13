@@ -17,9 +17,16 @@
     <main>
         <form action="/user/register" method="POST" enctype="multipart/form-data">
             <h2>¡Creá Tu Cuenta!</h2>
+            <!-- frontend -->
             <div class="errores">
              
             </div>
+             <!-- back mismo email -->
+            <% if (locals.validation && validation.email) { %>
+                <div class="text-danger">
+                    <%= validation.email.msg %>
+                </div>
+            <% } %>          
             <section class="register">
                 <div  class="user-name">
                     <input class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 

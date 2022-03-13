@@ -9,41 +9,42 @@ const controller = {
 	},
 	processRegister: function (req,res) {
 		let errors = validationResult(req);
-		let validation = validationResult(req)
+		let validation = validationResult(req);
 
-		db.Usuario.findOne({
-			where:{
-				email:req.body.email
-			}
-		})
-		.then(function(usuario){
-			if(usuario.email==req.body.email){
-				res.render("users/register",{
-					validation: {
-					  email: {msg: 'Ya existe otra persona registrada con ese email'},
-					 }
-				 })
-			}
-		})
-		
 		if (errors.errors.length > 0) {
 			return res.render('users/register', {
 				errors: errors.mapped(),
 				oldData: req.body
 			});
-		} else {
-			db.Usuario.create({
-            ...req.body,
-			password: bcryptjs.hashSync(req.body.password, 10),
-            avatar:req.file == undefined ? "default-image.png": req.file.filename
-		})
-		.then(()=>{
-            res.redirect("/user/login")
-        })
-        .catch(function (error) {
-            console.log(error);
-            })  
-		}		    
+		    } else {
+               db.Usuario.findOne({
+			        where:{
+				       email:req.body.email
+			       }
+		         })
+		       .then(function(usuario){
+			     if(usuario.email == req.body.email){
+				   res.render("users/register",{
+					validation: {
+					  email: {msg: 'Ya existe otra persona registrada con ese email'},
+					 }
+					})
+				}else{
+		       db.Usuario.create({
+                    ...req.body,
+			        password: bcryptjs.hashSync(req.body.password, 10),
+                    avatar:req.file == undefined ? "default-image.png": req.file.filename
+		        })
+		           .then(()=>{
+                      res.redirect("/user/login")
+                 })
+				}
+
+		}).catch(function(error){
+	        console.log(error)
+          })
+	   }
+	   			    
     },
 
     login: (req, res) => {

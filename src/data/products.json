@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Avocado Republic",
-    "description": "Acércate a conocerlos. Son mucho más que platos con palta. Ubicado en CABA - Honduras 5560.",
+    "description": "Es un Fast Good donde la palta es la protagonista de la carta ",
     "personas": 2,
     "category": "Gastronomía",
     "image": "avocado_republic.PNG",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Cervelar",
-    "description": "e esperan una amplia variedad de cervezas tiradas, un servicio gastronómico moderno y una arquitectura bien cervecera. Un combo que te va a regalar experiencias únicas e inolvidables! Ubicado en Coghlan - Av. Congreso 3701.",
+    "description": "Ofrece una enorme variedad de cervezas artesanales, acompañado de un servicio gastronómico moderno",
     "personas": 2,
     "category": "Gastronomía",
     "image": "cervelar.PNG",
@@ -65,101 +65,101 @@
   {
     "id": 8,
     "name": "La Birrería",
-    "description": "Excelente cerveza, grandes amigos y un buen rock and roll. ¡Viva la birra! Ubicado en CABA (Varias sucursales)",
+    "description": "Excelente cerveza, buena comida y Rock and roll  ",
     "personas": 2,
     "category": "Gastronomía",
     "image": "la_birreria.PNG",
-    "price": "3000"
+    "price": "2500"
   },
   {
     "id": 9,
-    "name": "Peñón del Aguila - Rosario",
-    "description": "La historia y el paso de la cerveza artesanal en una pinta, junto a hamburguesas con un toque gourmet. ¡Una dupla que no te va a dejar a gamba! Ubicado en Rosario - Alvear 105.",
+    "name": "Don Julio Parrilla",
+    "description": "Se destaca por servir cortes de carne premium a la parrilla, acompañados por vegetales y productos orgánicos de cada temporada ",
     "personas": 3,
     "category": "Gastronomía",
-    "image": "peñon_del_aguila_rosario.PNG",
-    "price": "$2500"
+    "image": "5ffe2e44324f6.jpg",
+    "price": "$4000"
   },
   {
     "id": 10,
-    "name": "Vegan Burgers en Devoto",
-    "description": "Green Factory te propone lo más rico del fast food 100% vegetal. Ubicado en Devoto - Sanabria 4509.",
+    "name": "Sacro",
+    "description": "Restaurante de comida del mundo basada en plantas y hongos",
     "personas": 2,
     "category": "Gastronomía",
-    "image": "vegan_burgers_en_devoto.PNG",
-    "price": "$2200"
-  },
-  {
-    "id": 11,
-    "name": "Picarón",
-    "description": "Disfruta la propuesta de Maxi Rossi. Platos de temporada en porciones chicas y compartibles. Ubicado en Capital Federal - Av. Dorrego 866",
-    "personas": 2,
-    "category": "Gastronomía",
-    "image": "picaron.PNG",
-    "price": "$5000"
-  },
-  {
-    "id": 12,
-    "name": "Sucre Restaurant Bar Grill",
-    "description": "Un espacio moderno e innovador combinado con la mejor cocina de autor.",
-    "personas": 3,
-    "category": "Gastronomía",
-    "image": "sucre_restaurant_bar_grill.PNG",
-    "price": "$6400"
-  },
-  {
-    "id": 13,
-    "name": "Toc Toc & Chungo",
-    "description": "Una comedia desopilante de Laurent Baffie. Preparate para la obra con unas copas degustación. Ubicado en CABA (Varias sucursales)",
-    "personas": 2,
-    "category": "Entretenimiento",
-    "image": "toc_toc_y_chungo.PNG",
+    "image": "salon.jpg",
     "price": "$3500"
   },
   {
-    "id": 14,
-    "name": "Ferdydurke",
-    "description": "¡Disfrutá de esta comedia dramática desde tu casa!",
+    "id": 11,
+    "name": "Pizzería Güerrin",
+    "description": "Emblematica Pizzeria ubicada en Av. Corrientes. Un ícono de la pizza porteña",
+    "personas": 2,
+    "category": "Gastronomía",
+    "image": "2AAQSIDFLBEZ5CJI4MQ77ORMXA.jpg",
+    "price": "$2400"
+  },
+  {
+    "id": 12,
+    "name": "P.F. Chang's",
+    "description": "Cocina de alta calidad de inspiración asiática y americana en un ambiente sofisticado y contemporáneo",
+    "personas": 2,
+    "category": "Gastronomía",
+    "image": "Changs.jpg",
+    "price": "$5800"
+  },
+  {
+    "id": 13,
+    "name": "Bioparque Temaiken",
+    "description": "El Lugar de las Aves, el Acuario, La Chacra, su paisaje, sus restaurantes y paradores hacen de Temaikèn un lugar inolvidable para pasar un día en familia.",
     "personas": 4,
     "category": "Entretenimiento",
-    "image": "ferdydurke.PNG",
-    "price": "$2000"
+    "image": "950x696.jpg",
+    "price": "$10250"
+  },
+  {
+    "id": 14,
+    "name": "Bus turístico",
+    "description": "Tu ticket por 24 hs te permitirá subir y bajar en la parada que desees y recorrer la ciudad a tu ritmoTe proponemos un recorrido con audioguia para que descubras cada rincón de Bs As",
+    "personas": 4,
+    "category": "Entretenimiento",
+    "image": "51.jpg",
+    "price": "$6000"
   },
   {
     "id": 15,
     "name": "El Viejo Almacén",
-    "description": "Un show único y auténtico con despliegue de parejas de tango, afamadas voces de cantores y cantantes y una gran orquesta típica. Ubicado en San Telmo - Balcarce 799",
+    "description": "Un show único y auténtico con despliegue de parejas de tango, afamadas voces de cantores y cantantes",
     "personas": 2,
     "category": "Entretenimiento",
     "image": "el_viejo_almacen.PNG",
-    "price": "$1400"
+    "price": "$3150"
   },
   {
     "id": 16,
-    "name": "Jazz Club",
-    "description": "Buena música y buena comida en Thelonious, plan que no falla.",
+    "name": "Thelonious",
+    "description": "Club de jazz que brinda buena música y excelente comida , plan que no falla.",
     "personas": 2,
     "category": "Entretenimiento",
     "image": "jazz_club.PNG",
-    "price": "$1100"
+    "price": "$4300"
   },
   {
     "id": 17,
     "name": "SĀNTAL",
-    "description": "Vino, tapas y un show de rock acústico. No te pierdas de la experiencia SĀNTAL en el barrio de Belgrano. Ubicado en Belgrano - Virrey del Pino 2235.",
+    "description": "Show de rock acústico para disfrutar con una copa de vino y tapas",
     "personas": 2,
     "category": "Entretenimiento",
     "image": "santal.PNG",
-    "price": "$2900"
+    "price": "$5800"
   },
   {
     "id": 18,
-    "name": "Fede Cyrulnik & Tucson",
-    "description": "Fede Cyrulnik & Tucson",
-    "personas": 2,
+    "name": "Parque de la Costa",
+    "description": "Es un escape perfecto y divertido, una gran opción para grandes y chicos ",
+    "personas": 3,
     "category": "Entretenimiento",
-    "image": "fede_cyrulnik_y_tucson.PNG",
-    "price": "$1300"
+    "image": "parque-b.jpg",
+    "price": "$12000"
   },
   {
     "id": 19,
@@ -168,16 +168,16 @@
     "personas": 2,
     "category": "Entretenimiento",
     "image": "noche_de_jazz.PNG",
-    "price": "$1.800"
+    "price": "$5000"
   },
   {
     "id": 20,
     "name": "Tango porteño",
-    "description": "Espectáculo de nivel mundial en uno de los teatros de Tango más lindo de Buenos Aires.",
+    "description": "La Era Dorada vuelve a brillar en este espectáculo único y moderno que recupera la esencia del Tango tradicional",
     "personas": 2,
     "category": "Entretenimiento",
     "image": "tango_porteño.PNG",
-    "price": "$2.200"
+    "price": "$5900"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "personas": 2,
     "category": "Entretenimiento",
     "image": "stand_up.PNG",
-    "price": "$1.500"
+    "price": "$3300"
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "personas": 1,
     "category": "Entretenimiento",
     "image": "mamba.PNG",
-    "price": "$300"
+    "price": "$800"
   },
   {
     "id": 23,
@@ -204,16 +204,16 @@
     "personas": 2,
     "category": "Entretenimiento",
     "image": "campanopolis.PNG",
-    "price": "$5.800"
+    "price": "$6300"
   },
   {
     "id": 24,
     "name": "Tour de Arte Callejero y Graffiti",
     "description": "Este recorrido a pie permite explorar las calles de la ciudad en busca de increíbles muestras de arte urbano.",
-    "personas": 1,
+    "personas": 3,
     "category": "Entretenimiento",
     "image": "tour_de_arte_callejero_y_graffiti.PNG",
-    "price": "$1.600"
+    "price": "$2.600"
   },
   {
     "id": 25,
@@ -222,7 +222,7 @@
     "personas": 1,
     "category": "Aventura",
     "image": "salto_en_paracaidas.PNG",
-    "price": "$5.000"
+    "price": "$8.000"
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "personas": 2,
     "category": "Aventura",
     "image": "kayac.PNG",
-    "price": "$5.400"
+    "price": "$7.950"
   },
   {
     "id": 27,
@@ -240,7 +240,7 @@
     "personas": 2,
     "category": "Aventura",
     "image": "paseo_en_velero.PNG",
-    "price": "$8.500"
+    "price": "$10700"
   },
   {
     "id": 28,
@@ -249,7 +249,7 @@
     "personas": 1,
     "category": "Aventura",
     "image": "escalada.PNG",
-    "price": "$1.900"
+    "price": "$1380"
   },
   {
     "id": 29,
@@ -258,7 +258,7 @@
     "personas": 1,
     "category": "Aventura",
     "image": "flyboard.png",
-    "price": "$2.300"
+    "price": "$3.700"
   },
   {
     "id": 30,
@@ -267,7 +267,7 @@
     "personas": 1,
     "category": "Aventura",
     "image": "arco_y_flecha.PNG",
-    "price": "$1.150"
+    "price": "$1.600"
   },
   {
     "id": 31,
@@ -276,7 +276,7 @@
     "personas": 1,
     "category": "Aventura",
     "image": "clase_de_golf.PNG",
-    "price": "$1.850"
+    "price": "$1.950"
   },
   {
     "id": 32,
@@ -285,7 +285,7 @@
     "personas": 2,
     "category": "Aventura",
     "image": "parque_camas_elasticas.PNG",
-    "price": "$2.100"
+    "price": "$3600"
   },
   {
     "id": 33,
@@ -312,7 +312,7 @@
     "personas": 4,
     "category": "Aventura",
     "image": "paint_ball.PNG",
-    "price": "$7.400"
+    "price": "$8560"
   },
   {
     "id": 36,

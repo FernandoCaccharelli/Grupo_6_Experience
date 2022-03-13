@@ -31,6 +31,10 @@ const howRouter = require ("./routes/how");
 const productsRouter = require ("./routes/products")
 const userRoutes = require("./routes/users");
 
+//Aquí llamo a la ruta de las api de movies
+const apiProductsRouter = require('./routes/api/productsA')
+const apiUsersRouter = require("./routes/api/usersA");
+
 app.use(express.static(publicPath));
 
 app.set("view engine", "ejs");
@@ -43,6 +47,10 @@ app.use("/", homeRouter);
 app.use("/products", howRouter);
 app.use("/products", productsRouter);
 app.use("/user", userRoutes);
+
+//mis recursos(APIs)
+app.use("/api/products", apiProductsRouter);
+app.use("/api/users", apiUsersRouter);
 
 
 app.listen(port, () => { console.log(`Servidor escuchando en el puerto ${port}`);
