@@ -6,14 +6,13 @@ const productsAPIControllers ={
 
     list:(req,res)=>{
         db.Producto.findAll({
-            include: ['categoria']
+            include: ['categoria'],
+            attributes:["id","name","description"]
         })
         .then(productos =>{
             return res.status(200).json({
                 count:productos.length,
-                countByCategory:{
-                },
-                data:productos,  
+                data: productos,  
                 status:200,
                 url: '/api/products'
             })
@@ -28,8 +27,8 @@ const productsAPIControllers ={
                 url: '/api/products/:id'
             })
         })
-    },
-    
+    }
+   
 
 }
 

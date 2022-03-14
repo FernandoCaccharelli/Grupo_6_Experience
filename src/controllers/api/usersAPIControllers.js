@@ -5,7 +5,9 @@ const { Op } = require("sequelize");
 const usersAPIControllers ={
 
     list:(req,res)=>{
-        db.Usuario.findAll()
+        db.Usuario.findAll({
+            attributes:["id","name","email"]
+        })
         .then(usuarios =>{
             return res.status(200).json({
                 total:usuarios.length,
@@ -16,7 +18,9 @@ const usersAPIControllers ={
         })
     },
     show: (req,res)=>{
-        db.Usuario.findByPk(req.params.id)
+        db.Usuario.findByPk(req.params.id,{
+            attributes:["id","name","email"]
+        })
         .then(usuario=>{
             return res.status(200).json({
                 data:usuario,
