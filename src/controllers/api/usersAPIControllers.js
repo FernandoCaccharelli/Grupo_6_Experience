@@ -2,6 +2,7 @@ const db = require('../../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 
+let url = "http://localhost:3030/api"
 const usersAPIControllers ={
 
     list:(req,res)=>{
@@ -10,22 +11,23 @@ const usersAPIControllers ={
         })
         .then(usuarios =>{
             return res.status(200).json({
-                total:usuarios.length,
-                data:usuarios,
                 status:200,
-                url: '/api/users'
+                url: url +'/users',
+                total:usuarios.length,
+                data:usuarios
             })
         })
     },
     show: (req,res)=>{
         db.Usuario.findByPk(req.params.id,{
-            attributes:["id","name","email"]
+            // attributes:["id","name","email"]
         })
         .then(usuario=>{
             return res.status(200).json({
                 data:usuario,
                 status:200,
-                url: '/api/users/:id'
+                url: url + '/users/:id',
+                avatar: url + '/users/images/avatar/'+ usuario.avatar
             })
         })
     }

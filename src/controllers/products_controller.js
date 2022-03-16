@@ -113,14 +113,7 @@ const products_controller = {
     //carrito de compras 
     basket: (req,res)=>{
         res.render("users/basket")
-    },
-
-search:(req,res)=>{
-    
-}
-
-
-
+    }
 }
 
 
