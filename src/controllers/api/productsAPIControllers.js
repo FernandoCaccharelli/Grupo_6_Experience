@@ -6,24 +6,34 @@ let url = "http://localhost:3030/api"
 const productsAPIControllers ={
 
     list:(req,res)=>{
-        let promCategorias =  db.Producto.findAll({ 
-                include: [{association:'categoria'}],
-                 group: ['category_id'],
-                attributes:[[sequelize.fn('COUNT', 'category_id'), 'totalProductos']],             
-            })
+        // let promCategorias =  db.Categoria.findAll({ 
+        //         include: [{association:'productos'}],
+        //         // attributes: ['category_id'],
+        //          group: ['category_id'],
+        //         attributes:[[sequelize.fn('COUNT', 'productos_id'), 'totalProductos']],             
+        //     })
+
+        const promCategorias = db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
            
+        
+       
         let promProductos =  db.Producto.findAll() 
 
         Promise
         .all([promProductos, promCategorias])
-        .then((productos) =>{
+        .then((productos, categorias) =>{
             return res.status(200).json({
-                count:productos.length,
+ 
+                data: {
+                    categories: categorias, 
+                    productos: productos
+                    },
                 status:200,
-                url: url + "/products",
-                data:productos           
+                url: url + "/products",           
             })
         })
+
+
     
         .catch(function (error) {
             console.log(error);
