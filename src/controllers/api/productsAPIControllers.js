@@ -13,7 +13,7 @@ const productsAPIControllers ={
         //         attributes:[[sequelize.fn('COUNT', 'productos_id'), 'totalProductos']],             
         //     })
 
-        const promCategorias = db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
+        const promCategorias =  db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
            
         
        
@@ -32,8 +32,6 @@ const productsAPIControllers ={
                 url: url + "/products",           
             })
         })
-
-
     
         .catch(function (error) {
             console.log(error);
