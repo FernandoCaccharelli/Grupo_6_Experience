@@ -49,7 +49,7 @@ app.use("/products", productsRouter);
 app.use("/user", userRoutes);
 
 //mis recursos(APIs)
-app.use("/api/products", apiProductsRouter);
+app.use("/api", apiProductsRouter);
 app.use("/api/users", apiUsersRouter);
 
 

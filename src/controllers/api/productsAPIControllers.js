@@ -13,25 +13,23 @@ const productsAPIControllers ={
         //         attributes:[[sequelize.fn('COUNT', 'productos_id'), 'totalProductos']],             
         //     })
 
-        const promCategorias = db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
-           
+        
         
        
-        let promProductos =  db.Producto.findAll() 
-
-        Promise
-        .all([promProductos, promCategorias])
-        .then((productos, categorias) =>{
+        db.Producto.findAll() 
+        .then((productos) =>{
             return res.status(200).json({
- 
+                status:200,
+                url: url + "/products",
+                count: productos.length,
                 data: {
-                    categories: categorias, 
+                    // categories: categorias, 
                     productos: productos
                     },
-                status:200,
-                url: url + "/products",           
+                           
             })
         })
+
 
 
     
@@ -49,9 +47,20 @@ const productsAPIControllers ={
                 image: url + '/products/images/'+ producto.image
             })
         })
-    }
-   
 
+    },
+    categorias: (req, res) => {
+        db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
+            .then((categorias) => {
+                return res.status(200).json({
+                    data: {
+                        categorias:categorias,
+                        url: url+'/categorias'
+                    }
+                })
+            })
+    }   
+          
 }
 
 module.exports= productsAPIControllers;
