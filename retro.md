@@ -28,7 +28,38 @@ Siguiendo la dinámica de estrella de mar:
 
 Link a Trello: https://trello.com/b/f2DpWAAi/proyecto-integrador
 
+Sprint 7:
+Haciendo una lectura general podríamos decir que estamos funcionando como equipo.
 
+Siguiendo la dinámica de estrella de mar:
+1.	Comenzar a hacer: organizarnos aún más las tareas para evitar retrasos en el sprint. 
+
+2.	Hacer más: Mejorar los estilos. 
+
+3.	Continuar haciendo: reuniones semanalmente para actualizar el estado de las tareas que cada uno realiza y seguir utilizando el Trello como herramienta de trabajo.
+
+4.	Hacer menos: esperar a realizar los commits hace que el compañero/a se atrase.
+
+5.	Dejar de hacer: No posponer tareas.
+
+Link a Trello: https://trello.com/b/f2DpWAAi/proyecto-integrador
+
+
+Sprint 8:
+Haciendo una lectura general podríamos decir que estamos funcionando como equipo.
+
+Siguiendo la dinámica de estrella de mar:
+1.	Comenzar a hacer: repasar todo el código desde el comienzo para prepararnos para la presentación del proyecto. 
+
+2.	Hacer más: Perfeccionar los estilos, códigos. 
+
+3.	Continuar haciendo: Reuniones semanales para comentar como estamos llevando las tareas.
+
+4.	Hacer menos: No ir preparados para las clases prácticas, haber repasado la teoría con anticipación.
+
+5.	Dejar de hacer: Asumir responsabilidades y no cumplirlas.
+
+Link a Trello: https://trello.com/b/f2DpWAAi/proyecto-integrador
 
 
 

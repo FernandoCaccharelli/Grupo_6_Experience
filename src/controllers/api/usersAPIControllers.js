@@ -20,14 +20,14 @@ const usersAPIControllers ={
     },
     show: (req,res)=>{
         db.Usuario.findByPk(req.params.id,{
-            // attributes:["id","name","email"]
+            attributes:["id","name","email", "avatar"]
         })
         .then(usuario=>{
             return res.status(200).json({
                 data:usuario,
                 status:200,
                 url: url + '/users/:id',
-                avatar: url + '/users/images/avatar/'+ usuario.avatar
+                avatar: url + '/images/avatars/'+ usuario.avatar
             })
         })
     }

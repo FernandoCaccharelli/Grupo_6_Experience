@@ -6,30 +6,17 @@ let url = "http://localhost:3030/api"
 const productsAPIControllers ={
 
     list:(req,res)=>{
-        // let promCategorias =  db.Categoria.findAll({ 
-        //         include: [{association:'productos'}],
-        //         // attributes: ['category_id'],
-        //          group: ['category_id'],
-        //         attributes:[[sequelize.fn('COUNT', 'productos_id'), 'totalProductos']],             
-        //     })
 
-        const promCategorias =  db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
-           
-        
-       
-        let promProductos =  db.Producto.findAll() 
-
-        Promise
-        .all([promProductos, promCategorias])
-        .then((productos, categorias) =>{
+        db.Producto.findAll() 
+        .then((productos) =>{
             return res.status(200).json({
- 
-                data: {
-                    categories: categorias, 
+                status:200,
+                url: url + "/products",
+                count: productos.length,
+                data: { 
                     productos: productos
                     },
-                status:200,
-                url: url + "/products",           
+                           
             })
         })
     
@@ -47,9 +34,31 @@ const productsAPIControllers ={
                 image: url + '/products/images/'+ producto.image
             })
         })
-    }
-   
 
+    },
+    categorias: (req, res) => {
+             db.Producto.findAll({ 
+                include: [{association:'categoria'}],
+                 attributes: ['category_id'],
+                 group: ['category_id'],
+                attributes:[[sequelize.fn('COUNT', "category_id"), 'totalProductos']],             
+            })
+
+        //  db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
+            .then((categorias) => {
+                return res.status(200).json({
+                    data: {
+                        count: categorias.length,
+                        categorias:categorias,
+                        url: url+'/categorias'
+                    }
+                })
+            })
+            .catch(function (error) {
+                console.log(error);
+                }) 
+    }   
+          
 }
 
 module.exports= productsAPIControllers;
