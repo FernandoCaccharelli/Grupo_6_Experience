@@ -26,6 +26,7 @@ router.put("/:id", uploadFile.single('image'),productsController.update);
 //borrar producto
 router.delete("/:id", productsController.destroy);
 
+//categorias
 //gastronomia
 router.get("/gastronomia", productsController.gastronomia);
 //aventura
