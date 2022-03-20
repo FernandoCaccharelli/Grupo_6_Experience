@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de producto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href ="/normalize.css">
+    <link rel ="stylesheet" href = "../style/products.css">
+</head>
+<body>
+    <!--           HEADER                 -->
+    <%- include ("../partials/header") %>
+    <nav class="nav-desplegable">
+        <ul class="menu">
+            <li class="filter"><a href="">Filtrar<i class="fas fa-angle-down"></i></a>
+                <ul class="item"> 
+                    <li class="red"><a href="">Gastronomía</a></li>
+                    <li><a href="">Aventura</a></li>
+                    <li><a href="">Entretenimiento</a></li>
+                </ul>          
+            </li>
+        </ul>
+    </nav>  
+
+    <!--           HEADER                 -->
+    <main>
+        <div >
+            <%- include ("../partials/aside") %>
+        </div>
+
+        <div class="all-products">
+            <%  for (let i=0; i<productos.length; i++) { %>
+            <section>
+                <article class="product-box">
+                    <img src = "/images/<%= productos[i].image %>" class = "opcion1"  >
+                    <h2><a href="/products/detail/<%= productos[i].id %>"><%= productos[i].name %></a></h2>
+                    <p class="descripcion"><%= productos[i].description %> </p>
+                    <p class="precio"><%= productos[i].price %></p>
+                </article>
+       
+            </section>
+            <% } %>
+        </div>
+    </main>
+    <div class="page-buttons">
+        <button class="back-next">    <i class="fas fa-angle-left"></i>    </button>
+     
+        
+        <button class="page">    1    </button>
+        <button class="page">    2    </button>
+        <button class="page">    3    </button>
+        <button class="page">    4    </button>
+        <button class="page">    5    </button>
+        <button class="page">    6    </button>
+
+        <button class="back-next">    <i class="fas fa-angle-right"></i>    </button>
+    </div>
+    
+
+
+
+    <%- include ("../partials/footer") %>
+</body>
+</html>
+

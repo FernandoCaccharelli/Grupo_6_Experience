@@ -13,9 +13,7 @@ const productsAPIControllers ={
                 status:200,
                 url: url + "/products",
                 count: productos.length,
-                data: { 
-                    productos: productos
-                    },
+                data: productos
                            
             })
         })

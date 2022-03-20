@@ -113,7 +113,53 @@ const products_controller = {
     //carrito de compras 
     basket: (req,res)=>{
         res.render("users/basket")
-    }
+    },
+
+    gastronomia:(req,res)=>{
+        db.Producto.findAll({
+          where:{
+              category_id : 3
+          }
+        })
+            .then(function(productos){
+                res.render("products/gastronomy", {productos:productos})
+            })
+            .catch(function (error) {
+                console.log(error);
+                })
+   },
+
+   aventura:(req,res)=>{
+    db.Producto.findAll({
+      where:{
+          category_id : 1
+      }
+    })
+        .then(function(productos){
+            res.render("products/adventure", {productos:productos})
+        })
+        .catch(function (error) {
+            console.log(error);
+            })
+},
+
+entretenimiento:(req,res)=>{
+    db.Producto.findAll({
+      where:{
+          category_id : 2
+      }
+    })
+        .then(function(productos){
+            res.render("products/entertainment", {productos:productos})
+        })
+        .catch(function (error) {
+            console.log(error);
+            })
+}
+
+
+
+
 }
 
 

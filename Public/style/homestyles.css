@@ -263,20 +263,24 @@ footer i {
         display: inline-block;
         font-size: 16px;
     }
-    .categorias{
+
+    .navbar li ul{
+        position: absolute;
+        display: none;
+        padding: 7px 0px;
+        font-weight: bolder;
+    }
+    .navbar li:hover >ul{
         display: flex;
         flex-direction: column;
-        padding: 9px 1px;
+        
     }
-    .categorias li a {
-        padding: 6px 0px;
-        display: none;
-        position: relative;
-        padding: 2px 2px;
+    .categorias a{
+        background-color: #D8E7F5;
+        border-radius: 6px;
     }
-    li .categorias:hover >li a {
-        display: block;
-    }
+    
+    
 
     .banner{
         width: 100%;

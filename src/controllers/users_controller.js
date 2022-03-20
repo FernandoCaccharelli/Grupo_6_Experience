@@ -9,28 +9,15 @@ const controller = {
 	},
 	processRegister: function (req,res) {
 		let errors = validationResult(req);
-		let validation = validationResult(req);
+	    // let validation = validationResult(req);
 
 		if (errors.errors.length > 0) {
 			return res.render('users/register', {
 				errors: errors.mapped(),
 				oldData: req.body
-			});
-		    } else {
-               db.Usuario.findOne({
-			        where:{
-				       email:req.body.email
-			       }
-		         })
-		       .then(function(usuario){
-			     if(usuario.email == req.body.email){
-				   res.render("users/register",{
-					validation: {
-					  email: {msg: 'Ya existe otra persona registrada con ese email'},
-					 }
-					})
-				}else{
-		       db.Usuario.create({
+			})
+		    } 
+               db.Usuario.create({
                     ...req.body,
 			        password: bcryptjs.hashSync(req.body.password, 10),
                     avatar:req.file == undefined ? "default-image.png": req.file.filename
@@ -38,13 +25,12 @@ const controller = {
 		           .then(()=>{
                       res.redirect("/user/login")
                  })
-				}
-
-		}).catch(function(error){
+				
+		.catch(function(error){
 	        console.log(error)
           })
-	   }
-	   			    
+
+		 			    
     },
 
     login: (req, res) => {
@@ -91,6 +77,7 @@ const controller = {
 	        console.log(error)
           })
        } 
+	   
       },
 
 	profile: (req, res) => {
