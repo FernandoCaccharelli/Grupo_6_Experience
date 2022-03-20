@@ -192,13 +192,13 @@ footer i {
         margin-right: 12px;
     }
     .navbar-nav li a{
-        font-size: 24px;
-        padding: 10px;
+        font-size: 20px;
+        padding: 8px;
     }
     div .navbar ul a {
-        font-size: 25px;
-        padding: 5px 32px;
-        margin-left: 55px;
+        font-size: 22px;
+        padding: 5px 43px;
+       
     }
     div .navbar{
         margin-top: 25px;
@@ -225,6 +225,10 @@ footer i {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+       
+    }
+    .footer-container{
+        margin-bottom: 112px;
     }
     footer h4 {
         font-size: 18px;
@@ -233,6 +237,7 @@ footer i {
     .instagram, .twitter {
         font-size: 25px;
         margin-right: 24px;
+      
     }
     footer{
         position: relative;
@@ -270,7 +275,7 @@ footer i {
     div .navbar ul a {
         font-size: 26px;
         padding: 5px 66px;
-        margin-left: 93px;
+        margin-left: 15px;
     }
     /*BODY*/
     .col-md-3{
