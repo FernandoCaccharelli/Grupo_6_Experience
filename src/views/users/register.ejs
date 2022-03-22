@@ -73,8 +73,8 @@
                 </div>
             </section>
         <div class="imagen">
-            <label for="image" class="form-label">Imagen de perfil:</label><br>
-            <input type="file" id="image" name="avatar"  id="image"
+            <label for="avatar" class="form-label">Imagen de perfil:</label><br>
+            <input type="file" id="avatar" name="avatar"  id="image"
                 class="form-input <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.avatar) { %>
                     <div class="text-danger">

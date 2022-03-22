@@ -6,6 +6,7 @@ module.exports = [
     body('description').notEmpty().withMessage('Tienes que dar una descripción').bail().isLength({min:20}).withMessage("Mínimo 20 caracteres"), body('expiration_date').notEmpty().withMessage('Tienes que poner una fecha'),
 	body('price').notEmpty().withMessage('Tienes que darle un precio'),
 	body('people').notEmpty().withMessage('Tienes que darle una cantidad de personas'),
+	body('category_id').notEmpty().withMessage('Tienes que asignarle una categoría'),
 	body('image').custom((value, { req }) => {
 		let file = req.file;
 		let acceptedExtensions = ['.jpg', '.png', '.gif'];

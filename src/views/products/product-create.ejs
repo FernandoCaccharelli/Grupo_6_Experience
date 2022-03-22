@@ -36,7 +36,7 @@
 					</div>
 					<div class="precio">
 						<label for="price" class="form-label">Precio del producto:</label>
-						<input type="text" id="price" name="price" placeholder="Ej: $2.400" class="form-input">
+						<input type="text" id="price" name="price" placeholder="Ej: 2400" class="form-input">
 						<% if (locals.errors && errors.price) { %>
 							<div class="text-danger">
 								<%= errors.price.msg %>
@@ -57,9 +57,10 @@
 							</div>
 						<% } %>
 					</div>
+					
 					<div class="categorias">
 						<label for="category_id" class="form-label">Categoría:</label>
-					    <select name="category_id" id="category_id" class="form-input">
+						<select name="category_id" id="category_id" class="form-input">
 							<option value="" disabled selected>Seleccione categoría</option>
 							<% categoria.forEach(categoria => { %>
 								<option value="<%= categoria.id%>"><%= categoria.category %></option>
@@ -68,6 +69,12 @@
 							<option value="aventura">Aventura</option>
 							<option value="entretenimiento">Entretenimiento</option> -->
 						</select>
+					
+						<% if (locals.errors && errors.category_id) { %>
+							<div class="text-danger">
+								<%= errors.category_id.msg %>
+							</div>
+						<% } %>
 				
 					</div>
 					<div class="descripcion">

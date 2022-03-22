@@ -45,12 +45,15 @@ const products_controller = {
     },
     store: function (req,res) {
         const errors = validationResult(req)
+
+       
         if(errors.errors.length > 0){
             return res.render("products/product-create", {
-                errors: errors.mapped()
+                errors: errors.mapped(),
+                oldData: req.body
             })
            
-        }else{
+        } else{
             let newProduct = {
                 name: req.body.name,
                 price: req.body.price,

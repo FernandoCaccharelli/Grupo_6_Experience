@@ -19,9 +19,9 @@ window.addEventListener("load",function(){
         }
 
          let image = document.querySelector("input#image")
-         if(description.value == ""){
+         if(image.value == ""){
             errores.push("Tenes que subir una imagen")
-        }else if(!/\.(jpg|png|gif)$/i .test(image.value)){
+        }else if(!(/.(jpg|png|gif)$/i).test(image.value)){
             errores.push("La extensión de este archivo es inválida")
          }
 
@@ -29,14 +29,18 @@ window.addEventListener("load",function(){
          if(price.value == ""){
              errores.push("Tenes que darle un precio")
          }
+          let category = document.querySelector("select#category_id")
+         if(category.value == ""){
+             errores.push("Tenes que asignarle una categoría")
+         }
         //  let people = document.querySelector("input#people")
         //  if(people.value == ""){
         //      errores.push("Tenes que aclarar para cuantas personas")
         //  }
-        //  let expiration_date = document.querySelector("input#expiration_date")
-        //  if(expiration_date.value == ""){
-        //      errores.push("Tenes que darle un vencimiento")
-        //  }
+         let expiration_date = document.querySelector("input#expiration_date")
+         if(expiration_date.value == ""){
+             errores.push("Tenes que darle un vencimiento")
+         }
 
         
         let listaErrores = document.querySelector("div.errores")

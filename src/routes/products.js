@@ -13,7 +13,7 @@ router.get("/", productsController.products);
 
 //crear producto
 router.get("/create", loggedMiddleware, productsController.create);
-router.post("/", uploadFile.single('image'),validationsProducts,productsController.store );
+router.post("/", uploadFile.single('image'),validationsProducts, productsController.store );
 
 
 //Detalle de producto
@@ -24,7 +24,7 @@ router.get("/edit/:id", loggedMiddleware,productsController.edit);
 router.put("/:id", uploadFile.single('image'),productsController.update);
 
 //borrar producto
-router.delete("/:id", productsController.destroy);
+router.delete("/:id", loggedMiddleware, productsController.destroy);
 
 //categorias
 //gastronomia

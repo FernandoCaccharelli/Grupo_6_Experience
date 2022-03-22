@@ -36,17 +36,20 @@ window.addEventListener("load",function(){
         if(birthdate.value == ""){
             errores.push("Tenes que escribir una fecha")
         }
-        let image = document.querySelector("input#image")
-         if(description.value == ""){
+        let avatar = document.querySelector("input#avatar")
+         if(avatar.value == ""){
             errores.push("Tenes que subir una imagen")
-        }else if(!/\.(jpg|png|gif)$/i .test(image.value)){
-            errores.push("La extensión de este archivo es inválida")
-         }
+        }
+        // else if(!/\.(jpg|png|gif)$/i .test(avatar.value)){
+        //     errores.push("La extensión de este archivo es inválida")
+        //  }
 
         let check= document.querySelector("input#check")
         if(!check.checked) {
             errores.push("Tiene que aceptar los términos")
         }
+
+    
 
         let listaErrores = document.querySelector("div.errores")
         listaErrores.style.color = "#F3832B";

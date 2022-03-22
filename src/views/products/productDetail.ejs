@@ -38,9 +38,11 @@
                 </div>
                 <div class = "botones">  
                     <button><a href="/products/edit/<%= productos.id%> " class="action-button edit">Editar</a></button>
+                    <% if (locals.isLogged) { %>
                     <form action="/products/<%=productos.id%>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
-                    <button type="submit" class="action-button delete">Borrar</button>
+                    <button type="submit" id="delete" class="action-button delete">Borrar</button>
                     </form>
+                    <% }%>
                 </div>        
                 <div class="payment">  
                     <img src="/images/MediosDePago_ar.f3317df5440144c6bf2cb502ad2bb941.png">
@@ -63,6 +65,6 @@
         </section>
         <%- include ("../partials/footer") %>
     </main>
-    <!-- <script src="/js/detalle.js"></script> -->
+    <script src="/js/detalle.js"></script>
 </body>
 </html>
