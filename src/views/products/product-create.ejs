@@ -28,7 +28,6 @@
 					<div class="nombre">
 						<label for="name" class="form-label">Nombre del producto:</label>
 						<input type="text" id="name" name="name" value="<%= locals.oldData ? oldData.name: null%>" class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>">
-					    
 						<% if(locals.errors && errors.name) { %>
                             <div class= "text-danger"> 
 								<%= errors.name.msg %> 
@@ -38,6 +37,11 @@
 					<div class="precio">
 						<label for="price" class="form-label">Precio del producto:</label>
 						<input type="text" id="price" name="price" placeholder="Ej: $2.400" class="form-input">
+						<% if (locals.errors && errors.price) { %>
+							<div class="text-danger">
+								<%= errors.price.msg %>
+							</div>
+						<% } %>
 					</div>
 					<div class="personas">
 						<label for="people" class="form-label">Cantidad de personas:</label>
@@ -47,6 +51,11 @@
 							<option value="3" >3</option>
 							<option value="4" >4</option>
 						</select>
+						<% if (locals.errors && errors.people) { %>
+							<div class="text-danger">
+								<%= errors.people.msg %>
+							</div>
+						<% } %>
 					</div>
 					<div class="categorias">
 						<label for="category_id" class="form-label">Categoría:</label>
@@ -59,6 +68,7 @@
 							<option value="aventura">Aventura</option>
 							<option value="entretenimiento">Entretenimiento</option> -->
 						</select>
+				
 					</div>
 					<div class="descripcion">
 						<label for="description" class="form-label">Descripción:</label>
@@ -81,6 +91,11 @@
 					<div class="vencimiento">
 						<label for="expiration_date" class="form-label">Fecha limite:</label>
 						<input  type="date" name="expiration_date" id="expiration_date" class="form-input" value = "YYYY-MM-DD"></input>
+						<% if (locals.errors && errors.expiration_date) { %>
+							<div class="text-danger">
+								<%= errors.expiration_date.msg %>
+							</div>
+						<% } %>
                     </div>
 
 					<div class="crear">

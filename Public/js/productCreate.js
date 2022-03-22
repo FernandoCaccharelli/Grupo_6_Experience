@@ -24,6 +24,20 @@ window.addEventListener("load",function(){
         }else if(!/\.(jpg|png|gif)$/i .test(image.value)){
             errores.push("La extensión de este archivo es inválida")
          }
+
+         let price = document.querySelector("input#price")
+         if(price.value == ""){
+             errores.push("Tenes que darle un precio")
+         }
+        //  let people = document.querySelector("input#people")
+        //  if(people.value == ""){
+        //      errores.push("Tenes que aclarar para cuantas personas")
+        //  }
+        //  let expiration_date = document.querySelector("input#expiration_date")
+        //  if(expiration_date.value == ""){
+        //      errores.push("Tenes que darle un vencimiento")
+        //  }
+
         
         let listaErrores = document.querySelector("div.errores")
         listaErrores.style.color = "#F3832B";

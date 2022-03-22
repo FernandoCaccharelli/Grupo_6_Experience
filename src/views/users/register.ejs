@@ -31,7 +31,7 @@
                 <div  class="user-name">
                     <input class="name <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
                     value="<%= locals.oldData ? oldData.name : null %>"
-                    type="text" name="name" placeholder="Nombre"
+                    id="name" type="text" name="name" placeholder="Nombre"
                      >
                         <% if (locals.errors && errors.name) { %>
                             <div class="text-danger">
@@ -40,7 +40,7 @@
                         <% } %>
                     <input class="lastName <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" 
                         value="<%= locals.oldData ? oldData.lastName : null %>"
-                        type="text" name="lastName" placeholder="Apellido">
+                        type="text" name="lastName"id="lastName" placeholder="Apellido">
                         <% if (locals.errors && errors.lastName) { %>
                             <div class="text-danger">
                                 <%= errors.lastName.msg %> 
@@ -50,7 +50,7 @@
                 <div>
                     <input class="email <%= locals.errors && errors.email ? 'is-invalid' : null %>" 
                         value="<%= locals.oldData ? oldData.email : null %>"
-                        type="email" name="email" placeholder="Correo electrónico">
+                        type="email" name="email"id="email" placeholder="Correo electrónico">
                         <% if (locals.errors && errors.email) { %>
                             <div class="text-danger">
                                 <%= errors.email.msg %>
@@ -59,7 +59,7 @@
                 </div>
                 <div >
                     <input class="password <%= locals.errors && errors.password ? 'is-invalid' : null %>" 
-                        type="password" name="password" placeholder="Contraseña">
+                        type="password" id="password"name="password" placeholder="Contraseña">
                         <% if (locals.errors && errors.password) { %>
                             <div class="text-danger">
                                 <%= errors.password.msg %>
@@ -74,7 +74,7 @@
             </section>
         <div class="imagen">
             <label for="image" class="form-label">Imagen de perfil:</label><br>
-            <input type="file" id="image" name="avatar"  
+            <input type="file" id="image" name="avatar"  id="image"
                 class="form-input <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.avatar) { %>
                     <div class="text-danger">
@@ -84,7 +84,7 @@
         </div>
         <section class="checkbox">
             <div>
-                <input type="checkbox" class="check" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
+                <input type="checkbox" id="check" class="check" name="terms-and-conditions"> He leído y acepto todos los <strong> términos y condiciones</strong> del sitio.
             </div>
         </section>
             <section class="register-accept" >

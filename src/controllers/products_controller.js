@@ -39,14 +39,17 @@ const products_controller = {
         //     .then(function(producto){  
         //         res.render('products/product-create', {producto : producto}); 
         //     }) 
-            // .catch(function (error) {
-            //     console.log(error);
-            //     })        
+            .catch(function (error) {
+                console.log(error);
+                })        
     },
     store: function (req,res) {
         const errors = validationResult(req)
         if(errors.errors.length > 0){
-            return res.render("products/product-create", {errors: errors.mapped()})
+            return res.render("products/product-create", {
+                errors: errors.mapped()
+            })
+           
         }else{
             let newProduct = {
                 name: req.body.name,

@@ -12,8 +12,12 @@ const productsAPIControllers ={
             return res.status(200).json({
                 status:200,
                 url: url + "/products",
-                count: productos.length,
-                data: productos
+                data: {
+                    productos,
+                    count: productos.length,
+
+                }
+                
                            
             })
         })
@@ -30,6 +34,7 @@ const productsAPIControllers ={
                 status:200,
                 url: url+'/products/:id',
                 image: url + '/products/images/'+ producto.image
+                
             })
         })
 

@@ -7,14 +7,17 @@ const usersAPIControllers ={
 
     list:(req,res)=>{
         db.Usuario.findAll({
-            attributes:["id","name","email"]
+            // attributes:["id","name","email"]
         })
         .then(usuarios =>{
             return res.status(200).json({
                 status:200,
-                url: url +'/users',
-                total:usuarios.length,
-                data:usuarios
+                url: url +'/users',               
+                data:{
+                    total:usuarios.length,
+                    usuarios
+                }
+              
             })
         })
     },
