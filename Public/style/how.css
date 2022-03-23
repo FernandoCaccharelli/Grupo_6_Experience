@@ -411,3 +411,18 @@ footer i {
 
 
 
+@media (min-width:1280px){
+    .menu-superior h1{
+        margin-left: 35px;
+    }
+
+    .barra input{
+        width:45%;
+        margin-right: 4px;
+        margin-left: 317px;
+    }
+    .oportunidades{
+        width: 70%;
+       margin-left: 160px;
+    }
+}

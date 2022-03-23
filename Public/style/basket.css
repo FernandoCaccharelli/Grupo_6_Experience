@@ -114,9 +114,10 @@ main section article div.button {
     justify-content: space-between;
     width: 100px;
     height: 25px;
-    background-color: #9BB1C5;
+    border-color: #5E81A3;
     border-radius: 20px;
     align-items: center;
+    background-color: #9BB1C5;
 }
 
 .less-button, .more-button {
@@ -131,6 +132,7 @@ main section article div.button {
     margin-top: 20px;
     border-radius: 10px;
     width: 150px;
+   
 }
 
 .info-exp div.button{
@@ -144,7 +146,7 @@ main section article div.button {
     margin-left: 15px; 
 }
 .info-exp h3 {
-    color:#9BB1C5;
+    
     font-size: 18px;
 }
 
@@ -152,7 +154,10 @@ main section article div.button {
     margin-top: 20px;
     font-size: 14px;
 }
-
+.info-exp p i{
+    color: #6c8fb1;
+    font-size: 1.2em;
+}
 .info-exp p.price {
     font-size: 16px;
     color: black;
@@ -224,7 +229,7 @@ footer i {
 .menu-superior h1{
     margin-left: 34px;
     font-size: 34px;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 .barra {
     width: 100%;
@@ -300,6 +305,10 @@ p.price {
 
 .buy-list ul {
     margin-left: 90px;
+}
+
+main section article div.gourmet-description{
+    margin-left: 320px;
 }
 
 /*///////////////////// FOOTER //////////////////*/
@@ -389,6 +398,7 @@ section article div.info-exp h3 {
 
 main section article div.gourmet-description {
     margin: 60px 0px;
+    margin-left: 456px;
 }
 p.price {
     font-size: 25px;
@@ -432,6 +442,21 @@ footer h4 {
     font-size: 30px;
     margin-right: 15px;
 }
+
+}
+@media (min-width:1280px){
+
+    .barra input{
+        width:43%;
+        margin-right: 4px;
+        margin-left: 317px;
+    }
+    .title-product{
+        font-size: 4vw;
+    }
+    .description{
+        margin-left: 42px;
+    }
 
 }
 

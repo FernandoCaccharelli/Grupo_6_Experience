@@ -386,19 +386,20 @@ footer i {
    
     }
 
-    @media(min-width:1200px){
-         /*////////////////// MAIN //////////////////////*/
-         .formulario {
-            width: 70%;
-            margin-left: 15%;        
+    @media(min-width:1280px){
+        .barra input{
+            width:43%;
+            margin-right: 4px;
+            margin-left: 317px;
         }
 
-         form .form-label{
-            font-size: 22px;
+        .formulario{
+            width: 65%;
+            margin-left: 380px;
+        }
+        div .formulario-titulo {
+            font-size: 20px;
+           
         }
 
-         .producto textarea {
-            width: 80%;
-            font-size: 18px;
-        }
     }

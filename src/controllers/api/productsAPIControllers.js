@@ -41,18 +41,18 @@ const productsAPIControllers ={
     },
     categorias: (req, res) => {
              db.Producto.findAll({ 
-                include: [{association:'categoria'}],
+                 include: [{association:'categoria'}],
                  attributes: ['category_id'],
                  group: ['category_id'],
                 attributes:[[sequelize.fn('COUNT', "category_id"), 'totalProductos']],             
             })
 
-        //  db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
+    // db.sequelize.query('select categorias.id, categorias.category, count(productos.id) from categorias inner join productos on categorias.id = productos.category_id group by categorias.category', {type: db.Sequelize.QueryTypes.SELECT})
             .then((categorias) => {
                 return res.status(200).json({
                     data: {
                         count: categorias.length,
-                        categorias:categorias,
+                        categorias,
                         url: url+'/categorias'
                     }
                 })

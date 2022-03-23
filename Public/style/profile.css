@@ -166,15 +166,15 @@ footer i {
         align-items: center;
     }
     .barra {
-        width: 85%;
+        width: 78%;
         margin-top: 2px;
     }
     .barra input{
         width: 55%;
-        margin-left: 134px;
+        margin-left: 116px;
         margin-top: 21px;
         height: 42px;
-        border-radius: 20px;
+        border-radius: 25px;
         padding: 22px;
         font-size: 20px;
     }
@@ -205,15 +205,20 @@ footer i {
         margin-left: 130px;
     }
     /*BODY*/
+    div .col-md-3{
+        text-align: center;
+
+    }
     .col-md-3 h2{
        font-size: 30px;
        margin-left: 40px;
+       margin-top: 104px;
     }
     .col-md-3 img{
-       width: 80%;
+       width: 50%;
        margin-top: 40px;
        margin-left: 40px; 
-       margin-bottom: 20px;
+       margin-bottom: 51px;
     }
     .alert {
         font-size: 24px;
@@ -227,9 +232,7 @@ footer i {
         justify-content: space-evenly;
        
     }
-    .footer-container{
-        margin-bottom: 112px;
-    }
+   
     footer h4 {
         font-size: 18px;
         margin-right: 30px;
@@ -249,6 +252,7 @@ footer i {
     .menu-superior h1{
         font-size: 54px;
         margin-top: 18px;
+        margin-left: -46px;
     }
     .barra input{
         margin-left: 174px;
@@ -286,10 +290,36 @@ footer i {
         border-radius: 20px;    
     }
     /*FOOTER*/
+    .footer-container{
+        margin-top: 140px;
+    }
     footer h4 {
         font-size: 20px;
     }
     .instagram, .twitter {
         font-size: 30px;
+    }
+}
+
+@media(min-width:1280px){
+    .logo a{
+        font-size: 44px;
+    }
+    .menu-superior h1{
+        margin-left: -74px;
+    }
+
+    .barra input{
+        width:48%;
+        font-size: 26px;
+        margin-right: 4px;
+        margin-left: 267px;
+    }
+    div .navbar{
+        margin-left: 315px;
+        padding-left: 30px;
+    }
+    .col-md-3 h2, .alert{
+        font-size: 38px;
     }
 }

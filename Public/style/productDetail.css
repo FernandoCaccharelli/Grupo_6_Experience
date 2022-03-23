@@ -271,28 +271,34 @@ main{
     width: 78%;
     margin-left: 45px;
 }
+.title h1{
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
 .product-detail{
     margin-left: 75px;
 }
 .detalle{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .product-image{
     width: 65%;
-    margin: 30px 0px 0px 100px;
+    margin: 5px 0px 0px 100px;
 }
 article div h3{
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 50px;
 }
-
+.precio{
+    font-size: 25px;
+}
 article div p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 article input{
-    margin: 30px 0px 25px 180px;
+    margin: 1px 0px 25px 182px;
     width: 30%;
     height: 41px;
     font-size: 20px;
@@ -301,6 +307,34 @@ article input{
 article .botones{
    margin-left: 134px;
 }
+
+.oportunidades{
+    display: flex;
+    margin-left: 17px;
+    width: 100%;
+}
+.oportunidad1{
+    margin-bottom: 35px;
+}
+.oportunidades img{
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.categoria i{
+    font-size: 1em;
+    margin-left: 14px;
+    padding-right: 20px;
+}
+
+.oportunidad1 h4, .oportunidad2 h4{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.oportunidad2{
+   margin-bottom: 36px;
+} 
+
 
 
 /*///////////////////// FOOTER //////////////////*/
@@ -368,7 +402,7 @@ footer h4 {
     margin-left: 36px;
 }
 .detalle{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .bar {
@@ -378,14 +412,18 @@ footer h4 {
 .product-image{
     width: 50%;
     height: 50%;
-    margin: 90px 0px 0px 25px;
+    margin: 26px 0px 0px 25px;
 }
 article div h3{
     font-size: 25px;
     margin-top: 25px;
 }
 article h4{
-    margin-top: 50px;
+    margin-top: 63px;
+    margin-right: 88px
+}
+article div p{
+    font-size: 20px;
 }
 
 article div h3, p, h4 {
@@ -393,14 +431,34 @@ article div h3, p, h4 {
 }
 
 article input{
-    margin: 0px 0px 25px 130px;
+    margin: 0px 0px 25px -51px;
     width: 35%;
-    height: 41px;
+    height: 42px;
     font-size: 23px;
 }
 
 article .botones{
     margin-left: 60px;
+    margin-top: -68px;   
+}
+.botones button{
+    height: 42px;
+    font-size: 23px;
+}
+.oportunidades{
+    margin-left: 52px;
+}
+.oportunidad1 h3, .oportunidad2 h3{
+    font-size: 20px;
+}
+.categoria i {
+    font-size: 1.2em;
+}
+.oportunidad1 h4, .oportunidad2 h4{
+    font-size: 20px;
+    width: 80%;
+    margin-top: 12px;
+    margin-left: 33px;
 }
         
  /*///////////////////// FOOTER //////////////////*/
@@ -423,12 +481,38 @@ footer h4 {
         
 }
 
-@media(min-width:1200px){
+@media(min-width:1280px){
+    .barra input{
+        width:43%;
+        margin-right: 4px;
+        margin-left: 317px;
+    }
+    .logo a{
+        font-size: 42px;
+    }
     
     /*//////////////////////////          MAIN          ///////////////////////*/
     .product-detail{
         width: 60%;
-        margin-left: 250px;
+        margin-left: 310px;
     }
+    article .botones{
+        margin-left: 40px;
+        padding: 5px;
+    }
+    .botones button{
+        margin-top: -5px;
+    }
+    .payment{
+        margin-left: -230px;
+        width: 180%;
+    }
+    .oportunidades{
+        width: 80%;
+        margin-left: 180px;
+    }
+
+  
 }
+
 

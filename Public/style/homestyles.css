@@ -471,7 +471,40 @@ footer h4 {
     }
    
     
-    
+    @media(min-width:1280px){
+
+      .barra input{
+          width:45%;
+          margin-right: 4px;
+          margin-left: 317px;
+      }
+      .menu-inferior li a{
+          margin-left: 119px;
+      }
+
+      .iconos{
+          margin-right: 40px;
+      }
+
+      .banner{
+          height: 550px;
+      }
+      .how{
+          margin-left:430px
+      }
+      .how i{
+          margin-left: 35px;
+      }
+      .how h3{
+          font-size: 28px;
+          margin-left: 44px;
+      }
+      .mas {
+          margin-left: 550px;
+      }
+
+
+    }
 
 
 

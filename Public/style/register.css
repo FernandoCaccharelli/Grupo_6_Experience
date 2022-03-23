@@ -372,4 +372,20 @@ footer h4 {
    }
 
 
+   @media (min-width:1280px){
 
+    .barra input{
+        width:43%;
+        margin-right: 4px;
+        margin-left: 317px;
+    }
+    main{
+        margin-left: 427px;
+    }
+    .birthdate{
+        margin-left: 51px;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

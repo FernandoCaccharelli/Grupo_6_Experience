@@ -403,3 +403,24 @@ footer h4 {
         font-size: 20px;
     }
 }
+
+@media (min-width:1280px){
+
+.barra input{
+    width:45%;
+    margin-right: 4px;
+    margin-left: 317px;
+}
+main{
+    width:38% ;
+    margin-left: 450px;
+    margin-top: 70px;
+}
+form{
+    margin-top: 10px;
+    
+}
+footer{
+    margin-bottom: 20px;
+}
+}
