@@ -6,66 +6,13 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    margin-top: 8px;
-}
-.menu{
-    font-size: 1.8em;
-    margin-left: 18px;
-    margin-right: -24px;
-    margin-top: 4px;
-    color:#5E81A3;
-}
-.menu-superior h1{
-    font-size: 24px;
-    margin-top: 7px;  
-    margin-left: 38px;
-}
-.barra input{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 85%;
-    height: 32px;
-    margin-top: 5px;
-    margin-left: 16px;
-    padding: 5px;
-    font-size: 16px;
-}
-.barra i{
-    margin-left: -26px;
-}
-
-.iconos{
-    display: flex;
-    margin-right: 20px;
-    margin-top: 9px;
-    font-size: 1.4em;
-}
-.iconos i{
-    color:#5E81A3;
-}
-.user{
-    margin-left: 12px;
-}
-.shop{
-    margin-right: -11px;
-    margin-left: 9px;
-}
-.menu-inferior{
-    display: none;
-}
 
 .banner{
     width: 102%;
     margin-top: -1px;
+    object-fit: cover;
 }
+
 .how{
     display: flex;
     text-align: center;
@@ -208,80 +155,6 @@ footer i {
 }
 
 @media(min-width:768px){
-    .menu{
-        display: none;
-    }
-    .menu-superior{
-        margin-top: 12px;
-        margin-bottom: -26px;
-    }
-    .menu-superior h1{
-        margin-left: 34px;
-        font-size: 34px;
-        margin-top: 20px;
-    }
-    .barra {
-        width: 100%;
-    }
-    .barra input{
-        width: 55%;
-        margin-left: 134px;
-        margin-top: 21px;
-        height: 42px;
-        border-radius: 20px;
-        padding: 8px;
-    }
-    .barra i{
-        font-size: 1.4em;
-        margin-left: -36px;
-    }
-  
-    .iconos{
-        margin-top: 27px;
-    }
-    .user{
-        font-size: 1.2em;
-        margin-right: 23px; 
-        margin-left: -10px;
-    }
-    .shop{
-        font-size: 1.2em;
-        margin-right: 9px;  
-    }
-    .menu-inferior{
-        display: flex;
-        padding: 17px 0px 11px 70px;
-    }
-    .menu-inferior ul{
-        list-style: none;
-        display: flex; 
-    }
-    .menu-inferior li a{
-        margin: 0px 72px 2px 44px;
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-        font-size: 16px;
-    }
-
-    .navbar li ul{
-        position: absolute;
-        display: none;
-        padding: 7px 0px;
-        font-weight: bolder;
-    }
-    .navbar li:hover >ul{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .categorias a{
-        background-color: #D8E7F5;
-        border-radius: 6px;
-    }
-    
-    
-
     .banner{
         width: 100%;
     }
@@ -365,35 +238,6 @@ footer h4 {
    }
 
    @media(min-width:1024px){
-    
-       .menu-superior h1{
-           font-size: 44px;
-           margin-left: 44px;
-           margin-top: 38px;
-       }
-       .barra input{
-           margin-left: 197px;
-           margin-top: 34px;
-           height: 58px;
-           border-radius: 29px;
-           font-size: 24px;
-           padding: 12px;
-       }
-       .barra i{
-           margin-left: -55px;
-           font-size: 2em;
-       }
-       .iconos{
-           font-size: 2em;
-           margin-top: 41px;
-       }
-       .menu-inferior{
-           margin:14px 0px 14px 10px;
-       }
-       .menu-inferior li a{
-           font-size: 26px;
-           padding: 4px 22px;
-       }
        .banner{
            width: 100%;
        }
@@ -472,23 +316,9 @@ footer h4 {
    
     
     @media(min-width:1280px){
-
-      .barra input{
-          width:45%;
-          margin-right: 4px;
-          margin-left: 317px;
-      }
-      .menu-inferior li a{
-          margin-left: 119px;
-      }
-
-      .iconos{
-          margin-right: 40px;
-      }
-
-      .banner{
-          height: 550px;
-      }
+       .banner{
+          height: 650px;
+      } 
       .how{
           margin-left:430px
       }

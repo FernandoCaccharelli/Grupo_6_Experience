@@ -9,9 +9,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href ="/normalize.css">
     <link rel ="stylesheet" href = "/style/productDetail.css">
+
 </head>
+
 <body>
-    <%- include ("../partials/header") %>
+    <%- include ("../partials/header") %>  
     <div class="flecha">
         <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
     </div>
@@ -37,9 +39,10 @@
                     <input type="submit" value="Comprar">
                 </div>
                 <div class = "botones">  
-                    <button><a href="/products/edit/<%= productos.id%> " class="action-button edit">Editar</a></button>
                     <% if (locals.isLogged) { %>
-                    <form action="/products/<%=productos.id%>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex">
+                    <button><a href="/products/edit/<%= productos.id%> " class="action-button edit">Editar</a></button>
+                   
+                    <form action="/products/<%=productos.id%>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display: inline-flex" >
                     <button type="submit" id="delete" class="action-button delete">Borrar</button>
                     </form>
                     <% }%>

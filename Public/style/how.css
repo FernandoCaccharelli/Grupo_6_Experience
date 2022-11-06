@@ -6,56 +6,6 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
-/*//////////////////////// HEADER ///////////////////////*/
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-a.menu {
-    display: none;
-}
-
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-.menu-superior h1{
-    font-size: 24px;
-    margin-top: 14px;  
-    margin-left: 15px;
-}
-.barra input{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 85%;
-    height: 32px;
-    margin-left: 16px;
-    padding: 5px;
-    font-size: 16px;
-}
-.barra i{
-    margin-left: -26px;
-}
-.iconos{
-    display: flex;
-    margin-right: 27px;
-    font-size: 1.4em;
-}
-.iconos i{
-    color:#5E81A3;
-}
-.user{
-    margin-left: 12px;
-}
-.shop{
-    margin-right: -11px;
-    margin-left: 9px;
-}
-.menu-inferior{
-    display: none;
-}
-
 /* MAIN */
 
 .flecha i{
@@ -186,44 +136,6 @@ footer i {
 
 
 @media(min-width:768px){
-    
-    .menu-superior{
-        margin-top: 12px;
-        margin-bottom: -26px;
-    }
-    .menu-superior h1{
-        margin-left: 34px;
-        font-size: 34px;
-        margin-top: 20px;
-    }
-    .barra {
-        width: 100%;
-    }
-    .barra input{
-        width: 55%;
-        margin-left: 116px;
-        height: 42px;
-        border-radius: 20px;
-        padding: 8px;
-    }
-    .barra i{
-        font-size: 1.4em;
-        margin-left: -36px;
-    }
-  
-    .iconos{
-        margin-top: 8px;
-    }
-    .user{
-        font-size: 1.2em;
-        margin-right: 23px; 
-        margin-left: -10px;
-    }
-    .shop{
-        font-size: 1.2em;
-        margin-right: 12px;  
-        margin-left: 2px;
-    }
 
    /* MAIN */
 
@@ -295,36 +207,6 @@ footer i {
     }
 }
 @media(min-width:1024px){
-    .menu-superior{
-        margin-top: 26px;
-    }
-    .logo a{
-        font-size: 46px;
-        margin-left: 16px;
-    }
-    .barra input{
-        width: 50%;
-        margin-left: 174px;
-        margin-top: 4px;
-        height: 58px;
-        border-radius: 29px;
-        font-size: 24px;
-        padding: 12px;
-    }
-    .barra i{
-        margin-left: -55px;
-        font-size: 2em;
-    }
-    .iconos{
-        font-size: 1.9em;
-        margin-top: 10px;
-    }
-    .user{
-        margin-left: -91px;
-    }
-    .shop{
-        margin-right: 18px;
-    }
 
     /* main */
     
@@ -397,30 +279,12 @@ footer i {
     }
     footer i{
         font-size: 1.5em;
-    }
-   
-    
-    
+    }   
 
 }
 
-
-
-
-
-
-
-
 @media (min-width:1280px){
-    .menu-superior h1{
-        margin-left: 35px;
-    }
-
-    .barra input{
-        width:45%;
-        margin-right: 4px;
-        margin-left: 317px;
-    }
+    
     .oportunidades{
         width: 70%;
        margin-left: 160px;

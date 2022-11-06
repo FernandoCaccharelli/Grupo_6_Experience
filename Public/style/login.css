@@ -8,45 +8,7 @@ body {
     background-color: white; 
     font-family: 'Roboto', sans-serif; 
 }
-/*//////////////////////// HEADER ///////////////////////*/
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    margin-right: 58px;
-}
-a.menu {
-    display: none;
-}
 
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-.menu-superior h1{
-    font-size: 24px;
-    margin-left: 15px;
-}
-.barra input{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 85%;
-    height: 32px;
-    margin-left: 16px;
-    padding: 5px;
-    font-size: 16px;
-    margin-top: 3px;
-}
-.barra i{
-    margin-left: -26px;
-}
-.menu-inferior{
-    display: none;
-}
-.iconos{
-    display: none;
-}
 /*//////////////////////////         MAIN               /////////////////////////////*/
 .flecha i{
     font-size:1.5em ;
@@ -172,39 +134,6 @@ footer i {
 
 @media (min-width: 768px){
     
-/*////////////////////////        HEADER         ////////////////*/
-
-.menu-superior{
-    margin-top: 12px;
-    margin-bottom: -26px;
-}
-.menu-superior h1{
-    margin-left: 34px;
-    font-size: 34px;
-    margin-top: 20px;
-}
-
-.barra {
-    width: 100%;
-    margin-top: 14px;
-}
-
-.barra input {
-    width: 50%;
-    margin-left: 126px;
-    margin-top: 12px;
-    height: 42px;
-    border-radius: 20px;
-    padding: 8px;
-}
-.barra i{
-    font-size: 1.4em;
-    margin-left: -36px;
-}
-
-.fa-search {
-    font-size: 25px;
-}
 
 /*////////////////////     MAIN             ////////////////////*/
 
@@ -280,28 +209,6 @@ footer h4 {
 
 @media (min-width:1024px){
 
-/*////////////////////////        HEADER         ////////////////*/
-
-.menu-superior{
-    margin-top: 18px;
-}
-.logo a{
-    font-size: 44px;
-    margin-left: 16px;
-}
-.barra input{
-    width: 50%;
-    margin-left: 174px;
-    margin-top: 13px;
-    height: 58px;
-    border-radius: 29px;
-    font-size: 22px;
-    padding: 12px;
-}
-.barra i{
-    margin-left: -55px;
-    font-size: 2em;
-}
 
 /*///////       MAIN            //////////////*/
 
@@ -406,11 +313,7 @@ footer h4 {
 
 @media (min-width:1280px){
 
-.barra input{
-    width:45%;
-    margin-right: 4px;
-    margin-left: 317px;
-}
+ 
 main{
     width:38% ;
     margin-left: 450px;

@@ -6,66 +6,6 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
-
-/*//////////////////////// HEADER ///////////////////////*/
-.menu-principal{
-    margin-top: 10px;
-}
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
-.menu{
-    font-size: 1.8em;
-    margin-left: 18px;
-    margin-right: -20px;
-    margin-top: 16px;
-    color:#5E81A3;
-}
-.menu-superior h1{
-    font-size: 24px;
-    margin-top: 18px;  
-    margin-left: 31px;
-}
-.barra input{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 85%;
-    height: 32px;
-    margin-top: 17px;
-    margin-left: 16px;
-    padding: 5px;
-    font-size: 16px;
-}
-.barra i{
-    margin-left: -26px;
-}
-.iconos{
-    display: flex;
-    margin-right: 27px;
-    margin-top: 21px;
-    font-size: 1.4em;
-}
-.iconos i{
-    color:#5E81A3;
-}
-.user{
-    margin-left: 12px;
-}
-.shop{
-    margin-right: -11px;
-    margin-left: 9px;
-}
-.menu-inferior{
-    display: none;
-}
-
 /*/////////////////////////            MAIN                ////////////////////////////////*/
 
 .product-detail {
@@ -218,46 +158,6 @@ footer i {
 }
 
 @media(min-width:768px){
-/*/////////////// HEADER ///////////////////*/
-.menu{
-    display: none;
-}
-
-.menu-superior h1{
-    margin-left: 34px;
-    font-size: 34px;
-    margin-top: 20px;
-}
-.barra {
-    width: 100%;
-}
-.barra input{
-    width: 55%;
-    font-size: 18px;
-    margin-left: 134px;
-    margin-top: 21px;
-    height: 42px;
-    border-radius: 20px;
-    padding: 8px;
-}
-.barra i{
-    font-size: 1.4em;
-    margin-left: -36px;
-}
-.iconos{
-    margin-top: 27px;
-}
-.user{
-    font-size: 1.2em;
-    margin-right: 64px; 
-    margin-left: -41px;
-}
-.shop{
-    font-size: 1.2em;
-    margin-right: 9px;  
-    margin-left: -38px;
-}
-
 /*//////////////////////////          MAIN          ///////////////////////*/
 
 .flecha{
@@ -357,38 +257,6 @@ footer h4 {
     
 }
 @media(min-width:1024px){
-/*/////////////// HEADER ///////////////////*/
-.menu-superior{
-    margin-bottom: -40px;
-}
-.menu-superior h1{
-    font-size: 50px;
-    margin-left: 49px;
-    margin-top: 32px;
-}
-.barra input{
-    margin-left: 157px;
-    margin-top: 34px;
-    height: 58px;
-    border-radius: 29px;
-    font-size: 28px;
-    padding: 12px;
-}
-.barra i{
-    margin-left: -55px;
-    font-size: 2em;
-}
-.iconos{
-    font-size: 2em;
-    margin-top: 41px;
-}
-.user{
-    margin-left: -91px;
-}
-.shop{
-    margin-right: 18px;
-}
-
 /*//////////////////////////          MAIN          ///////////////////////*/
 .product-detail{
     margin-left: 122px;
@@ -482,16 +350,8 @@ footer h4 {
 }
 
 @media(min-width:1280px){
-    .barra input{
-        width:43%;
-        margin-right: 4px;
-        margin-left: 317px;
-    }
-    .logo a{
-        font-size: 42px;
-    }
-    
-    /*//////////////////////////          MAIN          ///////////////////////*/
+   
+ /*//////////////////////////          MAIN          ///////////////////////*/
     .product-detail{
         width: 60%;
         margin-left: 310px;

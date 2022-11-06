@@ -1,20 +1,62 @@
-<header class="menu-principal">
-    <div class="menu-superior">
-        <a class="menu" href="#" ><i class="fas fa-bars"></i></a>    
-        <h1 class="logo"><a href="/">EXP</a></h1>    
-        <div class="barra">
-            <input type="search" placeholder="Buscar"> 
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="iconos">
-            <a class="user" href="/user/login"><i class="fas fa-user"></i></a>
-            <a class="shop" href="/products/basket"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>EXP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href ="../style/normalize.css">
+    <link rel ="stylesheet" href = "../style/header.css">
+    <link rel ="stylesheet" href = "/style/header.css"> 
+   
+</head>
+
+<!-------------------------------- header-------------------------------------------- -->
+ <header class="menu-principal"> 
+     <div class="menu-superior">
+        <button class="menu" href="#" ><i class="fas fa-bars"></i></button>   
+        <a href="/"><img class="logo" src = "/images/exp.png"> </a> 
+
+        <!-- -----------------buscador------------------- -->
+
+       <form action="/products/search" method="GET" class="busqueda">
+            <input type="text" placeholder="Buscar" name="search" class="barra-busqueda">
+            <button class="lupa" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="container">
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav align-items-center">
+                <% if (locals.isLogged) { %> 
+                    <li class="nav-item dropdown">
+                       <img src="/images/avatars/<%= locals.userLogged.avatar %>">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/user/profile">Mi perfil</a>
+                                <a class="dropdown-item" href="/user/logout">Logout</a>
+                            </ul>
+                    </li>
+                <% } else { %>
+                        <div class="iconos">
+                             <a class="user" href="/user/login"><i class="fas fa-user"></i></a> 
+                            <a class="shop" href="/products/basket"><i class="fas fa-shopping-cart"></i></a>
+                        </div> 
+                        <!-- <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/user/login">Login</a></li> -->
+                   <% } %>
+                </ul>
+            </div>
+           
+        </div> 
+
+
+   </div>
      <nav class = "menu-inferior">
         <ul class="navbar">
+            <!-- <button class="close-menu"><i class="fas fa-arrow-left"></i></button> -->
+            <button class="close-menu"><i class="fas fa-times"></i></button>
             <li>
-                <a class="categorias-menu" href="#">CATEGORÍAS</a>
+                <a class="categorias-menu" href="#">CATEGORÍAS</a><i class="fas fa-duotone fa-play"></i>
             <ul class="categorias">
                 <a class="categorias-menu" href="/products/gastronomia">Gastronomía</a>
                 <a class="categorias-menu" href="/products/entretenimiento">Entretenimiento</a>
@@ -24,6 +66,9 @@
             <li><a href="#">OFERTAS</a></li>
             <li><a href="#">AYUDA</a></li>
          </ul>
-     </nav>
-     <div class="franja-decorativa"></div>
-</header>
+     </nav> 
+     <!-- <div class="franja-decorativa"></div> -->
+
+     <script src="../js/menu.js"></script>  
+ </header> 
+

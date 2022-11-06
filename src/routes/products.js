@@ -34,6 +34,9 @@ router.get("/aventura", productsController.aventura);
 //entretenimiento
 router.get("/entretenimiento", productsController.entretenimiento);
 
+//search
+router.get("/search", productsController.search);
+
 
 
 

@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    width: 100%;
+    background-color: white; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* -----mobile first----- */
+
+.menu-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-top: 17px;
+    align-items: center;
+}
+.menu{
+    border: none;
+    background-color: white;
+    font-size: 1.8em;
+    margin-left: 18px;
+    margin-right: 6px;
+    color:#5E81A3;
+}
+
+.menu-superior h1{
+    font-size: 24px;
+    margin-left: 38px;
+}
+.logo{
+    width: 74%;
+    object-fit: cover;
+}
+.busqueda{
+    display:flex;
+    border: 1px solid #9BB1C5;
+    border-radius: 21px;
+    width: 130%;
+    height: 30%;
+}
+.barra-busqueda{
+    border: none;
+    border-radius: 34px;
+    width: 85%;
+    padding: 5px;
+    font-size: 16px;
+}
+.lupa{
+    background-color: white;
+    border: none;
+    margin-left: -7px;
+    border-radius: 23px;
+}
+
+.iconos{
+    display: flex;
+    margin-right: 20px;
+    font-size: 1.4em;
+   
+}
+.iconos i{
+    color:#5E81A3;
+}
+.user{
+    margin-left: 12px;
+}
+.shop{
+    margin-right: -11px;
+    margin-left: 9px;
+}
+
+/* ---------------menu--------------- */
+.menu-inferior li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-inferior li {
+    list-style: none;
+    padding: 0px 43px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.navbar{
+    background-color: #9BB1C5;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 100;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;    
+}
+.navbar li ul{
+    position: absolute;
+    display: none;
+}
+.navbar li:hover >ul{
+    display: flex;
+    flex-direction: column;
+    z-index: 100; 
+    margin-left: 125px;
+    margin-top: -48px;
+}
+.open-menu{
+    display: flex;
+    border: none;
+    background-color: #9BB1C5;
+    cursor: pointer;
+    margin-left: 16px;
+    
+}
+.close-menu{
+    display: block;
+    border: none;
+    background-color:#9BB1C5; 
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 20px 19px;
+}
+.open-menu i,
+.close-menu i{
+    font-size: 2em;
+    color:#5E81A3;
+}
+
+.menu_opened{
+    opacity: 1;
+    pointer-events: all;
+}
+.navbar li ul {
+    position: absolute;
+}
+
+.categorias .categorias-menu a{
+    padding: 0px 17px;
+    position: relative;
+}
+li i{
+    color:#5E81A3;
+    margin-left: 6px;
+}
+
+/* ---------------login --------------*/
+.container {
+    margin-left: 11px;
+}
+.navbar-nav li img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-right: 14px;
+    object-fit: cover;
+}
+.navbar-nav li{
+    list-style: none;
+    margin-top: -9px;
+}
+.navbar-nav li a{
+    text-decoration: none;
+    color: black;
+    background-color: #e4eef6;
+    display: block;
+    padding: 6px 6px;
+    margin-left: -6px;
+}
+.navbar-nav > li{
+    float: right;
+}
+.navbar-nav li ul{
+    position: absolute;
+    display: none;
+    padding: 7px 0px;
+}
+.navbar-nav li:hover >ul{
+    display: block;
+}
+div .navbar ul{
+    display: flex;
+    list-style: none;
+    padding-top: 15px;
+}
+div .navbar ul a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 24px;
+}
+
+
+@media(min-width:768px){
+
+    .menu, .close-menu, .menu-inferior li i{
+        display: none;
+    }
+    .menu-superior{
+        margin-top: 12px;
+        /* margin-bottom: -26px; */
+    }
+    .menu-superior h1{
+        margin-left: 34px;
+        font-size: 34px;
+        margin-top: 20px;
+    }
+    .logo{
+        width: 36%;
+        margin-left: 37px;
+    }
+    .busqueda{
+        width: 32%;
+        margin-right: 142px;
+    }
+    .barra-busqueda{
+        width: 85%;
+        padding: 5px;
+    }
+    .lupa{
+        margin-left: 7px;
+    }
+    .user{
+        font-size: 1.2em;
+        margin-right: 12px; 
+        margin-left: -10px;
+    }
+    .shop{
+        font-size: 1.2em;
+        margin-right: 9px;  
+    }
+/*----------------- menu inferior ----------------*/
+    .menu-inferior{
+        padding-bottom: 42px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        opacity:unset;
+        background: none;
+        margin-top: 82px;
+        pointer-events:all;
+        align-items: flex-start;
+        position:absolute;
+        height: 40%;
+    }
+    .menu-inferior li a{
+        margin: 12px 32px 0px 56px;
+    }
+    .navbar li:hover >ul{
+        margin-left: -12px;
+        margin-top: -24px;
+    } 
+    .categorias a{
+        background-color: #D8E7F5;
+        border-radius: 6px;
+        padding: 0px 5px 0px 5px;
+        text-align: center;
+    } 
+/* ----------------login --------------*/
+    
+    .navbar-nav li img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 7px;
+        margin-right: 65px;
+    }
+    .navbar-nav li a{
+        font-size: 20px;
+        padding: 8px;
+    }
+    div .navbar-nav ul a {
+        font-size: 18px;
+        padding: 5px 21px;   
+    }
+    
+}
+     @media(min-width:1024px){
+        .menu-superior {
+            margin-top: 19px;
+        }
+        .menu-superior h1{
+            font-size: 44px;
+            margin-left: 44px;
+            margin-top: 38px;
+        }
+        .logo{
+            width: 43%;
+            margin-left: 50px;
+        }
+        .busqueda{
+            width: 34%;
+            height: 44px;
+            margin-left: -22px;
+        }
+        .barra-busqueda{
+            width: 85%;
+            padding: 12px;
+            font-size: 22px;
+        }
+        .lupa{
+            font-size: 1.5em;
+        }
+        .iconos{
+            font-size: 2em;
+        }
+        .navbar{
+            margin-top: 122px;
+        }
+        .menu-inferior{
+            padding-bottom: 65px;
+        }
+        .menu-inferior li a{
+            font-size: 24px;
+            padding: 4px 22px;
+        }
+
+/* ------------login -------------*/
+
+    .navbar-nav li img{
+        width: 120px;
+        height: 120px;
+    }
+    .navbar-nav li a{
+        font-size: 26px;
+        padding: 15px;
+    }
+    div .navbar-nav ul a {
+        font-size: 22px;
+        padding: 5px 12px;
+        margin-left: 6px;
+    }
+      
+    }
+
+    @media(min-width:1440px){
+        .logo{
+            margin-left: 40px;
+        }
+        .busqueda{
+            width: 28%;
+            height: 50px;
+            border-radius: 30px;
+            margin-left: -22px;
+        }
+        .barra-busqueda{
+            padding: 16px;
+        }
+        .lupa{
+            margin-left: 12px;
+        }
+        
+        .iconos{
+            margin-right: 50px;
+        }
+        .user{
+            margin-right: 20px; 
+        }
+        .menu-inferior li a{
+            margin: 26px -11px 0px 170px;
+            font-size: 28px;
+        }
+        .menu-inferior {
+            padding-bottom: 95px;
+        }
+        .navbar{
+            margin-top: 140px;
+        }
+
+    }

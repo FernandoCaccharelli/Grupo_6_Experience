@@ -1,12 +1,41 @@
- const path = require('path');
+const path = require('path');
 const { validationResult } = require('express-validator')
 const db = require('../database/models');
 const sequelize = db.sequelize;
-//const { Op } = require("sequelize");
+// const { Op } = require("sequelize");
+const Sequelize = require("sequelize");
+const Op = Sequelize.Op;
 //const { moveMessagePortToContext } = require('worker_threads');
 
 const products_controller = {
+
+    search: (req,res) => {
+        // busqueda con query(barra de busqueda del header)
+        if (req.query.search != undefined) {
+            db.Producto.findAll({
+                where: {         // aca el where filtra la consulta
+                    [Op.or] : {  // Op (sequelize) Operador del where,fltra // (someAttribute = 5) OR (someAttribute = 6)
+                        name: {[Op.like]: '%' + req.query.search + '%'},
+                        description: {[Op.like]: '%' + req.query.search + '%'},   //[Op.like]: '%hat',      // LIKE '%hat'
+
+                    }
+                }
+            })
+            .then(producto => {
+                res.render(
+                    'products/products',
+                    {productos: producto}
+                )
+            })
+            .catch(function (error) {
+                console.log(error);
+                })
+        }
+    
+    },
+
     products: (req, res) => {
+
         db.Producto.findAll()
             .then(function(productos){
                 res.render("products/products", {productos:productos})
@@ -14,6 +43,7 @@ const products_controller = {
             .catch(function (error) {
                 console.log(error);
                 })
+   
     },
     detail: (req, res) => {
         db.Producto.findByPk(req.params.id, {

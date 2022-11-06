@@ -7,107 +7,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
-.menu-superior{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15px;
-}
- .menu i {
-    font-size: 1.8em;
-    margin-left: 13px;
-    margin-right: -18px;
-    margin-top: 17px;
-    color:#5E81A3;
-}
-
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-.menu-superior h1{
-    font-size: 24px;
-    margin-top: 17px;
-    margin-left: -4px;
-}
-.barra{
-    margin-top: 19px;
-    margin-left: -54px;
-}
-.barra input{
-    border:1px solid #9BB1C5;
-    border-radius: 14px;
-    width: 75%;
-    height: 32px;
-    margin-left: 30px;
-    padding: 5px;
-    font-size: 16px;
-}
-.barra i{
-    margin-left: -26px;
-}
-.iconos{
-    display: flex;
-    margin-right: 27px;
-    font-size: 1.4em;
-}
-.iconos i{
-    color:#5E81A3;
-}
-.user{
-   display: none;
-}
-.shop{
-    display: none;
-}
-.menu-inferior{
-    display: none;
-}
-/* NAVBAR */
-.navbar li img{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    margin-top: -40px;
-    margin-right: -9px;
-}
-.navbar-nav li{
-    list-style: none;
-    margin-right: 10px; 
-    margin-top: -26px;
-    padding: 10px;
-}
-.navbar-nav li a{
-    text-decoration: none;
-    color: black;
-    background-color: #e4eef6;
-    display: block;
-    padding: 6px 6px;
-    margin-left: -6px;
-}
-.navbar-nav > li{
-    float: right;
-}
-.navbar-nav li ul{
-    position: absolute;
-    display: none;
-    padding: 7px 0px;
-}
-.navbar-nav li:hover >ul{
-    display: block;
-}
-div .navbar ul{
-    display: flex;
-    list-style: none;
-    padding-top: 15px;
-}
-div .navbar ul a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 24px;
-}
-/*BODY*/
 .col-md-3 h2{
     margin-left: 10px;
     margin-top: 66px;
@@ -126,7 +25,8 @@ div .navbar ul a {
     padding: 8px;
     border-radius: 10px;
 }
-/*FOOTER*/
+
+/*---------FOOTER-----------*/
 footer{
     position: fixed;
     bottom: 0;
@@ -152,59 +52,7 @@ footer i {
 }
 
 @media(min-width:768px){
-    /*HEADER*/
-    .logo a{
-        font-size: 36px;
-        margin-left: 32px;
-    }
-    .menu-superior .menu i {
-        display: none;
-    }
-    .menu-superior{
-        padding-top: 10px;
-        padding-bottom: 15px;
-        align-items: center;
-    }
-    .barra {
-        width: 78%;
-        margin-top: 2px;
-    }
-    .barra input{
-        width: 55%;
-        margin-left: 116px;
-        margin-top: 21px;
-        height: 42px;
-        border-radius: 25px;
-        padding: 22px;
-        font-size: 20px;
-    }
-    .barra i{
-        font-size: 1.4em;
-        margin-left: -39px;
-    }
-
-    /*NAVBAR*/
-    .navbar li img{
-        width: 94px;
-        height: 94px;
-        border-radius: 50%;
-        margin-top: -86px;
-        margin-right: 12px;
-    }
-    .navbar-nav li a{
-        font-size: 20px;
-        padding: 8px;
-    }
-    div .navbar ul a {
-        font-size: 22px;
-        padding: 5px 43px;
-       
-    }
-    div .navbar{
-        margin-top: 25px;
-        margin-left: 130px;
-    }
-    /*BODY*/
+    
     div .col-md-3{
         text-align: center;
 
@@ -225,7 +73,8 @@ footer i {
         border-radius: 18px;
         margin-left: 40px;    
     }
-    /*FOOTER*/
+
+    /*------------FOOTER---------------*/
     .footer-text {
         display: flex;
         flex-direction: row;
@@ -248,40 +97,7 @@ footer i {
     }
 }
 @media(min-width:1024px){
-    /*HEADER*/
-    .menu-superior h1{
-        font-size: 54px;
-        margin-top: 18px;
-        margin-left: -46px;
-    }
-    .barra input{
-        margin-left: 174px;
-        margin-top: 34px;
-        height: 58px;
-        border-radius: 26px;
-        font-size: 28px;
-    }
-    .barra i{
-        margin-left: -55px;
-        font-size: 2em;
-    }
-    /*NAVBAR*/
-    .navbar li img{
-        width: 120px;
-        height: 120px;
-        margin-top: -100px;
-        margin-right: 12px;
-    }
-    .navbar-nav li a{
-        font-size: 26px;
-        padding: 15px;
-    }
-    div .navbar ul a {
-        font-size: 26px;
-        padding: 5px 66px;
-        margin-left: 15px;
-    }
-    /*BODY*/
+   
     .col-md-3{
         padding-top: 33px;
     }
@@ -289,7 +105,8 @@ footer i {
         font-size: 28px;
         border-radius: 20px;    
     }
-    /*FOOTER*/
+
+    /*---------FOOTER----------*/
     .footer-container{
         margin-top: 140px;
     }
@@ -302,23 +119,7 @@ footer i {
 }
 
 @media(min-width:1280px){
-    .logo a{
-        font-size: 44px;
-    }
-    .menu-superior h1{
-        margin-left: -74px;
-    }
-
-    .barra input{
-        width:48%;
-        font-size: 26px;
-        margin-right: 4px;
-        margin-left: 267px;
-    }
-    div .navbar{
-        margin-left: 315px;
-        padding-left: 30px;
-    }
+    
     .col-md-3 h2, .alert{
         font-size: 38px;
     }
