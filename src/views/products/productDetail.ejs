@@ -7,17 +7,21 @@
     <title>Detalle de producto</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href ="/normalize.css">
+    <link rel="stylesheet" href ="/normalize.css"> 
+    <link rel ="stylesheet" href = "/style/header.css">
     <link rel ="stylesheet" href = "/style/productDetail.css">
+    <script src="/js/menu.js"></script> 
 
 </head>
 
 <body>
-    <%- include ("../partials/header") %>  
-    <div class="flecha">
-        <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
-    </div>
+    <%- include ("../partials/header") %>
+   
     <main>
+        <div class="flecha">
+            <a class="flechaI" href="/"><i class="fas fa-arrow-left"></i> </a>
+        </div>
+
         <div class="product-detail">
             <div class="title">
                     <h1><%= productos.name %></h1>
@@ -47,9 +51,9 @@
                     </form>
                     <% }%>
                 </div>        
-                <div class="payment">  
+                <!-- <div class="payment">  
                     <img src="/images/MediosDePago_ar.f3317df5440144c6bf2cb502ad2bb941.png">
-                </div>
+                </div> -->
             </article>
         </div>
     </section>
@@ -60,7 +64,7 @@
                 <h4>Paseo en velero por el Río de La Plata al atardecer</h4>   
             </article>
             <article class="oportunidad2">
-                <img src = "/images/05693_cena-picasso-01_22_260x180_f.jpg" class = "imagen2" >
+                <img src = "/images/image-1647964748699-3035593.jpg" class = "imagen2" >
                 <h3 class="categoria"><i class="fas fa-utensils"></i>GASTRONOMÍA</h3>
                 <h4>Proba los mejores vinos con quien más quieras</h4>
 
@@ -68,6 +72,6 @@
         </section>
         <%- include ("../partials/footer") %>
     </main>
-    <!-- <script src="/js/detalle.js"></script> -->
-</body>
+    <script src="/js/detalle.js"></script> 
+ </body>
 </html>

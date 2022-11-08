@@ -64,6 +64,7 @@ const products_controller = {
         .all([promProductos, promCategorias])
         .then(([producto, categoria])=>{
             return res.render(path.resolve(__dirname, '../views/products/product-create'), {producto,categoria})
+           
         })
         // db.Producto.findAll()   
         //     .then(function(producto){  

@@ -1,11 +1,11 @@
 *{
     box-sizing: border-box;
 }
-body{
+ body{
     width: 100%;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-}
+} 
 /*/////////////////////////            MAIN                ////////////////////////////////*/
 
 .product-detail {
@@ -67,7 +67,8 @@ article input{
     box-shadow: 0px 0px 5px rgb(180, 180, 180);
     font-size: 18px;
 }
-button{
+/* botones de abajo afecta al menu superior */
+/* button{
     height: 35px;
     width: 90px;
     margin-left: 23px;
@@ -76,8 +77,7 @@ button{
     background-color: #cedeee;
     box-shadow: 0px 0px 5px rgb(180, 180, 180);
     font-size: 18px;
-
-}
+} */
 article a{
     text-decoration: none;
     color:black;

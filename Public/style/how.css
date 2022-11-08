@@ -26,7 +26,7 @@ body{
    display:none ;
 }
 h1{
-    font-size: 16px;
+    font-size: 16px !important;
     text-align: center;
     margin-left: 14px;
 }
@@ -38,8 +38,7 @@ h1{
 .regalo i{
     font-size: 1.4em;
     color: #145aa0;
-    margin-left: 15px;
-    margin-top: 8px;
+    margin: 8px 10px 15px 18px;
 }
 
 .como h2{
@@ -59,7 +58,7 @@ h1{
 .como h3{
     font-size: 16px;
     margin-left: 30px;
-    padding: 10px 1px;
+    padding: 24px 1px;
 }
 h3 i {
     font-size: 1.5em;

@@ -365,14 +365,15 @@ div .navbar ul a {
             margin-right: 20px; 
         }
         .menu-inferior li a{
-            margin: 26px -11px 0px 170px;
-            font-size: 28px;
+            margin: 19px -11px 0px 170px;
+            font-size: 24px;
         }
         .menu-inferior {
             padding-bottom: 95px;
         }
         .navbar{
             margin-top: 140px;
+            height: 40%;
         }
 
     }

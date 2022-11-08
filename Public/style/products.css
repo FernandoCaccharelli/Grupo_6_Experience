@@ -8,49 +8,11 @@ body {
     margin: 0%;
     font-family: "Roboto";
 }
-
-.nav-desplegable {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-
-}
-
-ul {
-    list-style: none;
-}
-
-li a{
-    text-decoration: none;
-}
-
-.filter {
-    position: relative;
-    justify-content: center;
-}
-
-.filter i {
-    font-size: 10px;
-    margin-left: 6px;
-}
-
-.item {
-    position: absolute;
-    display: none;
-}
-
-
-.filter:hover > .item {
-    display: block;
-}
-
 /*/////////////////////////////        ASIDE           ////////////////////////////*/
 
 .aside {
     display: none;
 }
-
 
 /*///////////////////////               MAIN           //////////////////////////*/
 
@@ -163,7 +125,7 @@ footer i {
 /*/////////////////////////////        MAIN          ////////////////////////////*/
 
 main {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
 }
 
@@ -171,6 +133,10 @@ main {
     width: 70%;
     justify-content: space-between;
     margin-left: 15px;
+    margin-top: 52px;
+}
+.all-products h2{
+    z-index: 120;
 }
 
 /*/////////////////////////////        ASIDE        ////////////////////////////*/
@@ -319,6 +285,8 @@ footer h4 {
 }
 
 }
-/* @media(min-width:1280px){
- 
-} */
+ @media(min-width:1440px){
+ .all-products{
+     margin-left: 100px;
+ }
+} 

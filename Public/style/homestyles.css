@@ -315,7 +315,7 @@ footer h4 {
     }
    
     
-    @media(min-width:1280px){
+    @media(min-width:1440px){
        .banner{
           height: 650px;
       } 
