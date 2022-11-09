@@ -99,34 +99,6 @@ main section .register-button{
     padding: 9px 24px;
 }
 
-/*////////////////////////////      FOOTER               //////////////////////////////////*/
-
-footer{
-    margin-top: 25px;   
-    margin-left: 10px;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer h4{
-    font-size: 12px;
-    padding-top: 5px;
-}
-.footer-i{
-    font-size: 1em;
-    align-self: center;
-    
-}
-
-footer i {
-    margin-right: 20px;
-    color: #5E81A3;
-}
-
 /*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
 
 @media(min-width:768px){
@@ -161,23 +133,6 @@ div .text-danger {
     margin: 10px 0px 10px 30px;
 }
 
-/*///////////////////// FOOTER //////////////////*/
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
-}
-
-footer h4 {
-    font-size: 15px;
-}
-
-.instagram, .twitter {
-    font-size: 25px;
-    margin-right: 10px;
-}
 }
 @media(min-width:1024px){
 
@@ -227,30 +182,10 @@ main section .register-button{
     font-size: 18px;
 }
 
-/*///////////////////// FOOTER //////////////////*/
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
 }
 
-footer h4 {
-    font-size: 25px;
-}
+/* @media(min-width:1200px){ 
 
-.instagram, .twitter {
-    font-size: 30px;
-    margin-right: 15px;
-}
-
-
-}
-
-@media(min-width:1200px){ 
-   
-   /*///////////////////// MAIN ///////////////////////////////////*/
    main {
      max-width: 40%;
      margin-left: 350px;
@@ -260,19 +195,9 @@ footer h4 {
        width: 80%;
    }
    
-   /*///////////////////// FOOTER //////////////////*/
-   
-   footer {
-       margin-top: 100px;
-   }
-   
-   footer h4 {
-       font-size: 20px;
-   }
-   
-   }
+   } */
 
-   @media (min-width:1280px){
+   @media (min-width:1440px){
 
     main{
         margin-left: 427px;
@@ -280,7 +205,5 @@ footer h4 {
     .birthdate{
         margin-left: 51px;
     }
-    footer{
-        margin-bottom: 20px;
-    }
+    
 }

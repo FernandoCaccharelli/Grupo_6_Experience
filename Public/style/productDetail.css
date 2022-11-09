@@ -132,31 +132,6 @@ article a{
      margin-left: 10px;
  }
 
-/*////////////////////////////      FOOTER               //////////////////////////////////*/
-footer{
-    margin-top: 30px;   
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer h4{
-    font-size: 12px;
-}
-.footer-i{
-    font-size: 1em;
-    align-self: center;
-    
-}
-
-footer i {
-    margin-right: 20px;
-    color: #5E81A3;
-}
-
 @media(min-width:768px){
 /*//////////////////////////          MAIN          ///////////////////////*/
 
@@ -235,26 +210,6 @@ article .botones{
    margin-bottom: 36px;
 } 
 
-
-
-/*///////////////////// FOOTER //////////////////*/
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
-}
-
-footer h4 {
-    font-size: 15px;
-}
-
-.instagram, .twitter {
-    font-size: 25px;
-    margin-right: 10px;
-}
-    
 }
 @media(min-width:1024px){
 /*//////////////////////////          MAIN          ///////////////////////*/
@@ -328,28 +283,10 @@ article .botones{
     margin-top: 12px;
     margin-left: 33px;
 }
-        
- /*///////////////////// FOOTER //////////////////*/
 
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
 }
 
-footer h4 {
-    font-size: 20px;
-}
-
-.instagram, .twitter {
-    font-size: 30px;
-    margin-right: 15px;
-}
-        
-}
-
-@media(min-width:1280px){
+@media(min-width:1440px){
    
  /*//////////////////////////          MAIN          ///////////////////////*/
     .product-detail{

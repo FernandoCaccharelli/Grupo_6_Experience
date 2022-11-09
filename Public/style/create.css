@@ -89,33 +89,6 @@ form .form-label{
     margin-top: 14px;
 }
 
-
-/*////////////////////////////      FOOTER               //////////////////////////////////*/
-
-footer{
-    margin-top: 46px;  
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer h4{
-    font-size: 12px;
-    margin-left: 14px;
-}
-.footer-i{
-    font-size: 1em;
-    align-self: center;   
-}
-footer i {
-    margin-right: 20px;
-    color: #5E81A3;
-}
-
-
 @media(min-width:768px){
 
 
@@ -158,29 +131,6 @@ footer i {
         font-size: 18px;
         margin: 25px 40px 14px 48px;
     }
-
-    /*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
-
-    footer{
-        margin-top: 90px;
-        margin-left: -20px;
-    }
-
-    .footer-text {
-        display: flex;
-        flex-direction: row;
-        width: 60%;
-        justify-content: space-evenly;
-    }
-
-    footer h4 {
-        font-size: 15px;
-    }
-
-    .instagram, .twitter {
-        font-size: 25px;
-        margin-right: 10px;
-    }
     
     }
     @media(min-width:1024px){
@@ -196,14 +146,14 @@ footer i {
         }
 
         .formulario h2{
-            font-size: 40px;
+            font-size: 30px;
         }
 
         form .form-label{
             font-size: 22px;
         }
 
-        .nombre, .precio, .personas, .categorias {
+        .nombre, .precio, .personas {
             width: 40%;
         }
 
@@ -238,24 +188,6 @@ footer i {
 
         .crear {
             width: 90%; }
-
-        /*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
-
-        .footer-text {
-            display: flex;
-            flex-direction: row;
-            width: 60%;
-            justify-content: space-evenly;
-        }
-
-        footer h4 {
-            font-size: 20px;
-        }
-
-        .instagram, .twitter {
-            font-size: 30px;
-            margin-right: 15px;
-        }
    
     }
 

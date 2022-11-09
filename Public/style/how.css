@@ -107,40 +107,12 @@ section .titulo{
      font-size: 14px;
      margin-left: 10px;
  }
- /*////////////////////////////      FOOTER               //////////////////////////////////*/
-footer{
-    margin-top: 35px;   
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer h4{
-    font-size: 12px;
-    margin-left: 5px;
-}
-.footer-i{
-    font-size: 1em;
-    align-self: center;
-    
-}
-
-footer i {
-    margin-right: 20px;
-    color: #5E81A3;
-}
-
 
 @media(min-width:768px){
 
    /* MAIN */
-
-   .flecha i { 
-    margin-left: 37px;
-    margin-top: 38px;
+    .flecha i { 
+        margin-left: 43px;
     }
 
     .tablet{
@@ -153,7 +125,13 @@ footer i {
         display: none;
     }
     .regalo{
-       justify-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: -4px;
+        margin-bottom: 14px;
+    }
+    .regalo h1{
+        font-size: 20px !important;
     }
     section .titulo{
         margin-left: 63px;
@@ -163,6 +141,11 @@ footer i {
         flex-wrap: nowrap;
         width: 100%;
         margin-left: -31px;
+    }
+    .como h3 {
+        font-size: 18px;
+        margin-left: 80px;
+        padding: 40px 7px;
     }
     .oportunidades{
         margin-left: 14px;
@@ -186,24 +169,6 @@ footer i {
     .oportunidad2{
        margin-bottom: 36px;
     } 
-
-    /* FOOTER */
-
-    .footer-text {
-        display: flex;
-        flex-direction: row;
-        width: 60%;
-        justify-content: space-evenly;
-    }
-    
-    footer h4 {
-        font-size: 15px;
-    }
-    
-    .instagram, .twitter {
-        font-size: 25px;
-        margin-right: 10px;
-    }
 }
 @media(min-width:1024px){
 
@@ -211,18 +176,19 @@ footer i {
     
     .flecha i{
         font-size: 2.2em;
-        margin-left: 56px;
-        margin-top: 52px;
+        margin-left: 62px;
+        margin-top: 10px;
     }
     .regalo {
       margin-left: 10px;
+      margin-bottom: 25px;
     }
     .regalo i{
         font-size: 2.5em;
-        margin-top: 20px;
+        margin-top: 3px;
     }
     .regalo h1{
-        font-size: 30px;
+        font-size: 26px !important;
     }
     .desktop{
         display: block;
@@ -235,13 +201,13 @@ footer i {
     }
     .como h2{
         width: 100%;
-        font-size: 32px;
+        font-size: 30px;
         padding-top: 16px;
     }
     .como h3{
-        font-size: 30px;
-        margin-left: 45px;
-        padding-top: 24px;
+        font-size: 24px;
+        margin-left: 100px;
+        padding-top: 60px;
     }
     .como .nada{
         width: 100%;
@@ -270,19 +236,32 @@ footer i {
         font-size: 22px;
         margin-left: 10px;
     }
-    footer{
-        margin-top: 80px;
-    }
-    footer h4{
-        font-size: 20px;
-    }
-    footer i{
-        font-size: 1.5em;
-    }   
-
 }
 
-@media (min-width:1280px){
+@media (min-width:1440px){
+    main{
+        margin-top: 20px;
+    }
+    .flecha i{
+        font-size: 2.8em;
+    }
+    .regalo {
+        margin: 45px 0px 25px 10px;
+      }
+      .regalo i{
+          font-size: 3.0em;
+      }
+      .regalo h1{
+          font-size: 30px !important;
+      }
+      .como h2{
+        font-size: 32px;
+     }
+     .como h3{
+        font-size: 28px;
+        margin-left: 112px;
+        padding-top: 92px;
+     }
     
     .oportunidades{
         width: 70%;

@@ -7,6 +7,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" /> 
    <link rel="stylesheet" href ="../style/normalize.css"> 
     <link rel ="stylesheet" href = "../style/header.css">   
+
+    <link rel ="stylesheet" href = "../style/footer.css">  
+    <link rel ="stylesheet" href = "/style/footer.css">     
  </head>  
 
 <!-------------------------------- header-------------------------------------------- -->
@@ -27,7 +30,7 @@
                 <ul class="navbar-nav align-items-center">
                 <% if (locals.isLogged) { %> 
                     <li class="nav-item dropdown">
-                       <img src="/images/avatars/<%= locals.userLogged.avatar %>">
+                        <a class="perfil"href="/user/profile"><img src="/images/avatars/<%= locals.userLogged.avatar %>"></a>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/user/profile">Mi perfil</a>
@@ -64,7 +67,6 @@
             </li>
             <li><a href="#">AYUDA</a></li>
          </ul>
-         <div class="franja-decorativa"></div> 
      </nav> 
 
    <script src="../js/menu.js" ></script>  

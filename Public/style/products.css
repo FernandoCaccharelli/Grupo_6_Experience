@@ -92,35 +92,6 @@ section h2{
     width: 15px;
 }
 
-
-
-/*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
-
-footer{
-    margin-top: 46px;  
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer h4{
-    font-size: 12px;
-    margin-left: 14px;
-    padding-top: 5px;
-}
-.footer-i{
-    font-size: 1em;
-    align-self: center;
-    
-}
-
-footer i {
-    margin-right: 20px;
-    color: #5E81A3;
-}
 /*////////////////////////        MEDIAS QUERIES                /////////////////////////////////*/
 
 @media(min-width:768px) {
@@ -200,61 +171,19 @@ hr {                          /*           Linea divisoria       */
     left: 20%;
 }
 
-
-
-/*///////////////////// FOOTER //////////////////*/
-
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
-}
-
-footer h4 {
-    font-size: 15px;
-}
-
-.instagram, .twitter {
-    font-size: 25px;
-    margin-right: 10px;
-}
-
 }
 
 @media(min-width:1024px) {
 
 /*/////////////////////////////        ASIDE        ////////////////////////////*/
-
 .filters i {            /*             Piquito ocultar filtro          */
     left: 15%;
 }
-
-
 /*/////////////////////////////        MAIN        ////////////////////////////*/
 
 .product-box {
     width: 180px;
     height: 215px;
-}
-
-/*///////////////////// FOOTER //////////////////*/
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
-}
-
-footer h4 {
-    font-size: 25px;
-}
-
-.instagram, .twitter {
-    font-size: 30px;
-    margin-right: 15px;
 }
 
 }
@@ -267,27 +196,9 @@ footer h4 {
     left: 11%;
 }
 
-
-/*///////////////////// FOOTER //////////////////*/
-
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
 }
 
-footer h4 {
-    font-size: 25px;
-}
-
-.instagram, .twitter {
-    font-size: 30px;
-    margin-right: 15px;
-}
-
-}
- @media(min-width:1440px){
+@media(min-width:1440px){
  .all-products{
      margin-left: 100px;
  }

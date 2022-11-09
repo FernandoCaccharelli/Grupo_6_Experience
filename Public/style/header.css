@@ -170,7 +170,7 @@ li i{
 .navbar-nav li a{
     text-decoration: none;
     color: black;
-    background-color: #e4eef6;
+    /* background-color: #e4eef6; */
     display: block;
     padding: 6px 6px;
     margin-left: -6px;
@@ -245,14 +245,16 @@ div .navbar ul a {
         flex-direction: row;
         opacity:unset;
         background: none;
-        margin-top: 82px;
+        margin-top: 90px;
         pointer-events:all;
         align-items: flex-start;
         position:absolute;
         height: 40%;
+        width: 90%;
+        margin-left: 64px;
     }
     .menu-inferior li a{
-        margin: 12px -18px 0px 78px;
+        margin: 12px -18px 0px 48px;
     }
     .navbar li:hover >ul{
         margin-left: -12px;
@@ -267,11 +269,11 @@ div .navbar ul a {
 /* ----------------login --------------*/
     
     .navbar-nav li img{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px; 
         border-radius: 50%;
         margin-top: 7px;
-        margin-right: 65px;
+        margin-right: 35px;
     }
     .navbar-nav li a{
         font-size: 20px;
@@ -313,22 +315,23 @@ div .navbar ul a {
             font-size: 2em;
         }
         .navbar{
-            margin-top: 122px;
+            margin-top: 142px;
+            margin-left: 90px;
         }
         .menu-inferior{
             padding-bottom: 65px;
         }
         .menu-inferior li a{
             font-size: 22px;
-            padding: 0px 10px 0px 34px;
+            padding: 0px 10px 0px 24px;
         }
 
 /* ------------login -------------*/
 
     .navbar-nav li img{
-        width: 120px;
-        height: 120px;
-    }
+        width: 90px;
+        height: 90px;
+    } 
     .navbar-nav li a{
         font-size: 26px;
         padding: 15px;
@@ -366,14 +369,14 @@ div .navbar ul a {
             margin-right: 20px; 
         }
         .menu-inferior li a{
-            margin: 19px -11px 0px 190px;
+            margin: 19px -11px 0px 150px;
             font-size: 24px;
         }
         .menu-inferior {
             padding-bottom: 95px;
         }
         .navbar{
-            margin-top: 140px;
+            margin-top: 172px;
             height: 40%;
         }
         .navbar li ul{
@@ -382,4 +385,10 @@ div .navbar ul a {
         .navbar li ul a{
             padding:9px 12px 2px 11px;
         }
+        /* ------------login -------------*/
+
+    .navbar-nav li img{
+        width: 110px;
+        height: 110px;
+    } 
     }

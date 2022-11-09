@@ -18,7 +18,7 @@ body{
     
 }
 .formulario {
-    background-color: #D8E7F5;
+    background-color: #eaf1f7;
     width: 84%;
     height: 90%;
     margin: 24px 0px 10px 26px;
@@ -99,34 +99,6 @@ div .producto .precio .form-input{        /*   Precio    */
     padding: 5px;
 }
 
-
-/*////////////////////////////      FOOTER               //////////////////////////////////*/
-
-footer{
-    margin-top: 46px;  
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer h4{
-    font-size: 12px;
-    margin-left: 14px;
-    padding-top: 5px;
-}
-.footer-i{
-    font-size: 1em;
-    align-self: center;   
-}
-
-footer i {
-    margin-right: 20px;
-    color: #5E81A3;
-}
-
 @media(min-width:768px){
 
     /*////////////////// MAIN //////////////////////*/
@@ -171,29 +143,6 @@ footer i {
         padding: 5px;
         font-size: 18px;
         margin: 40px 0px 20px 0px;
-    }
-
-    /*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
-
-    footer{
-        margin-top: 90px;
-        margin-left: -20px;
-    }
-
-    .footer-text {
-        display: flex;
-        flex-direction: row;
-        width: 60%;
-        justify-content: space-evenly;
-    }
-
-    footer h4 {
-        font-size: 15px;
-    }
-
-    .instagram, .twitter {
-        font-size: 25px;
-        margin-right: 10px;
     }
     
     }
@@ -240,24 +189,6 @@ footer i {
     .crear button{
         font-size: 25px;
     }
-
-        /*/////////////////////////////     FOOTER     ///////////////////////////////*/ 
-
-        .footer-text {
-            display: flex;
-            flex-direction: row;
-            width: 60%;
-            justify-content: space-evenly;
-        }
-
-        footer h4 {
-            font-size: 20px;
-        }
-
-        .instagram, .twitter {
-            font-size: 30px;
-            margin-right: 15px;
-        }
    
     }
 
