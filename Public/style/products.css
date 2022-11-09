@@ -42,7 +42,9 @@ section h2{
     color: #345D84;
 }
 .product-box img{
-    width: 98%;
+    width: 130px;
+    height: 95px;
+    object-fit: cover;
     margin-left: 3px;
 }
 .categoria{

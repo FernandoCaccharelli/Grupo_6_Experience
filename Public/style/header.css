@@ -217,7 +217,7 @@ div .navbar ul a {
         margin-left: 37px;
     }
     .busqueda{
-        width: 32%;
+        width: 30%;
         margin-right: 142px;
     }
     .barra-busqueda{
@@ -238,7 +238,7 @@ div .navbar ul a {
     }
 /*----------------- menu inferior ----------------*/
     .menu-inferior{
-        padding-bottom: 42px;
+        padding-bottom: 42px; 
     }
     .navbar{
         display: flex;
@@ -252,7 +252,7 @@ div .navbar ul a {
         height: 40%;
     }
     .menu-inferior li a{
-        margin: 12px 32px 0px 56px;
+        margin: 12px -18px 0px 78px;
     }
     .navbar li:hover >ul{
         margin-left: -12px;
@@ -297,9 +297,9 @@ div .navbar ul a {
             margin-left: 50px;
         }
         .busqueda{
-            width: 34%;
+            width: 30%;
             height: 44px;
-            margin-left: -22px;
+            margin-left: -11px;
         }
         .barra-busqueda{
             width: 85%;
@@ -319,8 +319,8 @@ div .navbar ul a {
             padding-bottom: 65px;
         }
         .menu-inferior li a{
-            font-size: 24px;
-            padding: 4px 22px;
+            font-size: 22px;
+            padding: 0px 10px 0px 34px;
         }
 
 /* ------------login -------------*/
@@ -346,13 +346,14 @@ div .navbar ul a {
             margin-left: 40px;
         }
         .busqueda{
-            width: 28%;
+            width: 24%;
             height: 50px;
             border-radius: 30px;
             margin-left: -22px;
         }
         .barra-busqueda{
             padding: 16px;
+            font-size: 24px;
         }
         .lupa{
             margin-left: 12px;
@@ -365,7 +366,7 @@ div .navbar ul a {
             margin-right: 20px; 
         }
         .menu-inferior li a{
-            margin: 19px -11px 0px 170px;
+            margin: 19px -11px 0px 190px;
             font-size: 24px;
         }
         .menu-inferior {
@@ -375,5 +376,10 @@ div .navbar ul a {
             margin-top: 140px;
             height: 40%;
         }
-
+        .navbar li ul{
+            padding-left: 20px;
+        }
+        .navbar li ul a{
+            padding:9px 12px 2px 11px;
+        }
     }

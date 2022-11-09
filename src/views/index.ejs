@@ -9,15 +9,39 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <link rel="stylesheet" href ="../style/normalize.css">
         <link rel ="stylesheet" href = "../style/homestyles.css">
+
+
     </head>
 
 <body>
     <%- include ("./partials/header") %>
     <main>
 
-       <section class="banner">
+       <!-- <section class="banner">
             <img src = "../images/SkBAKpnSG_1256x620__1.webp" class = "banner" >
-        </section> 
+        </section>  -->
+
+<!-- ------------------------Banner slider ---------------------- -->
+<div class="contenedor">
+    <div class="slider-contenedor">
+        <section class="contenido-slider">
+            <img src="../images/SkBAKpnSG_1256x620__1.webp" alt="">
+        </section>
+        <section class="contenido-slider">
+            <img src="../images/paracaidas_cursos_paracaidismo.jpg" alt="">
+        </section>
+    <section class="contenido-slider">
+        <img src="../images/8600_34471696444_a11e0ec99c_o.jpg" alt="">
+    </section>
+    <section class="contenido-slider">
+        <img src="../images/SkBAKpnSG_1256x620__1.webp" alt="">
+    </section>
+</div>
+</div>
+
+<!-- --------------------- Fin Banner slider ------------------- -->
+
+
         <section class="how">
             <i class="far fa-question-circle"></i>
             <h3>COMO LO HACEMOS</h3>
@@ -49,10 +73,11 @@
                 </article> 
             </section>
         </section>
-            <div class="mas">
+             <div class="mas"> 
                 <a href="/products"><h3>Ver más</h3></a>
-            </div>
+           </div> 
        
+     
         <article class="extra"> 
             <img src = "../images/la-usina-del-arte-1.webp" class = "imagen1" >
             <h3>RECITALES</h3>
@@ -63,5 +88,6 @@
 </main>
         
 <%- include ("./partials/footer") %>
+<script src="../js/slider.js" ></script>  
 </body>
 </html>

@@ -7,11 +7,37 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.banner{
-    width: 102%;
-    margin-top: -1px;
+/* ------------------------Banner slider ----------------------*/
+
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 195px;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+.contenido-slider > img{
+    /* width: 319px; */
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
+.contenido-slider h2{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+/* --------------------- Fin Banner slider -------------------*/
 
 .how{
     display: flex;
@@ -51,7 +77,7 @@ body{
 section h2{
     margin-left: 28px;
     margin-top: 38px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .opciones{
     display: flex;
@@ -73,28 +99,31 @@ section h2{
     margin-left: 3px;
 }
 .op1 .categoria,.op2 .categoria,.op3 .categoria{
-    font-size: 18px;
+    font-size: 16px;
     color: #345D84;
+    margin-top: 10px;
 }
 .op1 i, .op2 i,.op3 i{ 
     padding-left: 4px;
     padding-right: 10px;
 }
 .opciones h2{
-    font-size: 18px;
-    margin-top: 40px;
+    font-size: 16px;
+    margin-top: 34px;
     text-align: center;
     margin-left: 0px;
 }
 .op1 .descripcion,.op2 .descripcion,.op3 .descripcion{
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
+    margin-top: 8px;
 }
 .op1 .precio, .op2 .precio,.op3 .precio{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
     text-align: center;
     color: #5E81A3;
+    margin-top: 8px;
 }
 .mas{
     text-align: center;
@@ -123,14 +152,16 @@ section h2{
     border-bottom: #345D84 1px solid;
     width: 30%;
     border-radius: 14px;
-}
-.extra img{
+} 
+ .extra img{
     width: 90%;
     margin-top: 36px;  
     margin-bottom: -37px;
     margin-left: 16px;  
     padding-top: 55px;
 }
+
+
 /*FOOTER*/
 footer{
     margin-top: 110px;   
@@ -155,9 +186,14 @@ footer i {
 }
 
 @media(min-width:768px){
-    .banner{
-        width: 100%;
+    .contenido-slider{
+        height: 350px;
     }
+    .contenido-slider > img{
+        height: 350px;
+        object-fit: cover;
+    }
+
     .how{
         max-width: 37%;
         margin: -36px 0px 0px 241px;
@@ -220,27 +256,33 @@ footer i {
   
 /*///////////////////// FOOTER //////////////////*/
 
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
-}
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-evenly;
+    }
 
-footer h4 {
-    font-size: 15px;
-}
+    footer h4 {
+        font-size: 15px;
+    }
 
-.instagram, .twitter {
-    font-size: 25px;
-    margin-right: 10px;
+    .instagram, .twitter {
+        font-size: 25px;
+        margin-right: 10px;
+    }
 }
-   }
 
    @media(min-width:1024px){
-       .banner{
-           width: 100%;
-       }
+
+       .contenido-slider{
+        height: 500px;
+        }
+        .contenido-slider > img{
+        height: 500px;
+        object-fit: cover;
+        }
+
        .how{
            height: 80px;
            margin-left: 315px;
@@ -271,13 +313,13 @@ footer h4 {
             font-size: 20px;
         }
        .mas{
-           max-width: 20%;
-           margin-left: 410px;
+           max-width: 16%;
+           margin-left: 430px;
            margin-top: 30px;
        }
        .mas h3{
           padding: 19px;
-          font-size: 32px;
+          font-size: 28px;
        }
        .extra{
            margin-left: 21px;
@@ -292,49 +334,64 @@ footer h4 {
     
        /*FOOTER*/
 
-footer{
-    padding-top: 50px;
-}       
+    footer{
+        padding-top: 50px;
+    }       
 
-.footer-text {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-evenly;
-}
-
-footer h4 {
-    font-size: 20px;
-}
-
-.instagram, .twitter {
-    font-size: 30px;
-    margin-right: 15px;
-}
-   
+    .footer-text {
+       display: flex;
+       flex-direction: row;
+       width: 60%;
+       justify-content: space-evenly;
     }
-   
-    
+
+    footer h4 {
+       font-size: 20px;
+    }
+
+    .instagram, .twitter {
+      font-size: 30px;
+      margin-right: 15px;
+    }
+}
+
     @media(min-width:1440px){
-       .banner{
-          height: 650px;
-      } 
+     
+      .contenido-slider{
+        height: 600px;
+        }
+        .contenido-slider > img{
+        height: 600px;
+        object-fit: cover;
+        }
+
       .how{
-          margin-left:430px
+        margin-left: 490px;
+        max-width: 30%;
       }
       .how i{
-          margin-left: 35px;
+          margin-left: 20px;
       }
       .how h3{
-          font-size: 28px;
-          margin-left: 44px;
+        font-size: 28px;
+        margin-left: 28px;
       }
       .mas {
-          margin-left: 550px;
+          margin-left: 640px;
+      }
+      .mas h3 {
+        font-size: 32px;
+    }
+      .opciones{
+          width: 85%;
+          margin-left: 70px;
+      }
+      .op1, .op2, .op3 {
+          margin-left: 80px;
       }
 
 
-    }
+}
 
 
 
