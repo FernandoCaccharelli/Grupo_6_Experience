@@ -11,25 +11,27 @@ body{
 
 /*//////////////////////////         MAIN               /////////////////////////////*/
 .flecha i{
-    font-size:1.5em ;
+    font-size:1.6em ;
     color:#5E81A3;
     margin-left: 16px;
-    margin-top: 12px;
+    margin-top: 15px;
     transition: color 450ms;
 }
 .flecha i:hover{
-  color:#1E5488;   
+  color:#1E5488;
+    
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #D8E7F5 ;
+    background-color: #eaf1f7 ;
     margin-top: 18px;
-    max-width:85%;
-    margin-left: 27px;
+    max-width:80%;
+    margin-left: 34px;
     border-radius: 10px;
+    box-shadow: 3px -1px 10px 0px rgba(0,0,0,0.20);
 }
 h2 {
     font-size: 30px;
@@ -49,7 +51,7 @@ main section .name,
 .password,
 .birthdate {
     font-size: 12px;
-    margin: 8px 30px;
+    margin: 8px 23px;
     height: 35px;
     width: 80%;
     padding: 5px;
@@ -66,19 +68,19 @@ main section .name,
     margin-top: 15px;
 }
 
-.imagen label{    /*/////////////   Imagen de perfil ////////////////////*/
+.imagen label{   
     font-size: 13px;
     font-weight: bold;
 }
 
-.imagen input{    /*//////////////////   Seleccionar archivo        /////////////////////////////*/
+.imagen input{   
     font-size: 11px;
 }
 
 .checkbox{
-    margin: 30px 0px 15px 45px;
+    margin: 30px 0px 15px 25px;
     font-size: 12px;
-    width: 70%;
+    width: 80%;
     
 }
 
@@ -96,7 +98,7 @@ main section .register-button{
     height: 34px;
     margin: 15px;
     border-radius: 5px;
-    padding: 9px 24px;
+    padding: 7px 18px;
 }
 
 /*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
@@ -105,14 +107,13 @@ main section .register-button{
 
 /*///////////////////// MAIN ///////////////////////////////////*/
 .flecha i { 
-    margin-left: 36px;
-    margin-top: 64px;
- }
+    margin-left: 43px;
+}
 
 main{
-    width:50%;
-    margin: 45px 195px;
-    border-radius: 10px;
+    max-width: 50%;
+    margin: 45px 219px;
+    border-radius: 22px;
 }
 
 div .text-danger {
@@ -122,6 +123,7 @@ div .text-danger {
 .checkbox{
     font-size: 15px;
     width: 80%;
+    margin-left: 29px;
 }
 
 .imagen label {
@@ -130,40 +132,47 @@ div .text-danger {
 
 .imagen input {
     font-size: 13px;
-    margin: 10px 0px 10px 30px;
+    margin: 10px 0px 10px 0px;
 }
 
 }
 @media(min-width:1024px){
 
 /*///////////////////// MAIN ///////////////////////////////////*/
-.flecha i { 
-    font-size: 2.1em;
-    margin-left: 56px;
-    margin-top: 74px;
+.flecha i{
+    font-size: 2.2em;
+    margin-left: 62px;
+    margin-top: 10px;
 }
 .text-danger {
     font-size: 18px;
 }
 
 section.register {
-    margin-top: 50px;
+    margin-top: 17px;
 }
 
 h2 {
     font-size: 48px;
     margin-top: 25px;
+    padding-top: 61px;
 }
 main{
     margin-left: 266px;
 }
 
-main section .name, .lastName, .email, .password, .birthdate {
+main section .name, .lastName, .email, .password {
     font-size: 18px;
     margin: 16px 10px;
-    height: 40px;
-    padding: 20px 12px;
+    width: 60%;
+    padding: 22px 12px;
 }
+.birthdate{
+    font-size: 18px;
+    margin: 22px 46px;
+    padding: 20px 12px; 
+}
+
 .imagen label{
     font-size: 18px;
 }
@@ -177,33 +186,49 @@ main section .register-button{
     margin-top: 25px;
     margin-bottom: 25px;
 } 
-
 .checkbox {
     font-size: 18px;
+    margin-left: 46px;
 }
 
 }
-
-/* @media(min-width:1200px){ 
-
-   main {
-     max-width: 40%;
-     margin-left: 350px;
-   }
-   
-   main section .name, .lastName, .email, .password, .birth-date {
-       width: 80%;
-   }
-   
-   } */
 
    @media (min-width:1440px){
+    .flecha i{
+        font-size: 2.8em;
+    }
 
     main{
-        margin-left: 427px;
+        margin-left: 470px;
+        max-width: 38%;
+    }
+    h2 {
+        font-size: 50px;
+        padding-top: 72px;
+    }
+    main section .name, .lastName, .email, .password {
+        font-size: 22px;
+        margin: 25px 0px;
+        width: 55%;
+        padding: 24px 13px;
     }
     .birthdate{
-        margin-left: 51px;
+        font-size: 22px;
+        margin: 36px 67px;
     }
-    
+    .imagen label, .imagen input {
+        font-size: 22px;
+    }
+
+    .checkbox {
+        font-size: 20px;
+        margin-left: 71px;
+    }
+    main section .register-button {
+        height: 55px;
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        padding:11px;
+    }
 }

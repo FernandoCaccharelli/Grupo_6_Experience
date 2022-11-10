@@ -11,7 +11,7 @@ body {
 
 /*//////////////////////////         MAIN               /////////////////////////////*/
 .flecha i{
-    font-size:1.5em ;
+    font-size:1.6em ;
     color:#5E81A3;
     margin-left: 16px;
     margin-top: 15px;
@@ -21,19 +21,20 @@ body {
   color:#1E5488;
     
 }
-main {
-    background-color: #D8E7F5;
-    width: 75%;
-    height: 90%;
-    margin: 9% 0% 10% 13%;
-    box-shadow: 7px -1px 22px 0px rgba(0,0,0,0.40);
-    border-radius: 10px;   
-    text-align: center;
+
+main{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #eaf1f7 ;
+    margin-top: 18px;
+    max-width:75%;
+    margin-left: 42px;
+    border-radius: 10px;
+    box-shadow: 3px -1px 10px 0px rgba(0,0,0,0.20);
 }
 h2 {
-    font-size: 8vw;
+    font-size: 30px;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -46,7 +47,11 @@ main section.login {
 
 main .email, 
 .password {
-    font-size: 20px;
+    font-size: 14px;
+    margin: 8px 23px;
+    height: 35px;
+    width: 80%;
+    padding: 5px;
 }
 
 .text-danger {
@@ -57,15 +62,8 @@ main .email,
 }
 
 main .rimen-me {
-    margin-top: 13px;
+    margin-top: 28px;
     font-size: 12px;
-}
-main .email input, 
-.password input{
-    font-size: 3vw;
-    padding: 2px;
-    border-radius: 5px;
-    border:  #5E81A3 1px solid;
 }
 main .button-send {
     width: 50%;
@@ -80,12 +78,12 @@ main .button-send {
 }
 .retrieve-pass {
     margin-top: 30px;
-    font-size: 3vw;
+    font-size: 12px; 
 }
 
 .register-here {
     margin-top: 10px;
-    font-size: 3vw;
+    font-size: 12px;
     margin-bottom: 15px;
 }
 
@@ -106,30 +104,20 @@ main section.options-login button{
 /*////////////////////////////   MEDIAS QUERIES /////////////////////////*/
 
 @media (min-width: 768px){
-    
-
-/*////////////////////     MAIN             ////////////////////*/
 
 .flecha i { 
-    margin-left: 36px;
-    margin-top: 64px;
+        margin-left: 43px;
     }
 main{
-    width: 55%;
-    margin-left: 174px;
-    margin-top: 37px;
-}
-h2 {
-    font-size: 7vw;
-    padding-bottom: 45px;
+    max-width: 50%;
+    margin: 19px 219px;
+    border-radius: 22px;
 }
 
-.email {
-    margin-top: 15px;
-}
-
+main .email, 
 .password {
-    margin-top: 10px;
+    font-size: 16px;
+    margin: 13px 28px;
 }
 
 div .text-danger {
@@ -137,22 +125,23 @@ div .text-danger {
 }
 
 main .rimen-me {
-    margin-top: 18px;
-    font-size: 20px;
+    margin-top: 34px;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 main .button-send {
     width: 40%;
-    font-size: 25px;
-    margin-top: 70px;
+    font-size: 20px;
+    margin-top: 38px;
 }
 
 .retrieve-pass {
-    font-size: 2.5vw;
+    font-size: 16px;
 }
 
 .register-here {
-    font-size: 2.5vw;
+    font-size: 16px;
 }
 
 main section.options-login button {
@@ -165,17 +154,27 @@ main section.options-login button {
 @media (min-width:1024px){
 /*///////       MAIN            //////////////*/
 
-.flecha i { 
-    font-size: 2.1em;
-    margin-left: 56px;
-    margin-top: 74px;
-    }
-main{
-    width: 50%;
-    margin-left: 245px;
+.flecha i{
+    font-size: 2.2em;
+    margin-left: 62px;
+    margin-top: 10px;
 }
+main{
+    max-width: 43%;
+    margin-left: 298px;
+}
+h2 {
+    font-size: 44px;
+    margin-top: 25px;
+    padding-top: 48px;
+    padding-bottom: 0px;
+}
+main .email, 
 .password {
-    margin-top: 20px;
+    font-size: 18px;
+    margin: 16px 39px;
+    width: 80%;
+    padding: 22px 12px;
 }
 
 .text-danger {
@@ -187,9 +186,8 @@ main .rimen-me {
     font-size: 25px;
 }
 main .button-send {
-    width: 40%;
-    font-size: 30px;
-    margin-top: 90px;
+    font-size: 28px;
+    margin-top: 53px;
 }
 
 .retrieve-pass {
@@ -205,53 +203,46 @@ main section.options-login button {
 @media (min-width:1440px){
     
     /*///////       MAIN            //////////////*/
-    
+    .flecha i{
+        font-size: 2.8em;
+    }
+
     main {
-        width: 50%;
-        margin: 10% 0% 10% 23%;
+        margin-left: 470px;
+        max-width: 38%;
     }
 
     h2 {
-        font-size: 5vw;
+        font-size: 50px;
+        padding-top: 72px;
     }
 
-    main .email input, .password input {
-        font-size: 2vw;
+    main .email, 
+    .password {
+        font-size: 24px;
+        margin: 25px 48px;
+        padding: 30px 13px;
     }
    
     main .button-send {
-        width: 30%;
-        font-size: 25px;
-        margin-top: 80px;
+        width: 35%;
+        font-size: 28px;
+        margin-top: 60px;
+        padding: 15px;
+    }
+    main .rimen-me {
+        margin-top: 70px;
+        font-size: 22px;
     }
     .retrieve-pass {
         margin-top: 30px;
-        font-size: 1.5vw;
+        font-size: 22px;
     }
     
     .register-here {
         margin-top: 10px;
-        font-size: 1.5vw;
-    }
-
-    main section.options-login button{
-        padding: 2px;
-        font-size: 1.5vw;
+        font-size: 22px;
+        margin-bottom: 30px;
     }
     
 }
-
-/* @media (min-width:1280px){
-
- 
-main{
-    width:38% ;
-    margin-left: 450px;
-    margin-top: 70px;
-}
-form{
-    margin-top: 10px;
-    
-}
-
-} */

@@ -251,7 +251,7 @@ div .navbar ul a {
         position:absolute;
         height: 40%;
         width: 90%;
-        margin-left: 64px;
+        margin-left: 60px;
     }
     .menu-inferior li a{
         margin: 12px -18px 0px 48px;
@@ -369,14 +369,14 @@ div .navbar ul a {
             margin-right: 20px; 
         }
         .menu-inferior li a{
-            margin: 19px -11px 0px 150px;
+            margin: 19px -11px 0px 160px;
             font-size: 24px;
         }
         .menu-inferior {
             padding-bottom: 95px;
         }
         .navbar{
-            margin-top: 172px;
+            margin-top: 160px;
             height: 40%;
         }
         .navbar li ul{

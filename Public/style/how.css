@@ -171,9 +171,7 @@ section .titulo{
     } 
 }
 @media(min-width:1024px){
-
-    /* main */
-    
+    /* main */  
     .flecha i{
         font-size: 2.2em;
         margin-left: 62px;
